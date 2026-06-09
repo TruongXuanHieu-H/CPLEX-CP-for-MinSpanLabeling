@@ -1,5 +1,6 @@
 CPLEXDIR=/opt/ibm/ILOG/CPLEX_Studio222
 CONCERTDIR=$(CPLEXDIR)/concert
+CPDIR=$(CPLEXDIR)/cpoptimizer
 
 SYSTEM=x86-64_linux
 LIBFORMAT=static_pic
@@ -14,13 +15,16 @@ CXXFLAGS= \
     -DNDEBUG \
     -DIL_STD \
     -I$(CPLEXDIR)/cplex/include \
-    -I$(CONCERTDIR)/include
+    -I$(CONCERTDIR)/include \
+    -I$(CPDIR)/include
 
 LDFLAGS= \
     -L$(CPLEXDIR)/cplex/lib/$(SYSTEM)/$(LIBFORMAT) \
-    -L$(CONCERTDIR)/lib/$(SYSTEM)/$(LIBFORMAT)
+    -L$(CONCERTDIR)/lib/$(SYSTEM)/$(LIBFORMAT) \
+    -L$(CPDIR)/lib/$(SYSTEM)/$(LIBFORMAT)
 
 LIBS= \
+	-lcp \
     -lilocplex \
     -lconcert \
     -lcplex \
@@ -28,7 +32,7 @@ LIBS= \
     -lpthread \
     -ldl
 
-TARGET=build/cplex_cp
+TARGET=build/cplex
 
 SRC=$(wildcard src/*.cpp)
 
