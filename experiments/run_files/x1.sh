@@ -2,7 +2,7 @@
 
 build_dir="../../build"
 dataset_dir="../../benchmarks/x1"
-report_dir="../../experiments/reports"
+report_dir="../../experiments/reports/x1"
 
 $build_dir/cplex $dataset_dir/A-pores_1.mtx.rnd      >> $report_dir/A-pores_1.txt
 $build_dir/cplex $dataset_dir/B-ibm32.mtx.rnd        >> $report_dir/B-ibm32.txt
