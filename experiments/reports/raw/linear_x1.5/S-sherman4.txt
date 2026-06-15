@@ -1,12 +1,12 @@
-! Solving for graph ../../../benchmarks/raw/linear/S-sherman4.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/S-sherman4.mtx.rnd
 ! Target value is set to 384
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 209281
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 547 variables, 1887 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
  !  . Log search space  : 9668.3 (before), 9668.3 (after)
  !  . Memory usage      : 929.7 kB (before), 929.7 kB (after)
  ! Using parallel search with 8 workers.
@@ -16,7 +16,7 @@
  + New bound is 1
                         0        547    1   F        -
  + New bound is 385
- *           385        1  0.31s        1      (gap is 0.00%)
+ *           385        1  0.47s        1      (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 385 (optimal - effective tol. is 0)
@@ -25,8 +25,8 @@
  ! Number of branches     : 4008
  ! Number of fails        : 116
  ! Total memory usage     : 165.8 MB (165.0 MB CP Optimizer + 0.8 MB Concert)
- ! Time spent in solve    : 0.31s (0.29s engine + 0.02s extraction)
- ! Search speed (br. / s) : 14314.3
+ ! Time spent in solve    : 0.47s (0.43s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 9320.9
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 385

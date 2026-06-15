@@ -1,10 +1,10 @@
-! Solving for graph ../../../benchmarks/raw/linear/Q-494_bus.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/Q-494_bus.mtx.rnd
 ! Target value is set to 220
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 108461
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 495 variables, 1080 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 8279.8 (before), 8279.8 (after)
@@ -18,7 +18,7 @@
  + New bound is 220
                         0        495    1   F        -
  + New bound is 221
- *           441      495  0.22s        1      (gap is 49.89%)
+ *           441      495  0.20s        1      (gap is 49.89%)
              441     1000          1    1     104647  = _int364
              441     1000          1    2     66762  = _int398
              441     1000          1    3     79830  = _int193
@@ -104,7 +104,7 @@
              441    13000        495    6       293 != _int86
              441    13000        495    8       440 != _int61
              441    13000        495    3       334 != _int258
- ! Time = 0.67s, Average fail depth = 7, Memory usage = 140.8 MB
+ ! Time = 0.68s, Average fail depth = 7, Memory usage = 140.8 MB
  ! Current bound is 221 (gap is 49.89%)
  !          Best Branches  Non-fixed    W       Branch decision
              441    14000        495    5   F   290  = _int390
@@ -150,7 +150,7 @@
              441    22000        495    6        67 != _int86
              441    21000        495    8         1 != _int380
              441    21000        495    3       133 != _int206
- ! Time = 0.92s, Average fail depth = 6, Memory usage = 143.1 MB
+ ! Time = 0.91s, Average fail depth = 6, Memory usage = 143.1 MB
  ! Current bound is 221 (gap is 49.89%)
  !          Best Branches  Non-fixed    W       Branch decision
              441    23000        495    5   F    84  = _int377
@@ -196,7 +196,7 @@
              441    29000        495    3        77 != _int447
              441    31000        495    5   F     1  = _int274
              441    31000        495    6        99 != _int472
- ! Time = 1.15s, Average fail depth = 6, Memory usage = 145.2 MB
+ ! Time = 1.16s, Average fail depth = 6, Memory usage = 145.2 MB
  ! Current bound is 221 (gap is 49.89%)
  !          Best Branches  Non-fixed    W       Branch decision
              441    30000        495    8       347 != _int462
@@ -242,7 +242,7 @@
              441    11000        495    2       344 != _int185
              441    38000        495    3       417 != _int463
              441    39000        495    5   F     1  = _int250
- ! Time = 1.40s, Average fail depth = 6, Memory usage = 146.3 MB
+ ! Time = 1.42s, Average fail depth = 6, Memory usage = 146.3 MB
  ! Current bound is 221 (gap is 49.89%)
  !          Best Branches  Non-fixed    W       Branch decision
              441    40000        495    6       186 != _int456
@@ -265,7 +265,7 @@
              441    43000        495    5   F   212  = _int377
              441    44000        495    6        44 != _int86
              441    42000        495    8       332 != _int432
- ! Time = 1.54s, Average fail depth = 6, Memory usage = 146.8 MB
+ ! Time = 1.54s, Average fail depth = 6, Memory usage = 146.9 MB
  ! Current bound is 221 (gap is 49.89%)
  !          Best Branches  Non-fixed    W       Branch decision
              441    13000        495    1        11 != _int465
@@ -295,8 +295,8 @@
  ! Number of branches     : 236482
  ! Number of fails        : 109490
  ! Total memory usage     : 148.0 MB (147.6 MB CP Optimizer + 0.4 MB Concert)
- ! Time spent in solve    : 1.65s (1.64s engine + 0.02s extraction)
- ! Search speed (br. / s) : 144196.3
+ ! Time spent in solve    : 1.65s (1.63s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 145081.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 441

@@ -1,12 +1,12 @@
-! Solving for graph ../../../benchmarks/raw/linear/J-nos4.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/J-nos4.mtx.rnd
 ! Target value is set to 26
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 2575
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 101 variables, 347 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 1144.4 (before), 1144.4 (after)
  !  . Memory usage      : 392.9 kB (before), 392.9 kB (after)
  ! Using parallel search with 8 workers.
@@ -38,7 +38,7 @@
  + New bound is 48 (gap is 9.43%)
               53     1679          1    7   F    23 != _int51
  + New bound is 52 (gap is 1.89%)
- ! Time = 0.11s, Average fail depth = 13, Memory usage = 9.5 MB
+ ! Time = 0.12s, Average fail depth = 13, Memory usage = 9.5 MB
  ! Current bound is 52 (gap is 1.89%)
  !          Best Branches  Non-fixed    W       Branch decision
               53     3000        101    3        41 != _int11
@@ -55,7 +55,7 @@
  ! Number of branches     : 18408
  ! Number of fails        : 5910
  ! Total memory usage     : 9.3 MB (9.2 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 0.14s (0.13s engine + 0.02s extraction)
+ ! Time spent in solve    : 0.13s (0.13s engine + 0.00s extraction)
  ! Search speed (br. / s) : 153400.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------

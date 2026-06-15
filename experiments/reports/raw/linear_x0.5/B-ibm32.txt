@@ -1,10 +1,10 @@
-! Solving for graph ../../../benchmarks/raw/linear/B-ibm32.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/B-ibm32.mtx.rnd
 ! Target value is set to 5
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 156
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 33 variables, 122 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
  ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
  !  . Log search space  : 240.4 (before), 240.4 (after)
@@ -18,7 +18,7 @@
  + New bound is 6
                         2         32    1   F     1 != _int3
  + New bound is 7
- *            16       35  0.03s        1      (gap is 56.25%)
+ *            16       35  0.04s        1      (gap is 56.25%)
               16      743          1    1   F    11 != _int30
  + New bound is 12 (gap is 25.00%)
               16     1000          1    1   F     5  = _int2
@@ -34,8 +34,8 @@
  ! Number of branches     : 6662
  ! Number of fails        : 2206
  ! Total memory usage     : 5.4 MB (5.3 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.03s (0.02s engine + 0.01s extraction)
- ! Search speed (br. / s) : 333100.0
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 222066.7
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 16

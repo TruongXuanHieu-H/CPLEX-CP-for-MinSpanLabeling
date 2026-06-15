@@ -1,12 +1,12 @@
-! Solving for graph ../../../benchmarks/raw/linear/J-nos4.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/J-nos4.mtx.rnd
 ! Target value is set to 53
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 5248
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 101 variables, 347 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 1248.1 (before), 1248.1 (after)
  !  . Memory usage      : 392.9 kB (before), 392.9 kB (after)
  ! Using parallel search with 8 workers.
@@ -39,7 +39,7 @@
              107     1988          1    4   F     1 != _int43
  + New bound is 106 (gap is 0.93%)
              107     2000          1    6   F   106  = _int79
- ! Time = 0.19s, Average fail depth = 14, Memory usage = 11.0 MB
+ ! Time = 0.20s, Average fail depth = 14, Memory usage = 11.1 MB
  ! Current bound is 106 (gap is 0.93%)
  !          Best Branches  Non-fixed    W       Branch decision
              107     2000          1    8   F     1  = _int77
@@ -60,8 +60,8 @@
  ! Number of branches     : 23152
  ! Number of fails        : 8018
  ! Total memory usage     : 10.8 MB (10.7 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 0.22s (0.21s engine + 0.01s extraction)
- ! Search speed (br. / s) : 115760.0
+ ! Time spent in solve    : 0.22s (0.22s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 110247.6
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 107

@@ -1,12 +1,12 @@
-! Solving for graph ../../../benchmarks/raw/linear/G-will57.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/G-will57.mtx.rnd
 ! Target value is set to 7
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 393
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 58 variables, 184 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 499.9 (before), 499.9 (after)
  !  . Memory usage      : 347.0 kB (before), 347.0 kB (after)
  ! Using parallel search with 8 workers.
@@ -60,7 +60,7 @@
               29     3000         47    2   F     7  = _int47
               29     5000         49    1   F    11  = _int25
               29     4000         54    2        16 != _int24
- ! Time = 0.13s, Average fail depth = 9, Memory usage = 7.6 MB
+ ! Time = 0.10s, Average fail depth = 9, Memory usage = 7.6 MB
  ! Current bound is 25 (gap is 13.79%)
  !          Best Branches  Non-fixed    W       Branch decision
               29     5000         22    3         8 != _int49
@@ -106,7 +106,7 @@
               29    11000         27    6         8  = _int46
               29    10000         19    8   F     9  = _int27
               29    10000         54    1   F    11  = _int46
- ! Time = 0.20s, Average fail depth = 9, Memory usage = 7.6 MB
+ ! Time = 0.18s, Average fail depth = 9, Memory usage = 7.6 MB
  ! Current bound is 25 (gap is 13.79%)
  !          Best Branches  Non-fixed    W       Branch decision
               29    10000         45    4        27 != _int49
@@ -129,7 +129,7 @@
               29    12000         22    8        18  = _int50
               29    13000         20    3        16 != _int36
               29    14000         18    6            -
- ! Time = 0.24s, Average fail depth = 9, Memory usage = 7.6 MB
+ ! Time = 0.22s, Average fail depth = 9, Memory usage = 7.6 MB
  ! Current bound is 25 (gap is 13.79%)
  !          Best Branches  Non-fixed    W       Branch decision
               29    11000         43    7   F    16  = _int25
@@ -152,7 +152,7 @@
               29    13000         53    7   F    26  = _int51
               29    15000         20    8   F    12  = _int25
               29    15000         49    4        22 != _int7
- ! Time = 0.27s, Average fail depth = 10, Memory usage = 7.9 MB
+ ! Time = 0.25s, Average fail depth = 10, Memory usage = 7.9 MB
  ! Current bound is 25 (gap is 13.79%)
  !          Best Branches  Non-fixed    W       Branch decision
               29    16000         36    1        25  = _int47
@@ -199,7 +199,7 @@
               29    20000         21    6        20 != _int25
               29    18000         31    7   F    12  = _int50
               29    20000         27    8   F        -
- ! Time = 0.36s, Average fail depth = 10, Memory usage = 7.7 MB
+ ! Time = 0.34s, Average fail depth = 10, Memory usage = 7.7 MB
  ! Current bound is 26 (gap is 10.34%)
  !          Best Branches  Non-fixed    W       Branch decision
               29    19000         53    1   F        -
@@ -220,8 +220,8 @@
  ! Number of branches     : 164517
  ! Number of fails        : 75429
  ! Total memory usage     : 8.7 MB (8.6 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.38s (0.38s engine + 0.01s extraction)
- ! Search speed (br. / s) : 444640.5
+ ! Time spent in solve    : 0.36s (0.36s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 456991.7
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 29

@@ -1,12 +1,12 @@
-! Solving for graph ../../../benchmarks/raw/linear/K-dwt__234.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/K-dwt__234.mtx.rnd
 ! Target value is set to 51
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 5917
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 118 variables, 279 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 1478.6 (before), 1478.6 (after)
  !  . Memory usage      : 359.9 kB (before), 359.9 kB (after)
  ! Using parallel search with 8 workers.
@@ -29,7 +29,7 @@
  ! Number of branches     : 7247
  ! Number of fails        : 672
  ! Total memory usage     : 10.6 MB (10.5 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.15s (0.14s engine + 0.01s extraction)
+ ! Time spent in solve    : 0.15s (0.13s engine + 0.02s extraction)
  ! Search speed (br. / s) : 55746.2
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------

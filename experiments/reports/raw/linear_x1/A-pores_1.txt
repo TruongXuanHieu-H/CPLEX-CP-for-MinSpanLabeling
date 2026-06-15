@@ -1,10 +1,10 @@
-! Solving for graph ../../../benchmarks/raw/linear/A-pores_1.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/A-pores_1.mtx.rnd
 ! Target value is set to 6
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 175
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 31 variables, 133 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 231.0 (before), 231.0 (after)

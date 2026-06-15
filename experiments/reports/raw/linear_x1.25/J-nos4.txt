@@ -1,10 +1,10 @@
-! Solving for graph ../../../benchmarks/raw/linear/J-nos4.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/J-nos4.mtx.rnd
 ! Target value is set to 44
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 4357
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 101 variables, 347 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 1221.0 (before), 1221.0 (after)
@@ -18,8 +18,8 @@
  + New bound is 44
                         0        101    1   F        -
  + New bound is 45
- *           133      101  0.14s        1      (gap is 66.17%)
- *            89      875  0.14s        1      (gap is 49.44%)
+ *           133      101  0.13s        1      (gap is 66.17%)
+ *            89      875  0.13s        1      (gap is 49.44%)
               89     1000          1    1      4101  = _int18
               89     1000          1    2      3085  = _int37
               89     1000          1    3      2049  = _int46
@@ -39,7 +39,7 @@
  + New bound is 86 (gap is 3.37%)
               89     1906          1    7   F    45 != _int23
  + New bound is 89 (gap is 0.00%)
- ! Time = 0.18s, Average fail depth = 12, Memory usage = 10.8 MB
+ ! Time = 0.17s, Average fail depth = 12, Memory usage = 10.8 MB
  ! Current bound is 89 (gap is 0.00%)
  !          Best Branches  Non-fixed    W       Branch decision
  ! ----------------------------------------------------------------------------
@@ -50,7 +50,7 @@
  ! Number of branches     : 14352
  ! Number of fails        : 3428
  ! Total memory usage     : 10.2 MB (10.1 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 0.18s (0.18s engine + 0.00s extraction)
+ ! Time spent in solve    : 0.17s (0.17s engine + 0.00s extraction)
  ! Search speed (br. / s) : 84423.5
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------

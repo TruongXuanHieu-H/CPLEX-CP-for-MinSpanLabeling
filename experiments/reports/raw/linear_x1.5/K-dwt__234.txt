@@ -1,10 +1,10 @@
-! Solving for graph ../../../benchmarks/raw/linear/K-dwt__234.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/K-dwt__234.mtx.rnd
 ! Target value is set to 77
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 8933
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 118 variables, 279 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 1548.7 (before), 1548.7 (after)

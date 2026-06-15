@@ -1,12 +1,12 @@
-! Solving for graph ../../../benchmarks/raw/linear/B-ibm32.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/B-ibm32.mtx.rnd
 ! Target value is set to 7
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 218
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 33 variables, 122 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 256.4 (before), 256.4 (after)
  !  . Memory usage      : 304.3 kB (before), 304.3 kB (after)
  ! Using parallel search with 8 workers.
@@ -29,7 +29,7 @@
  ! Number of branches     : 7361
  ! Number of fails        : 2563
  ! Total memory usage     : 5.5 MB (5.4 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Time spent in solve    : 0.04s (0.03s engine + 0.02s extraction)
  ! Search speed (br. / s) : 245366.7
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------

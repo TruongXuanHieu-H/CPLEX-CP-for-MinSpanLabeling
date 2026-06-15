@@ -1,10 +1,10 @@
-! Solving for graph ../../../benchmarks/raw/linear/O-impcol_d.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/O-impcol_d.mtx.rnd
 ! Target value is set to 61
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 25865
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 426 variables, 1692 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 6244.6 (before), 6244.6 (after)
@@ -58,7 +58,7 @@
              245     5000          1    2   F   124  = _int322
              245     5000         85    3        78 != _int170
              245     5000          1    4   F   154 != _int323
- ! Time = 0.28s, Average fail depth = 5, Memory usage = 44.8 MB
+ ! Time = 0.27s, Average fail depth = 5, Memory usage = 44.8 MB
  ! Current bound is 63 (gap is 74.29%)
  !          Best Branches  Non-fixed    W       Branch decision
              245     5000        108    5   F   117  = _int193
@@ -66,14 +66,14 @@
              245     5000          1    7       124 != _int376
              245     5000         44    8       174 != _int204
              245     6000         85    3        67 != _int173
- *           244     5522  0.31s        6      (gap is 74.18%)
+ *           244     5522  0.29s        6      (gap is 74.18%)
              244     6000        336    1   F   150  = _int90
              244     7000         30    3       222 != _int311
              244     6000        340    4       129  = _int213
              244     6000         99    5       157  = _int263
              244     6000          1    6       211  = _int205
              244     6000        113    8   F   127  = _int165
- *           243     6338  0.34s        6      (gap is 74.07%)
+ *           243     6338  0.33s        6      (gap is 74.07%)
              243     8000         28    3   F    63  = _int185
              243     7000          1    5   F   135  = _int165
              243     7000          1    6       242  = _int300
@@ -81,7 +81,7 @@
              243     7000        329    1        76 != _int313
              243     6000        151    2   F   145  = _int211
              243     7000        306    4   F     3  = _int223
- ! Time = 0.37s, Average fail depth = 119, Memory usage = 48.1 MB
+ ! Time = 0.36s, Average fail depth = 119, Memory usage = 48.1 MB
  ! Current bound is 63 (gap is 74.07%)
  !          Best Branches  Non-fixed    W       Branch decision
              243     6000        147    7        73 != _int323
@@ -98,19 +98,19 @@
              243     9000        135    5   F   238  = _int67
              243     9000        348    6       179 != _int165
              243     9000        309    8   F    63  = _int53
- *           242     9243  0.43s        5      (gap is 73.97%)
+ *           242     9243  0.42s        5      (gap is 73.97%)
              242    10000        141    3   F   118  = _int141
              242    10000         26    4       222  = _int389
              242    10000          1    5       184  = _int178
              242    10000        139    6   F   215  = _int185
              242     7000        372    7        83 != _int322
- ! Time = 0.46s, Average fail depth = 131, Memory usage = 50.5 MB
+ ! Time = 0.47s, Average fail depth = 131, Memory usage = 50.5 MB
  ! Current bound is 63 (gap is 73.97%)
  !          Best Branches  Non-fixed    W       Branch decision
              242    10000          1    8   F   173  = _int195
              242    10000        187    1   F   209  = _int205
              242     9000        358    2        12 != _int321
- *           223    10095  0.46s        4      (gap is 71.75%)
+ *           223    10095  0.47s        4      (gap is 71.75%)
              223    11000        178    1        62  = _int186
              223    11000         60    3       116 != _int188
              223    11000        155    5   F   125  = _int313
@@ -150,7 +150,7 @@
  *           184    14712  0.65s        1      (gap is 65.76%)
              184    14000        208    4         6  = _int228
              184    16000        285    5        62 != _int367
- ! Time = 0.68s, Average fail depth = 109, Memory usage = 54.0 MB
+ ! Time = 0.67s, Average fail depth = 109, Memory usage = 54.0 MB
  ! Current bound is 63 (gap is 65.76%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    12000        369    7       109 != _int348
@@ -174,7 +174,7 @@
              184    16000        380    4        90  = _int311
              184    18000        424    3        98  = _int56
              184    17000        399    4   F    15  = _int407
- ! Time = 0.78s, Average fail depth = 101, Memory usage = 56.4 MB
+ ! Time = 0.77s, Average fail depth = 101, Memory usage = 56.4 MB
  ! Current bound is 124 (gap is 32.61%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    18000        425    6   F   175  = _int175
@@ -269,7 +269,7 @@
              184    24000          1    1        62  = _int71
              184    28000        282    3   F   120  = _int163
              184    28000        425    5        81 != _int174
- ! Time = 1.21s, Average fail depth = 93, Memory usage = 54.8 MB
+ ! Time = 1.22s, Average fail depth = 93, Memory usage = 54.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    29000        424    6        69 != _int173
@@ -338,7 +338,7 @@
              184    29000        340    1       183  = _int330
              184    32000        382    2       118 != _int101
              184    37000        280    3        83 != _int163
- ! Time = 1.62s, Average fail depth = 90, Memory usage = 57.8 MB
+ ! Time = 1.61s, Average fail depth = 90, Memory usage = 57.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    30000        413    4       183  = _int167
@@ -384,7 +384,7 @@
              184    41000        333    8   F    24  = _int231
              184    35000        410    2       189 != _int208
              184    43000        334    3         1  = _int183
- ! Time = 1.85s, Average fail depth = 89, Memory usage = 59.2 MB
+ ! Time = 1.83s, Average fail depth = 89, Memory usage = 59.2 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    34000        349    4   F    28  = _int77
@@ -407,7 +407,7 @@
              184    44000        423    5   F    90  = _int165
              184    45000        407    6   F    31  = _int204
              184    44000        394    8       156 != _int83
- ! Time = 1.95s, Average fail depth = 89, Memory usage = 59.1 MB
+ ! Time = 1.93s, Average fail depth = 89, Memory usage = 59.1 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    37000        424    2   F    93  = _int208
@@ -430,7 +430,7 @@
              184    48000        405    6            -
              184    42000        403    7        73 != _int195
              184    39000        403    2        34 != _int53
- ! Time = 2.08s, Average fail depth = 89, Memory usage = 58.3 MB
+ ! Time = 2.06s, Average fail depth = 89, Memory usage = 58.3 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    38000        316    1       125 != _int170
@@ -453,7 +453,7 @@
              184    45000        408    7   F    36  = _int322
              184    40000        305    1       183 != _int298
              184    52000        419    3         7 != _int186
- ! Time = 2.24s, Average fail depth = 88, Memory usage = 59.3 MB
+ ! Time = 2.22s, Average fail depth = 88, Memory usage = 59.3 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    41000        396    4       183  = _int38
@@ -476,7 +476,7 @@
              184    54000        361    3   F   105  = _int175
              184    43000        289    4   F   122  = _int68
              184    53000        299    5        75  = _int370
- ! Time = 2.34s, Average fail depth = 88, Memory usage = 58.4 MB
+ ! Time = 2.33s, Average fail depth = 88, Memory usage = 58.4 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    53000        321    6   F    76  = _int73
@@ -545,7 +545,7 @@
              184    49000        425    2       153 != _int211
              184    51000        424    4         8 != _int77
              184    52000        424    4        72 != _int73
- ! Time = 2.69s, Average fail depth = 82, Memory usage = 57.8 MB
+ ! Time = 2.68s, Average fail depth = 82, Memory usage = 57.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    62000        300    6   F    89  = _int22
@@ -614,7 +614,7 @@
              184    55000        424    2         6 != _int211
              184    70000        367    3        80  = _int79
              184    63000        424    4   F     3  = _int67
- ! Time = 3.06s, Average fail depth = 80, Memory usage = 58.5 MB
+ ! Time = 3.08s, Average fail depth = 80, Memory usage = 58.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    70000        326    5        82 != _int400
@@ -683,7 +683,7 @@
              184    77000        333    6   F    20  = _int401
              184    64000        171    7   F   126  = _int175
              184    79000        292    8       136  = _int128
- ! Time = 3.43s, Average fail depth = 80, Memory usage = 58.9 MB
+ ! Time = 3.45s, Average fail depth = 80, Memory usage = 58.9 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    56000        114    1   F   124  = _int250
@@ -706,7 +706,7 @@
              184    84000        286    3         1  = _int374
              184    74000          1    4         1  = _int119
              184    83000        383    5       102 != _int165
- ! Time = 3.56s, Average fail depth = 80, Memory usage = 59.1 MB
+ ! Time = 3.58s, Average fail depth = 80, Memory usage = 59.1 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    80000        289    6            -
@@ -729,7 +729,7 @@
              184    83000        289    6        63 != _int278
              184    63000          1    1       123  = _int373
              184    87000        289    3   F   122  = _int422
- ! Time = 3.70s, Average fail depth = 80, Memory usage = 59.6 MB
+ ! Time = 3.72s, Average fail depth = 80, Memory usage = 59.6 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    78000          1    4        62  = _int34
@@ -752,7 +752,7 @@
              184    89000        425    3        11  = _int171
              184    81000          1    4       123  = _int186
              184    88000        397    5            -
- ! Time = 3.80s, Average fail depth = 80, Memory usage = 59.8 MB
+ ! Time = 3.83s, Average fail depth = 80, Memory usage = 59.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    87000        290    6   F    77  = _int166
@@ -775,7 +775,7 @@
              184    90000        283    6        62 != _int399
              184    68000        407    7   F   107  = _int299
              184    88000        326    8         1  = _int397
- ! Time = 3.92s, Average fail depth = 80, Memory usage = 59.8 MB
+ ! Time = 3.93s, Average fail depth = 80, Memory usage = 59.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    69000        282    1   F    89  = _int413
@@ -798,7 +798,7 @@
              184    91000        411    8        60  = _int195
              184    71000        329    1   F   155  = _int410
              184    88000          1    4         1  = _int359
- ! Time = 4.08s, Average fail depth = 80, Memory usage = 59.8 MB
+ ! Time = 4.11s, Average fail depth = 80, Memory usage = 59.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    95000        286    5       183  = _int105
@@ -821,7 +821,7 @@
              184    91000          1    4         1  = _int150
              184    98000        284    5         2 != _int184
              184    96000        286    6       182 != _int390
- ! Time = 4.19s, Average fail depth = 80, Memory usage = 59.8 MB
+ ! Time = 4.22s, Average fail depth = 80, Memory usage = 59.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    73000        287    7        62  = _int165
@@ -844,7 +844,7 @@
              184     100k        369    5   F   152  = _int313
              184    99000        329    6   F   174  = _int166
              184    75000        405    7   F    70  = _int412
- ! Time = 4.31s, Average fail depth = 80, Memory usage = 59.8 MB
+ ! Time = 4.33s, Average fail depth = 80, Memory usage = 59.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    98000        419    8            -
@@ -867,7 +867,7 @@
              184     103k        295    5        90 != _int174
              184    80000        416    1   F    70  = _int323
              184    99000          1    4       184  = _int264
- ! Time = 4.47s, Average fail depth = 80, Memory usage = 59.8 MB
+ ! Time = 4.49s, Average fail depth = 80, Memory usage = 59.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     104k        305    5       182 != _int193
@@ -890,7 +890,7 @@
              184     102k        284    6   F   146  = _int175
              184     102k        417    8   F    21  = _int195
              184    83000        413    1         1  = _int410
- ! Time = 4.58s, Average fail depth = 80, Memory usage = 59.8 MB
+ ! Time = 4.59s, Average fail depth = 80, Memory usage = 59.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     103k        423    3   F   159  = _int165
@@ -936,7 +936,7 @@
              184     111k        353    5   F    17  = _int347
              184     108k        368    6        89 != _int364
              184    85000        421    7        66 != _int412
- ! Time = 4.75s, Average fail depth = 80, Memory usage = 58.6 MB
+ ! Time = 4.76s, Average fail depth = 80, Memory usage = 58.6 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     108k        363    8   F   115  = _int188
@@ -959,7 +959,7 @@
              184     111k        425    6       182 != _int175
              184    87000        418    7        10 != _int412
              184     110k        340    8   F    67  = _int192
- ! Time = 4.84s, Average fail depth = 80, Memory usage = 58.5 MB
+ ! Time = 4.86s, Average fail depth = 80, Memory usage = 58.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    91000        422    1       140 != _int323
@@ -1005,7 +1005,7 @@
              184     114k        404    4   F   140  = _int411
              184     121k        308    5   F   177  = _int19
              184     116k        292    6        39 != _int111
- ! Time = 5.12s, Average fail depth = 80, Memory usage = 58.6 MB
+ ! Time = 5.13s, Average fail depth = 80, Memory usage = 58.6 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    94000          1    7         1  = _int166
@@ -1028,7 +1028,7 @@
              184    97000          1    7         1  = _int236
              184     119k        323    8       183  = _int229
              184     118k        404    3        74 != _int185
- ! Time = 5.26s, Average fail depth = 80, Memory usage = 58.6 MB
+ ! Time = 5.29s, Average fail depth = 80, Memory usage = 58.6 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     116k        404    4   F    74  = _int411
@@ -1051,7 +1051,7 @@
              184     122k        283    8        78 != _int175
              184    99000        390    1            -
              184     121k        412    3   F     8  = _int77
- ! Time = 5.37s, Average fail depth = 80, Memory usage = 58.6 MB
+ ! Time = 5.40s, Average fail depth = 80, Memory usage = 58.6 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     118k        403    4   F    64  = _int77
@@ -1074,7 +1074,7 @@
              184    80000        425    2       108 != _int347
              184     124k        379    3        89 != _int309
              184     119k        410    4   F    94  = _int283
- ! Time = 5.49s, Average fail depth = 80, Memory usage = 58.6 MB
+ ! Time = 5.50s, Average fail depth = 80, Memory usage = 58.6 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     130k        423    5       170 != _int165
@@ -1097,7 +1097,7 @@
              184     121k        400    4   F   160  = _int149
              184     133k        404    5        76 != _int195
              184     128k        299    6   F   161  = _int175
- ! Time = 5.59s, Average fail depth = 80, Memory usage = 58.6 MB
+ ! Time = 5.61s, Average fail depth = 80, Memory usage = 58.6 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     105k        415    7       100 != _int412
@@ -1120,7 +1120,7 @@
              184     131k        279    6        62 != _int133
              184     131k        406    8        65  = _int44
              184     109k          1    1       184  = _int347
- ! Time = 5.74s, Average fail depth = 80, Memory usage = 58.7 MB
+ ! Time = 5.75s, Average fail depth = 80, Memory usage = 58.7 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     124k        318    4       154 != _int77
@@ -1143,7 +1143,7 @@
              184    82000        425    2   F    73  = _int337
              184     133k        307    3   F    70  = _int311
              184     126k        287    4   F    88  = _int175
- ! Time = 5.84s, Average fail depth = 80, Memory usage = 58.7 MB
+ ! Time = 5.86s, Average fail depth = 80, Memory usage = 58.7 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     139k        287    5   F    62  = _int253
@@ -1189,7 +1189,7 @@
              184     138k        415    6   F        -
              184     140k        284    8   F     1  = _int41
              184     117k        409    1        84 != _int323
- ! Time = 6.12s, Average fail depth = 80, Memory usage = 58.1 MB
+ ! Time = 6.13s, Average fail depth = 80, Memory usage = 58.1 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184    87000        322    2       125  = _int403
@@ -1212,7 +1212,7 @@
              184     143k        375    8   F     3 != _int284
              184     119k        415    1   F    73  = _int188
              184    90000          1    2        19  = _int226
- ! Time = 6.25s, Average fail depth = 80, Memory usage = 58.1 MB
+ ! Time = 6.24s, Average fail depth = 80, Memory usage = 58.1 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     141k        415    3        97 != _int77
@@ -1235,7 +1235,7 @@
              184     137k        256    4         1  = _int80
              184     144k        282    6       183  = _int291
              184     146k        289    8   F   182  = _int95
- ! Time = 6.33s, Average fail depth = 80, Memory usage = 58.1 MB
+ ! Time = 6.31s, Average fail depth = 80, Memory usage = 58.1 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     122k        298    1   F    14  = _int188
@@ -1258,7 +1258,7 @@
              184     148k        424    8   F    63  = _int195
              184     124k        419    1   F   168  = _int413
              184    96000          1    2       124  = _int61
- ! Time = 6.45s, Average fail depth = 80, Memory usage = 58.1 MB
+ ! Time = 6.47s, Average fail depth = 80, Memory usage = 58.1 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     146k        352    3       105 != _int195
@@ -1281,7 +1281,7 @@
              184     150k        383    6       182 != _int405
              184     151k        280    8   F    63  = _int310
              184     127k        424    1   F    86  = _int413
- ! Time = 6.56s, Average fail depth = 80, Memory usage = 58.1 MB
+ ! Time = 6.58s, Average fail depth = 80, Memory usage = 58.1 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     148k        411    3            -
@@ -1304,7 +1304,7 @@
              184     130k        425    1        94 != _int410
              184     150k        282    3   F    88  = _int261
              184     147k          1    4         1  = _int78
- ! Time = 6.67s, Average fail depth = 80, Memory usage = 58.4 MB
+ ! Time = 6.68s, Average fail depth = 80, Memory usage = 58.4 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     156k        386    5   F     2  = _int409
@@ -1327,7 +1327,7 @@
              184     153k        285    3         1 != _int21
              184     150k          1    4       135 != _int175
              184     159k        325    5       111 != _int175
- ! Time = 6.77s, Average fail depth = 79, Memory usage = 59.0 MB
+ ! Time = 6.79s, Average fail depth = 79, Memory usage = 59.0 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     122k        425    7   F   122 != _int86
@@ -1350,7 +1350,7 @@
              184     157k        391    6        13 != _int175
              184     125k        420    7   F   176  = _int73
              184     102k        291    2   F   178  = _int347
- ! Time = 6.92s, Average fail depth = 79, Memory usage = 59.1 MB
+ ! Time = 6.97s, Average fail depth = 79, Memory usage = 59.1 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     157k        313    3       131 != _int188
@@ -1373,7 +1373,7 @@
              184     159k        287    3       126  = _int92
              184     164k        390    5   F    20  = _int195
              184     160k        355    6         4 != _int132
- ! Time = 7.04s, Average fail depth = 79, Memory usage = 59.4 MB
+ ! Time = 7.11s, Average fail depth = 79, Memory usage = 59.4 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     163k        421    8        80 != _int186
@@ -1396,7 +1396,7 @@
              184     167k        404    5       100 != _int175
              184     166k        285    8   F        -
              184     130k         52    7      3649  = _int135
- ! Time = 7.17s, Average fail depth = 79, Memory usage = 59.5 MB
+ ! Time = 7.24s, Average fail depth = 79, Memory usage = 59.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     105k        306    2       181 != _int410
@@ -1419,7 +1419,7 @@
              184     141k        424    1   F    71  = _int41
              184     170k        316    5       183 != _int349
              184     165k        280    6   F     1  = _int120
- ! Time = 7.33s, Average fail depth = 79, Memory usage = 59.5 MB
+ ! Time = 7.40s, Average fail depth = 79, Memory usage = 59.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     134k          1    7        62  = _int63
@@ -1442,7 +1442,7 @@
              184     137k          1    7        62  = _int123
              184     172k        347    8   F    26  = _int97
              184     108k        401    2       179 != _int191
- ! Time = 7.49s, Average fail depth = 79, Memory usage = 59.5 MB
+ ! Time = 7.56s, Average fail depth = 79, Memory usage = 59.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     168k        293    3        77 != _int299
@@ -1465,7 +1465,7 @@
              184     110k        407    2       119 != _int195
              184     162k        403    4        84 != _int411
              184     177k        338    5        59  = _int91
- ! Time = 7.61s, Average fail depth = 79, Memory usage = 59.5 MB
+ ! Time = 7.68s, Average fail depth = 79, Memory usage = 59.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     171k        394    6         1  = _int223
@@ -1488,7 +1488,7 @@
              184     180k        338    5            -
              184     174k        383    6        92 != _int166
              184     141k        410    7   F   119  = _int345
- ! Time = 7.74s, Average fail depth = 79, Memory usage = 59.5 MB
+ ! Time = 7.81s, Average fail depth = 79, Memory usage = 59.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     179k        328    8   F   140  = _int96
@@ -1511,7 +1511,7 @@
              184     177k        425    6        62 != _int313
              184     142k        417    7   F     4  = _int86
              184     150k         70    1       180  = _int48
- ! Time = 7.88s, Average fail depth = 79, Memory usage = 59.5 MB
+ ! Time = 7.99s, Average fail depth = 79, Memory usage = 59.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     175k        287    3            -
@@ -1534,7 +1534,7 @@
              184     184k        311    8   F     1 != _int195
              184     153k          1    1       123  = _int7
              184     118k        425    2        84 != _int188
- ! Time = 7.99s, Average fail depth = 79, Memory usage = 59.5 MB
+ ! Time = 8.11s, Average fail depth = 79, Memory usage = 59.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     177k        424    3   F   122 != _int77
@@ -1557,7 +1557,7 @@
              184     182k        337    6   F     1  = _int62
              184     156k          1    1   F   165  = _int299
              184     121k        424    2       163 != _int188
- ! Time = 8.10s, Average fail depth = 78, Memory usage = 58.7 MB
+ ! Time = 8.22s, Average fail depth = 78, Memory usage = 58.7 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     188k        269    5            -
@@ -1580,7 +1580,7 @@
              184     158k        414    1   F    85  = _int323
              184     175k        425    4   F    94  = _int405
              184     191k        391    5   F    40  = _int89
- ! Time = 8.22s, Average fail depth = 79, Memory usage = 60.1 MB
+ ! Time = 8.36s, Average fail depth = 79, Memory usage = 60.1 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     190k        341    8   F        -
@@ -1603,7 +1603,7 @@
              184     178k        424    4   F    74  = _int67
              184     194k        402    5   F   160  = _int208
              184     187k        308    6   F   177  = _int328
- ! Time = 8.33s, Average fail depth = 79, Memory usage = 59.8 MB
+ ! Time = 8.49s, Average fail depth = 79, Memory usage = 59.8 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     192k        389    8   F   111  = _int348
@@ -1626,7 +1626,7 @@
              184     197k        280    5       176 != _int397
              184     191k        276    6   F     7  = _int166
              184     151k        402    7   F    62 != _int195
- ! Time = 8.46s, Average fail depth = 78, Memory usage = 60.4 MB
+ ! Time = 8.65s, Average fail depth = 78, Memory usage = 60.4 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     196k        319    8        85 != _int406
@@ -1649,7 +1649,7 @@
              184     184k          1    4   F     1  = _int190
              184     200k        284    5   F    64  = _int388
              184     194k        349    6   F   110  = _int253
- ! Time = 8.58s, Average fail depth = 78, Memory usage = 60.5 MB
+ ! Time = 8.79s, Average fail depth = 78, Memory usage = 60.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     199k        312    8       155 != _int188
@@ -1672,7 +1672,7 @@
              184     187k        192    4   F   234  = _int74
              184     203k        307    5   F     1 != _int191
              184     197k        367    6       117 != _int166
- ! Time = 8.70s, Average fail depth = 78, Memory usage = 60.5 MB
+ ! Time = 8.93s, Average fail depth = 78, Memory usage = 60.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     154k        415    7       102 != _int86
@@ -1695,7 +1695,7 @@
              184     190k          1    4       123  = _int280
              184     156k        307    7   F   182  = _int95
              184     203k        421    8         2  = _int162
- ! Time = 8.83s, Average fail depth = 78, Memory usage = 60.5 MB
+ ! Time = 9.08s, Average fail depth = 78, Memory usage = 60.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     133k          1    2        62  = _int289
@@ -1718,7 +1718,7 @@
              184     172k        414    1   F     7  = _int195
              184     136k          1    2       184  = _int336
              184     197k        424    3   F   144  = _int195
- ! Time = 8.97s, Average fail depth = 78, Memory usage = 60.5 MB
+ ! Time = 9.25s, Average fail depth = 78, Memory usage = 60.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     194k          1    4         1  = _int198
@@ -1741,7 +1741,7 @@
              184     139k          1    2   F    89  = _int188
              184     200k        292    3        99 != _int185
              184     197k          1    4        85 != _int406
- ! Time = 9.09s, Average fail depth = 78, Memory usage = 60.5 MB
+ ! Time = 9.40s, Average fail depth = 78, Memory usage = 60.5 MB
  ! Current bound is 127 (gap is 30.98%)
  !          Best Branches  Non-fixed    W       Branch decision
              184     210k        395    5        76 != _int165
@@ -1764,8 +1764,8 @@
  ! Number of branches     : 1498834
  ! Number of fails        : 644706
  ! Total memory usage     : 66.9 MB (66.2 MB CP Optimizer + 0.7 MB Concert)
- ! Time spent in solve    : 9.13s (9.11s engine + 0.02s extraction)
- ! Search speed (br. / s) : 164526.2
+ ! Time spent in solve    : 9.43s (9.42s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 159281.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 184

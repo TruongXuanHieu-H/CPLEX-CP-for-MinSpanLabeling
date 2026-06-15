@@ -1,10 +1,10 @@
-! Solving for graph ../../../benchmarks/raw/linear/V-nos6.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/V-nos6.mtx.rnd
 ! Target value is set to 326
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 219725
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 676 variables, 1965 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 11995.8 (before), 11995.8 (after)
@@ -18,7 +18,7 @@
  + New bound is 326
                         0        676    1   F        -
  + New bound is 327
- *           327      676  0.47s        1      (gap is 0.00%)
+ *           327      676  0.51s        1      (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 327 (optimal - effective tol. is 0)
@@ -27,8 +27,8 @@
  ! Number of branches     : 6708
  ! Number of fails        : 88
  ! Total memory usage     : 265.5 MB (264.7 MB CP Optimizer + 0.8 MB Concert)
- ! Time spent in solve    : 0.47s (0.45s engine + 0.02s extraction)
- ! Search speed (br. / s) : 15245.5
+ ! Time spent in solve    : 0.51s (0.49s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 13689.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 327

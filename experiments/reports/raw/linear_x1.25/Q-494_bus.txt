@@ -1,12 +1,12 @@
-! Solving for graph ../../../benchmarks/raw/linear/Q-494_bus.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/Q-494_bus.mtx.rnd
 ! Target value is set to 275
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 135576
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 495 variables, 1080 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
  !  . Log search space  : 8439.1 (before), 8439.1 (after)
  !  . Memory usage      : 723.5 kB (before), 723.5 kB (after)
  ! Using parallel search with 8 workers.
@@ -18,7 +18,7 @@
  + New bound is 276
                         2        494    1   F     1 != _int57
  + New bound is 277
- *           551      497  0.45s        1      (gap is 49.73%)
+ *           551      497  0.27s        1      (gap is 49.73%)
              551     1000          1    1     40171  = _int62
              551     1000          1    2     121480  = _int489
              551     1000          1    3      2761  = _int458
@@ -35,7 +35,7 @@
              551     2000          1    6         1 != _int332
              551     2000          1    8   F   242  = _int282
              551     3000          1    1        16 != _int57
- ! Time = 0.58s, Average fail depth = 5, Memory usage = 172.1 MB
+ ! Time = 0.35s, Average fail depth = 5, Memory usage = 172.1 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551     3000          1    2        16 != _int480
@@ -58,7 +58,7 @@
              551     5000          1    1        68 != _int57
              551     5000        495    3   F   550  = _int228
              551     5000          1    4        23 != _int325
- ! Time = 0.77s, Average fail depth = 7, Memory usage = 233.8 MB
+ ! Time = 0.51s, Average fail depth = 7, Memory usage = 233.8 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551     5000        495    8   F   549  = _int144
@@ -81,7 +81,7 @@
              551     9000        495    6         1 != _int340
              551     9000        495    8   F   550  = _int67
              551     6000        495    1       471 != _int104
- ! Time = 0.92s, Average fail depth = 7, Memory usage = 235.1 MB
+ ! Time = 0.63s, Average fail depth = 7, Memory usage = 235.1 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551    10000        495    3   F    65  = _int206
@@ -104,7 +104,7 @@
              551    13000        495    6       253 != _int408
              551    13000        495    8   F   101  = _int72
              551    14000        495    3   F   156  = _int416
- ! Time = 1.09s, Average fail depth = 6, Memory usage = 236.3 MB
+ ! Time = 0.76s, Average fail depth = 6, Memory usage = 236.3 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551    13000        495    5   F     7  = _int242
@@ -127,7 +127,7 @@
              551     7000        495    2        35 != _int174
              551     7000        495    7        97 != _int485
              551    18000        495    3   F     1  = _int103
- ! Time = 1.24s, Average fail depth = 6, Memory usage = 237.5 MB
+ ! Time = 0.90s, Average fail depth = 6, Memory usage = 237.5 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551    17000        495    5   F   128  = _int328
@@ -150,7 +150,7 @@
              551    21000        495    5   F   285  = _int74
              551    22000        495    6       281 != _int206
              551    21000        495    8   F   213  = _int103
- ! Time = 1.40s, Average fail depth = 6, Memory usage = 238.2 MB
+ ! Time = 1.04s, Average fail depth = 6, Memory usage = 238.2 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551    23000        495    3   F     2  = _int113
@@ -173,7 +173,7 @@
              551    26000        495    6       282 != _int451
              551    25000        495    8   F   403  = _int139
              551    27000        495    3   F    29  = _int210
- ! Time = 1.58s, Average fail depth = 6, Memory usage = 239.7 MB
+ ! Time = 1.18s, Average fail depth = 6, Memory usage = 239.7 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551    25000        495    5   F   550  = _int138
@@ -196,7 +196,7 @@
              551    31000        495    3   F     2  = _int57
              551    29000        495    5   F     1  = _int346
              551    31000        495    6         1 != _int341
- ! Time = 1.74s, Average fail depth = 6, Memory usage = 240.3 MB
+ ! Time = 1.31s, Average fail depth = 6, Memory usage = 240.2 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551    30000        495    8   F    29  = _int426
@@ -219,7 +219,7 @@
              551    33000        495    5   F     2  = _int101
              551    34000        495    8   F     2  = _int472
              551    10000        495    7       344 != _int323
- ! Time = 1.90s, Average fail depth = 6, Memory usage = 240.8 MB
+ ! Time = 1.43s, Average fail depth = 6, Memory usage = 240.8 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551    34000        495    5   F   302  = _int206
@@ -242,7 +242,7 @@
              551    38000        495    3            -
              551    38000        495    5   F     1  = _int211
              551    39000        495    6        98 != _int78
- ! Time = 2.08s, Average fail depth = 6, Memory usage = 241.5 MB
+ ! Time = 1.59s, Average fail depth = 6, Memory usage = 241.5 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551    39000        495    8   F    66  = _int450
@@ -265,7 +265,7 @@
              551    43000        495    6       194 != _int206
              551    43000        495    8   F     2  = _int399
              551    13000        495    1       550 != _int97
- ! Time = 2.31s, Average fail depth = 6, Memory usage = 242.1 MB
+ ! Time = 1.79s, Average fail depth = 6, Memory usage = 242.1 MB
  ! Current bound is 277 (gap is 49.73%)
  !          Best Branches  Non-fixed    W       Branch decision
              551    42000        495    3   F   308  = _int206
@@ -283,8 +283,8 @@
  ! Number of branches     : 226082
  ! Number of fails        : 103177
  ! Total memory usage     : 243.6 MB (243.2 MB CP Optimizer + 0.4 MB Concert)
- ! Time spent in solve    : 2.31s (2.29s engine + 0.02s extraction)
- ! Search speed (br. / s) : 98725.8
+ ! Time spent in solve    : 1.79s (1.78s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 127729.9
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 551

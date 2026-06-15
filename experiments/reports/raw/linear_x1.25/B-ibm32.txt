@@ -1,10 +1,10 @@
-! Solving for graph ../../../benchmarks/raw/linear/B-ibm32.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/B-ibm32.mtx.rnd
 ! Target value is set to 11
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 342
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 33 variables, 122 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 277.8 (before), 277.8 (after)
@@ -18,7 +18,7 @@
  + New bound is 12
                         2         32    1   F     1 != _int3
  + New bound is 13
- *            34       35  0.03s        1      (gap is 61.76%)
+ *            34       35  0.04s        1      (gap is 61.76%)
               34      764          1    1   F     1 != _int17
  + New bound is 24 (gap is 29.41%)
               34     1000          1    1   F     4  = _int17
@@ -38,7 +38,7 @@
               34     2000         20    6            -
               34     2000         19    8            -
               34     2000         29    1   F     5  = _int22
- ! Time = 0.08s, Average fail depth = 8, Memory usage = 6.2 MB
+ ! Time = 0.09s, Average fail depth = 8, Memory usage = 6.3 MB
  ! Current bound is 33 (gap is 2.94%)
  !          Best Branches  Non-fixed    W       Branch decision
               34     1901         26    2            -
@@ -51,8 +51,8 @@
  ! Number of branches     : 19257
  ! Number of fails        : 8333
  ! Total memory usage     : 6.1 MB (6.0 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.08s (0.08s engine + 0.00s extraction)
- ! Search speed (br. / s) : 275100.0
+ ! Time spent in solve    : 0.09s (0.09s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 213966.7
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 34

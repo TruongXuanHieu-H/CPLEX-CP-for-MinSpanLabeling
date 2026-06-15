@@ -1,12 +1,12 @@
-! Solving for graph ../../../benchmarks/raw/linear/E-bcspwr02.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/E-bcspwr02.mtx.rnd
 ! Target value is set to 32
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 1537
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 50 variables, 108 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 529.3 (before), 529.3 (after)
  !  . Memory usage      : 304.6 kB (before), 304.6 kB (after)
  ! Using parallel search with 8 workers.
@@ -18,7 +18,7 @@
  + New bound is 33
                         2         49    1   F     1 != _int19
  + New bound is 34
- *            65       52  0.04s        1      (gap is 47.69%)
+ *            65       52  0.06s        1      (gap is 47.69%)
               65      365          1    1            -
  + New bound is 65 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
@@ -29,7 +29,7 @@
  ! Number of branches     : 5464
  ! Number of fails        : 907
  ! Total memory usage     : 6.0 MB (5.9 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Time spent in solve    : 0.06s (0.04s engine + 0.02s extraction)
  ! Search speed (br. / s) : 136600.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------

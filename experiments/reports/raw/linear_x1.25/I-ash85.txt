@@ -1,12 +1,12 @@
-! Solving for graph ../../../benchmarks/raw/linear/I-ash85.mtx.rnd
+! Solving for graph ../../../benchmarks/linear/I-ash85.mtx.rnd
 ! Target value is set to 30
 ! No predefined lower bound found. Lower bound is set to 1
 ! No predefined upper bound found. Upper bound is set to 2521
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 86 variables, 304 constraints, 1 phase
- ! TimeLimit            = 150
+ ! TimeLimit            = 30
  ! LogVerbosity         = Verbose
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
  !  . Log search space  : 971.8 (before), 971.8 (after)
  !  . Memory usage      : 359.2 kB (before), 359.2 kB (after)
  ! Using parallel search with 8 workers.
@@ -36,7 +36,7 @@
               91     2000          1    8        57 != _int30
               91     2000         61    2   F    77  = _int17
               91     2000          1    6   F    53  = _int68
- ! Time = 0.14s, Average fail depth = 14, Memory usage = 9.1 MB
+ ! Time = 0.13s, Average fail depth = 14, Memory usage = 9.1 MB
  ! Current bound is 62 (gap is 31.87%)
  !          Best Branches  Non-fixed    W       Branch decision
               91     3000         62    4   F    75  = _int24
@@ -83,7 +83,7 @@
               91     8000         62    5   F    33  = _int0
               91     8000         72    6        20 != _int23
               91     8000         85    8   F    60  = _int40
- ! Time = 0.25s, Average fail depth = 12, Memory usage = 10.2 MB
+ ! Time = 0.24s, Average fail depth = 12, Memory usage = 10.2 MB
  ! Current bound is 63 (gap is 30.77%)
  !          Best Branches  Non-fixed    W       Branch decision
               91     7000         71    1   F    53  = _int41
@@ -110,8 +110,8 @@
  ! Number of branches     : 72026
  ! Number of fails        : 32329
  ! Total memory usage     : 10.7 MB (10.5 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 0.27s (0.26s engine + 0.02s extraction)
- ! Search speed (br. / s) : 277023.1
+ ! Time spent in solve    : 0.28s (0.27s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 266763.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 91
