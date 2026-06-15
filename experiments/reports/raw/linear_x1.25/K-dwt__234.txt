@@ -1,0 +1,38 @@
+! Solving for graph ../../../benchmarks/raw/linear/K-dwt__234.mtx.rnd
+! Target value is set to 64
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 7425
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 118 variables, 279 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1517.3 (before), 1517.3 (after)
+ !  . Memory usage      : 359.9 kB (before), 359.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        118                 -
+ + New bound is 1
+                        0        118    1   F        -
+ + New bound is 64
+                        0        118    1   F        -
+ + New bound is 65
+ *           129      118  0.17s        1      (gap is 49.61%)
+             129      835          1    1            -
+ + New bound is 129 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 129 (optimal - effective tol. is 0)
+ ! Best bound             : 129
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 7345
+ ! Number of fails        : 679
+ ! Total memory usage     : 10.9 MB (10.8 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.17s (0.16s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 48966.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 129
+! Labeling: 65 1 1 1 65 1 129 129 65 65 1 1 65 65 65 1 1 1 129 1 65 1 129 1 1 1 65 129 1 1 1 65 1 1 65 1 129 129 1 1 1 1 1 129 1 1 1 1 1 1 1 1 65 1 1 1 1 1 1 129 1 1 1 1 129 1 129 1 1 1 1 1 129 1 65 65 1 1 1 1 65 129 129 129 1 1 1 65 1 65 129 65 65 1 129 1 65 1 1 1 1 129 1 1 1 65 1 1 1 65 65 1 65 65 1 65 1 
+! -------------------------------------------------------- 

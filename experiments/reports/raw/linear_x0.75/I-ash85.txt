@@ -1,0 +1,110 @@
+! Solving for graph ../../../benchmarks/raw/linear/I-ash85.mtx.rnd
+! Target value is set to 18
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 1513
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 86 variables, 304 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 908.4 (before), 908.4 (after)
+ !  . Memory usage      : 359.2 kB (before), 359.2 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         86                 -
+ + New bound is 1
+                        0         86    1            -
+ + New bound is 19
+                        2         85    1   F     1 != _int55
+ + New bound is 20
+ *            55       88  0.06s        1      (gap is 63.64%)
+              55     1000          1    1   F    19  = _int41
+              55     1000          1    2   F    20  = _int47
+              55     1000          1    3        19  = _int83
+              55     1000          1    4       218  = _int35
+              55     1000          1    5        48 != _int40
+              55     1000          1    6        37  = _int71
+              55     1000          1    7   F    19  = _int42
+              55     1000          1    8      1313  = _int72
+              55     2000         74    5            -
+              55     1273         65    1   F    19 != _int55
+ + New bound is 38 (gap is 30.91%)
+              55     2000         65    1         8 != _int58
+              55     2000         61    2   F    10  = _int9
+              55     2000          1    3        27 != _int1
+              55     2000          1    4   F    41  = _int65
+              55     2000          1    6        30 != _int23
+              55     2000          1    8        11  = _int60
+ ! Time = 0.10s, Average fail depth = 15, Memory usage = 8.5 MB
+ ! Current bound is 38 (gap is 30.91%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              55     2389         82    1   F    11 != _int55
+ + New bound is 48 (gap is 12.73%)
+              55     3000         62    2   F    32  = _int7
+              55     2000         65    7   F    25  = _int1
+              55     3000         76    1   F     5  = _int56
+              55     3000         64    3        34 != _int10
+              55     3000          1    4         1 != _int15
+              55     3000         62    5        25 != _int50
+              55     3000         61    6        24 != _int62
+              55     3000         67    8   F     1  = _int10
+              55     4000         72    1        45 != _int61
+              55     4000         66    3        29 != _int4
+              55     4000         83    5   F    54  = _int40
+              55     4000         64    6        14 != _int58
+              55     4000         70    8   F    54 != _int11
+              55     4000          1    4        41 != _int48
+              55     5000         75    1        26 != _int56
+              55     5000         61    3        35 != _int46
+              55     5000         61    5            -
+              55     5000         63    6        36 != _int8
+              55     5000         69    8         1  = _int26
+ ! Time = 0.15s, Average fail depth = 13, Memory usage = 9.2 MB
+ ! Current bound is 48 (gap is 12.73%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              55     4000         84    2        28 != _int5
+              55     5000         78    4        34 != _int25
+              55     3000         84    7   F     8  = _int1
+              55     6000         62    3   F    27  = _int29
+              55     6000         62    5        54  = _int73
+              55     6000         63    6   F     6  = _int28
+              55     6000         63    8            -
+              55     4647         84    2   F    46 != _int7
+ + New bound is 52 (gap is 5.45%)
+              55     6000         79    1   F    30  = _int39
+              55     7000         63    3   F    20  = _int44
+              55     7000         61    5   F    23  = _int4
+              55     7000         79    6   F    52  = _int20
+              55     7000         63    8   F    44  = _int8
+              55     5000         84    2        13 != _int5
+              55     6000         78    4        24 != _int39
+              55     6627         79    4   F    29 != _int1
+ + New bound is 53 (gap is 3.64%)
+              55     4000         74    7   F    32  = _int4
+              55     7000         75    1         3 != _int55
+              55     8000         62    3        25 != _int7
+              55     7000         70    4   F     1  = _int65
+ ! Time = 0.20s, Average fail depth = 12, Memory usage = 9.4 MB
+ ! Current bound is 53 (gap is 3.64%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              55     8000         72    5   F     5  = _int50
+              55     8000         72    6   F    54  = _int16
+              55     8000         61    8   F     1  = _int8
+              55     7571         84    1            -
+ + New bound is 55 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 55 (optimal - effective tol. is 0)
+ ! Best bound             : 55
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 60484
+ ! Number of fails        : 26522
+ ! Total memory usage     : 9.6 MB (9.5 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.20s (0.20s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 302420.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 55
+! Labeling: 1 55 19 1 19 55 55 55 1 37 1 55 55 19 19 37 1 37 1 55 19 37 55 1 37 1 1 1 1 19 19 1 37 37 1 19 1 19 1 1 37 19 19 37 19 19 55 1 19 37 19 37 1 37 19 37 37 1 37 55 19 55 1 19 19 1 37 37 55 19 1 55 37 37 55 1 1 37 19 19 1 37 37 1 19 
+! -------------------------------------------------------- 

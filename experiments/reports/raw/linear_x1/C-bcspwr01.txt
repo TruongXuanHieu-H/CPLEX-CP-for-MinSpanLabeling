@@ -1,0 +1,38 @@
+! Solving for graph ../../../benchmarks/raw/linear/C-bcspwr01.mtx.rnd
+! Target value is set to 17
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 647
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 40 variables, 85 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 373.5 (before), 373.5 (after)
+ !  . Memory usage      : 303.7 kB (before), 303.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         40                 -
+ + New bound is 1
+                        0         40    1   F        -
+ + New bound is 18
+                        2         39    1   F     1 != _int20
+ + New bound is 19
+ *            35       42  0.03s        1      (gap is 45.71%)
+              35      275          1    1            -
+ + New bound is 35 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 35 (optimal - effective tol. is 0)
+ ! Best bound             : 35
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 5104
+ ! Number of fails        : 1291
+ ! Total memory usage     : 5.6 MB (5.5 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.03s (0.03s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 170133.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 35
+! Labeling: 18 1 1 1 18 1 1 1 18 1 18 18 18 1 18 1 1 1 18 18 1 18 18 18 1 18 35 18 18 1 1 35 35 1 35 18 1 1 1 
+! -------------------------------------------------------- 

@@ -1,0 +1,67 @@
+! Solving for graph ../../../benchmarks/raw/linear/A-pores_1.mtx.rnd
+! Target value is set to 11
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 320
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 31 variables, 133 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 258.0 (before), 258.0 (after)
+ !  . Memory usage      : 304.5 kB (before), 304.5 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         31                 -
+ + New bound is 1
+                        0         31    1   F        -
+ + New bound is 11
+                        0         31    1   F        -
+ + New bound is 12
+ *            34       31  0.03s        1      (gap is 64.71%)
+              34      732          1    1   F    23 != _int22
+ + New bound is 24 (gap is 29.41%)
+              34     1000          1    1   F    27  = _int28
+              34     1000          1    2   F    28  = _int16
+              34     1000          1    3   F    15  = _int6
+              34     1000          1    5        16 != _int5
+              34     1000          1    6        12  = _int19
+              34     1000          1    8            -
+              34     2000         22    5        20 != _int16
+              34     2000         19    6   F     1  = _int19
+              34     2000         23    8         2 != _int22
+              34     1573         28    1   F     7 != _int1
+ + New bound is 30 (gap is 11.76%)
+              34     1000          1    4        28 != _int4
+              34     1000          1    7   F    18  = _int0
+              34     2000         29    3   F    22  = _int10
+              34     3000         24    5   F    19  = _int11
+              34     2000         28    1   F    20  = _int2
+ ! Time = 0.06s, Average fail depth = 8, Memory usage = 6.4 MB
+ ! Current bound is 30 (gap is 11.76%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              34     1960         29    2   F    21 != _int10
+ + New bound is 33 (gap is 2.94%)
+              34     2000         28    2        19 != _int20
+              34     3000         25    3   F     3  = _int10
+              34     2000         24    4        10 != _int1
+              34     3000         25    6         3 != _int12
+              34     2000         28    7   F     6  = _int4
+              34     3000         24    8        19 != _int27
+              34     2571         28    1   F    11 != _int1
+ + New bound is 34 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 34 (optimal - effective tol. is 0)
+ ! Best bound             : 34
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 26091
+ ! Number of fails        : 11777
+ ! Total memory usage     : 6.4 MB (6.3 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.08s (0.08s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 372728.6
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 34
+! Labeling: 12 23 34 1 23 23 23 34 34 34 1 1 1 23 1 12 12 12 1 12 34 1 23 1 34 34 23 12 12 23 
+! -------------------------------------------------------- 

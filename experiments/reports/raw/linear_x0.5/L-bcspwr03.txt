@@ -1,0 +1,144 @@
+! Solving for graph ../../../benchmarks/raw/linear/L-bcspwr03.mtx.rnd
+! Target value is set to 20
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 2341
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 119 variables, 297 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 1332.0 (before), 1332.0 (after)
+ !  . Memory usage      : 392.4 kB (before), 392.4 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        119                 -
+ + New bound is 1
+                        0        119    1   F        -
+ + New bound is 21
+                        2        118    1   F     1 != _int27
+ + New bound is 22
+ *            61      121  0.09s        1      (gap is 63.93%)
+              61     1000          1    1       803  = _int49
+              61     1000          1    2       411  = _int70
+              61     1000          1    3       384  = _int26
+              61     1000          1    4        22 != _int57
+              61     1000          1    5         1  = _int37
+              61     1000          1    6      1836  = _int97
+              61     1000          1    7      1753  = _int4
+              61     1000          1    8         1  = _int88
+              61     1713          1    1   F    41 != _int62
+ + New bound is 42 (gap is 31.15%)
+              61     2000          1    1   F     3  = _int61
+              61     2000          1    2        52 != _int61
+              61     2000          1    3        55 != _int33
+              61     2000          1    4        48 != _int62
+              61     2000          1    5        34 != _int61
+              61     2000          1    6        24 != _int50
+              61     2000          1    7   F    28  = _int62
+ ! Time = 0.13s, Average fail depth = 26, Memory usage = 9.3 MB
+ ! Current bound is 42 (gap is 31.15%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              61     2000          1    8        21  = _int47
+              61     3000         10    3        41  = _int31
+              61     3000         39    5   F    40  = _int61
+              61     3000         37    8   F    33  = _int62
+              61     2701         62    1   F    12 != _int61
+ + New bound is 53 (gap is 13.11%)
+              61     3000         62    1        56  = _int77
+              61     3000         46    4         1  = _int38
+              61     4000         65    3        59 != _int61
+              61     4000         75    5        54  = _int24
+              61     3000         40    6   F     3  = _int62
+              61     4000          8    8   F    32  = _int62
+              61     4000          7    1   F     8  = _int33
+              61     4000         69    4         6 != _int57
+              61     3000        117    7   F     9  = _int61
+              61     5000         40    3   F    27  = _int62
+              61     5000          7    5        27 != _int73
+              61     4000         80    6        60  = _int8
+              61     5000         88    1        15 != _int57
+              61     3000        117    2        25 != _int61
+              61     5000         85    4   F    30  = _int62
+ ! Time = 0.18s, Average fail depth = 17, Memory usage = 10.1 MB
+ ! Current bound is 53 (gap is 13.11%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              61     6000         46    5   F    21  = _int33
+              61     5000          7    8         3 != _int48
+              61     6000         89    1        31 != _int62
+              61     6000        101    4   F    51  = _int33
+              61     6000         36    3   F    34  = _int101
+              61     7000         44    5        37 != _int57
+              61     5000          3    6        42  = _int117
+              61     6000         21    8        37 != _int66
+              61     6135        117    1   F    41 != _int61
+ + New bound is 54 (gap is 11.48%)
+              61     3813        117    2   F    15 != _int33
+ + New bound is 58 (gap is 4.92%)
+              61     4000        117    2         4 != _int61
+              61     4000        117    7        55 != _int61
+              61     7000         31    1        52 != _int90
+              61     7000         36    3        38 != _int75
+              61     7000         30    4   F    59  = _int61
+              61     8000        106    5        39 != _int62
+              61     6000         10    6   F    22  = _int62
+              61     8000         30    1        58  = _int98
+              61     8000         31    3   F    30  = _int101
+              61     8000         29    4   F    35  = _int33
+ ! Time = 0.22s, Average fail depth = 14, Memory usage = 10.5 MB
+ ! Current bound is 58 (gap is 4.92%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              61     7000        117    6   F    22  = _int62
+              61     7000         46    8        27 != _int62
+              61     5000        117    2   F    25  = _int61
+              61     5000        117    7   F     2  = _int62
+              61     9000         39    3        16 != _int57
+              61     9000         29    4         1 != _int38
+              61     9000         49    5   F    33  = _int33
+              61     8000        115    6   F    25  = _int61
+              61     6000         61    2        60 != _int43
+              61     6000         54    7        37 != _int36
+              61     9000         40    1        21  = _int65
+              61    10000         28    3   F    35  = _int62
+              61    10000         16    5   F    50  = _int57
+              61     9000         58    6        40  = _int102
+              61     7000        102    7   F    57  = _int33
+              61    11000         28    3   F    31  = _int57
+              61    10000         61    4        43 != _int102
+              61    11000         45    5   F    32  = _int9
+              61    10000         34    6        10  = _int61
+              61     7000        109    2        60  = _int97
+ ! Time = 0.27s, Average fail depth = 15, Memory usage = 11.0 MB
+ ! Current bound is 58 (gap is 4.92%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              61     8000        106    7        59 != _int57
+              61    10000         34    1        24 != _int57
+              61    12000         84    3   F    40  = _int62
+              61    11000         61    4         7 != _int62
+              61    12000         27    5   F    28  = _int61
+              61     8000          9    8   F     2  = _int61
+              61    11000         31    1        48 != _int86
+              61     8000        108    2   F    27  = _int62
+              61    13000         68    3   F    54  = _int33
+              61    12000         91    4   F    28  = _int44
+              61    13000         27    5            -
+              61    11000          5    6         4 != _int61
+              61     9000        104    7   F    38  = _int62
+              61     9000        116    8            -
+              61     8549        112    2   F    49 != _int61
+ + New bound is 61 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 61 (optimal - effective tol. is 0)
+ ! Best bound             : 61
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 89483
+ ! Number of fails        : 37876
+ ! Total memory usage     : 11.2 MB (11.1 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.31s (0.29s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 308562.1
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 61
+! Labeling: 41 1 21 1 1 21 21 21 41 1 21 21 21 1 1 41 21 1 21 21 41 1 1 21 41 41 21 41 41 21 1 41 1 21 21 1 1 21 21 1 1 1 21 21 1 1 41 1 1 21 21 21 21 21 21 41 1 21 1 21 21 21 41 1 1 1 21 1 21 41 41 21 41 1 1 41 41 1 21 1 1 41 21 1 21 1 41 1 1 21 1 21 21 1 61 41 41 1 21 21 1 21 41 1 1 21 1 21 1 21 41 1 41 1 1 21 41 1 
+! -------------------------------------------------------- 

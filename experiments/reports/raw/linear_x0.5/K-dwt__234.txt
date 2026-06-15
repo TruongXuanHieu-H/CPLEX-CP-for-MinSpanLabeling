@@ -1,0 +1,38 @@
+! Solving for graph ../../../benchmarks/raw/linear/K-dwt__234.mtx.rnd
+! Target value is set to 26
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 3017
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 118 variables, 279 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 1364.0 (before), 1364.0 (after)
+ !  . Memory usage      : 359.9 kB (before), 359.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        118                 -
+ + New bound is 1
+                        0        118    1            -
+ + New bound is 27
+                        2        117    1   F     1 != _int92
+ + New bound is 28
+ *            53      120  0.09s        1      (gap is 47.17%)
+              53      761          1    1            -
+ + New bound is 53 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 53 (optimal - effective tol. is 0)
+ ! Best bound             : 53
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 7047
+ ! Number of fails        : 526
+ ! Total memory usage     : 9.1 MB (8.9 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.09s (0.09s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 88087.5
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 53
+! Labeling: 27 1 1 1 27 1 53 53 27 27 1 1 27 27 27 1 1 1 53 1 27 1 53 1 1 1 27 53 1 1 1 27 1 1 27 1 53 53 1 1 1 1 1 53 1 1 1 1 1 1 1 1 27 1 1 1 1 1 1 53 1 1 1 1 53 1 53 1 1 1 1 1 53 1 27 27 1 1 1 1 27 53 53 53 1 1 1 27 1 27 53 27 27 1 53 1 27 1 1 1 1 53 1 1 1 27 1 1 1 27 27 1 27 27 1 27 1 
+! -------------------------------------------------------- 

@@ -1,0 +1,38 @@
+! Solving for graph ../../../benchmarks/raw/linear/E-bcspwr02.mtx.rnd
+! Target value is set to 21
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 1009
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 50 variables, 108 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 498.9 (before), 498.9 (after)
+ !  . Memory usage      : 304.6 kB (before), 304.6 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         50                 -
+ + New bound is 1
+                        0         50    1   F        -
+ + New bound is 22
+                        2         49    1   F     1 != _int19
+ + New bound is 23
+ *            43       52  0.04s        1      (gap is 46.51%)
+              43      343          1    1            -
+ + New bound is 43 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 43 (optimal - effective tol. is 0)
+ ! Best bound             : 43
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 5376
+ ! Number of fails        : 1013
+ ! Total memory usage     : 5.7 MB (5.6 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 179200.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 43
+! Labeling: 22 1 22 1 22 1 1 1 22 1 1 1 1 22 22 1 1 1 1 1 1 43 1 22 22 22 43 43 1 1 22 22 1 1 1 1 1 22 22 22 1 22 43 1 22 1 22 22 22 
+! -------------------------------------------------------- 

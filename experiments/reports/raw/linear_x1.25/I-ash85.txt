@@ -1,0 +1,119 @@
+! Solving for graph ../../../benchmarks/raw/linear/I-ash85.mtx.rnd
+! Target value is set to 30
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 2521
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 86 variables, 304 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 971.8 (before), 971.8 (after)
+ !  . Memory usage      : 359.2 kB (before), 359.2 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         86                 -
+ + New bound is 1
+                        0         86    1   F        -
+ + New bound is 31
+                        2         85    1   F     1 != _int55
+ + New bound is 32
+ *            91       88  0.09s        1      (gap is 64.84%)
+              91     1000          1    1         1  = _int64
+              91     1000          1    2   F    32  = _int68
+              91     1000          1    3        58  = _int74
+              91     1000          1    4       282  = _int64
+              91     1000          1    5        91  = _int53
+              91     1000          1    6        56  = _int68
+              91     1000          1    7         1  = _int13
+              91     1000          1    8        31  = _int37
+              91     2000         39    3   F    12  = _int67
+              91     1318         60    1   F    61 != _int41
+ + New bound is 62 (gap is 31.87%)
+              91     2000         60    1   F    39  = _int66
+              91     2000          1    4        45  = _int15
+              91     2000          1    5   F     5  = _int48
+              91     2000          1    8        57 != _int30
+              91     2000         61    2   F    77  = _int17
+              91     2000          1    6   F    53  = _int68
+ ! Time = 0.14s, Average fail depth = 14, Memory usage = 9.1 MB
+ ! Current bound is 62 (gap is 31.87%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              91     3000         62    4   F    75  = _int24
+              91     2000         64    7        75 != _int7
+              91     3000         61    3   F    60  = _int82
+              91     3000         66    5   F    56  = _int48
+              91     3000         69    6   F    83  = _int75
+              91     3000         63    8        48 != _int10
+              91     3000         61    2   F    43  = _int59
+              91     3000         72    1   F     4  = _int25
+              91     4000         61    3        74  = _int1
+              91     4000         62    5        84 != _int27
+              91     4000         69    6        46 != _int64
+              91     4000         75    8   F    90  = _int10
+              91     3000         74    7        44 != _int66
+              91     5000         61    3        31 != _int0
+              91     4000         78    4        76 != _int14
+              91     5000         70    5   F    68  = _int48
+              91     5000         71    6   F    59  = _int18
+              91     5000         79    8   F    33  = _int27
+              91     4000         71    1   F    29  = _int24
+              91     4000         72    7         3 != _int32
+ ! Time = 0.18s, Average fail depth = 12, Memory usage = 10.3 MB
+ ! Current bound is 62 (gap is 31.87%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              91     6000         61    3            -
+              91     6000         66    5        31 != _int14
+              91     6000         74    6   F    34  = _int6
+              91     6000         64    8        41 != _int10
+              91     5000         73    1        20 != _int55
+              91     4000         85    2        24 != _int59
+              91     5000         76    4        71  = _int69
+              91     5000         70    7   F    38  = _int37
+              91     7000         63    3   F    33  = _int10
+              91     6000         75    4   F    36  = _int76
+              91     7000         66    5            -
+              91     7000         71    6         1 != _int78
+              91     7000         63    8   F    45  = _int57
+              91     5905         74    1   F        -
+ + New bound is 63 (gap is 30.77%)
+              91     6000         73    1        90 != _int40
+              91     6000         72    7   F    66  = _int6
+              91     8000         63    3   F    37  = _int48
+              91     8000         62    5   F    33  = _int0
+              91     8000         72    6        20 != _int23
+              91     8000         85    8   F    60  = _int40
+ ! Time = 0.25s, Average fail depth = 12, Memory usage = 10.2 MB
+ ! Current bound is 63 (gap is 30.77%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              91     7000         71    1   F    53  = _int41
+              91     9000         66    3   F     2  = _int42
+              91     7000         77    4        52 != _int14
+              91     9000         59    5   F    81  = _int20
+              91     9000         80    6   F        -
+              91     9000         62    8   F    67  = _int60
+              91     5000         84    2   F    20  = _int67
+              91     7000         84    7        75 != _int6
+              91     8000         85    1        42 != _int41
+              91    10000         62    3   F    58  = _int6
+              91     8000         84    4   F    35  = _int24
+              91    10000         78    5   F    89  = _int23
+              91    10000         76    6   F     7  = _int11
+              91    10000         65    8   F    31  = _int36
+              91     8256         84    1            -
+ + New bound is 91 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 91 (optimal - effective tol. is 0)
+ ! Best bound             : 91
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 72026
+ ! Number of fails        : 32329
+ ! Total memory usage     : 10.7 MB (10.5 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.27s (0.26s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 277023.1
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 91
+! Labeling: 1 91 31 1 31 91 91 91 1 61 1 91 91 31 31 61 1 61 1 91 31 61 91 1 61 1 1 1 1 31 31 1 61 61 1 31 1 31 1 1 61 31 31 61 31 31 91 1 31 61 31 61 1 61 31 61 61 1 61 91 31 91 1 31 31 1 61 61 91 31 1 91 61 61 91 1 1 61 31 31 1 61 61 1 31 
+! -------------------------------------------------------- 

@@ -1,0 +1,38 @@
+! Solving for graph ../../../benchmarks/raw/linear/A-pores_1.mtx.rnd
+! Target value is set to 6
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 175
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 31 variables, 133 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 231.0 (before), 231.0 (after)
+ !  . Memory usage      : 304.5 kB (before), 304.5 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         31                 -
+ + New bound is 1
+                        0         31    1            -
+ + New bound is 6
+                        0         31    1   F        -
+ + New bound is 7
+ *            19       31  0.02s        1      (gap is 63.16%)
+              19      319          1    1            -
+ + New bound is 19 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 19 (optimal - effective tol. is 0)
+ ! Best bound             : 19
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 5265
+ ! Number of fails        : 1753
+ ! Total memory usage     : 5.3 MB (5.2 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.02s (0.02s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 263250.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 19
+! Labeling: 7 13 19 1 13 13 13 19 19 19 1 1 1 13 1 7 7 7 1 7 19 1 13 1 19 19 13 7 7 13 
+! -------------------------------------------------------- 

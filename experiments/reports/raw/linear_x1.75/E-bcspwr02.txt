@@ -1,0 +1,38 @@
+! Solving for graph ../../../benchmarks/raw/linear/E-bcspwr02.mtx.rnd
+! Target value is set to 37
+! No predefined lower bound found. Lower bound is set to 1
+! No predefined upper bound found. Upper bound is set to 1777
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 50 variables, 108 constraints, 1 phase
+ ! TimeLimit            = 150
+ ! LogVerbosity         = Verbose
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 539.8 (before), 539.8 (after)
+ !  . Memory usage      : 304.6 kB (before), 304.6 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         50                 -
+ + New bound is 1
+                        0         50    1   F        -
+ + New bound is 38
+                        2         49    1   F     1 != _int19
+ + New bound is 39
+ *            75       52  0.04s        1      (gap is 48.00%)
+              75      375          1    1            -
+ + New bound is 75 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 75 (optimal - effective tol. is 0)
+ ! Best bound             : 75
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 5505
+ ! Number of fails        : 1205
+ ! Total memory usage     : 6.2 MB (6.1 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 137625.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 75
+! Labeling: 38 1 38 1 38 1 1 1 38 1 1 1 1 38 38 1 1 1 1 1 1 75 1 38 38 38 75 75 1 1 38 38 1 1 1 1 1 38 38 38 1 38 75 1 38 1 38 38 38 
+! -------------------------------------------------------- 
