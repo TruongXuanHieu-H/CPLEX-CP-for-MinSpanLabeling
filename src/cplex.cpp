@@ -14,15 +14,17 @@ struct Edge
 
 int main(int argc, char *argv[])
 {
-    if (argc != 4)
+    if (argc != 6)
     {
-        std::cerr << "Usage: " << argv[0] << " instance.txt <target_value_mul> <time_limit>\n";
+        std::cerr << "Usage: " << argv[0] << " instance.txt <target_value_mul> <lower_bound> <upper_bound> <time_limit>\n";
         return 1;
     }
 
     std::string graph_name = argv[1];
     double target_value_mul = std::stod(argv[2]);
-    int time_limit = std::stoi(argv[3]);
+    int LB = std::stoi(argv[3]);
+    int UB = std::stoi(argv[4]);
+    int time_limit = std::stoi(argv[5]);
 
     std::ifstream fin(graph_name);
     if (!fin)
@@ -34,8 +36,8 @@ int main(int argc, char *argv[])
     std::string name;
     std::getline(fin, name);
 
-    int num_vertices, num_edges, base_target_value, LB, UB;
-    fin >> num_vertices >> num_edges >> base_target_value >> LB >> UB;
+    int num_vertices, num_edges, base_target_value;
+    fin >> num_vertices >> num_edges >> base_target_value;
     int target_value = static_cast<int>(std::round(base_target_value * target_value_mul));
     std::cout << "! Target value is set to " << target_value << "\n";
 
