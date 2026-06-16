@@ -1,0 +1,40 @@
+! Solving for graph ../../../benchmarks/linear/G-will57.mtx.rnd
+! Target value is set to 7
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 58 variables, 184 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 338.3 (before), 338.3 (after)
+ !  . Memory usage      : 315.0 kB (before), 315.0 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         58                 -
+ + New bound is 1
+                        0         58    1            -
+ + New bound is 7
+                        0         58    1   F        -
+ + New bound is 8
+ *            29       58  0.05s        1      (gap is 72.41%)
+              29     1126         21    1   F    11 != _int47
+ + New bound is 19 (gap is 34.48%)
+              29     2562         55    2   F     6 != _int39
+ + New bound is 25 (gap is 13.79%)
+              29     9240         55    2   F    18 != _int29
+ + New bound is 29 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 29 (optimal - effective tol. is 0)
+ ! Best bound             : 29
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 95537
+ ! Number of fails        : 44649
+ ! Total memory usage     : 8.0 MB (7.9 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.24s (0.24s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 415378.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 29
+! Labeling: 1 1 8 15 15 1 22 8 1 15 8 1 1 29 1 1 15 15 22 22 8 15 15 29 15 8 29 8 8 8 15 15 8 1 22 1 1 1 15 8 1 1 1 8 1 1 8 1 8 8 22 1 1 1 8 8 8 
+! -------------------------------------------------------- 

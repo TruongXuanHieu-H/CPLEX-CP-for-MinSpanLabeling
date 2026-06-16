@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
         IloCP cp(model);
         IloSearchPhase phase(env, label);
 
-        cp.setParameter(IloCP::LogVerbosity, IloCP::Verbose);
+        cp.setParameter(IloCP::LogVerbosity, IloCP::Terse);
         cp.setSearchPhases(phase);
         cp.setParameter(IloCP::TimeLimit, time_limit);
 

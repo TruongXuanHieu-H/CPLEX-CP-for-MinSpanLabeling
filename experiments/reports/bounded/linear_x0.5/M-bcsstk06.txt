@@ -1,0 +1,74 @@
+! Solving for graph ../../../benchmarks/linear/M-bcsstk06.mtx.rnd
+! Target value is set to 18
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 421 variables, 4140 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.05s (0.05s extraction + 0.00s propagation)
+ !  . Log search space  : 3668.7 (before), 3668.7 (after)
+ !  . Memory usage      : 1.4 MB (before), 1.4 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        421                 -
+ + New bound is 1
+                        0        421    1   F        -
+ + New bound is 19
+                        2        420    1   F     1 != _int147
+ + New bound is 20
+ *           235      423  0.19s        1      (gap is 91.49%)
+ *           199      423  0.19s        2      (gap is 89.95%)
+             199     167k        409    7   F     8 != _int382
+ + New bound is 27 (gap is 86.43%)
+             199     167k        409    7   F     9 != _int382
+ + New bound is 28 (gap is 85.93%)
+             199     241k        147    4   F    10 != _int291
+ + New bound is 29 (gap is 85.43%)
+             199     253k        399    2   F    11 != _int338
+ + New bound is 30 (gap is 84.92%)
+             199     262k        335    7   F    12 != _int84
+ + New bound is 31 (gap is 84.42%)
+             199     264k        412    4   F    13 != _int128
+ + New bound is 32 (gap is 83.92%)
+             199     277k        410    2   F    14 != _int18
+ + New bound is 33 (gap is 83.42%)
+             199     290k        287    1   F        -
+ + New bound is 34 (gap is 82.91%)
+             199     295k        405    7   F    16 != _int308
+ + New bound is 35 (gap is 82.41%)
+             199     309k        411    1   F        -
+ + New bound is 36 (gap is 81.91%)
+             199     369k        270    2   F    18 != _int355
+ + New bound is 37 (gap is 81.41%)
+             199     385k        280    4   F     1 != _int82
+ + New bound is 38 (gap is 80.90%)
+             199     402k        409    2   F     2 != _int14
+ + New bound is 39 (gap is 80.40%)
+             199     410k        275    7   F     3 != _int42
+ + New bound is 40 (gap is 79.90%)
+             199     434k        410    4   F     4 != _int83
+ + New bound is 41 (gap is 79.40%)
+ ! Time = 19.71s, Average fail depth = 28, Memory usage = 47.4 MB
+ ! Current bound is 41 (gap is 79.40%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             199     428k        419    1   F     5 != _int147
+ + New bound is 42 (gap is 78.89%)
+             199     438k        405    7   F     6 != _int116
+ + New bound is 43 (gap is 78.39%)
+             199     510k        274    2   F     7 != _int119
+ + New bound is 44 (gap is 77.89%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 199 (gap is 77.89%)
+ ! Best bound             : 44
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 277276059
+ ! Number of fails        : 127638309
+ ! Total memory usage     : 119.8 MB (117.9 MB CP Optimizer + 1.9 MB Concert)
+ ! Time spent in solve    : 1800.03s (1799.99s engine + 0.05s extraction)
+ ! Search speed (br. / s) : 154044.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 199
+! Labeling: 19 1 145 1 73 127 19 91 73 145 127 73 19 199 127 127 19 145 55 37 127 73 73 127 55 37 37 109 19 19 181 181 37 19 55 19 1 1 145 1 19 199 73 163 55 55 19 1 19 73 91 199 145 19 109 19 1 55 127 199 163 1 145 55 1 1 19 55 145 91 37 127 163 109 1 73 109 145 73 127 73 181 163 19 109 73 1 127 1 1 109 73 73 181 1 199 127 1 55 55 109 55 19 109 109 163 19 1 109 109 199 127 1 1 1 91 181 145 145 73 55 163 1 127 91 19 109 91 127 73 127 91 199 1 91 109 1 163 199 1 55 91 37 145 127 1 109 145 19 1 1 1 73 37 1 109 55 109 91 127 127 109 127 73 19 163 1 55 181 55 109 19 37 91 91 91 109 73 19 37 91 1 109 199 19 145 145 73 73 37 1 55 163 37 109 37 109 73 37 19 55 37 91 19 1 19 55 91 163 37 55 37 73 1 1 91 19 37 145 145 55 55 91 109 145 19 37 1 199 55 109 181 19 55 73 19 73 73 19 181 181 1 91 1 19 73 73 181 1 145 55 127 181 1 37 91 55 1 199 127 55 37 109 1 19 73 37 1 91 91 55 109 1 19 91 181 1 91 73 1 37 163 19 1 109 109 73 145 1 145 127 145 199 37 37 19 145 145 55 163 91 19 181 163 37 37 55 55 37 109 163 163 199 127 37 163 19 73 55 19 1 37 37 163 37 19 19 109 73 73 1 109 145 127 181 145 127 199 55 181 181 127 163 127 91 1 109 91 19 91 37 19 145 55 1 37 37 19 55 127 37 37 91 91 1 19 19 145 163 163 199 199 145 55 127 73 55 127 1 109 199 181 73 19 37 199 145 37 1 19 55 1 91 91 1 19 91 181 1 127 145 55 1 91 37 109 145 73 145 19 91 19 181 109 109 91 109 1 163 37 
+! -------------------------------------------------------- 

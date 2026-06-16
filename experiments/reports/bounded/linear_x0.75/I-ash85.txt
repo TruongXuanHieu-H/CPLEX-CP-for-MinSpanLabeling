@@ -1,0 +1,44 @@
+! Solving for graph ../../../benchmarks/linear/I-ash85.mtx.rnd
+! Target value is set to 18
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 86 variables, 304 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 551.2 (before), 551.2 (after)
+ !  . Memory usage      : 359.2 kB (before), 359.2 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         86                 -
+ + New bound is 1
+                        0         86    1   F        -
+ + New bound is 18
+                        0         86    1   F        -
+ + New bound is 19
+ *            55       86  0.04s        1      (gap is 65.45%)
+              55     1555          1    1   F    37 != _int30
+ + New bound is 38 (gap is 30.91%)
+              55     2663         84    7   F    29 != _int57
+ + New bound is 48 (gap is 12.73%)
+              55     5660         84    1   F    26 != _int32
+ + New bound is 49 (gap is 10.91%)
+              55     5757         83    4   F    40 != _int32
+ + New bound is 50 (gap is 9.09%)
+              55     8470         85    4            -
+ + New bound is 55 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 55 (optimal - effective tol. is 0)
+ ! Best bound             : 55
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 79000
+ ! Number of fails        : 36873
+ ! Total memory usage     : 9.6 MB (9.4 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.22s (0.22s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 359090.9
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 55
+! Labeling: 1 55 19 1 19 55 55 55 1 37 1 55 55 19 19 37 1 37 1 55 19 37 55 1 37 1 1 1 1 19 19 1 37 37 1 19 1 19 1 1 37 19 19 37 19 19 55 1 19 37 19 37 1 37 19 37 37 1 37 55 19 55 1 19 19 1 37 37 55 19 1 55 37 37 55 1 1 37 19 19 1 37 37 1 19 
+! -------------------------------------------------------- 
