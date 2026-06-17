@@ -1,0 +1,73 @@
+! Solving for graph ../../../benchmarks/linear/F-curtis54.mtx.rnd
+! Target value is set to 20
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 55 variables, 178 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 348.7 (before), 348.7 (after)
+ !  . Memory usage      : 346.8 kB (before), 346.8 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         55                 -
+ + New bound is 1
+                        0         55    1   F        -
+ + New bound is 21
+                        2         54    1   F     1 != _int24
+ + New bound is 22
+ *            81       54  0.04s        1      (gap is 72.84%)
+              81     2924         16    2   F    11 != _int7
+ + New bound is 52 (gap is 35.80%)
+              81     6940         48    4   F    12 != _int8
+ + New bound is 53 (gap is 34.57%)
+              81    15064         53    7   F    51 != _int3
+ + New bound is 54 (gap is 33.33%)
+              81    26861         16    4   F    13 != _int3
+ + New bound is 55 (gap is 32.10%)
+              81    34026         53    4   F    15 != _int7
+ + New bound is 56 (gap is 30.86%)
+              81    30489         17    1   F    36 != _int9
+ + New bound is 57 (gap is 29.63%)
+              81    32606         34    7   F    13 != _int8
+ + New bound is 59 (gap is 27.16%)
+              81    78161         53    4   F    13 != _int8
+ + New bound is 60 (gap is 25.93%)
+              81     123k         32    4   F    18 != _int7
+ + New bound is 61 (gap is 24.69%)
+              81     157k         53    4   F    12 != _int3
+ + New bound is 62 (gap is 23.46%)
+              81     158k         19    7   F    38 != _int9
+ + New bound is 64 (gap is 20.99%)
+              81     176k         37    4   F    42 != _int3
+ + New bound is 65 (gap is 19.75%)
+              81     165k         22    1   F    15 != _int7
+ + New bound is 67 (gap is 17.28%)
+              81     190k         50    2   F     4 != _int5
+ + New bound is 68 (gap is 16.05%)
+              81     198k         19    2   F     4 != _int5
+ + New bound is 69 (gap is 14.81%)
+              81     207k         46    2   F     4 != _int5
+ + New bound is 70 (gap is 13.58%)
+ ! Time = 3.34s, Average fail depth = 28, Memory usage = 8.9 MB
+ ! Current bound is 70 (gap is 13.58%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              81     215k         32    2   F    30 != _int7
+ + New bound is 71 (gap is 12.35%)
+              81     225k         53    2            -
+ + New bound is 81 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 81 (optimal - effective tol. is 0)
+ ! Best bound             : 81
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 1732766
+ ! Number of fails        : 832936
+ ! Total memory usage     : 10.7 MB (10.6 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 3.61s (3.61s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 481323.9
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 81
+! Labeling: 41 21 1 21 41 61 1 41 1 41 1 61 81 1 41 41 21 61 21 1 1 1 21 1 41 61 21 1 1 41 41 61 21 1 21 1 61 61 1 41 1 21 41 81 1 41 21 61 61 21 21 41 21 1 
+! -------------------------------------------------------- 

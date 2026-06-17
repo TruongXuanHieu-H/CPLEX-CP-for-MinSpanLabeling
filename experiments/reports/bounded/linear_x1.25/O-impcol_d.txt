@@ -1,0 +1,125 @@
+! Solving for graph ../../../benchmarks/linear/O-impcol_d.mtx.rnd
+! Target value is set to 151
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 426 variables, 1692 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 3856.4 (before), 3856.4 (after)
+ !  . Memory usage      : 848.0 kB (before), 848.0 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        426                 -
+ + New bound is 1
+                        0        426    1            -
+ + New bound is 151
+                        0        426    1   F        -
+ + New bound is 152
+ *           466      562  0.13s        3      (gap is 67.38%)
+ *           454      670  0.13s        7      (gap is 66.52%)
+             454    42570        425    4   F        -
+ + New bound is 158 (gap is 65.20%)
+             454    42570        425    4   F        -
+ + New bound is 159 (gap is 64.98%)
+             454    46642        419    1   F        -
+ + New bound is 160 (gap is 64.76%)
+             454    52538        397    1   F        -
+ + New bound is 166 (gap is 63.44%)
+             454    52538        397    1   F        -
+ + New bound is 167 (gap is 63.22%)
+             454    42233        406    7   F        -
+ + New bound is 168 (gap is 63.00%)
+             454    69193        420    4   F        -
+ + New bound is 169 (gap is 62.78%)
+             454    62222        407    2   F        -
+ + New bound is 170 (gap is 62.56%)
+             454    72543        415    1   F        -
+ + New bound is 171 (gap is 62.33%)
+             454    70854        417    2   F        -
+ + New bound is 172 (gap is 62.11%)
+             454    70854        417    2   F        -
+ + New bound is 178 (gap is 60.79%)
+             454    70854        417    2   F        -
+ + New bound is 179 (gap is 60.57%)
+             454    83685        422    1   F        -
+ + New bound is 180 (gap is 60.35%)
+             454    86918        423    1   F        -
+ + New bound is 186 (gap is 59.03%)
+             454    86918        423    1   F        -
+ + New bound is 187 (gap is 58.81%)
+ ! Time = 8.08s, Average fail depth = 24, Memory usage = 35.1 MB
+ ! Current bound is 187 (gap is 58.81%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             454    96661        290    2   F        -
+ + New bound is 188 (gap is 58.59%)
+             454     107k        297    1   F        -
+ + New bound is 189 (gap is 58.37%)
+             454     107k        416    2   F        -
+ + New bound is 190 (gap is 58.15%)
+             454     116k        410    4   F        -
+ + New bound is 191 (gap is 57.93%)
+             454    99272        423    7   F        -
+ + New bound is 192 (gap is 57.71%)
+             454     121k        423    1   F        -
+ + New bound is 193 (gap is 57.49%)
+             454     131k        423    4   F        -
+ + New bound is 194 (gap is 57.27%)
+             454     131k        423    4   F        -
+ + New bound is 200 (gap is 55.95%)
+             454     131k        423    4   F        -
+ + New bound is 201 (gap is 55.73%)
+             454     125k        383    1   F        -
+ + New bound is 202 (gap is 55.51%)
+             454     115k        402    7   F        -
+ + New bound is 203 (gap is 55.29%)
+             454     144k        399    4   F        -
+ + New bound is 204 (gap is 55.07%)
+             454     130k        423    7   F        -
+ + New bound is 205 (gap is 54.85%)
+             454     130k        423    7   F        -
+ + New bound is 211 (gap is 53.52%)
+             454     130k        423    7   F        -
+ + New bound is 212 (gap is 53.30%)
+             454     155k        414    2   F        -
+ + New bound is 213 (gap is 53.08%)
+             454     165k        419    4   F        -
+ + New bound is 214 (gap is 52.86%)
+             454     147k        412    7   F        -
+ + New bound is 215 (gap is 52.64%)
+             454     167k        411    1   F        -
+ + New bound is 216 (gap is 52.42%)
+             454     167k        411    1   F        -
+ + New bound is 221 (gap is 51.32%)
+ ! Time = 14.70s, Average fail depth = 18, Memory usage = 37.3 MB
+ ! Current bound is 221 (gap is 51.32%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             454     167k        411    1   F        -
+ + New bound is 222 (gap is 51.10%)
+             454     169k        418    2   F        -
+ + New bound is 223 (gap is 50.88%)
+             454     180k        404    1   F        -
+ + New bound is 224 (gap is 50.66%)
+             454     191k        422    4   F        -
+ + New bound is 225 (gap is 50.44%)
+             454     190k        408    2   F        -
+ + New bound is 226 (gap is 50.22%)
+             454     199k        422    1   F        -
+ + New bound is 227 (gap is 50.00%)
+             454     202k        418    1            -
+ + New bound is 454 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 454 (optimal - effective tol. is 0)
+ ! Best bound             : 454
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 1799829
+ ! Number of fails        : 812309
+ ! Total memory usage     : 58.2 MB (57.5 MB CP Optimizer + 0.7 MB Concert)
+ ! Time spent in solve    : 18.37s (18.35s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 98083.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 454
+! Labeling: 1 1 1 152 1 152 1 152 454 1 303 303 303 152 303 1 152 1 152 1 1 152 152 303 152 152 303 152 152 1 303 152 1 454 152 152 303 1 1 1 303 1 152 152 152 454 152 152 303 1 303 1 303 303 303 454 303 303 303 1 303 454 152 303 152 152 454 1 1 152 454 152 1 152 1 1 303 454 1 152 1 1 1 303 152 1 152 303 1 454 152 1 152 152 1 303 1 303 303 152 303 303 303 152 152 152 454 454 303 1 1 454 454 1 1 1 1 303 1 1 152 303 454 454 303 454 1 1 303 303 152 454 1 303 454 152 454 1 454 1 303 152 1 303 152 303 303 303 152 303 454 454 152 454 1 152 303 152 303 303 1 152 152 152 303 152 1 1 303 1 152 1 303 1 303 152 152 454 303 152 152 152 1 1 454 152 454 152 303 1 303 1 152 152 454 454 1 1 454 1 152 152 1 1 152 303 454 454 152 152 454 303 152 303 303 152 303 152 1 1 152 454 152 152 1 1 1 152 1 303 303 1 1 1 1 152 1 1 1 303 152 1 152 152 303 152 303 303 152 1 1 303 152 1 303 1 454 1 454 454 152 454 152 454 1 303 303 1 1 152 303 1 1 1 454 1 1 1 303 303 1 152 1 303 152 152 152 1 1 1 1 303 152 454 1 1 1 1 152 152 152 303 152 1 1 152 152 1 1 1 152 1 454 454 152 152 152 303 303 454 303 454 303 152 303 1 303 1 1 454 152 454 152 303 303 454 152 303 303 1 1 1 454 303 303 303 303 152 1 152 303 152 454 152 303 152 152 303 1 303 1 152 303 303 152 1 152 152 1 1 303 454 152 1 1 303 152 152 152 303 454 1 1 454 303 454 152 1 303 303 1 1 1 1 152 303 454 303 152 152 152 1 1 1 1 152 1 303 303 1 303 152 1 1 152 1 152 303 152 303 1 303 1 303 1 
+! -------------------------------------------------------- 

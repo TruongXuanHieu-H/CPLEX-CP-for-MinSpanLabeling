@@ -1,0 +1,138 @@
+! Solving for graph ../../../benchmarks/linear/P-can__445.mtx.rnd
+! Target value is set to 99
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 446 variables, 2127 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
+ !  . Log search space  : 4068.2 (before), 4068.2 (after)
+ !  . Memory usage      : 963.5 kB (before), 963.5 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        446                 -
+ + New bound is 1
+                        0        446    1            -
+ + New bound is 100
+                        2        445    1   F     1 != _int160
+ + New bound is 101
+ *           496      448  0.13s        1      (gap is 79.64%)
+ *           495     2418  0.22s        3      (gap is 79.60%)
+ *           397     2873  0.22s        3      (gap is 74.56%)
+             397    90430        421    1   F        -
+ + New bound is 109 (gap is 72.54%)
+             397    90430        421    1   F        -
+ + New bound is 110 (gap is 72.29%)
+             397    92187        347    2   F    11 != _int398
+ + New bound is 111 (gap is 72.04%)
+             397    78512        413    4   F    12 != _int298
+ + New bound is 112 (gap is 71.79%)
+             397    94482        442    7   F    13 != _int298
+ + New bound is 113 (gap is 71.54%)
+             397    92683        410    4   F    14 != _int261
+ + New bound is 114 (gap is 71.28%)
+             397    92725        410    4   F    21 != _int261
+ + New bound is 121 (gap is 69.52%)
+             397    92769        410    4   F    22 != _int261
+ + New bound is 122 (gap is 69.27%)
+             397     103k        425    2   F    23 != _int288
+ + New bound is 123 (gap is 69.02%)
+             397     155k        388    1   F        -
+ + New bound is 124 (gap is 68.77%)
+             397     116k        430    2   F    25 != _int288
+ + New bound is 125 (gap is 68.51%)
+             397     155k        391    4   F    26 != _int278
+ + New bound is 126 (gap is 68.26%)
+             397     174k        438    1   F        -
+ + New bound is 127 (gap is 68.01%)
+             397     182k        346    7   F    28 != _int313
+ + New bound is 128 (gap is 67.76%)
+ ! Time = 29.51s, Average fail depth = 56, Memory usage = 41.2 MB
+ ! Current bound is 128 (gap is 67.76%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             397     193k        398    1   F        -
+ + New bound is 129 (gap is 67.51%)
+             397     202k        415    4   F    30 != _int211
+ + New bound is 130 (gap is 67.25%)
+             397     202k        415    4   F    37 != _int211
+ + New bound is 137 (gap is 65.49%)
+             397     198k        439    7   F    38 != _int313
+ + New bound is 138 (gap is 65.24%)
+             397     254k        334    4   F    39 != _int311
+ + New bound is 139 (gap is 64.99%)
+             397     218k        439    7   F    46 != _int298
+ + New bound is 146 (gap is 63.22%)
+             397     288k        400    1   F        -
+ + New bound is 147 (gap is 62.97%)
+             397     286k        401    2   F    48 != _int299
+ + New bound is 148 (gap is 62.72%)
+             397     314k        415    1   F        -
+ + New bound is 149 (gap is 62.47%)
+             397     292k        369    7   F    50 != _int313
+ + New bound is 150 (gap is 62.22%)
+             397     320k        433    1   F        -
+ + New bound is 151 (gap is 61.96%)
+             397     324k        423    2   F    52 != _int285
+ + New bound is 152 (gap is 61.71%)
+             397     390k        368    1   F        -
+ + New bound is 153 (gap is 61.46%)
+             397     320k        437    7   F    60 != _int313
+ + New bound is 160 (gap is 59.70%)
+             397     367k        440    4   F    61 != _int302
+ + New bound is 161 (gap is 59.45%)
+             397     403k        394    7   F    62 != _int313
+ + New bound is 162 (gap is 59.19%)
+             397     438k        411    1   F        -
+ + New bound is 163 (gap is 58.94%)
+             397     471k        426    2   F    64 != _int393
+ + New bound is 164 (gap is 58.69%)
+             397     528k        390    1   F        -
+ + New bound is 165 (gap is 58.44%)
+             397     505k        424    2   F    72 != _int190
+ + New bound is 172 (gap is 56.68%)
+ ! Time = 86.81s, Average fail depth = 54, Memory usage = 46.4 MB
+ ! Current bound is 172 (gap is 56.68%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             397     586k        368    1   F        -
+ + New bound is 173 (gap is 56.42%)
+             397     528k        429    7   F    74 != _int313
+ + New bound is 174 (gap is 56.17%)
+             397     527k        430    4   F    75 != _int15
+ + New bound is 175 (gap is 55.92%)
+             397     631k        424    1   F        -
+ + New bound is 176 (gap is 55.67%)
+             397     650k        306    1   F        -
+ + New bound is 182 (gap is 54.16%)
+             397     650k        306    1   F        -
+ + New bound is 183 (gap is 53.90%)
+             397     704k        414    2   F    89 != _int264
+ + New bound is 189 (gap is 52.39%)
+             397     621k        419    4   F    95 != _int32
+ + New bound is 195 (gap is 50.88%)
+             397     777k        344    1   F        -
+ + New bound is 196 (gap is 50.63%)
+             397     665k        418    4   F    97 != _int15
+ + New bound is 197 (gap is 50.38%)
+             397     774k        445    2   F    98 != _int299
+ + New bound is 198 (gap is 50.13%)
+             397     723k        445    7   F    99 != _int55
+ + New bound is 199 (gap is 49.87%)
+             397     837k        444    1   F   100 != _int44
+ + New bound is 200 (gap is 49.62%)
+             397    1359k        445    1   F     7 != _int300
+ + New bound is 206 (gap is 48.11%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : 397 (gap is 48.11%)
+ ! Best bound             : 206
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 65156244
+ ! Number of fails        : 29512014
+ ! Total memory usage     : 163.5 MB (162.6 MB CP Optimizer + 0.9 MB Concert)
+ ! Time spent in solve    : 1800.04s (1800.01s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 36197.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 397
+! Labeling: 199 1 100 199 1 100 1 100 199 100 1 199 298 100 199 1 199 298 199 199 1 1 100 199 199 1 100 100 1 298 1 1 298 100 397 1 199 298 100 199 199 397 199 199 298 298 199 199 100 199 298 1 298 199 397 100 298 1 199 1 199 100 199 1 100 298 100 397 1 397 100 199 199 298 100 100 298 100 397 298 199 1 100 100 199 100 199 1 298 1 1 397 298 199 1 100 298 298 100 100 199 298 397 384 298 199 1 199 199 298 1 1 397 397 199 100 199 298 397 298 298 298 100 199 1 100 1 1 199 186 397 1 199 298 100 298 1 298 298 1 215 298 298 1 397 397 100 298 100 1 100 298 100 199 199 1 1 1 199 397 1 100 298 298 1 397 100 1 199 298 298 199 100 199 100 100 100 285 199 1 100 397 298 397 298 1 100 100 298 100 298 100 285 397 100 199 1 100 1 199 100 1 1 100 1 199 298 100 100 199 199 100 397 397 298 100 298 298 397 298 100 298 100 100 100 100 100 199 100 100 1 199 1 1 100 397 397 1 100 1 199 1 199 1 384 100 199 1 100 1 199 199 100 298 1 298 298 100 199 1 1 100 298 100 298 199 397 298 1 199 298 199 1 397 1 199 298 100 199 1 1 1 100 100 1 298 1 100 298 100 1 1 100 199 100 100 100 298 1 298 116 1 1 298 298 100 1 100 100 1 298 100 100 298 100 397 397 100 1 384 1 1 199 298 1 397 100 397 199 298 1 397 1 298 1 199 100 397 100 100 397 199 199 199 1 1 1 199 298 397 1 1 1 298 1 397 397 199 298 397 100 199 199 298 1 199 298 298 199 199 1 397 199 298 1 100 298 397 199 199 298 199 199 100 199 199 199 199 199 199 397 100 397 298 298 1 199 397 1 100 1 1 100 1 199 298 1 397 298 298 199 1 1 100 298 298 1 100 100 298 1 100 298 100 100 397 1 298 1 100 100 100 199 199 100 298 298 100 298 1 199 298 1 199 397 
+! -------------------------------------------------------- 

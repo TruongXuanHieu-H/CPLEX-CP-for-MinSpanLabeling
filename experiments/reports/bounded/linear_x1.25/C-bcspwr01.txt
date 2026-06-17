@@ -1,0 +1,36 @@
+! Solving for graph ../../../benchmarks/linear/C-bcspwr01.mtx.rnd
+! Target value is set to 21
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 40 variables, 85 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 224.6 (before), 224.6 (after)
+ !  . Memory usage      : 303.7 kB (before), 303.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         40                 -
+ + New bound is 1
+                        0         40    1            -
+ + New bound is 22
+                        2         39    1   F     1 != _int20
+ + New bound is 23
+ *            43       42  0.02s        1      (gap is 46.51%)
+              43      288          1    1            -
+ + New bound is 43 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 43 (optimal - effective tol. is 0)
+ ! Best bound             : 43
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 5129
+ ! Number of fails        : 1924
+ ! Total memory usage     : 5.3 MB (5.2 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.02s (0.02s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 256450.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 43
+! Labeling: 22 1 1 1 22 1 1 1 22 1 22 22 22 1 22 1 1 1 43 22 1 22 22 22 1 22 22 43 22 1 1 22 43 1 43 22 1 1 1 
+! -------------------------------------------------------- 

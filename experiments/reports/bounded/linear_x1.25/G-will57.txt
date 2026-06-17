@@ -1,0 +1,58 @@
+! Solving for graph ../../../benchmarks/linear/G-will57.mtx.rnd
+! Target value is set to 16
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 58 variables, 184 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 357.9 (before), 357.9 (after)
+ !  . Memory usage      : 347.0 kB (before), 347.0 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         58                 -
+ + New bound is 1
+                        0         58    1            -
+ + New bound is 17
+                        2         57    1   F     1 != _int32
+ + New bound is 18
+ *            65       60  0.03s        1      (gap is 72.31%)
+              65     2867         20    2   F        -
+ + New bound is 42 (gap is 35.38%)
+              65    19295         55    4   F    25 != _int37
+ + New bound is 43 (gap is 33.85%)
+              65    24497         22    4   F    27 != _int37
+ + New bound is 44 (gap is 32.31%)
+              65    26232         19    1   F        -
+ + New bound is 45 (gap is 30.77%)
+              65    35665         49    1   F        -
+ + New bound is 46 (gap is 29.23%)
+              65    39533         47    1   F        -
+ + New bound is 47 (gap is 27.69%)
+              65    42991         34    2   F    31 != _int37
+ + New bound is 48 (gap is 26.15%)
+              65    59736         35    7   F    23 != _int35
+ + New bound is 49 (gap is 24.62%)
+              65    70282         56    4   F    33 != _int38
+ + New bound is 50 (gap is 23.08%)
+              65    67660         46    1   F    33 != _int37
+ + New bound is 51 (gap is 21.54%)
+              65    73783         22    1   F    35 != _int37
+ + New bound is 52 (gap is 20.00%)
+              65    75388         55    2            -
+ + New bound is 65 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 65 (optimal - effective tol. is 0)
+ ! Best bound             : 65
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 645481
+ ! Number of fails        : 311761
+ ! Total memory usage     : 9.5 MB (9.4 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 1.38s (1.38s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 467739.9
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 65
+! Labeling: 1 1 17 17 65 49 33 1 1 17 17 49 1 65 33 1 33 33 65 49 17 17 17 65 17 17 17 33 33 17 1 17 17 1 49 1 33 33 33 17 1 1 1 17 1 1 17 1 17 17 49 49 1 1 17 17 33 
+! -------------------------------------------------------- 

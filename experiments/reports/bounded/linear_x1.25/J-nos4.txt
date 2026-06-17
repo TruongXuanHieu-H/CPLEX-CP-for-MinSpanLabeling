@@ -1,0 +1,36 @@
+! Solving for graph ../../../benchmarks/linear/J-nos4.mtx.rnd
+! Target value is set to 44
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 101 variables, 347 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 703.5 (before), 703.5 (after)
+ !  . Memory usage      : 392.9 kB (before), 392.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        101                 -
+ + New bound is 1
+                        0        101    1   F        -
+ + New bound is 45
+                        2        100    1   F     1 != _int64
+ + New bound is 46
+ *            89       92  0.04s        1      (gap is 48.31%)
+              89     1341         60    2            -
+ + New bound is 89 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 89 (optimal - effective tol. is 0)
+ ! Best bound             : 89
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 14307
+ ! Number of fails        : 6059
+ ! Total memory usage     : 9.8 MB (9.7 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.06s (0.06s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 286140.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 89
+! Labeling: 89 45 45 45 45 1 45 45 1 45 1 1 1 45 1 45 1 89 89 1 45 45 45 89 89 45 45 1 1 1 89 45 89 1 45 45 1 89 1 45 45 45 1 1 89 45 1 89 89 1 45 45 45 45 89 1 45 1 89 1 45 89 89 1 45 1 1 45 45 1 45 89 89 1 1 89 45 89 89 45 89 45 89 89 45 1 1 89 1 89 45 89 1 1 1 45 1 89 1 1 
+! -------------------------------------------------------- 

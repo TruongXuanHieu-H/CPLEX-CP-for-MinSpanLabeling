@@ -1,0 +1,36 @@
+! Solving for graph ../../../benchmarks/linear/J-nos4.mtx.rnd
+! Target value is set to 53
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 101 variables, 347 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 730.1 (before), 730.1 (after)
+ !  . Memory usage      : 392.9 kB (before), 392.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        101                 -
+ + New bound is 1
+                        0        101    1   F        -
+ + New bound is 53
+                        0        101    1   F        -
+ + New bound is 54
+ *           107       90  0.04s        1      (gap is 49.53%)
+             107     1987         28    1            -
+ + New bound is 107 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 107 (optimal - effective tol. is 0)
+ ! Best bound             : 107
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 14931
+ ! Number of fails        : 6455
+ ! Total memory usage     : 10.2 MB (10.1 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.06s (0.05s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 298620.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 107
+! Labeling: 107 54 54 54 54 1 54 54 1 54 1 1 1 54 1 54 1 107 107 1 54 54 54 107 107 54 54 1 1 1 107 54 107 1 54 54 1 107 1 54 54 54 1 1 107 54 1 107 107 1 54 54 54 54 107 1 54 1 107 1 54 107 107 1 54 1 1 54 54 1 54 107 107 1 1 107 54 107 107 54 107 54 107 107 54 1 1 107 1 107 54 107 1 1 1 54 1 107 1 1 
+! -------------------------------------------------------- 
