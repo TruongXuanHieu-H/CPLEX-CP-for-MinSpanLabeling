@@ -41,18 +41,6 @@ int main(int argc, char *argv[])
     int target_value = static_cast<int>(std::round(base_target_value * target_value_mul));
     std::cout << "! Target value is set to " << target_value << "\n";
 
-    if (LB == 0) // Lower bound not set
-    {
-        LB = 1; // Set naive lower bound
-        std::cout << "! No predefined lower bound found. Lower bound is set to " << LB << "\n";
-    }
-
-    if (UB == 0) // Upper bound not set
-    {
-        UB = (num_vertices - 1) * target_value + 1; // Set naive upper bound
-        std::cout << "! No predefined upper bound found. Upper bound is set to " << UB << "\n";
-    }
-
     std::vector<Edge> edges;
     for (int i = 0; i < num_edges; i++)
     {
