@@ -1,0 +1,44 @@
+! Solving for graph ../../../benchmarks/abp/L-bcspwr03.mtx.rnd
+! Target value is set to 39
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 119 variables, 297 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 819.0 (before), 819.0 (after)
+ !  . Memory usage      : 392.4 kB (before), 392.4 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        119                 -
+ + New bound is 1
+                        0        119    1            -
+ + New bound is 40
+                        2        118    1   F     1 != _int27
+ + New bound is 41
+ *           118      119  0.05s        1      (gap is 65.25%)
+             118     2735         41    2   F    40 != _int61
+ + New bound is 80 (gap is 32.20%)
+             118     3634        118    7   F    60 != _int33
+ + New bound is 100 (gap is 15.25%)
+             118     6932        116    1   F    22 != _int57
+ + New bound is 101 (gap is 14.41%)
+             118     8587        118    2   F    35 != _int62
+ + New bound is 115 (gap is 2.54%)
+             118    16958        117    4            -
+ + New bound is 118 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 118 (optimal - effective tol. is 0)
+ ! Best bound             : 118
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 130194
+ ! Number of fails        : 60243
+ ! Total memory usage     : 11.5 MB (11.4 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.36s (0.34s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 382923.5
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 118
+! Labeling: 79 1 40 1 1 79 40 40 40 1 40 40 40 1 1 79 40 1 79 40 79 1 1 40 79 40 40 40 40 40 1 79 1 40 40 1 1 79 40 1 1 1 40 40 1 1 79 1 79 1 40 40 1 79 40 40 1 40 1 79 40 1 79 1 1 1 40 1 40 40 79 40 40 40 40 40 79 1 40 1 1 79 40 1 40 79 40 1 1 40 1 40 79 1 118 79 40 1 1 40 1 40 40 1 1 40 1 79 1 79 79 1 79 1 1 40 79 1 
+! -------------------------------------------------------- 

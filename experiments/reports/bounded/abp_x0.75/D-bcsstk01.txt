@@ -1,0 +1,46 @@
+! Solving for graph ../../../benchmarks/abp/D-bcsstk01.mtx.rnd
+! Target value is set to 7
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 49 variables, 224 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 273.7 (before), 273.7 (after)
+ !  . Memory usage      : 347.6 kB (before), 347.6 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         49                 -
+ + New bound is 1
+                        0         49    1   F        -
+ + New bound is 8
+                        2         48    1   F     1 != _int37
+ + New bound is 9
+ *            36       51  0.04s        1      (gap is 75.00%)
+              36     1640         46    1   F    21 != _int28
+ + New bound is 23 (gap is 36.11%)
+              36    27999         16    1   F    23 != _int34
+ + New bound is 24 (gap is 33.33%)
+              36    74324         46    1   F    16 != _int40
+ + New bound is 25 (gap is 30.56%)
+              36     200k         36    4   F    11 != _int44
+ + New bound is 26 (gap is 27.78%)
+              36     204k         32    4   F    12 != _int44
+ + New bound is 27 (gap is 25.00%)
+              36     224k         46    1            -
+ + New bound is 36 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 36 (optimal - effective tol. is 0)
+ ! Best bound             : 36
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 1813448
+ ! Number of fails        : 876250
+ ! Total memory usage     : 9.4 MB (9.3 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 3.18s (3.17s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 573875.9
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 36
+! Labeling: 1 22 15 1 8 1 15 1 8 8 1 15 36 15 22 15 8 8 15 36 29 22 29 22 15 22 22 15 29 8 1 15 29 8 15 22 22 1 22 1 8 1 8 1 1 8 8 1 
+! -------------------------------------------------------- 

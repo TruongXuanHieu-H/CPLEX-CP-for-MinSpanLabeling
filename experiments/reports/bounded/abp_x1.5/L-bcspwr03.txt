@@ -1,0 +1,31 @@
+! Solving for graph ../../../benchmarks/abp/L-bcspwr03.mtx.rnd
+! Target value is set to 59
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 119 variables, 297 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 888.6 (before), 888.6 (after)
+ !  . Memory usage      : 392.4 kB (before), 392.4 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        119                 -
+ + New bound is 1
+                        0        119    1            -
+ + New bound is 59
+                        0        119    1   F        -
+ + New bound is 60
+ ! ----------------------------------------------------------------------------
+ ! Search completed, model has no solution.
+ ! Best bound             : 60
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 225002
+ ! Number of fails        : 104433
+ ! Total memory usage     : 13.5 MB (13.3 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.62s (0.62s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 362906.5
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! No solution
+! --------------------------------------------------------

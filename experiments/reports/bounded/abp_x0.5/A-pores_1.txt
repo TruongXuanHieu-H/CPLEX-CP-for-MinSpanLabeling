@@ -1,0 +1,36 @@
+! Solving for graph ../../../benchmarks/abp/A-pores_1.mtx.rnd
+! Target value is set to 3
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 31 variables, 133 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 152.1 (before), 152.1 (after)
+ !  . Memory usage      : 304.5 kB (before), 304.5 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         31                 -
+ + New bound is 1
+                        0         31    1   F        -
+ + New bound is 4
+                        2         30    1   F     1 != _int16
+ + New bound is 5
+ *            10       33  0.04s        1      (gap is 50.00%)
+              10      234          1    1            -
+ + New bound is 10 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 10 (optimal - effective tol. is 0)
+ ! Best bound             : 10
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 4940
+ ! Number of fails        : 1715
+ ! Total memory usage     : 5.2 MB (5.1 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 164666.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 10
+! Labeling: 4 7 10 1 7 7 7 10 10 10 1 1 1 7 1 4 4 4 1 4 10 1 7 1 10 10 7 4 4 7 
+! -------------------------------------------------------- 

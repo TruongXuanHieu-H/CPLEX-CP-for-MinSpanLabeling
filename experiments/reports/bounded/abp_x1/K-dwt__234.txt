@@ -1,0 +1,36 @@
+! Solving for graph ../../../benchmarks/abp/K-dwt__234.mtx.rnd
+! Target value is set to 51
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 118 variables, 279 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 810.7 (before), 810.7 (after)
+ !  . Memory usage      : 359.9 kB (before), 359.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        118                 -
+ + New bound is 1
+                        0        118    1            -
+ + New bound is 52
+                        2        117    1   F     1 != _int92
+ + New bound is 53
+ *           103      109  0.04s        1      (gap is 48.54%)
+             103      784          1    1            -
+ + New bound is 103 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 103 (optimal - effective tol. is 0)
+ ! Best bound             : 103
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 7133
+ ! Number of fails        : 1599
+ ! Total memory usage     : 8.4 MB (8.3 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 237766.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 103
+! Labeling: 103 52 1 52 52 52 1 1 1 52 1 103 103 1 52 1 1 1 103 1 52 52 103 1 1 1 52 1 1 52 1 1 1 1 52 52 103 52 52 52 1 1 1 1 103 1 52 1 1 1 1 1 52 1 1 1 1 1 103 103 1 103 1 1 52 1 1 1 1 52 1 52 103 1 52 52 52 1 1 1 103 52 103 52 52 1 52 52 1 52 103 52 52 1 52 1 52 1 103 1 1 1 1 1 103 1 52 1 1 52 103 52 52 52 52 52 1 
+! -------------------------------------------------------- 

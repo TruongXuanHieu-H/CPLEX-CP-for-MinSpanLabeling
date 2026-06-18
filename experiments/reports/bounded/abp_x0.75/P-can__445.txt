@@ -1,0 +1,124 @@
+! Solving for graph ../../../benchmarks/abp/P-can__445.mtx.rnd
+! Target value is set to 59
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 446 variables, 2127 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
+ !  . Log search space  : 3923.8 (before), 3923.8 (after)
+ !  . Memory usage      : 963.5 kB (before), 963.5 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        446                 -
+ + New bound is 1
+                        0        446    1            -
+ + New bound is 59
+                        0        446    1   F        -
+ + New bound is 60
+ *           355      446  0.13s        1      (gap is 83.10%)
+ *           296      446  0.13s        2      (gap is 79.73%)
+ *           295     6783  0.33s        5      (gap is 79.66%)
+ *           267     7746  0.34s        6      (gap is 77.53%)
+ *           237    10147  0.43s        5      (gap is 74.68%)
+             237    86805        404    4   F        -
+ + New bound is 67 (gap is 71.73%)
+             237    86805        404    4   F        -
+ + New bound is 68 (gap is 71.31%)
+             237    78183        442    1   F     9 != _int96
+ + New bound is 69 (gap is 70.89%)
+             237    56803        418    2   F    10 != _int32
+ + New bound is 70 (gap is 70.46%)
+             237    53914        423    7   F    11 != _int32
+ + New bound is 71 (gap is 70.04%)
+             237    89915        434    1   F    12 != _int429
+ + New bound is 72 (gap is 69.62%)
+             237     109k        351    2   F    13 != _int226
+ + New bound is 73 (gap is 69.20%)
+             237     103k        354    7   F    14 != _int287
+ + New bound is 74 (gap is 68.78%)
+             237     119k        410    2   F    15 != _int283
+ + New bound is 75 (gap is 68.35%)
+             237     113k        412    7   F    16 != _int146
+ + New bound is 76 (gap is 67.93%)
+             237     180k        394    1   F        -
+ + New bound is 77 (gap is 67.51%)
+             237     133k        413    2   F    18 != _int283
+ + New bound is 78 (gap is 67.09%)
+ ! Time = 15.54s, Average fail depth = 121, Memory usage = 42.8 MB
+ ! Current bound is 78 (gap is 67.09%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             237     133k        413    2   F    24 != _int283
+ + New bound is 84 (gap is 64.56%)
+             237     216k        402    4   F    25 != _int287
+ + New bound is 85 (gap is 64.14%)
+             237     169k        403    7   F    26 != _int32
+ + New bound is 86 (gap is 63.71%)
+             237     235k        406    4   F    27 != _int25
+ + New bound is 87 (gap is 63.29%)
+             237     195k        438    1   F        -
+ + New bound is 88 (gap is 62.87%)
+             237     187k        417    7   F    29 != _int108
+ + New bound is 89 (gap is 62.45%)
+             237     187k        417    7   F    35 != _int108
+ + New bound is 95 (gap is 59.92%)
+             237     258k        401    4   F    36 != _int44
+ + New bound is 96 (gap is 59.49%)
+             237     211k        335    2   F    37 != _int276
+ + New bound is 97 (gap is 59.07%)
+             237     222k        431    1   F        -
+ + New bound is 98 (gap is 58.65%)
+             237     255k        402    7   F    39 != _int32
+ + New bound is 99 (gap is 58.23%)
+             237     235k        404    2   F    40 != _int323
+ + New bound is 100 (gap is 57.81%)
+             237     326k        369    4   F    41 != _int45
+ + New bound is 101 (gap is 57.38%)
+             237     297k        418    1   F        -
+ + New bound is 102 (gap is 56.96%)
+             237     345k        377    7   F    43 != _int102
+ + New bound is 103 (gap is 56.54%)
+             237     330k        438    1   F        -
+ + New bound is 104 (gap is 56.12%)
+             237     360k        416    2   F    45 != _int298
+ + New bound is 105 (gap is 55.70%)
+             237     353k        445    4   F    46 != _int416
+ + New bound is 106 (gap is 55.27%)
+             237     353k        445    4   F    52 != _int416
+ + New bound is 112 (gap is 52.74%)
+             237     400k        395    1   F        -
+ + New bound is 113 (gap is 52.32%)
+ ! Time = 42.79s, Average fail depth = 117, Memory usage = 46.9 MB
+ ! Current bound is 113 (gap is 52.32%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             237     472k        403    7   F    54 != _int45
+ + New bound is 114 (gap is 51.90%)
+             237     464k        445    2   F    55 != _int91
+ + New bound is 115 (gap is 51.48%)
+             237     502k        408    1   F        -
+ + New bound is 116 (gap is 51.05%)
+             237     503k        446    1   F     3 != _int108
+ + New bound is 122 (gap is 48.52%)
+             237     503k        444    1   F     1 != _int108
+ + New bound is 123 (gap is 48.10%)
+             237     571k        420    4   F    60 != _int109
+ + New bound is 124 (gap is 47.68%)
+             237     601k        436    7   F    65 != _int264
+ + New bound is 125 (gap is 47.26%)
+             237     728k        400    1   F        -
+ + New bound is 126 (gap is 46.84%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 5 solutions found.
+ ! Best objective         : 237 (gap is 46.84%)
+ ! Best bound             : 126
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 88047218
+ ! Number of fails        : 40497151
+ ! Total memory usage     : 139.6 MB (138.8 MB CP Optimizer + 0.9 MB Concert)
+ ! Time spent in solve    : 1800.05s (1800.02s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 48914.8
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 237
+! Labeling: 119 178 60 119 119 60 1 119 1 60 60 1 237 119 178 119 60 178 1 119 1 1 60 119 119 178 178 178 60 1 178 1 119 237 60 1 1 1 60 1 60 60 237 60 119 178 119 119 60 1 60 1 1 119 60 119 119 178 1 237 119 1 60 60 237 237 119 1 60 1 1 237 119 237 60 119 178 1 60 119 178 1 60 237 1 178 178 60 60 1 1 119 237 1 178 60 178 60 178 119 119 119 60 1 119 237 237 237 178 60 178 1 1 119 60 1 119 119 119 237 1 60 60 178 1 178 60 119 178 237 1 119 119 60 119 119 60 237 60 178 119 60 119 60 60 119 1 237 60 60 1 60 178 1 178 1 60 60 178 119 60 178 237 119 1 1 60 60 60 237 119 178 178 178 119 119 1 119 237 60 60 1 1 60 119 178 1 178 178 178 178 1 60 119 1 237 237 60 1 1 1 60 178 178 178 60 237 1 1 119 1 178 178 1 1 178 60 237 60 119 216 178 1 178 60 178 1 119 1 119 60 60 60 60 60 60 60 178 60 60 178 178 60 1 1 178 178 1 119 1 60 119 1 1 60 1 119 60 119 178 119 119 60 60 1 119 237 119 60 178 1 178 1 178 178 60 60 178 119 178 1 1 119 119 60 119 60 119 119 60 1 1 119 178 119 178 60 119 237 119 178 119 1 178 178 60 237 60 119 1 1 1 60 1 119 60 237 237 178 1 60 1 60 119 178 60 119 1 119 178 119 1 1 1 1 119 178 1 1 178 60 119 178 119 178 60 1 178 119 119 60 178 178 60 178 60 60 178 1 1 1 178 119 178 119 178 237 60 119 119 1 178 119 178 237 119 1 1 1 178 119 119 1 237 119 178 1 119 237 60 178 119 178 60 1 60 178 60 178 119 237 178 178 60 237 1 178 237 1 237 60 1 119 119 237 1 1 60 178 1 1 237 237 60 60 1 237 178 178 60 1 237 237 119 1 178 119 60 119 1 1 1 237 178 119 
+! -------------------------------------------------------- 

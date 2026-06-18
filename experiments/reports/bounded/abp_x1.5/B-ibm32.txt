@@ -1,0 +1,42 @@
+! Solving for graph ../../../benchmarks/abp/B-ibm32.mtx.rnd
+! Target value is set to 14
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 33 variables, 122 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 184.3 (before), 184.3 (after)
+ !  . Memory usage      : 304.3 kB (before), 304.3 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         33                 -
+ + New bound is 1
+                        0         33    1            -
+ + New bound is 15
+                        2         32    1   F     1 != _int3
+ + New bound is 16
+ *            43       34  0.03s        1      (gap is 62.79%)
+              43      912          1    4   F    29 != _int2
+ + New bound is 30 (gap is 30.23%)
+              43     1274         24    1   F    19 != _int1
+ + New bound is 37 (gap is 13.95%)
+              43     2247         31    2   F    39 != _int4
+ + New bound is 41 (gap is 4.65%)
+              43     3185         32    4            -
+ + New bound is 43 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 43 (optimal - effective tol. is 0)
+ ! Best bound             : 43
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 26742
+ ! Number of fails        : 12764
+ ! Total memory usage     : 6.5 MB (6.4 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.08s (0.07s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 445700.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 43
+! Labeling: 15 15 15 29 29 29 1 15 1 15 15 1 1 29 15 43 1 29 15 43 15 1 1 15 1 1 1 1 29 29 1 29 
+! -------------------------------------------------------- 

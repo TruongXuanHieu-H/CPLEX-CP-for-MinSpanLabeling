@@ -1,0 +1,36 @@
+! Solving for graph ../../../benchmarks/abp/J-nos4.mtx.rnd
+! Target value is set to 35
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 101 variables, 347 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 671.0 (before), 671.0 (after)
+ !  . Memory usage      : 392.9 kB (before), 392.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        101                 -
+ + New bound is 1
+                        0        101    1            -
+ + New bound is 35
+                        0        101    1   F        -
+ + New bound is 36
+ *            71       90  0.04s        1      (gap is 49.30%)
+              71     1612         55    1            -
+ + New bound is 71 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 71 (optimal - effective tol. is 0)
+ ! Best bound             : 71
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 14109
+ ! Number of fails        : 6052
+ ! Total memory usage     : 10.0 MB (9.8 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.07s (0.06s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 282180.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 71
+! Labeling: 71 36 36 36 36 1 36 36 1 36 1 1 1 36 1 36 1 71 71 1 36 36 36 71 71 36 36 1 1 1 71 36 71 1 36 36 1 71 1 36 36 36 1 1 71 36 1 71 71 1 36 36 36 36 71 1 36 1 71 1 36 71 71 1 36 1 1 36 36 1 36 71 71 1 1 71 36 71 71 36 71 36 71 71 36 1 1 71 1 71 36 71 1 1 1 36 1 71 1 1 
+! -------------------------------------------------------- 

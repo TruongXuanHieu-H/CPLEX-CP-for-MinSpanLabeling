@@ -1,0 +1,40 @@
+! Solving for graph ../../../benchmarks/abp/B-ibm32.mtx.rnd
+! Target value is set to 9
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 33 variables, 122 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 165.0 (before), 165.0 (after)
+ !  . Memory usage      : 304.3 kB (before), 304.3 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         33                 -
+ + New bound is 1
+                        0         33    1   F        -
+ + New bound is 10
+                        2         32    1   F     1 != _int3
+ + New bound is 11
+ *            28       34  0.03s        1      (gap is 60.71%)
+              28      912          1    4   F    19 != _int1
+ + New bound is 20 (gap is 28.57%)
+              28     1181         21    1   F     8 != _int2
+ + New bound is 25 (gap is 10.71%)
+              28     1239         21    1   F    26 != _int2
+ + New bound is 28 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 28 (optimal - effective tol. is 0)
+ ! Best bound             : 28
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 12956
+ ! Number of fails        : 5860
+ ! Total memory usage     : 5.9 MB (5.8 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 323900.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 28
+! Labeling: 10 10 10 19 19 19 1 10 1 10 10 1 1 19 10 28 1 19 10 28 10 1 1 10 1 1 1 1 19 19 1 19 
+! -------------------------------------------------------- 

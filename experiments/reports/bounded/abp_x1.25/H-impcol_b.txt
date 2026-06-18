@@ -1,0 +1,81 @@
+! Solving for graph ../../../benchmarks/abp/H-impcol_b.mtx.rnd
+! Target value is set to 10
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 60 variables, 340 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 372.6 (before), 372.6 (after)
+ !  . Memory usage      : 350.8 kB (before), 350.8 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         60                 -
+ + New bound is 1
+                        0         60    1   F        -
+ + New bound is 11
+                        2         59    1   F     1 != _int29
+ + New bound is 12
+ *            71       71  0.04s        1      (gap is 83.10%)
+              71    26782          6    1   F        -
+ + New bound is 13 (gap is 81.69%)
+              71    26782          6    1   F        -
+ + New bound is 14 (gap is 80.28%)
+              71    32584          4    4   F     4 != _int41
+ + New bound is 15 (gap is 78.87%)
+              71    32594          4    4   F     5 != _int41
+ + New bound is 16 (gap is 77.46%)
+              71    32606          4    4   F     6 != _int41
+ + New bound is 17 (gap is 76.06%)
+              71    34909          5    1   F     7 != _int1
+ + New bound is 18 (gap is 74.65%)
+              71    34923          5    1   F     8 != _int1
+ + New bound is 19 (gap is 73.24%)
+              71    34939          5    1   F     9 != _int1
+ + New bound is 20 (gap is 71.83%)
+              71    29812         13    2   F     9 != _int4
+ + New bound is 21 (gap is 70.42%)
+              71    36643          5    7   F    10 != _int48
+ + New bound is 22 (gap is 69.01%)
+              71    43095          9    1   F    11 != _int56
+ + New bound is 23 (gap is 67.61%)
+              71    36793          4    2   F     3 != _int7
+ + New bound is 24 (gap is 66.20%)
+              71    48134         55    7   F     4 != _int57
+ + New bound is 25 (gap is 64.79%)
+              71    48196         55    7   F     5 != _int57
+ + New bound is 26 (gap is 63.38%)
+              71    47456         49    2   F     6 != _int7
+ + New bound is 27 (gap is 61.97%)
+              71    59432          5    4   F     7 != _int57
+ + New bound is 28 (gap is 60.56%)
+ ! Time = 1.14s, Average fail depth = 26, Memory usage = 9.4 MB
+ ! Current bound is 28 (gap is 60.56%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              71    74563         40    1   F     8 != _int1
+ + New bound is 29 (gap is 59.15%)
+              71     259k          5    7   F     1 != _int55
+ + New bound is 30 (gap is 57.75%)
+              71     741k         24    1   F     9 != _int57
+ + New bound is 31 (gap is 56.34%)
+              71    1459k         58    1   F    11 != _int13
+ + New bound is 32 (gap is 54.93%)
+              71    2766k         33    1   F    10 != _int57
+ + New bound is 33 (gap is 53.52%)
+              71   38179k         33    1   F    20 != _int48
+ + New bound is 34 (gap is 52.11%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 71 (gap is 52.11%)
+ ! Best bound             : 34
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 741487632
+ ! Number of fails        : 357509918
+ ! Total memory usage     : 302.5 MB (302.3 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1800.01s (1800.00s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 411937.6
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 71
+! Labeling: 1 1 11 21 41 11 71 11 41 21 11 1 11 11 11 11 51 21 1 31 21 21 61 11 41 21 21 11 1 1 1 11 21 1 11 11 1 1 11 21 1 21 1 1 31 11 11 1 11 41 11 31 1 1 21 21 71 31 11 
+! -------------------------------------------------------- 
