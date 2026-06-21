@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     }
 
     std::string graph_name = argv[1];
-    double target_value_mul = std::stod(argv[2]);
+    int target_value = std::stod(argv[2]);
     int LB = std::stoi(argv[3]);
     int UB = std::stoi(argv[4]);
     int time_limit = std::stoi(argv[5]);
@@ -33,13 +33,12 @@ int main(int argc, char *argv[])
         return 1;
     }
     std::cout << "! Solving for graph " << graph_name << "\n";
+    std::cout << "! Target value is set to " << target_value << "\n";
     std::string name;
     std::getline(fin, name);
 
-    int num_vertices, num_edges, base_target_value;
-    fin >> num_vertices >> num_edges >> base_target_value;
-    int target_value = static_cast<int>(std::round(base_target_value * target_value_mul));
-    std::cout << "! Target value is set to " << target_value << "\n";
+    int num_vertices, temp, num_edges;
+    fin >> num_vertices >> temp >> num_edges;
 
     std::vector<Edge> edges;
     for (int i = 0; i < num_edges; i++)
@@ -58,6 +57,8 @@ int main(int argc, char *argv[])
         IloModel model(env);
 
         IloIntVarArray label(env, num_vertices, 1, UB);
+
+        model.add(IloAllDiff(env, label));
 
         IloIntVar span(env, LB, UB);
 
@@ -91,6 +92,18 @@ int main(int argc, char *argv[])
             int solution_span = static_cast<int>(cp.getValue(span));
 
             bool valid = true;
+
+            for (int i = 0; i < num_vertices; i++)
+            {
+                for (int j = i + 1; j < num_vertices; j++)
+                {
+                    if (solution[i] == solution[j])
+                    {
+                        std::cout << "! VERIFY FAILED: duplicate label " << solution[i] << "\n";
+                        valid = false;
+                    }
+                }
+            }
 
             for (const auto &e : edges)
             {

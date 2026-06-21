@@ -1,44 +1,50 @@
 ! Solving for graph ../../../benchmarks/abp/F-curtis54.mtx.rnd
 ! Target value is set to 13
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 55 variables, 178 constraints, 1 phase
+ ! Minimization problem - 55 variables, 179 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
- !  . Log search space  : 316.5 (before), 316.5 (after)
- !  . Memory usage      : 314.7 kB (before), 314.7 kB (after)
+ ! Initial process time : 0.02s (0.00s extraction + 0.02s propagation)
+ !  . Log search space  : 316.1 (before), 316.1 (after)
+ !  . Memory usage      : 346.8 kB (before), 346.8 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         55                 -
- + New bound is 1
-                        0         55    1   F        -
  + New bound is 14
-                        2         54    1   F     1 != _int24
+                        2         54    1   F     1 != _int53
  + New bound is 15
- *            53       57  0.04s        1      (gap is 71.70%)
-              53     2975         19    1   F    21 != _int25
- + New bound is 35 (gap is 33.96%)
-              53     6815         38    1   F     9 != _int28
- + New bound is 36 (gap is 32.08%)
-              53     5908         52    2   F    39 != _int25
- + New bound is 45 (gap is 15.09%)
-              53    22320         43    2   F    12 != _int9
- + New bound is 46 (gap is 13.21%)
-              53    28852         52    2            -
- + New bound is 53 (gap is 0.00%)
+ *            54    88239  0.80s        2      (gap is 72.22%)
+              54    88698         51    4   F     7 != _int0
+ + New bound is 35 (gap is 35.19%)
+              54    83407         51    1   F     7 != _int46
+ + New bound is 36 (gap is 33.33%)
+              54    94054         52    7   F    27 != _int31
+ + New bound is 45 (gap is 16.67%)
+              54    99957         31    1   F     6 != _int0
+ + New bound is 46 (gap is 14.81%)
+              54     105k         51    2   F    15 != _int0
+ + New bound is 50 (gap is 7.41%)
+              54     124k         43    7   F    44 != _int31
+ + New bound is 51 (gap is 5.56%)
+              54     127k         40    7   F    44 != _int31
+ + New bound is 52 (gap is 3.70%)
+              54     129k         27    7   F    12 != _int2
+ + New bound is 53 (gap is 1.85%)
+              54     851k         47    1            -
+ + New bound is 54 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
- ! Best objective         : 53 (optimal - effective tol. is 0)
- ! Best bound             : 53
+ ! Best objective         : 54 (optimal - effective tol. is 0)
+ ! Best bound             : 54
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 310055
- ! Number of fails        : 149604
- ! Total memory usage     : 8.7 MB (8.5 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.59s (0.58s engine + 0.02s extraction)
- ! Search speed (br. / s) : 543956.1
+ ! Number of branches     : 6905542
+ ! Number of fails        : 3349554
+ ! Total memory usage     : 12.2 MB (12.1 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 8.43s (8.43s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 820135.6
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 53
-! Labeling: 40 14 53 1 40 27 1 27 1 14 1 40 53 1 1 27 14 1 40 14 27 27 14 1 27 27 14 1 53 27 1 27 14 27 14 1 40 40 1 1 27 14 27 1 27 27 14 14 40 14 14 27 14 1 
+! Best span = 54
+! Labeling: 41 50 2 3 42 19 7 8 18 45 11 38 40 30 32 6 53 23 47 12 37 17 44 4 27 29 48 21 13 5 31 28 49 16 43 20 14 34 1 35 36 52 25 15 10 24 54 33 26 22 51 39 46 9 
 ! -------------------------------------------------------- 

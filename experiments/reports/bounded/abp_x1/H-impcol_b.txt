@@ -1,89 +1,71 @@
 ! Solving for graph ../../../benchmarks/abp/H-impcol_b.mtx.rnd
 ! Target value is set to 8
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 60 variables, 340 constraints, 1 phase
+ ! Minimization problem - 60 variables, 341 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
- !  . Log search space  : 353.0 (before), 353.0 (after)
- !  . Memory usage      : 350.8 kB (before), 350.8 kB (after)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 352.7 (before), 352.7 (after)
+ !  . Memory usage      : 350.9 kB (before), 350.9 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         60                 -
- + New bound is 1
-                        0         60    1   F        -
  + New bound is 9
-                        2         59    1   F     1 != _int29
+                        2         59    1   F     1 != _int53
  + New bound is 10
- *            57       69  0.04s        1      (gap is 82.46%)
-              57    23393         19    1   F        -
- + New bound is 11 (gap is 80.70%)
-              57    23393         19    1   F        -
- + New bound is 12 (gap is 78.95%)
-              57    25376         12    7   F        -
- + New bound is 13 (gap is 77.19%)
-              57    30730          7    1   F        -
- + New bound is 14 (gap is 75.44%)
-              57    30730          7    1   F        -
- + New bound is 15 (gap is 73.68%)
-              57    30730          7    1   F        -
- + New bound is 16 (gap is 71.93%)
-              57    36161         34    4   F        -
- + New bound is 17 (gap is 70.18%)
-              57    36161         34    4   F        -
- + New bound is 18 (gap is 68.42%)
-              57    36161         34    4   F        -
- + New bound is 19 (gap is 66.67%)
-              57    34425         54    2   F     3 != _int57
- + New bound is 20 (gap is 64.91%)
-              57    34002         59    7   F    12 != _int48
- + New bound is 21 (gap is 63.16%)
-              57    34024         58    7   F     5 != _int56
- + New bound is 22 (gap is 61.40%)
-              57    40130          4    1   F     6 != _int56
- + New bound is 23 (gap is 59.65%)
-              57    42227         37    7   F    15 != _int48
- + New bound is 24 (gap is 57.89%)
-              57    44299         27    4   F    16 != _int56
- + New bound is 25 (gap is 56.14%)
-              57    43808          6    2   F     1 != _int4
- + New bound is 26 (gap is 54.39%)
- ! Time = 0.70s, Average fail depth = 34, Memory usage = 8.7 MB
- ! Current bound is 26 (gap is 54.39%)
+ *            59      667  0.02s        2      (gap is 83.05%)
+              59    26758         52    4   F     2 != _int54
+ + New bound is 11 (gap is 81.36%)
+              59    26762         52    4   F     3 != _int54
+ + New bound is 12 (gap is 79.66%)
+              59    24299         26    2   F     4 != _int24
+ + New bound is 13 (gap is 77.97%)
+              59    25401         34    1   F     5 != _int34
+ + New bound is 14 (gap is 76.27%)
+              59    26154         15    1   F        -
+ + New bound is 15 (gap is 74.58%)
+              59    26168         15    1   F     7 != _int34
+ + New bound is 16 (gap is 72.88%)
+              59    34668         26    4   F     7 != _int22
+ + New bound is 17 (gap is 71.19%)
+              59    32319         42    7   F     1 != _int24
+ + New bound is 18 (gap is 69.49%)
+              59    36557         53    2   F     2 != _int30
+ + New bound is 19 (gap is 67.80%)
+              59    35421         44    1   F     3 != _int22
+ + New bound is 20 (gap is 66.10%)
+              59    35467         44    1   F     4 != _int34
+ + New bound is 21 (gap is 64.41%)
+              59    43863         21    4   F     5 != _int34
+ + New bound is 22 (gap is 62.71%)
+              59    44027         58    4   F     6 != _int16
+ + New bound is 23 (gap is 61.02%)
+              59    44170         58    2   F     7 != _int22
+ + New bound is 24 (gap is 59.32%)
+              59     131k         15    4   F    16 != _int16
+ + New bound is 25 (gap is 57.63%)
+              59     167k         11    1   F     9 != _int22
+ + New bound is 26 (gap is 55.93%)
+              59    5552k         51    1   F     2 != _int16
+ + New bound is 27 (gap is 54.24%)
+ ! Time = 56.70s, Average fail depth = 11, Memory usage = 14.2 MB
+ ! Current bound is 27 (gap is 54.24%)
  !          Best Branches  Non-fixed    W       Branch decision
-              57    53042         57    2   F     1 != _int57
- + New bound is 27 (gap is 52.63%)
-              57    56715         46    4   F     3 != _int44
- + New bound is 28 (gap is 50.88%)
-              57    65268         56    4   F    28 != _int4
- + New bound is 29 (gap is 49.12%)
-              57    3186k         56    1   F     1 != _int10
- + New bound is 30 (gap is 47.37%)
-              57   11844k         27    1   F     4 != _int57
- + New bound is 31 (gap is 45.61%)
-              57   39418k         13    1   F        -
- + New bound is 32 (gap is 43.86%)
-              57   52379k         36    2   F     3 != _int57
- + New bound is 33 (gap is 42.11%)
-              57   52395k         38    1   F     3 != _int57
- + New bound is 34 (gap is 40.35%)
-              57   52590k         57    1   F    28 != _int56
- + New bound is 35 (gap is 38.60%)
-              57   59334k         55    4            -
- + New bound is 57 (gap is 0.00%)
+              59   20989k         15    1   F    21 != _int30
+ + New bound is 28 (gap is 52.54%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 1 solution found.
- ! Best objective         : 57 (optimal - effective tol. is 0)
- ! Best bound             : 57
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 59 (gap is 52.54%)
+ ! Best bound             : 28
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 474557554
- ! Number of fails        : 227886350
- ! Total memory usage     : 194.5 MB (194.3 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 1016.95s (1016.94s engine + 0.02s extraction)
- ! Search speed (br. / s) : 466652.5
+ ! Number of branches     : 1464955201
+ ! Number of fails        : 692502022
+ ! Total memory usage     : 405.0 MB (404.8 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1800.00s (1800.00s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 813864.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 57
-! Labeling: 1 1 9 17 33 9 57 9 33 17 9 1 9 9 9 9 41 17 1 25 17 17 49 9 33 17 17 9 1 1 1 9 17 1 9 9 1 1 9 17 1 17 1 1 25 9 9 1 9 33 9 25 1 1 17 17 57 25 9 
+! Best span = 59
+! Labeling: 40 29 41 31 32 19 34 17 54 20 9 7 15 37 33 13 10 47 6 1 46 49 2 39 26 25 4 27 3 38 59 42 21 58 43 36 57 8 11 50 5 45 56 22 53 14 12 24 16 55 48 30 28 23 18 52 35 51 44 
 ! -------------------------------------------------------- 

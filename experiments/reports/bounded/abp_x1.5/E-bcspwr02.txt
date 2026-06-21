@@ -1,36 +1,50 @@
 ! Solving for graph ../../../benchmarks/abp/E-bcspwr02.mtx.rnd
-! Target value is set to 32
+! Target value is set to 31
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 50 variables, 108 constraints, 1 phase
+ ! Minimization problem - 50 variables, 109 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 310.5 (before), 310.5 (after)
- !  . Memory usage      : 304.6 kB (before), 304.6 kB (after)
+ !  . Log search space  : 309.7 (before), 309.7 (after)
+ !  . Memory usage      : 304.7 kB (before), 304.7 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         50                 -
- + New bound is 1
-                        0         50    1   F        -
+ + New bound is 32
+                        2         49    1   F     1 != _int43
  + New bound is 33
-                        2         49    1   F     1 != _int19
- + New bound is 34
- *            65       49  0.02s        1      (gap is 47.69%)
-              65      357          1    1            -
- + New bound is 65 (gap is 0.00%)
+ *            74      308  0.02s        1      (gap is 55.41%)
+ *            73      420  0.02s        3      (gap is 54.79%)
+ *            72      698  0.02s        3      (gap is 54.17%)
+ *            71     1201  0.04s        5      (gap is 53.52%)
+ *            70     1774  0.04s        5      (gap is 52.86%)
+ *            69     1767  0.04s        6      (gap is 52.17%)
+ *            68     3286  0.07s        5      (gap is 51.47%)
+              68     5418         43    2   F    20 != _int6
+ + New bound is 52 (gap is 23.53%)
+              68     5474         43    2   F    29 != _int6
+ + New bound is 62 (gap is 8.82%)
+              68     6475         39    4   F    31 != _int26
+ + New bound is 63 (gap is 7.35%)
+              68     6899         39    4   F    33 != _int26
+ + New bound is 66 (gap is 2.94%)
+              68    10091         44    2   F    65 != _int25
+ + New bound is 67 (gap is 1.47%)
+              68     407k         40    2            -
+ + New bound is 68 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 1 solution found.
- ! Best objective         : 65 (optimal - effective tol. is 0)
- ! Best bound             : 65
+ ! Search completed, 7 solutions found.
+ ! Best objective         : 68 (optimal - effective tol. is 0)
+ ! Best bound             : 68
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 5637
- ! Number of fails        : 1873
- ! Total memory usage     : 5.8 MB (5.7 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.02s (0.02s engine + 0.00s extraction)
- ! Search speed (br. / s) : 281850.0
+ ! Number of branches     : 3262624
+ ! Number of fails        : 1593218
+ ! Total memory usage     : 10.8 MB (10.8 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 6.75s (6.75s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 484068.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 65
-! Labeling: 33 1 33 1 33 33 33 1 33 1 1 33 33 33 33 1 1 1 1 1 33 1 1 33 33 33 1 33 1 1 33 65 1 1 1 1 1 33 33 33 1 1 65 1 33 1 65 33 33 
+! Best span = 68
+! Labeling: 7 39 67 37 12 49 63 58 21 61 54 65 56 28 8 11 35 36 64 57 59 34 45 5 4 33 1 68 47 42 14 32 53 55 51 52 41 18 43 13 62 15 2 44 10 66 6 3 9 
 ! -------------------------------------------------------- 

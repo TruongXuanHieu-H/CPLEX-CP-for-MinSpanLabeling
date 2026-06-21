@@ -1,36 +1,45 @@
 ! Solving for graph ../../../benchmarks/abp/A-pores_1.mtx.rnd
-! Target value is set to 8
+! Target value is set to 7
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 31 variables, 133 constraints, 1 phase
+ ! Minimization problem - 31 variables, 134 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 162.7 (before), 162.7 (after)
+ !  . Log search space  : 162.4 (before), 162.4 (after)
  !  . Memory usage      : 304.5 kB (before), 304.5 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         31                 -
- + New bound is 1
-                        0         31    1            -
  + New bound is 8
-                        0         31    1   F        -
+                        2         30    1   F     1 != _int21
  + New bound is 9
- *            25       31  0.02s        1      (gap is 64.00%)
-              25      371          1    4            -
- + New bound is 25 (gap is 0.00%)
+ *            38       61  0.01s        1      (gap is 76.32%)
+ *            33      857  0.01s        2      (gap is 72.73%)
+ *            32     2135  0.03s        1      (gap is 71.88%)
+              32     3067         29    2   F     7 != _int24
+ + New bound is 22 (gap is 31.25%)
+ *            31    22163  0.24s        8      (gap is 29.03%)
+              31    24879          5    7   F     8 != _int24
+ + New bound is 23 (gap is 25.81%)
+              31    32779         23    1   F     1 != _int14
+ + New bound is 24 (gap is 22.58%)
+              31    4069k         24    1   F     9 != _int1
+ + New bound is 25 (gap is 19.35%)
+              31   28835k         22    1   F     8 != _int8
+ + New bound is 26 (gap is 16.13%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 1 solution found.
- ! Best objective         : 25 (optimal - effective tol. is 0)
- ! Best bound             : 25
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : 31 (gap is 16.13%)
+ ! Best bound             : 26
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 7120
- ! Number of fails        : 2824
- ! Total memory usage     : 5.5 MB (5.4 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.02s (0.02s engine + 0.00s extraction)
- ! Search speed (br. / s) : 356000.0
+ ! Number of branches     : 873031790
+ ! Number of fails        : 427877166
+ ! Total memory usage     : 436.0 MB (435.9 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 1800.00s (1800.00s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 485017.7
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 25
-! Labeling: 9 17 25 1 17 17 17 25 25 25 1 1 1 17 1 9 9 9 1 9 25 1 17 1 25 25 17 9 9 17 
+! Best span = 31
+! Labeling: 2 27 1 19 22 18 17 7 11 9 24 25 29 21 31 14 5 8 23 10 13 28 16 20 12 3 26 4 6 30 
 ! -------------------------------------------------------- 

@@ -1,42 +1,47 @@
 ! Solving for graph ../../../benchmarks/abp/L-bcspwr03.mtx.rnd
-! Target value is set to 49
+! Target value is set to 48
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 119 variables, 297 constraints, 1 phase
+ ! Minimization problem - 119 variables, 298 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 857.9 (before), 857.9 (after)
+ !  . Log search space  : 857.4 (before), 857.4 (after)
  !  . Memory usage      : 392.4 kB (before), 392.4 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        119                 -
- + New bound is 1
-                        0        119    1            -
+ + New bound is 49
+                        2        118    1   F     1 != _int117
  + New bound is 50
-                        2        118    1   F     1 != _int27
- + New bound is 51
- *           148      119  0.04s        1      (gap is 65.54%)
-             148     2125         36    1   F    50 != _int33
- + New bound is 100 (gap is 32.43%)
-             148     4597        118    7   F    26 != _int62
- + New bound is 125 (gap is 15.54%)
-             148    15537        112    7   F    42 != _int57
- + New bound is 126 (gap is 14.86%)
-             148    20875        117    4            -
- + New bound is 148 (gap is 0.00%)
+ *           148      517  0.05s        4      (gap is 66.22%)
+ *           147     1123  0.06s        5      (gap is 65.99%)
+ *           146     1842  0.07s        5      (gap is 65.75%)
+ *           145     5102  0.13s        4      (gap is 65.52%)
+             145     9064        119    4   F    49 != _int94
+ + New bound is 98 (gap is 32.41%)
+             145    12419         53    1   F        -
+ + New bound is 99 (gap is 31.72%)
+             145    12499         53    1   F    26 != _int94
+ + New bound is 123 (gap is 15.17%)
+             145    17553        117    2   F   134 != _int14
+ + New bound is 135 (gap is 6.90%)
+             145    32464        117    7   F    84 != _int81
+ + New bound is 136 (gap is 6.21%)
+             145    52623        118    4            -
+ + New bound is 145 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 1 solution found.
- ! Best objective         : 148 (optimal - effective tol. is 0)
- ! Best bound             : 148
+ ! Search completed, 4 solutions found.
+ ! Best objective         : 145 (optimal - effective tol. is 0)
+ ! Best bound             : 145
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 182230
- ! Number of fails        : 85291
- ! Total memory usage     : 12.2 MB (12.0 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.38s (0.38s engine + 0.00s extraction)
- ! Search speed (br. / s) : 492513.5
+ ! Number of branches     : 426560
+ ! Number of fails        : 202603
+ ! Total memory usage     : 17.1 MB (16.9 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 1.14s (1.14s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 377486.7
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 148
-! Labeling: 99 1 50 1 1 99 50 50 50 1 50 50 50 1 1 99 50 1 99 50 99 1 1 50 99 50 50 50 50 50 1 99 1 50 50 1 1 99 50 1 1 1 50 50 1 1 99 1 99 1 50 50 1 99 50 50 1 50 1 99 50 1 99 1 1 1 50 1 50 50 99 50 50 50 50 50 99 1 50 1 1 99 50 1 50 99 50 1 1 50 1 50 99 1 148 99 50 1 1 50 1 50 50 1 1 50 1 99 1 99 99 1 99 1 1 50 99 1 
+! Best span = 145
+! Labeling: 55 100 119 121 134 50 132 57 138 79 75 69 97 114 1 4 51 66 115 11 74 78 67 131 22 85 103 68 19 87 120 27 21 102 70 86 107 90 35 32 101 2 52 95 98 23 56 124 61 12 73 80 14 30 92 16 9 6 36 116 31 113 59 122 34 33 54 25 65 58 15 5 62 64 137 60 112 20 17 128 82 145 72 26 28 108 63 104 84 8 7 96 89 83 49 99 88 94 13 141 117 76 109 29 10 127 91 18 93 133 118 105 71 77 24 53 81 3 
 ! -------------------------------------------------------- 

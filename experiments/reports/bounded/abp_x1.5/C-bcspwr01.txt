@@ -1,36 +1,43 @@
 ! Solving for graph ../../../benchmarks/abp/C-bcspwr01.mtx.rnd
-! Target value is set to 26
+! Target value is set to 25
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 40 variables, 85 constraints, 1 phase
+ ! Minimization problem - 40 variables, 86 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
- !  . Log search space  : 235.3 (before), 235.3 (after)
+ !  . Log search space  : 234.5 (before), 234.5 (after)
  !  . Memory usage      : 303.7 kB (before), 303.7 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         40                 -
- + New bound is 1
-                        0         40    1            -
  + New bound is 26
-                        0         40    1   F        -
+                        2         39    1   F     1 != _int30
  + New bound is 27
- *            53       40  0.04s        1      (gap is 49.06%)
-              53      287          1    1            -
- + New bound is 53 (gap is 0.00%)
+ *            59       98  0.02s        1      (gap is 54.24%)
+ *            58      861  0.02s        3      (gap is 53.45%)
+ *            57      980  0.02s        5      (gap is 52.63%)
+              57     1973          1    2   F    17 != _int27
+ + New bound is 43 (gap is 24.56%)
+ *            56     1193  0.04s        3      (gap is 23.21%)
+ *            55     1295  0.04s        5      (gap is 21.82%)
+              55     2031         39    2   F     1 != _int15
+ + New bound is 52 (gap is 5.45%)
+ *            54     2102  0.04s        5      (gap is 3.70%)
+              54     5911         34    1            -
+ + New bound is 54 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 1 solution found.
- ! Best objective         : 53 (optimal - effective tol. is 0)
- ! Best bound             : 53
+ ! Search completed, 6 solutions found.
+ ! Best objective         : 54 (optimal - effective tol. is 0)
+ ! Best bound             : 54
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 5138
- ! Number of fails        : 1854
- ! Total memory usage     : 5.3 MB (5.2 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.04s (0.02s engine + 0.02s extraction)
- ! Search speed (br. / s) : 256900.0
+ ! Number of branches     : 59754
+ ! Number of fails        : 28574
+ ! Total memory usage     : 7.2 MB (7.2 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.09s (0.08s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 746925.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 53
-! Labeling: 27 1 1 1 27 1 1 1 27 1 27 27 27 1 27 1 1 1 53 27 1 27 27 27 1 27 27 53 27 1 1 27 53 1 53 27 1 1 1 
+! Best span = 54
+! Labeling: 28 29 47 33 14 3 32 34 54 43 38 41 11 36 9 52 31 51 26 17 35 8 5 22 6 7 2 27 39 53 30 1 10 37 12 4 42 40 13 
 ! -------------------------------------------------------- 
