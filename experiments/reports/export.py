@@ -6,7 +6,7 @@ ROOT_DIR = "./bounded"
 OUTPUT_FILE = "summary.xlsx"
 
 
-def extract(pattern, text, default=""):
+def extract(pattern, text, default="-"):
     m = re.search(pattern, text, re.MULTILINE)
     return m.group(1).strip() if m else default
 
@@ -29,6 +29,11 @@ def parse_log(filepath):
 
     worker_count = extract(
         r'! Using parallel search with (\d+) workers\.',
+        content
+    )
+
+    target_value = extract(
+        r'!\s*Target value is set to\s*(\d+)',
         content
     )
 
@@ -66,6 +71,7 @@ def parse_log(filepath):
         "Problem": problem,
         "Time limit (s)": time_limit,
         "Worker count": worker_count,
+        "Target value": target_value,
         "Best bound": best_bound,
         "Best objective": best_objective,
         "Memory consumed (MB)": memory_consumed,
@@ -111,6 +117,7 @@ def main():
                 "Problem",
                 "Time limit (s)",
                 "Worker count",
+                "Target value",
                 "Best bound",
                 "Best objective",
                 "Memory consumed (MB)",
