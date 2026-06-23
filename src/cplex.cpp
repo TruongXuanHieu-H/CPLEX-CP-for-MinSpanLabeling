@@ -58,19 +58,15 @@ int main(int argc, char *argv[])
 
         IloIntVarArray label(env, num_vertices, 1, UB);
 
-        model.add(IloAllDiff(env, label));
-
         IloIntVar span(env, LB, UB);
 
+        model.add(IloAllDiff(env, label));
+
         for (const auto &e : edges)
-        {
             model.add(IloAbs(label[e.u] - label[e.v]) >= target_value);
-        }
 
         for (int v = 0; v < num_vertices; v++)
-        {
             model.add(span >= label[v]);
-        }
 
         model.add(IloMinimize(env, span));
 
