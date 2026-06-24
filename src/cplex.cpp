@@ -6,11 +6,8 @@
 #include <vector>
 #include <cmath>
 
-struct Edge
-{
-    int u;
-    int v;
-};
+#include "edge.h"
+#include "instance_data.h"
 
 int main(int argc, char *argv[])
 {
@@ -20,20 +17,21 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    std::string graph_name = argv[1];
-    int target_value = std::stod(argv[2]);
-    int lower_bound = std::stoi(argv[3]);
-    int upper_bound = std::stoi(argv[4]);
-    int time_limit = std::stoi(argv[5]);
+    InstanceData data;
+    data.graph_name = argv[1];
+    data.target_value = std::stod(argv[2]);
+    data.lower_bound = std::stoi(argv[3]);
+    data.upper_bound = std::stoi(argv[4]);
+    data.time_limit = std::stoi(argv[5]);
 
-    std::ifstream fin(graph_name);
+    std::ifstream fin(data.graph_name);
     if (!fin)
     {
         std::cerr << "Cannot open file\n";
         return 1;
     }
-    std::cout << "! Solving for graph " << graph_name << "\n";
-    std::cout << "! Target value is set to " << target_value << "\n";
+    std::cout << "! Solving for graph " << data.graph_name << "\n";
+    std::cout << "! Target value is set to " << data.target_value << "\n";
     std::string name;
     std::getline(fin, name);
 
@@ -56,14 +54,14 @@ int main(int argc, char *argv[])
     {
         IloModel model(env);
 
-        IloIntVarArray label(env, num_vertices, 1, upper_bound);
+        IloIntVarArray label(env, num_vertices, 1, data.upper_bound);
 
-        IloIntVar span(env, lower_bound, upper_bound);
+        IloIntVar span(env, data.lower_bound, data.upper_bound);
 
         model.add(IloAllDiff(env, label));
 
         for (const auto &e : edges)
-            model.add(IloAbs(label[e.u] - label[e.v]) >= target_value);
+            model.add(IloAbs(label[e.u] - label[e.v]) >= data.target_value);
 
         for (int v = 0; v < num_vertices; v++)
             model.add(span >= label[v]);
@@ -75,7 +73,7 @@ int main(int argc, char *argv[])
 
         cp.setParameter(IloCP::LogVerbosity, IloCP::Terse);
         cp.setSearchPhases(phase);
-        cp.setParameter(IloCP::TimeLimit, time_limit);
+        cp.setParameter(IloCP::TimeLimit, data.time_limit);
 
         if (cp.solve())
         {
@@ -104,9 +102,9 @@ int main(int argc, char *argv[])
             for (const auto &e : edges)
             {
                 int diff = std::abs(solution[e.u] - solution[e.v]);
-                if (diff < target_value)
+                if (diff < data.target_value)
                 {
-                    std::cout << "! VERIFY FAILED: edge (" << e.u + 1 << ", " << e.v + 1 << ") has distance " << diff << " < " << target_value << "\n";
+                    std::cout << "! VERIFY FAILED: edge (" << e.u + 1 << ", " << e.v + 1 << ") has distance " << diff << " < " << data.target_value << "\n";
                     valid = false;
                 }
             }
