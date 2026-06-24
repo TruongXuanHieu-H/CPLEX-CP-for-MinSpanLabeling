@@ -1,6 +1,6 @@
 #include "has_hole_encoder.h"
 
-IloModel HasHoleEncoder::create_model(ConfigData &config_data, GraphData &graph_data, CPData &cp_data)
+IloModel HasHoleEncoder::encode_model(ConfigData &config_data, GraphData &graph_data, CPData &cp_data)
 {
     cp_data.model.add(IloAllDiff(cp_data.env, cp_data.label));
 

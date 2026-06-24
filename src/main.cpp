@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     CPData cp_data(config_data, graph_data);
 
     std::unique_ptr<Encoder> encoder = std::make_unique<HasHoleEncoder>();
-    IloModel model = encoder->create_model(config_data, graph_data, cp_data);
+    IloModel model = encoder->encode_model(config_data, graph_data, cp_data);
     IloCP cp(model);
     IloSearchPhase phase(cp_data.env, cp_data.label);
 

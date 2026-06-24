@@ -11,7 +11,7 @@ class Encoder
 public:
     virtual ~Encoder() = default;
 
-    virtual IloModel create_model(ConfigData &config_data, GraphData &graph_data, CPData &cp_data) = 0;
+    virtual IloModel encode_model(ConfigData &config_data, GraphData &graph_data, CPData &cp_data) = 0;
 };
 
 #endif
