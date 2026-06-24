@@ -3,14 +3,20 @@
 
 #include <iostream>
 
+enum class VerticesMode
+{
+    no_hole,
+    has_hole,
+};
+
 class ConfigData
 {
 public:
     ConfigData(int argc, char *argv[])
     {
-        if (argc != 6)
+        if (argc != 7)
         {
-            std::cerr << "Usage: " << argv[0] << " instance.txt <target_value_mul> <lower_bound> <upper_bound> <time_limit>\n";
+            std::cerr << "Usage: " << argv[0] << " instance.txt <target_value_mul> <lower_bound> <upper_bound> <time_limit> <vertices_mode>\n";
             exit(1);
         }
 
@@ -28,6 +34,23 @@ public:
 
         time_limit = std::stoi(argv[5]);
         std::cout << "! Time limit is set to " << time_limit << "\n";
+
+        std::string v_mode = argv[6];
+        if (v_mode == "no_hole")
+        {
+            vertices_mode = VerticesMode::no_hole;
+            std::cout << "! Vertices mode is set to No hole\n";
+        }
+        else if (v_mode == "has_hole")
+        {
+            vertices_mode = VerticesMode::has_hole;
+            std::cout << "! Vertices mode is set to Has hole\n";
+        }
+        else
+        {
+            std::cerr << "! Vertices mode " << v_mode << " is undefined\n";
+            exit(1);
+        }
     }
 
     std::string instance_dir;
@@ -35,6 +58,7 @@ public:
     int lower_bound;
     int upper_bound;
     int time_limit;
+    VerticesMode vertices_mode;
 };
 
 #endif

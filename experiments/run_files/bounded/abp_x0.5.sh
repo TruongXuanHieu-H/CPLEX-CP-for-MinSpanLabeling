@@ -8,27 +8,27 @@ target_value_mul="0.5"
 
 mkdir -p "$report_dir"
 
-$build_dir/cplex $dataset_dir/A-pores_1.mtx.rnd     $target_value_mul   4   30  $time_limit     > $report_dir/A-pores_1.txt
-$build_dir/cplex $dataset_dir/B-ibm32.mtx.rnd       $target_value_mul   6   32  $time_limit     > $report_dir/B-ibm32.txt
-$build_dir/cplex $dataset_dir/C-bcspwr01.mtx.rnd    $target_value_mul   10  39  $time_limit     > $report_dir/C-bcspwr01.txt
-$build_dir/cplex $dataset_dir/D-bcsstk01.mtx.rnd    $target_value_mul   6   48  $time_limit     > $report_dir/D-bcsstk01.txt
-$build_dir/cplex $dataset_dir/E-bcspwr02.mtx.rnd    $target_value_mul   12  49  $time_limit     > $report_dir/E-bcspwr02.txt
-$build_dir/cplex $dataset_dir/F-curtis54.mtx.rnd    $target_value_mul   8   54  $time_limit     > $report_dir/F-curtis54.txt
-$build_dir/cplex $dataset_dir/G-will57.mtx.rnd      $target_value_mul   8   57  $time_limit     > $report_dir/G-will57.txt
-$build_dir/cplex $dataset_dir/H-impcol_b.mtx.rnd    $target_value_mul   5   59  $time_limit     > $report_dir/H-impcol_b.txt
-$build_dir/cplex $dataset_dir/I-ash85.mtx.rnd       $target_value_mul   13  85  $time_limit     > $report_dir/I-ash85.txt
-$build_dir/cplex $dataset_dir/J-nos4.mtx.rnd        $target_value_mul   19  100 $time_limit     > $report_dir/J-nos4.txt
-$build_dir/cplex $dataset_dir/K-dwt__234.mtx.rnd    $target_value_mul   27  117 $time_limit     > $report_dir/K-dwt__234.txt
-$build_dir/cplex $dataset_dir/L-bcspwr03.mtx.rnd    $target_value_mul   21  118 $time_limit     > $report_dir/L-bcspwr03.txt
-$build_dir/cplex $dataset_dir/M-bcsstk06.mtx.rnd    $target_value_mul   19  420 $time_limit     > $report_dir/M-bcsstk06.txt
-$build_dir/cplex $dataset_dir/N-bcsstk07.mtx.rnd    $target_value_mul   19  420 $time_limit     > $report_dir/N-bcsstk07.txt
-$build_dir/cplex $dataset_dir/O-impcol_d.mtx.rnd    $target_value_mul   62  425 $time_limit     > $report_dir/O-impcol_d.txt
-$build_dir/cplex $dataset_dir/P-can__445.mtx.rnd    $target_value_mul   41  445 $time_limit     > $report_dir/P-can__445.txt
-$build_dir/cplex $dataset_dir/Q-494_bus.mtx.rnd     $target_value_mul   111 494 $time_limit     > $report_dir/Q-494_bus.txt
-$build_dir/cplex $dataset_dir/R-dwt__503.mtx.rnd    $target_value_mul   33  503 $time_limit     > $report_dir/R-dwt__503.txt
-$build_dir/cplex $dataset_dir/S-sherman4.mtx.rnd    $target_value_mul   129 546 $time_limit     > $report_dir/S-sherman4.txt
-$build_dir/cplex $dataset_dir/T-dwt__592.mtx.rnd    $target_value_mul   53  592 $time_limit     > $report_dir/T-dwt__592.txt
-$build_dir/cplex $dataset_dir/U-662_bus.mtx.rnd     $target_value_mul   111 662 $time_limit     > $report_dir/U-662_bus.txt
-$build_dir/cplex $dataset_dir/V-nos6.mtx.rnd        $target_value_mul   164 675 $time_limit     > $report_dir/V-nos6.txt
-$build_dir/cplex $dataset_dir/W-685_bus.mtx.rnd     $target_value_mul   69  685 $time_limit     > $report_dir/W-685_bus.txt
-$build_dir/cplex $dataset_dir/X-can__715.mtx.rnd    $target_value_mul   58  715 $time_limit     > $report_dir/X-can__715.txt
+$build_dir/cplex $dataset_dir/A-pores_1.mtx.rnd    3   4   30  $time_limit  no_hole    > $report_dir/A-pores_1.txt
+$build_dir/cplex $dataset_dir/B-ibm32.mtx.rnd      4   5   32  $time_limit  no_hole    > $report_dir/B-ibm32.txt
+$build_dir/cplex $dataset_dir/C-bcspwr01.mtx.rnd   8   9   39  $time_limit  no_hole    > $report_dir/C-bcspwr01.txt
+$build_dir/cplex $dataset_dir/D-bcsstk01.mtx.rnd   4   5   48  $time_limit  no_hole    > $report_dir/D-bcsstk01.txt
+$build_dir/cplex $dataset_dir/E-bcspwr02.mtx.rnd   10  11  49  $time_limit  no_hole    > $report_dir/E-bcspwr02.txt
+$build_dir/cplex $dataset_dir/F-curtis54.mtx.rnd   6   7   54  $time_limit  no_hole    > $report_dir/F-curtis54.txt
+$build_dir/cplex $dataset_dir/G-will57.mtx.rnd     6   7   57  $time_limit  no_hole    > $report_dir/G-will57.txt
+$build_dir/cplex $dataset_dir/H-impcol_b.mtx.rnd   4   5   59  $time_limit  no_hole    > $report_dir/H-impcol_b.txt
+$build_dir/cplex $dataset_dir/I-ash85.mtx.rnd      11  12  85  $time_limit  no_hole    > $report_dir/I-ash85.txt
+$build_dir/cplex $dataset_dir/J-nos4.mtx.rnd       17  18  100 $time_limit  no_hole    > $report_dir/J-nos4.txt
+$build_dir/cplex $dataset_dir/K-dwt__234.mtx.rnd   25  26  117 $time_limit  no_hole    > $report_dir/K-dwt__234.txt
+$build_dir/cplex $dataset_dir/L-bcspwr03.mtx.rnd   19  20  118 $time_limit  no_hole    > $report_dir/L-bcspwr03.txt
+$build_dir/cplex $dataset_dir/M-bcsstk06.mtx.rnd   17  18  420 $time_limit  no_hole    > $report_dir/M-bcsstk06.txt
+$build_dir/cplex $dataset_dir/N-bcsstk07.mtx.rnd   17  18  420 $time_limit  no_hole    > $report_dir/N-bcsstk07.txt
+$build_dir/cplex $dataset_dir/O-impcol_d.mtx.rnd   60  61  425 $time_limit  no_hole    > $report_dir/O-impcol_d.txt
+$build_dir/cplex $dataset_dir/P-can__445.mtx.rnd   45  46  445 $time_limit  no_hole    > $report_dir/P-can__445.txt
+$build_dir/cplex $dataset_dir/Q-494_bus.mtx.rnd    113 114 494 $time_limit  no_hole    > $report_dir/Q-494_bus.txt
+$build_dir/cplex $dataset_dir/R-dwt__503.mtx.rnd   31  32  503 $time_limit  no_hole    > $report_dir/R-dwt__503.txt
+$build_dir/cplex $dataset_dir/S-sherman4.mtx.rnd   130 131 546 $time_limit  no_hole    > $report_dir/S-sherman4.txt
+$build_dir/cplex $dataset_dir/T-dwt__592.mtx.rnd   56  57  592 $time_limit  no_hole    > $report_dir/T-dwt__592.txt
+$build_dir/cplex $dataset_dir/U-662_bus.mtx.rnd    110 111 662 $time_limit  no_hole    > $report_dir/U-662_bus.txt
+$build_dir/cplex $dataset_dir/V-nos6.mtx.rnd       164 165 675 $time_limit  no_hole    > $report_dir/V-nos6.txt
+$build_dir/cplex $dataset_dir/W-685_bus.mtx.rnd    68  69  685 $time_limit  no_hole    > $report_dir/W-685_bus.txt
+$build_dir/cplex $dataset_dir/X-can__715.mtx.rnd   58  59  715 $time_limit  no_hole    > $report_dir/X-can__715.txt

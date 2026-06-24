@@ -13,8 +13,38 @@
 #include "data/graph_data.h"
 #include "encoder/encoder.h"
 #include "encoder/has_hole_encoder.h"
+#include "encoder/no_hole_encoder.h"
 #include "verifier/verifier.h"
 #include "verifier/has_hole_verifier.h"
+#include "verifier/no_hole_verifier.h"
+
+std::unique_ptr<Encoder> get_encoder(VerticesMode vertices_mode)
+{
+    switch (vertices_mode)
+    {
+    case VerticesMode::no_hole:
+        return std::make_unique<NoHoleEncoder>();
+    case VerticesMode::has_hole:
+        return std::make_unique<HasHoleEncoder>();
+
+    default:
+        exit(1);
+    }
+}
+
+std::unique_ptr<Verifier> get_verifier(VerticesMode vertices_mode)
+{
+    switch (vertices_mode)
+    {
+    case VerticesMode::no_hole:
+        return std::make_unique<NoHoleVerifier>();
+    case VerticesMode::has_hole:
+        return std::make_unique<HasHoleVerifier>();
+
+    default:
+        exit(1);
+    }
+}
 
 int main(int argc, char *argv[])
 {
@@ -22,7 +52,7 @@ int main(int argc, char *argv[])
     GraphData graph_data(config_data);
     CPData cp_data(config_data, graph_data);
 
-    std::unique_ptr<Encoder> encoder = std::make_unique<HasHoleEncoder>();
+    std::unique_ptr<Encoder> encoder = get_encoder(config_data.vertices_mode);
     IloModel model = encoder->encode_model(config_data, graph_data, cp_data);
     IloCP cp(model);
     IloSearchPhase phase(cp_data.env, cp_data.label);
@@ -40,7 +70,7 @@ int main(int argc, char *argv[])
         }
         int solution_span = static_cast<int>(cp.getValue(cp_data.span));
 
-        std::unique_ptr<Verifier> verifier = std::make_unique<HasHoleVerifier>();
+        std::unique_ptr<Verifier> verifier = get_verifier(config_data.vertices_mode);
 
         if (verifier->verify(config_data, graph_data, solution, solution_span))
         {
