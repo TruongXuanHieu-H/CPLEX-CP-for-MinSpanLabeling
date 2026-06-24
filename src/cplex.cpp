@@ -22,8 +22,8 @@ int main(int argc, char *argv[])
 
     std::string graph_name = argv[1];
     int target_value = std::stod(argv[2]);
-    int LB = std::stoi(argv[3]);
-    int UB = std::stoi(argv[4]);
+    int lower_bound = std::stoi(argv[3]);
+    int upper_bound = std::stoi(argv[4]);
     int time_limit = std::stoi(argv[5]);
 
     std::ifstream fin(graph_name);
@@ -56,9 +56,9 @@ int main(int argc, char *argv[])
     {
         IloModel model(env);
 
-        IloIntVarArray label(env, num_vertices, 1, UB);
+        IloIntVarArray label(env, num_vertices, 1, upper_bound);
 
-        IloIntVar span(env, LB, UB);
+        IloIntVar span(env, lower_bound, upper_bound);
 
         model.add(IloAllDiff(env, label));
 
