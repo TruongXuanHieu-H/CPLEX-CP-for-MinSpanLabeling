@@ -16,7 +16,8 @@ CXXFLAGS= \
     -DIL_STD \
     -I$(CPLEXDIR)/cplex/include \
     -I$(CONCERTDIR)/include \
-    -I$(CPDIR)/include
+    -I$(CPDIR)/include \
+    -Isrc
 
 LDFLAGS= \
     -L$(CPLEXDIR)/cplex/lib/$(SYSTEM)/$(LIBFORMAT) \
@@ -24,7 +25,7 @@ LDFLAGS= \
     -L$(CPDIR)/lib/$(SYSTEM)/$(LIBFORMAT)
 
 LIBS= \
-	-lcp \
+    -lcp \
     -lilocplex \
     -lconcert \
     -lcplex \
@@ -32,15 +33,20 @@ LIBS= \
     -lpthread \
     -ldl
 
-TARGET=build/cplex
+TARGET := build/cplex
 
-SRC=$(wildcard src/*.cpp)
+SRC := $(shell find src -type f -name '*.cpp')
+OBJ := $(patsubst src/%.cpp,build/obj/%.o,$(SRC))
 
 all: $(TARGET)
 
-$(TARGET): $(SRC)
-	mkdir -p build
-	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS) $(LIBS)
+$(TARGET): $(OBJ)
+	mkdir -p $(dir $@)
+	$(CXX) $(OBJ) -o $@ $(LDFLAGS) $(LIBS)
+
+build/obj/%.o: src/%.cpp
+	mkdir -p $(dir $@)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	rm -rf build
