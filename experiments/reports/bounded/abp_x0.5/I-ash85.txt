@@ -1,0 +1,70 @@
+! Solving for graph ../../../benchmarks/abp/I-ash85.mtx.rnd
+! Target value is set to 11
+! Lower bound is set to 12
+! Upper bound is set to 85
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 86 variables, 474 constraints, 1 phase
+ ! Presolve      : 85 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 551.0 (before), 551.0 (after)
+ !  . Memory usage      : 493.5 kB (before), 493.5 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         86                 -
+ + New bound is 12
+                        0         86    1   F        -
+ + New bound is 22
+                       22         85    1   F    11 != _int55
+ + New bound is 23
+ *            84      520  0.06s        1      (gap is 72.62%)
+ *            76      596  0.06s        1      (gap is 69.74%)
+ *            70     1948  0.07s        1      (gap is 67.14%)
+ *            67     2837  0.09s        1      (gap is 65.67%)
+ *            66     2960  0.09s        1      (gap is 65.15%)
+ *            65     2486  0.09s        6      (gap is 64.62%)
+ *            64     2583  0.09s        6      (gap is 64.06%)
+ *            63     2982  0.11s        6      (gap is 63.49%)
+ *            59     3597  0.11s        8      (gap is 61.02%)
+ *            57     4590  0.13s        1      (gap is 59.65%)
+ *            56     5380  0.16s        3      (gap is 58.93%)
+ *            48     5084  0.16s        7      (gap is 52.08%)
+ *            47     6113  0.17s        3      (gap is 51.06%)
+ *            46     8773  0.23s        8      (gap is 50.00%)
+ *            45    10120  0.25s        6      (gap is 48.89%)
+ *            44    16163  0.36s        1      (gap is 47.73%)
+ *            43    14445  0.36s        4      (gap is 46.51%)
+ ! Time = 0.36s, Average fail depth = 60, Memory usage = 12.2 MB
+ ! Current bound is 23 (gap is 46.51%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *            42    14984  0.36s        4      (gap is 45.24%)
+ *            41    20792  0.46s        1      (gap is 43.90%)
+              41    26428         84    7   F    21 != _int63
+ + New bound is 33 (gap is 19.51%)
+              41    41837         83    4   F    11 != _int67
+ + New bound is 34 (gap is 17.07%)
+ *            40    46730  0.96s        1      (gap is 15.00%)
+ *            39    50281  1.05s        7      (gap is 12.82%)
+ *            38     185k  3.50s        1      (gap is 10.53%)
+ *            37     438k  8.16s        1      (gap is 8.11%)
+ *            36    1061k  18.97s       2      (gap is 5.56%)
+ *            35    7359k  138.38s      4      (gap is 2.86%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 25 solutions found.
+ ! Best objective         : 35 (gap is 2.86%)
+ ! Best bound             : 34
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 738517839
+ ! Number of fails        : 340031081
+ ! Total memory usage     : 270.8 MB (270.4 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 1800.00s (1799.99s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 410290.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 35
+! Labeling: 1 12 35 28 35 16 34 13 23 29 2 33 6 34 2 1 10 11 35 35 35 12 31 23 25 19 23 22 24 7 12 13 13 13 24 32 5 24 23 20 9 26 12 8 35 2 35 13 17 1 34 1 2 20 35 24 24 35 3 12 12 12 1 27 23 24 35 1 1 1 35 35 21 1 14 15 30 23 2 1 1 18 1 4 12 
+! -------------------------------------------------------- 

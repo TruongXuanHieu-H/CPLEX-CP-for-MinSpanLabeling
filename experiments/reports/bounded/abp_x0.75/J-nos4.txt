@@ -1,0 +1,70 @@
+! Solving for graph ../../../benchmarks/abp/J-nos4.mtx.rnd
+! Target value is set to 26
+! Lower bound is set to 27
+! Upper bound is set to 100
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 101 variables, 547 constraints, 1 phase
+ ! Presolve      : 100 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 670.6 (before), 670.6 (after)
+ !  . Memory usage      : 496.2 kB (before), 496.2 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        101                 -
+ + New bound is 27
+                        0        101    1   F        -
+ + New bound is 51
+                        0        101    1   F        -
+ + New bound is 52
+ *            97      488  0.06s        2      (gap is 46.39%)
+ *            96     3268  0.11s        3      (gap is 45.83%)
+ *            95     5590  0.17s        3      (gap is 45.26%)
+ *            93     9092  0.25s        5      (gap is 44.09%)
+ *            92    12052  0.29s        1      (gap is 43.48%)
+ *            90    12388  0.33s        6      (gap is 42.22%)
+ *            89    13401  0.38s        4      (gap is 41.57%)
+ *            88    13475  0.38s        4      (gap is 40.91%)
+ *            87    13495  0.38s        4      (gap is 40.23%)
+ *            86    16774  0.42s        1      (gap is 39.53%)
+ *            85    17763  0.47s        1      (gap is 38.82%)
+ *            84    17803  0.47s        1      (gap is 38.10%)
+ *            83    19787  0.54s        4      (gap is 37.35%)
+ *            82    19874  0.54s        4      (gap is 36.59%)
+ *            81    21016  0.56s        4      (gap is 35.80%)
+ *            80    24270  0.61s        1      (gap is 35.00%)
+ *            79    24628  0.63s        1      (gap is 34.18%)
+ ! Time = 0.63s, Average fail depth = 46, Memory usage = 14.1 MB
+ ! Current bound is 52 (gap is 34.18%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *            78    26148  0.67s        1      (gap is 33.33%)
+ *            77    28345  0.74s        4      (gap is 32.47%)
+ *            76    28402  0.74s        4      (gap is 31.58%)
+ *            75    30853  0.81s        4      (gap is 30.67%)
+ *            74    39250  1.06s        2      (gap is 29.73%)
+ *            73    51752  1.33s        1      (gap is 28.77%)
+              73    69320         42    7   F    26 != _int44
+ + New bound is 53 (gap is 27.40%)
+ *            72     142k  3.90s        1      (gap is 26.39%)
+ *            71     144k  3.99s        1      (gap is 25.35%)
+ *            70     210k  5.45s        2      (gap is 24.29%)
+ *            69     211k  5.83s        4      (gap is 23.19%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 27 solutions found.
+ ! Best objective         : 69 (gap is 23.19%)
+ ! Best bound             : 53
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 464605644
+ ! Number of fails        : 210521179
+ ! Total memory usage     : 147.0 MB (146.6 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 1800.01s (1800.01s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 258112.8
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 69
+! Labeling: 60 62 48 65 65 69 31 58 18 14 69 1 45 24 6 51 46 9 5 34 50 35 27 41 33 56 2 15 1 1 32 68 3 69 37 29 7 53 68 36 42 28 44 66 2 28 1 43 10 63 25 69 47 27 35 39 11 69 43 69 38 16 57 54 59 1 23 26 17 19 37 12 43 40 4 13 27 1 2 67 8 38 63 55 20 69 1 22 64 61 28 30 1 64 21 49 68 2 52 1 
+! -------------------------------------------------------- 

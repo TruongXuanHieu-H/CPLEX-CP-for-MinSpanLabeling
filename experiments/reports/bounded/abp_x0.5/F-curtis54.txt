@@ -1,0 +1,55 @@
+! Solving for graph ../../../benchmarks/abp/F-curtis54.mtx.rnd
+! Target value is set to 6
+! Lower bound is set to 7
+! Upper bound is set to 54
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 55 variables, 286 constraints, 1 phase
+ ! Presolve      : 54 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 316.3 (before), 316.3 (after)
+ !  . Memory usage      : 390.9 kB (before), 390.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         55                 -
+ + New bound is 7
+                        0         55    1            -
+ + New bound is 12
+                       12         54    1   F     6 != _int24
+ + New bound is 13
+ *            50      323  0.05s        1      (gap is 74.00%)
+ *            49      375  0.05s        1      (gap is 73.47%)
+ *            47      969  0.05s        2      (gap is 72.34%)
+ *            46      247  0.05s        3      (gap is 71.74%)
+ *            45      315  0.05s        3      (gap is 71.11%)
+ *            44      387  0.05s        3      (gap is 70.45%)
+ *            41      744  0.05s        5      (gap is 68.29%)
+ *            40      854  0.05s        5      (gap is 67.50%)
+ *            39      921  0.05s        5      (gap is 66.67%)
+ *            26     1159  0.06s        1      (gap is 50.00%)
+ *            25     1623  0.06s        4      (gap is 48.00%)
+              25     8505         39    2   F        -
+ + New bound is 20 (gap is 20.00%)
+              25     9396         50    2   F    10 != _int3
+ + New bound is 24 (gap is 4.00%)
+              25    12028         52    2            -
+ + New bound is 25 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 11 solutions found.
+ ! Best objective         : 25 (optimal - effective tol. is 0)
+ ! Best bound             : 25
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 100175
+ ! Number of fails        : 46352
+ ! Total memory usage     : 9.1 MB (8.9 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.17s (0.15s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 667833.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 25
+! Labeling: 19 1 1 21 13 13 7 6 1 4 7 1 19 12 7 2 7 7 23 1 1 13 18 9 25 1 19 25 7 24 1 7 22 11 14 16 1 8 13 17 15 5 3 13 1 13 25 10 13 1 19 1 20 1 
+! -------------------------------------------------------- 

@@ -1,0 +1,48 @@
+! Solving for graph ../../../benchmarks/abp/F-curtis54.mtx.rnd
+! Target value is set to 9
+! Lower bound is set to 10
+! Upper bound is set to 54
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 55 variables, 286 constraints, 1 phase
+ ! Presolve      : 54 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 316.3 (before), 316.3 (after)
+ !  . Memory usage      : 390.9 kB (before), 390.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         55                 -
+ + New bound is 10
+                        0         55    1            -
+ + New bound is 18
+                       18         54    1   F     9 != _int24
+ + New bound is 19
+ *            38      274  0.04s        1      (gap is 50.00%)
+ *            37     6361  0.11s        5      (gap is 48.65%)
+              37     9277          2    4   F    27 != _int23
+ + New bound is 29 (gap is 21.62%)
+              37    13936         52    2   F    33 != _int28
+ + New bound is 34 (gap is 8.11%)
+              37    22288         50    7   F    33 != _int28
+ + New bound is 35 (gap is 5.41%)
+              37    22468         50    7            -
+ + New bound is 37 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 37 (optimal - effective tol. is 0)
+ ! Best bound             : 37
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 227643
+ ! Number of fails        : 108651
+ ! Total memory usage     : 9.7 MB (9.5 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.36s (0.34s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 669538.2
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 37
+! Labeling: 1 32 19 18 36 1 12 27 24 9 11 1 28 17 10 16 19 10 1 22 1 21 7 10 37 3 31 6 13 33 4 37 8 29 15 25 1 35 10 1 20 14 1 10 19 37 28 34 37 23 26 2 30 5 
+! -------------------------------------------------------- 

@@ -1,0 +1,49 @@
+! Solving for graph ../../../benchmarks/abp/C-bcspwr01.mtx.rnd
+! Target value is set to 12
+! Lower bound is set to 13
+! Upper bound is set to 39
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 40 variables, 163 constraints, 1 phase
+ ! Presolve      : 39 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 210.9 (before), 210.9 (after)
+ !  . Memory usage      : 346.7 kB (before), 346.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         40                 -
+ + New bound is 13
+                        0         40    1   F        -
+ + New bound is 24
+                       24         39    1   F    12 != _int20
+ + New bound is 25
+ *            38      365  0.04s        2      (gap is 34.21%)
+ *            37       48  0.04s        3      (gap is 32.43%)
+ *            36      372  0.04s        3      (gap is 30.56%)
+ *            33      708  0.04s        3      (gap is 24.24%)
+ *            32      918  0.04s        3      (gap is 21.88%)
+ *            31     1337  0.04s        3      (gap is 19.35%)
+ *            30     1852  0.04s        5      (gap is 16.67%)
+ *            29     2210  0.06s        5      (gap is 13.79%)
+ *            27     3402  0.06s        7      (gap is 7.41%)
+ *            26     3782  0.08s        7      (gap is 3.85%)
+ *            25     6378  0.09s        3      (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 11 solutions found.
+ ! Best objective         : 25 (optimal - effective tol. is 0)
+ ! Best bound             : 25
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 58653
+ ! Number of fails        : 27189
+ ! Total memory usage     : 7.5 MB (7.4 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.11s (0.11s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 586530.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 25
+! Labeling: 4 25 1 1 5 18 7 9 2 20 10 6 8 1 21 13 16 25 13 13 3 21 25 17 14 19 25 1 11 22 1 1 15 1 24 13 1 12 23 
+! -------------------------------------------------------- 

@@ -1,0 +1,92 @@
+! Solving for graph ../../../benchmarks/abp/I-ash85.mtx.rnd
+! Target value is set to 17
+! Lower bound is set to 18
+! Upper bound is set to 85
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 86 variables, 474 constraints, 1 phase
+ ! Presolve      : 85 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 550.9 (before), 550.9 (after)
+ !  . Memory usage      : 501.7 kB (before), 501.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         86                 -
+ + New bound is 18
+                        0         86    1            -
+ + New bound is 34
+                       34         85    1   F    17 != _int55
+ + New bound is 35
+ *            84      520  0.06s        2      (gap is 58.33%)
+ *            79     2719  0.09s        1      (gap is 55.70%)
+ *            78     4005  0.13s        1      (gap is 55.13%)
+ *            76     6832  0.17s        4      (gap is 53.95%)
+ *            75    10092  0.25s        3      (gap is 53.33%)
+ *            74    14276  0.34s        4      (gap is 52.70%)
+ *            73    16453  0.41s        1      (gap is 52.05%)
+              72    21000         86    3            -
+ *            72    21000  0.49s        3      (gap is 51.39%)
+ *            71    28705  0.67s        1      (gap is 50.70%)
+ *            70    29704  0.67s        4      (gap is 50.00%)
+ *            69    32751  0.74s        4      (gap is 49.28%)
+ *            68    34462  0.79s        1      (gap is 48.53%)
+ *            67    35448  0.83s        2      (gap is 47.76%)
+ *            66    35678  0.83s        2      (gap is 46.97%)
+              66    67014         84    1   F     1 != _int18
+ + New bound is 36 (gap is 45.45%)
+              66    67487         83    1   F     2 != _int57
+ + New bound is 37 (gap is 43.94%)
+ ! Time = 1.63s, Average fail depth = 38, Memory usage = 11.4 MB
+ ! Current bound is 37 (gap is 43.94%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              66    71394         49    4   F     3 != _int16
+ + New bound is 38 (gap is 42.42%)
+              66    78054         84    7   F     4 != _int17
+ + New bound is 39 (gap is 40.91%)
+              66    78166         84    7   F     4 != _int17
+ + New bound is 40 (gap is 39.39%)
+              66    85023         84    2   F     6 != _int80
+ + New bound is 41 (gap is 37.88%)
+ *            65    90637  2.18s        4      (gap is 36.92%)
+ *            64     161k  3.97s        1      (gap is 35.94%)
+              64     176k         22    4   F     7 != _int80
+ + New bound is 42 (gap is 34.38%)
+              64     413k         10    1   F     5 != _int68
+ + New bound is 43 (gap is 32.81%)
+              64     507k         67    2   F     8 != _int80
+ + New bound is 44 (gap is 31.25%)
+ *            63     879k  23.27s       4      (gap is 30.16%)
+ *            62    1104k  28.09s       7      (gap is 29.03%)
+ *            61    1699k  44.52s       7      (gap is 27.87%)
+              61    2381k         18    1   F    27 != _int80
+ + New bound is 45 (gap is 26.23%)
+              61    2382k         84    1   F    28 != _int80
+ + New bound is 46 (gap is 24.59%)
+              61    5160k         23    1   F    12 != _int49
+ + New bound is 47 (gap is 22.95%)
+              61   11325k         26    1   F        -
+ + New bound is 48 (gap is 21.31%)
+              61   11325k         26    1   F        -
+ + New bound is 49 (gap is 19.67%)
+              61   11349k         65    1   F    13 != _int80
+ + New bound is 52 (gap is 14.75%)
+ *            60   16944k  451.79s      4      (gap is 13.33%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 20 solutions found.
+ ! Best objective         : 60 (gap is 13.33%)
+ ! Best bound             : 52
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 532021849
+ ! Number of fails        : 244383387
+ ! Total memory usage     : 180.7 MB (180.4 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 1800.00s (1799.99s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 295569.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 60
+! Labeling: 7 43 35 18 60 50 26 1 5 45 18 30 29 60 3 43 23 34 26 54 56 1 35 18 24 8 60 17 14 13 43 23 39 41 11 46 12 58 6 10 42 47 37 28 59 4 40 18 1 33 25 6 19 53 51 3 49 21 1 52 44 60 20 32 57 16 38 1 36 35 31 59 60 1 48 55 26 60 1 9 22 2 27 15 60 
+! -------------------------------------------------------- 
