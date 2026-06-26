@@ -3,7 +3,7 @@ import re
 import pandas as pd
 
 ROOT_DIR = "./bounded"
-OUTPUT_FILE = "summary.xlsx"
+OUTPUT_FILE = "cplex-cp_summary.xlsx"
 
 
 def extract(pattern, text, default="-"):
