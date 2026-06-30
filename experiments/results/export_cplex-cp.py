@@ -1,9 +1,7 @@
 import os
 import re
+import argparse
 import pandas as pd
-
-ROOT_DIR = "./bounded"
-OUTPUT_FILE = "cplex-cp_summary.xlsx"
 
 
 def extract(pattern, text, default="-"):
@@ -59,14 +57,14 @@ def parse_log(filepath):
 
     optimal_found = ""
 
-    if best_objective and best_bound:
+    if best_objective != "-" and best_bound != "-":
         try:
             if int(best_objective) == int(best_bound):
                 optimal_found = "x"
         except ValueError:
             pass
 
-    row = {
+    return {
         "File": os.path.basename(filepath),
         "Problem": problem,
         "Time limit (s)": time_limit,
@@ -79,17 +77,15 @@ def parse_log(filepath):
         "Optimal found": optimal_found
     }
 
-    return row
 
-
-def main():
+def main(root_dir, output_file):
     with pd.ExcelWriter(
-        OUTPUT_FILE,
+        output_file,
         engine="openpyxl"
     ) as writer:
 
-        for folder in sorted(os.listdir(ROOT_DIR)):
-            folder_path = os.path.join(ROOT_DIR, folder)
+        for folder in sorted(os.listdir(root_dir)):
+            folder_path = os.path.join(root_dir, folder)
 
             if not os.path.isdir(folder_path):
                 continue
@@ -135,8 +131,24 @@ def main():
                 index=False
             )
 
-    print(f"Saved to {OUTPUT_FILE}")
+    print(f"Saved to {output_file}")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(
+        description="Parse CPLEX-CP logs into an Excel summary."
+    )
+
+    parser.add_argument(
+        "root_dir",
+        help="Root directory containing experiment folders"
+    )
+
+    parser.add_argument(
+        "output_file",
+        help="Output Excel file"
+    )
+
+    args = parser.parse_args()
+
+    main(args.root_dir, args.output_file)
