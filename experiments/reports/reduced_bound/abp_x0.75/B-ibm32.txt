@@ -1,0 +1,52 @@
+! Solving for graph ../../../benchmarks/abp/B-ibm32.mtx.rnd
+! Target value is set to 6
+! Lower bound is set to 7
+! Upper bound is set to 24
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 33 variables, 170 constraints, 1 phase
+ ! Presolve      : 24 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 150.9 (before), 150.9 (after)
+ !  . Memory usage      : 346.3 kB (before), 346.3 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         33                 -
+ + New bound is 7
+                        0         33    1   F        -
+ + New bound is 11
+                        0         33    1   F        -
+ + New bound is 12
+ *            24      998  0.04s        1      (gap is 50.00%)
+ *            23      675  0.04s        3      (gap is 47.83%)
+ *            22     1609  0.06s        8      (gap is 45.45%)
+ *            21     1920  0.06s        8      (gap is 42.86%)
+ *            20     2623  0.08s        6      (gap is 40.00%)
+ *            19     3283  0.08s        5      (gap is 36.84%)
+              19     4311         16    2   F        -
+ + New bound is 16 (gap is 15.79%)
+              19     3706         27    7   F     4 != _int2
+ + New bound is 17 (gap is 10.53%)
+              19     5465          4    4   F     5 != _int18
+ + New bound is 18 (gap is 5.26%)
+              19     6470         28    1   F    18 != _int4
+ + New bound is 19 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 6 solutions found.
+ ! Best objective         : 19 (optimal - effective tol. is 0)
+ ! Best bound             : 19
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 52101
+ ! Number of fails        : 25054
+ ! Total memory usage     : 6.8 MB (6.7 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.12s (0.11s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 473645.5
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 19
+! Labeling: 12 6 8 1 7 2 19 10 18 11 8 15 1 4 13 3 17 13 7 1 9 19 19 13 14 19 19 19 5 1 16 1 
+! -------------------------------------------------------- 

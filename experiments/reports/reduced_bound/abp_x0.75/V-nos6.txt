@@ -1,0 +1,34 @@
+! Solving for graph ../../../benchmarks/abp/V-nos6.mtx.rnd
+! Target value is set to 246
+! Lower bound is set to 247
+! Upper bound is set to 506
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 676 variables, 2977 constraints, 1 phase
+ ! Presolve      : 506 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.08s (0.08s extraction + 0.00s propagation)
+ !  . Log search space  : 6071.5 (before), 6071.5 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        676                 -
+ + New bound is 247
+                        0        676    1            -
+ + New bound is 492
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 492
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 23209042
+ ! Number of fails        : 8907742
+ ! Total memory usage     : 242.0 MB (237.6 MB CP Optimizer + 4.4 MB Concert)
+ ! Time spent in solve    : 1800.10s (1800.02s engine + 0.08s extraction)
+ ! Search speed (br. / s) : 12893.8
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! No solution
+! --------------------------------------------------------

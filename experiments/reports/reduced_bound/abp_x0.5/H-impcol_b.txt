@@ -1,0 +1,43 @@
+! Solving for graph ../../../benchmarks/abp/H-impcol_b.mtx.rnd
+! Target value is set to 4
+! Lower bound is set to 5
+! Upper bound is set to 29
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 60 variables, 398 constraints, 1 phase
+ ! Presolve      : 29 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 291.3 (before), 291.3 (after)
+ !  . Memory usage      : 393.2 kB (before), 393.2 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         60                 -
+ + New bound is 5
+                        0         60    1   F        -
+ + New bound is 8
+                        8         59    1   F     4 != _int29
+ + New bound is 9
+ *            29       72  0.04s        3      (gap is 68.97%)
+              29     8244         56    7   F    12 != _int10
+ + New bound is 20 (gap is 31.03%)
+              29    4746k         55    2            -
+ + New bound is 29 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 29 (optimal - effective tol. is 0)
+ ! Best bound             : 29
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 37650650
+ ! Number of fails        : 18008918
+ ! Total memory usage     : 22.3 MB (22.1 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 54.24s (54.24s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 694277.2
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 29
+! Labeling: 11 12 5 4 5 9 13 13 5 22 9 6 9 8 27 13 9 13 1 13 17 14 1 20 17 9 1 9 1 18 21 5 9 1 13 5 1 1 16 23 15 19 1 2 1 28 26 21 24 7 10 9 3 1 25 13 5 29 29 
+! -------------------------------------------------------- 

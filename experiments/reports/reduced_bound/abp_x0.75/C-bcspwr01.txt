@@ -1,0 +1,44 @@
+! Solving for graph ../../../benchmarks/abp/C-bcspwr01.mtx.rnd
+! Target value is set to 12
+! Lower bound is set to 13
+! Upper bound is set to 29
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 40 variables, 143 constraints, 1 phase
+ ! Presolve      : 29 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 193.5 (before), 193.5 (after)
+ !  . Memory usage      : 346.0 kB (before), 346.0 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         40                 -
+ + New bound is 13
+                        0         40    1            -
+ + New bound is 23
+                        0         40    1   F        -
+ + New bound is 24
+ *            28      944  0.04s        5      (gap is 14.29%)
+ *            27     2362  0.06s        3      (gap is 11.11%)
+ *            26     3197  0.08s        3      (gap is 7.69%)
+ *            25     3986  0.09s        7      (gap is 4.00%)
+              25     4004         39    7   F    11 != _int36
+ + New bound is 25 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 4 solutions found.
+ ! Best objective         : 25 (optimal - effective tol. is 0)
+ ! Best bound             : 25
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 37389
+ ! Number of fails        : 17194
+ ! Total memory usage     : 6.7 MB (6.6 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.09s (0.08s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 467362.5
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 25
+! Labeling: 2 1 1 4 10 15 11 1 21 24 8 3 12 25 18 1 1 25 1 13 14 17 16 19 9 23 25 13 6 25 1 13 1 5 20 13 1 7 22 
+! -------------------------------------------------------- 

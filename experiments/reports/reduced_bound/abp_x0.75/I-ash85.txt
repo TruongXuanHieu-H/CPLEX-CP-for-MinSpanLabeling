@@ -1,0 +1,48 @@
+! Solving for graph ../../../benchmarks/abp/I-ash85.mtx.rnd
+! Target value is set to 17
+! Lower bound is set to 18
+! Upper bound is set to 63
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 86 variables, 430 constraints, 1 phase
+ ! Presolve      : 63 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 513.6 (before), 513.6 (after)
+ !  . Memory usage      : 427.8 kB (before), 427.8 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         86                 -
+ + New bound is 18
+                        0         86    1   F        -
+ + New bound is 34
+                       34         85    1   F    17 != _int55
+ + New bound is 35
+ *            63     240k  4.94s        1      (gap is 44.44%)
+              63     241k         19    2   F        -
+ + New bound is 50 (gap is 20.63%)
+ *            62     259k  5.28s        4      (gap is 19.35%)
+              62    1565k         64    1   F    13 != _int79
+ + New bound is 51 (gap is 17.74%)
+ *            61    6178k  128.88s      7      (gap is 16.39%)
+              61   16943k         56    1   F    12 != _int12
+ + New bound is 52 (gap is 14.75%)
+ *            60   53923k  1021.21s     4      (gap is 13.33%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : 60 (gap is 13.33%)
+ ! Best bound             : 52
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 756374978
+ ! Number of fails        : 355954550
+ ! Total memory usage     : 188.1 MB (187.8 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 1800.02s (1800.02s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 420206.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 60
+! Labeling: 3 60 25 31 25 50 22 26 42 51 6 13 2 24 40 5 4 59 24 39 37 56 11 42 27 59 41 44 22 53 59 1 60 60 20 28 47 43 39 45 7 46 58 2 37 38 55 35 33 5 23 6 16 30 42 36 18 9 8 59 59 59 10 32 34 2 60 4 12 3 1 19 21 3 48 49 29 41 52 3 14 54 17 15 57 
+! -------------------------------------------------------- 
