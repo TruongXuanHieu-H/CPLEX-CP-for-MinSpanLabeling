@@ -35,6 +35,16 @@ def parse_log(filepath):
         content
     )
 
+    lower_bound = extract(
+        r'!\s*Lower bound is set to\s*(\d+)',
+        content
+    )
+
+    upper_bound = extract(
+        r'!\s*Upper bound is set to\s*(\d+)',
+        content
+    )
+
     best_objective = extract(
         r'!\s*Best objective\s*:\s*(\d+)',
         content
@@ -70,6 +80,8 @@ def parse_log(filepath):
         "Time limit (s)": time_limit,
         "Worker count": worker_count,
         "Target value": target_value,
+        "Lower bound": lower_bound,
+        "Upper bound": upper_bound,
         "Best bound": best_bound,
         "Best objective": best_objective,
         "Memory consumed (MB)": memory_consumed,
@@ -114,6 +126,8 @@ def main(root_dir, output_file):
                 "Time limit (s)",
                 "Worker count",
                 "Target value",
+                "Lower bound",
+                "Upper bound",
                 "Best bound",
                 "Best objective",
                 "Memory consumed (MB)",
