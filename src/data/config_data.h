@@ -7,6 +7,7 @@ enum class VerticesMode
 {
     no_hole,
     has_hole,
+    all_diff,
 };
 
 class ConfigData

@@ -1,8 +1,8 @@
-#include "has_hole_verifier.h"
+#include "all_diff_verifier.h"
 
 #include <iostream>
 
-bool HasHoleVerifier::verify(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span)
+bool AllDiffVerifier::verify(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span)
 {
     for (const auto &e : graph_data.edges)
     {
@@ -22,6 +22,18 @@ bool HasHoleVerifier::verify(ConfigData &config_data, GraphData &graph_data, std
     {
         std::cout << "! VERIFY FAILED: span = " << solution_span << ", but max label = " << max_label << "\n";
         return false;
+    }
+
+    for (int i = 0; i < graph_data.num_vertices; i++)
+    {
+        for (int j = i + 1; j < graph_data.num_vertices; j++)
+        {
+            if (solution[i] == solution[j])
+            {
+                std::cout << "! VERIFY FAILED: duplicate label " << solution[i] << "\n";
+                return false;
+            }
+        }
     }
 
     return true;

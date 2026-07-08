@@ -12,9 +12,11 @@
 #include "data/cp_data.h"
 #include "data/graph_data.h"
 #include "encoder/encoder.h"
+#include "encoder/all_diff_encoder.h"
 #include "encoder/has_hole_encoder.h"
 #include "encoder/no_hole_encoder.h"
 #include "verifier/verifier.h"
+#include "verifier/all_diff_verifier.h"
 #include "verifier/has_hole_verifier.h"
 #include "verifier/no_hole_verifier.h"
 
@@ -26,6 +28,8 @@ std::unique_ptr<Encoder> get_encoder(VerticesMode vertices_mode)
         return std::make_unique<NoHoleEncoder>();
     case VerticesMode::has_hole:
         return std::make_unique<HasHoleEncoder>();
+    case VerticesMode::all_diff:
+        return std::make_unique<AllDiffEncoder>();
 
     default:
         exit(1);
@@ -40,6 +44,8 @@ std::unique_ptr<Verifier> get_verifier(VerticesMode vertices_mode)
         return std::make_unique<NoHoleVerifier>();
     case VerticesMode::has_hole:
         return std::make_unique<HasHoleVerifier>();
+    case VerticesMode::all_diff:
+        return std::make_unique<AllDiffVerifier>();
 
     default:
         exit(1);
