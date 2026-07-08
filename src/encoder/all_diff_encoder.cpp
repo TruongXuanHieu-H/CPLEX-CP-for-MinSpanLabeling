@@ -2,15 +2,17 @@
 
 IloModel AllDiffEncoder::encode_model(ConfigData &config_data, GraphData &graph_data, CPData &cp_data)
 {
-    for (const auto &e : graph_data.edges)
-        cp_data.model.add(IloAbs(cp_data.label[e.u] - cp_data.label[e.v]) >= config_data.target_value);
-
-    for (int v = 0; v < graph_data.num_vertices; v++)
-        cp_data.model.add(cp_data.span >= cp_data.label[v]);
-
-    cp_data.model.add(IloAllDiff(cp_data.env, cp_data.label));
+    encode_symmetry_breaking(config_data, graph_data, cp_data);
+    encode_target_value(config_data, graph_data, cp_data);
+    encode_span(config_data, graph_data, cp_data);
+    encode_all_diff(config_data, graph_data, cp_data);
 
     cp_data.model.add(IloMinimize(cp_data.env, cp_data.span));
 
     return cp_data.model;
+}
+
+void AllDiffEncoder::encode_all_diff(ConfigData &config_data, GraphData &graph_data, CPData &cp_data)
+{
+    cp_data.model.add(IloAllDiff(cp_data.env, cp_data.label));
 }
