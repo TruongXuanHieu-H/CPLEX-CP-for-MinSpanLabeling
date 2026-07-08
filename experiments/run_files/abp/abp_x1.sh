@@ -1,8 +1,11 @@
 #!/bin/bash
 
-build_dir="../../../build"
-dataset_dir="../../../benchmarks/abp"
-report_dir="../../../experiments/reports/bounded/abp_x1"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
+
+build_dir="$ROOT_DIR/build"
+dataset_dir="$ROOT_DIR/benchmarks/abp"
+report_dir="$ROOT_DIR/experiments/results/abp/abp_x1"
 time_limit="1800"
 
 mkdir -p "$report_dir"
