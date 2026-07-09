@@ -10,14 +10,20 @@ enum class VerticesMode
     all_diff,
 };
 
+enum class TargetValueMode
+{
+    abp,  // Linear
+    cabp, // Cyclic
+};
+
 class ConfigData
 {
 public:
     ConfigData(int argc, char *argv[])
     {
-        if (argc != 7)
+        if (argc != 8)
         {
-            std::cerr << "Usage: " << argv[0] << " instance.txt <target_value_mul> <lower_bound> <upper_bound> <time_limit> <vertices_mode>\n";
+            std::cerr << "Usage: " << argv[0] << " instance.txt <target_value_mul> <lower_bound> <upper_bound> <time_limit> <vertices_mode> <target_value_mode>\n";
             exit(1);
         }
 
@@ -47,9 +53,31 @@ public:
             vertices_mode = VerticesMode::has_hole;
             std::cout << "! Vertices mode is set to Has hole\n";
         }
+        else if (v_mode == "all_diff")
+        {
+            vertices_mode = VerticesMode::all_diff;
+            std::cout << "! Vertices mode is set to All different\n";
+        }
         else
         {
             std::cerr << "! Vertices mode " << v_mode << " is undefined\n";
+            exit(1);
+        }
+
+        std::string target_value_mode = argv[7];
+        if (target_value_mode == "abp")
+        {
+            this->target_value_mode = TargetValueMode::abp;
+            std::cout << "! Target value mode is set to Linear\n";
+        }
+        else if (target_value_mode == "cabp")
+        {
+            this->target_value_mode = TargetValueMode::cabp;
+            std::cout << "! Target value mode is set to Cyclic\n";
+        }
+        else
+        {
+            std::cerr << "! Target value mode " << target_value_mode << " is undefined\n";
             exit(1);
         }
     }
@@ -60,6 +88,7 @@ public:
     int upper_bound;
     int time_limit;
     VerticesMode vertices_mode;
+    TargetValueMode target_value_mode;
 };
 
 #endif

@@ -14,17 +14,43 @@ public:
     virtual bool verify(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span) = 0;
 
 protected:
-    bool verify_target_value(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution)
+    bool verify_target_value(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span)
     {
-        for (const auto &e : graph_data.edges)
+
+        switch (config_data.target_value_mode)
         {
-            int diff = std::abs(solution[e.u] - solution[e.v]);
-            if (diff < config_data.target_value)
+        case TargetValueMode::abp:
+        {
+            for (const auto &e : graph_data.edges)
             {
-                std::cout << "! VERIFY FAILED: edge (" << e.u + 1 << ", " << e.v + 1 << ") has distance " << diff << " < " << config_data.target_value << "\n";
-                return false;
+                int diff = std::abs(solution[e.u] - solution[e.v]);
+                if (diff < config_data.target_value)
+                {
+                    std::cout << "! VERIFY FAILED: edge (" << e.u + 1 << ", " << e.v + 1 << ") has distance " << diff << " < " << config_data.target_value << "\n";
+                    return false;
+                }
             }
+            break;
         }
+        case TargetValueMode::cabp:
+        {
+            for (const auto &e : graph_data.edges)
+            {
+                int diff = std::abs(solution[e.u] - solution[e.v]);
+                int cyclic_diff = std::min(diff, solution_span - diff);
+
+                if (cyclic_diff < config_data.target_value)
+                {
+                    std::cout << "! VERIFY FAILED: edge (" << e.u + 1 << ", " << e.v + 1 << ") has cyclic distance " << cyclic_diff << " < " << config_data.target_value << "\n";
+                    return false;
+                }
+            }
+            break;
+        }
+        default:
+            break;
+        }
+
         return true;
     }
 

@@ -33,8 +33,30 @@ protected:
 
     void encode_target_value(ConfigData &config_data, GraphData &graph_data, CPData &cp_data)
     {
-        for (const auto &e : graph_data.edges)
-            cp_data.model.add(IloAbs(cp_data.label[e.u] - cp_data.label[e.v]) >= config_data.target_value);
+        switch (config_data.target_value_mode)
+        {
+        case TargetValueMode::abp:
+        {
+            for (const auto &e : graph_data.edges)
+                cp_data.model.add(IloAbs(cp_data.label[e.u] - cp_data.label[e.v]) >= config_data.target_value);
+            break;
+        }
+        case TargetValueMode::cabp:
+        {
+            for (const auto &e : graph_data.edges)
+            {
+                IloIntExpr diff(cp_data.env);
+                diff = IloAbs(cp_data.label[e.u] - cp_data.label[e.v]);
+
+                cp_data.model.add(IloMin(diff, cp_data.span - diff) >= config_data.target_value);
+
+                diff.end();
+            }
+            break;
+        }
+        default:
+            break;
+        }
     }
 
     void encode_span(ConfigData &config_data, GraphData &graph_data, CPData &cp_data)

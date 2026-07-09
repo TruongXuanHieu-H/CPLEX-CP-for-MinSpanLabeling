@@ -4,7 +4,7 @@
 
 bool NoHoleVerifier::verify(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span)
 {
-    if (!verify_target_value(config_data, graph_data, solution))
+    if (!verify_target_value(config_data, graph_data, solution, solution_span))
         return false;
     if (!verify_span(config_data, graph_data, solution, solution_span))
         return false;
