@@ -7,6 +7,9 @@ class NoHoleVerifier : public Verifier
 {
 public:
     bool verify(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span) override;
+
+private:
+    bool verify_no_hole(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span);
 };
 
 #endif
