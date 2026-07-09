@@ -1,45 +1,38 @@
-! Solving for graph ../../../benchmarks/abp/A-pores_1.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/A-pores_1.mtx.rnd
 ! Target value is set to 9
+! Lower bound is set to 10
+! Upper bound is set to 45
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 31 variables, 134 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 169.9 (before), 169.9 (after)
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 169.0 (before), 169.0 (after)
  !  . Memory usage      : 304.5 kB (before), 304.5 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         31                 -
  + New bound is 10
-                        2         30    1   F     1 != _int21
+                        2         30    1   F     1 != _int16
  + New bound is 11
- *            42       40  0.02s        1      (gap is 73.81%)
- *            38      455  0.02s        2      (gap is 71.05%)
- *            37     1248  0.04s        2      (gap is 70.27%)
-              37     4146          6    2   F        -
- + New bound is 25 (gap is 32.43%)
- *            36     5940  0.08s        3      (gap is 30.56%)
-              36    19001         30    2   F    24 != _int13
- + New bound is 26 (gap is 27.78%)
-              36    24674          7    7   F        -
- + New bound is 27 (gap is 25.00%)
-              36    27992          6    4   F        -
- + New bound is 28 (gap is 22.22%)
-              36    22124         28    2   F    29 != _int23
- + New bound is 32 (gap is 11.11%)
+ *            28       33  0.02s        1      (gap is 60.71%)
+              28      731          1    1            -
+ + New bound is 28 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, 4 solutions found.
- ! Best objective         : 36 (gap is 11.11%)
- ! Best bound             : 32
+ ! Search completed, 1 solution found.
+ ! Best objective         : 28 (optimal - effective tol. is 0)
+ ! Best bound             : 28
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 728555244
- ! Number of fails        : 360153454
- ! Total memory usage     : 402.4 MB (402.3 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 1800.02s (1800.02s engine + 0.00s extraction)
- ! Search speed (br. / s) : 404750.7
+ ! Number of branches     : 7470
+ ! Number of fails        : 3029
+ ! Total memory usage     : 5.6 MB (5.5 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.02s (0.02s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 746999.9
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 36
-! Labeling: 26 10 25 2 4 6 8 23 24 35 17 7 13 3 15 32 21 34 5 27 22 12 16 1 30 36 11 33 31 14 
+! Best span = 28
+! Labeling: 28 1 10 1 19 1 1 28 28 10 19 1 1 19 19 10 10 28 1 10 10 1 19 19 28 28 19 10 28 19 
 ! -------------------------------------------------------- 

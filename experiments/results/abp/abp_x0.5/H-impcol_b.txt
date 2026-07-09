@@ -1,16 +1,16 @@
-! Solving for graph ../../../benchmarks/abp/H-impcol_b.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/H-impcol_b.mtx.rnd
 ! Target value is set to 4
 ! Lower bound is set to 5
 ! Upper bound is set to 29
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 60 variables, 398 constraints, 1 phase
+ ! Minimization problem - 60 variables, 399 constraints, 1 phase
  ! Presolve      : 29 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 291.3 (before), 291.3 (after)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 290.3 (before), 290.3 (after)
  !  . Memory usage      : 393.2 kB (before), 393.2 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
@@ -21,23 +21,49 @@
  + New bound is 8
                         8         59    1   F     4 != _int29
  + New bound is 9
- *            29       72  0.04s        3      (gap is 68.97%)
-              29     8244         56    7   F    12 != _int10
+ *            29       64  0.05s        2      (gap is 68.97%)
+              29    32350          7    1   F        -
+ + New bound is 10 (gap is 65.52%)
+              29    32350          7    1   F        -
+ + New bound is 11 (gap is 62.07%)
+              29    37696          7    4   F     3 != _int56
+ + New bound is 12 (gap is 58.62%)
+              29    39635          7    2   F     4 != _int5
+ + New bound is 13 (gap is 55.17%)
+              29    39603          9    1   F     5 != _int14
+ + New bound is 14 (gap is 51.72%)
+              29    39641          9    1   F     6 != _int14
+ + New bound is 15 (gap is 48.28%)
+              29    39723          9    1   F     7 != _int14
+ + New bound is 16 (gap is 44.83%)
+              29    46465         11    4   F     4 != _int8
+ + New bound is 17 (gap is 41.38%)
+              29    79480         56    7   F     5 != _int5
+ + New bound is 18 (gap is 37.93%)
+              29    3076k         20    7   F     7 != _int14
+ + New bound is 19 (gap is 34.48%)
+              29    4039k         54    2   F    15 != _int11
  + New bound is 20 (gap is 31.03%)
-              29    4746k         55    2            -
+              29    4040k         56    2   F    20 != _int8
+ + New bound is 21 (gap is 27.59%)
+              29    4051k         35    2   F    10 != _int56
+ + New bound is 22 (gap is 24.14%)
+              29    4061k         20    2   F    14 != _int56
+ + New bound is 23 (gap is 20.69%)
+              29    4060k         54    7            -
  + New bound is 29 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 29 (optimal - effective tol. is 0)
  ! Best bound             : 29
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 37650650
- ! Number of fails        : 18008918
- ! Total memory usage     : 22.3 MB (22.1 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 54.24s (54.24s engine + 0.00s extraction)
- ! Search speed (br. / s) : 694277.2
+ ! Number of branches     : 32016521
+ ! Number of fails        : 15337320
+ ! Total memory usage     : 19.4 MB (19.2 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 45.39s (45.38s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 705676.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 29
-! Labeling: 11 12 5 4 5 9 13 13 5 22 9 6 9 8 27 13 9 13 1 13 17 14 1 20 17 9 1 9 1 18 21 5 9 1 13 5 1 1 16 23 15 19 1 2 1 28 26 21 24 7 10 9 3 1 25 13 5 29 29 
+! Labeling: 19 26 5 24 5 1 5 5 5 16 1 7 1 1 1 2 9 11 13 13 9 9 25 4 17 14 9 1 10 23 13 21 15 22 5 5 13 5 3 6 12 9 9 18 20 1 1 17 27 5 8 1 28 17 1 9 21 29 1 
 ! -------------------------------------------------------- 

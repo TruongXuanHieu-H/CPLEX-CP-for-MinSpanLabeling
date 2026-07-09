@@ -1,17 +1,17 @@
-! Solving for graph ../../../benchmarks/abp/B-ibm32.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/B-ibm32.mtx.rnd
 ! Target value is set to 4
 ! Lower bound is set to 5
 ! Upper bound is set to 16
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 33 variables, 154 constraints, 1 phase
+ ! Minimization problem - 33 variables, 155 constraints, 1 phase
  ! Presolve      : 16 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 131.6 (before), 131.6 (after)
- !  . Memory usage      : 313.6 kB (before), 313.6 kB (after)
+ !  . Log search space  : 130.6 (before), 130.6 (after)
+ !  . Memory usage      : 313.7 kB (before), 313.7 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -21,25 +21,24 @@
  + New bound is 8
                         8         32    1   F     4 != _int3
  + New bound is 9
- *            16      317  0.02s        1      (gap is 43.75%)
- *            15      254  0.02s        2      (gap is 40.00%)
- *            13      700  0.02s        3      (gap is 30.77%)
-              13     1743          1    7   F    11 != _int17
- + New bound is 12 (gap is 7.69%)
-              13     2637         22    1            -
+ *            16      159  0.02s        1      (gap is 43.75%)
+ *            15      347  0.02s        3      (gap is 40.00%)
+ *            14      731  0.02s        3      (gap is 35.71%)
+ *            13      776  0.02s        3      (gap is 30.77%)
+              13     1130         20    7            -
  + New bound is 13 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 3 solutions found.
+ ! Search completed, 4 solutions found.
  ! Best objective         : 13 (optimal - effective tol. is 0)
  ! Best bound             : 13
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 21786
- ! Number of fails        : 10353
- ! Total memory usage     : 6.1 MB (6.0 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.05s (0.05s engine + 0.00s extraction)
- ! Search speed (br. / s) : 435720.0
+ ! Number of branches     : 15097
+ ! Number of fails        : 7027
+ ! Total memory usage     : 5.9 MB (5.8 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 503233.3
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 13
-! Labeling: 1 10 9 12 8 1 5 8 2 6 9 13 13 9 7 13 3 9 5 12 1 1 4 1 1 5 1 5 11 13 1 12 
+! Labeling: 12 12 6 7 5 11 4 13 1 13 6 1 9 8 5 8 1 13 5 9 13 3 2 12 1 1 1 1 9 10 1 9 
 ! -------------------------------------------------------- 

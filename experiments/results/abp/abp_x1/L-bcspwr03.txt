@@ -1,40 +1,46 @@
-! Solving for graph ../../../benchmarks/abp/L-bcspwr03.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/L-bcspwr03.mtx.rnd
 ! Target value is set to 39
+! Lower bound is set to 40
+! Upper bound is set to 118
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 119 variables, 298 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
- !  . Log search space  : 818.5 (before), 818.5 (after)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 815.2 (before), 815.2 (after)
  !  . Memory usage      : 392.4 kB (before), 392.4 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        119                 -
  + New bound is 40
-                        2        118    1   F     1 != _int117
+                        2        118    1   F     1 != _int28
  + New bound is 41
- *           118     1191  0.06s        5      (gap is 65.25%)
-             118     2928         49    1   F     1 != _int94
+ *           118      118  0.04s        1      (gap is 65.25%)
+             118     2695         46    2   F    40 != _int61
  + New bound is 80 (gap is 32.20%)
-             118     5121        118    7   F    17 != _int94
+             118     3630        118    7   F    59 != _int34
  + New bound is 100 (gap is 15.25%)
-             118     7074        117    2   F    31 != _int81
+             118     6856        111    4   F    61 != _int61
+ + New bound is 101 (gap is 14.41%)
+             118     8551        116    7   F    63 != _int34
  + New bound is 110 (gap is 6.78%)
-             118    21585        117    1            -
+             118    16041        118    1            -
  + New bound is 118 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 118 (optimal - effective tol. is 0)
  ! Best bound             : 118
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 156395
- ! Number of fails        : 73689
- ! Total memory usage     : 14.6 MB (14.5 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.36s (0.36s engine + 0.01s extraction)
- ! Search speed (br. / s) : 446842.9
+ ! Number of branches     : 140231
+ ! Number of fails        : 64635
+ ! Total memory usage     : 11.6 MB (11.4 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.27s (0.27s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 519374.1
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 118
-! Labeling: 82 8 75 12 28 117 25 61 77 34 60 70 79 54 40 103 101 26 48 15 69 38 7 32 99 67 43 92 91 64 68 85 113 93 47 19 58 116 76 21 96 24 50 66 5 106 108 22 41 111 112 11 100 110 94 95 52 45 49 46 53 55 114 30 36 18 63 72 14 107 105 74 10 3 37 71 42 87 109 104 56 1 29 102 78 31 13 39 84 57 86 62 90 97 118 98 33 115 81 89 16 80 2 51 4 88 23 9 44 27 6 17 65 35 73 83 20 59 
+! Labeling: 1 1 40 1 79 1 1 1 40 1 1 79 118 1 79 40 40 1 79 1 40 1 1 40 1 1 40 1 40 1 79 79 1 40 79 1 79 1 40 40 40 79 79 1 1 40 1 1 40 1 40 40 1 40 40 40 1 1 1 79 1 1 40 40 40 40 1 1 40 40 79 79 40 40 40 79 79 1 40 79 79 40 40 40 40 40 40 40 40 40 1 1 79 1 1 40 40 1 1 40 40 40 79 1 1 40 1 40 1 79 40 40 40 1 1 1 40 1 
 ! -------------------------------------------------------- 

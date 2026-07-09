@@ -1,29 +1,34 @@
-! Solving for graph ../../../benchmarks/abp/S-sherman4.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/S-sherman4.mtx.rnd
 ! Target value is set to 261
+! Lower bound is set to 262
+! Upper bound is set to 546
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 547 variables, 1888 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
- !  . Log search space  : 4972.8 (before), 4972.8 (after)
- !  . Memory usage      : 993.8 kB (before), 993.8 kB (after)
+ !  . Log search space  : 4966.5 (before), 4966.5 (after)
+ !  . Memory usage      : 929.8 kB (before), 929.8 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        547                 -
  + New bound is 262
-                        2        546    1   F     1 != _int464
- + New bound is 263
+ *           262        1  0.15s        1      (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, no solution found.
- ! Best bound             : 263
+ ! Search completed, 1 solution found.
+ ! Best objective         : 262 (optimal - effective tol. is 0)
+ ! Best bound             : 262
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 126268921
- ! Number of fails        : 55787615
- ! Total memory usage     : 279.3 MB (278.5 MB CP Optimizer + 0.8 MB Concert)
- ! Time spent in solve    : 1800.02s (1800.00s engine + 0.02s extraction)
- ! Search speed (br. / s) : 70149.4
+ ! Number of branches     : 4009
+ ! Number of fails        : 105
+ ! Total memory usage     : 43.1 MB (42.3 MB CP Optimizer + 0.8 MB Concert)
+ ! Time spent in solve    : 0.15s (0.13s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 30838.5
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! No solution
-! --------------------------------------------------------
+! Best span = 262
+! Labeling: 262 262 1 1 1 262 262 262 262 262 1 262 262 1 262 262 262 1 1 1 262 1 1 262 1 1 262 262 262 1 1 1 1 1 262 262 1 262 1 262 262 1 262 1 1 1 1 1 1 1 1 1 262 262 1 262 262 1 1 1 1 1 1 1 1 262 1 262 1 262 1 262 262 262 262 262 262 1 262 262 1 1 262 1 262 262 1 262 262 262 262 262 1 1 262 1 262 1 1 1 1 262 262 1 1 1 1 262 1 262 1 262 262 262 262 1 1 1 1 1 262 1 1 1 1 1 1 262 1 1 262 1 1 1 1 262 262 1 262 1 1 1 262 262 262 262 262 262 1 262 262 1 262 262 1 1 1 1 262 262 262 262 1 262 1 1 262 1 262 262 262 262 1 1 262 1 1 1 262 262 262 262 262 262 262 1 1 1 1 262 262 1 262 1 1 1 262 262 262 1 262 262 262 1 1 1 262 262 1 262 262 1 262 1 262 262 1 262 1 1 1 1 262 262 262 1 262 1 1 262 1 262 262 1 1 1 1 262 262 262 1 1 262 262 1 1 1 1 262 262 262 262 1 1 1 1 262 1 1 262 262 1 262 262 1 1 1 1 1 1 262 1 1 262 262 262 1 262 1 1 1 262 1 262 1 1 262 1 1 262 262 1 1 1 1 1 262 262 1 1 262 262 262 262 262 1 262 262 262 262 1 1 262 1 262 1 262 262 1 262 1 1 262 262 1 262 262 1 1 262 262 262 1 1 1 1 1 1 262 262 1 1 262 1 1 262 1 262 1 262 262 262 1 262 1 262 262 262 262 262 262 262 262 1 262 1 1 1 1 262 1 262 262 262 262 1 262 262 1 262 262 262 1 1 1 262 1 262 262 262 262 1 262 1 1 1 262 262 262 1 1 1 262 262 1 262 1 262 262 1 262 1 1 1 1 262 262 262 1 262 262 262 262 1 1 1 262 262 262 262 1 262 262 1 1 1 1 262 1 1 262 262 1 262 262 262 1 262 262 1 262 1 1 1 1 262 262 262 262 262 1 1 262 262 1 262 1 1 1 1 262 1 1 262 262 1 262 1 262 1 1 262 262 1 262 262 262 262 1 262 262 262 262 1 262 1 262 1 262 262 1 262 1 1 1 1 1 1 262 1 1 1 1 1 1 1 262 1 262 1 262 262 262 1 262 262 1 1 1 262 1 262 262 1 1 262 262 262 1 262 262 262 262 262 1 1 
+! -------------------------------------------------------- 

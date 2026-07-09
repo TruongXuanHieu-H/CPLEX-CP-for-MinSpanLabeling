@@ -1,29 +1,46 @@
-! Solving for graph ../../../benchmarks/abp/I-ash85.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/I-ash85.mtx.rnd
 ! Target value is set to 23
+! Lower bound is set to 24
+! Upper bound is set to 85
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 86 variables, 305 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
- !  . Log search space  : 550.8 (before), 550.8 (after)
- !  . Memory usage      : 391.3 kB (before), 391.3 kB (after)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 549.3 (before), 549.3 (after)
+ !  . Memory usage      : 359.2 kB (before), 359.2 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         86                 -
  + New bound is 24
-                        2         85    1   F     1 != _int39
+                        2         85    1   F     1 != _int55
  + New bound is 25
+ *            70       68  0.04s        1      (gap is 64.29%)
+              70     2821         14    2   F    24 != _int8
+ + New bound is 48 (gap is 31.43%)
+              70     3340         84    1   F    13 != _int54
+ + New bound is 60 (gap is 14.29%)
+              70     3191         85    2   F    41 != _int43
+ + New bound is 66 (gap is 5.71%)
+              70     3277         85    2   F    21 != _int43
+ + New bound is 69 (gap is 1.43%)
+              70     3921         66    2            -
+ + New bound is 70 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, no solution found.
- ! Best bound             : 25
+ ! Search completed, 1 solution found.
+ ! Best objective         : 70 (optimal - effective tol. is 0)
+ ! Best bound             : 70
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 807035601
- ! Number of fails        : 399586904
- ! Total memory usage     : 546.7 MB (546.6 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 1800.00s (1799.99s engine + 0.02s extraction)
- ! Search speed (br. / s) : 448355.6
+ ! Number of branches     : 40745
+ ! Number of fails        : 18525
+ ! Total memory usage     : 8.9 MB (8.7 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.08s (0.08s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 509312.5
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! No solution
-! --------------------------------------------------------
+! Best span = 70
+! Labeling: 1 1 24 70 24 24 47 70 70 47 24 24 47 24 1 1 1 47 1 70 70 24 70 1 70 1 24 1 1 1 47 24 47 47 1 24 1 1 70 1 47 1 24 47 24 1 70 1 1 47 47 70 24 47 24 47 47 24 47 47 24 24 1 47 47 1 47 70 1 47 70 70 24 70 47 1 24 24 24 70 70 1 1 1 24 
+! -------------------------------------------------------- 

@@ -1,16 +1,16 @@
-! Solving for graph ../../../benchmarks/abp/G-will57.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/G-will57.mtx.rnd
 ! Target value is set to 9
 ! Lower bound is set to 10
 ! Upper bound is set to 42
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 58 variables, 268 constraints, 1 phase
+ ! Minimization problem - 58 variables, 269 constraints, 1 phase
  ! Presolve      : 42 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
- !  . Log search space  : 312.4 (before), 312.4 (after)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 311.4 (before), 311.4 (after)
  !  . Memory usage      : 382.1 kB (before), 382.1 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
@@ -19,30 +19,33 @@
  + New bound is 10
                         0         58    1   F        -
  + New bound is 18
-                       18         57    1   F     9 != _int32
+                       18         57    1   F     9 != _int33
  + New bound is 19
- *            42      624  0.04s        4      (gap is 54.76%)
- *            41     2775  0.06s        6      (gap is 53.66%)
- *            40     3760  0.08s        6      (gap is 52.50%)
-              40     5315         55    7   F    10 != _int27
- + New bound is 31 (gap is 22.50%)
- *            39     9217  0.15s        4      (gap is 20.51%)
- *            38     9258  0.15s        4      (gap is 18.42%)
- *            37     8481  0.15s        8      (gap is 16.22%)
-              37    36159         56    7            -
+ *            42     2496  0.06s        1      (gap is 54.76%)
+ *            41     4123  0.08s        3      (gap is 53.66%)
+ *            39     3955  0.08s        8      (gap is 51.28%)
+              39     5441         37    1   F        -
+ + New bound is 30 (gap is 23.08%)
+              39     4868         55    2   F     7 != _int28
+ + New bound is 31 (gap is 20.51%)
+ *            38     9044  0.13s        1      (gap is 18.42%)
+ *            37    12599  0.17s        4      (gap is 16.22%)
+              37    26356         55    7   F    10 != _int39
+ + New bound is 35 (gap is 5.41%)
+              37    34138         56    7            -
  + New bound is 37 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 6 solutions found.
+ ! Search completed, 5 solutions found.
  ! Best objective         : 37 (optimal - effective tol. is 0)
  ! Best bound             : 37
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 337679
- ! Number of fails        : 162599
- ! Total memory usage     : 9.8 MB (9.7 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 0.54s (0.54s engine + 0.01s extraction)
- ! Search speed (br. / s) : 637130.2
+ ! Number of branches     : 322066
+ ! Number of fails        : 154952
+ ! Total memory usage     : 9.6 MB (9.4 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.49s (0.49s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 670970.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 37
-! Labeling: 3 27 22 10 10 28 19 37 10 5 25 1 18 37 17 35 1 7 29 19 10 11 2 1 8 28 1 12 1 28 10 6 1 33 37 28 20 26 19 36 16 24 14 9 34 28 13 31 15 4 28 30 37 32 23 21 19 
+! Labeling: 32 30 3 34 37 10 19 1 19 26 33 24 29 10 36 13 37 19 11 1 1 37 1 37 14 28 28 31 2 28 35 25 1 21 28 19 12 16 10 23 1 6 8 9 18 19 7 20 15 2 22 17 11 5 27 4 1 
 ! -------------------------------------------------------- 

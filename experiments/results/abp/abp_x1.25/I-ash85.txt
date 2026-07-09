@@ -1,55 +1,46 @@
-! Solving for graph ../../../benchmarks/abp/I-ash85.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/I-ash85.mtx.rnd
 ! Target value is set to 28
+! Lower bound is set to 29
+! Upper bound is set to 107
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 86 variables, 305 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 579.3 (before), 579.3 (after)
- !  . Memory usage      : 391.3 kB (before), 391.3 kB (after)
+ !  . Log search space  : 578.3 (before), 578.3 (after)
+ !  . Memory usage      : 359.2 kB (before), 359.2 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         86                 -
  + New bound is 29
-                        2         85    1   F     1 != _int39
+                        2         85    1   F     1 != _int55
  + New bound is 30
- *           107       83  0.02s        2      (gap is 71.96%)
- *           106      571  0.02s        8      (gap is 71.70%)
-             106     4833         84    2   F    12 != _int42
- + New bound is 69 (gap is 34.91%)
- *           105    16774  0.29s        1      (gap is 34.29%)
- *           104    24482  0.42s        1      (gap is 33.65%)
- *           103    23259  0.42s        4      (gap is 33.01%)
- *           102     351k  5.74s        7      (gap is 32.35%)
-             102    1118k         38    1   F        -
- + New bound is 70 (gap is 31.37%)
- *           101    1427k  25.38s       1      (gap is 30.69%)
-             101    1590k         22    1   F    15 != _int5
- + New bound is 71 (gap is 29.70%)
-             101    4818k         37    1   F    16 != _int64
- + New bound is 72 (gap is 28.71%)
- *           100    5477k  100.92s      1      (gap is 28.00%)
-             100   15443k         44    1   F    44 != _int36
- + New bound is 73 (gap is 27.00%)
-             100   25644k         38    1   F        -
- + New bound is 74 (gap is 26.00%)
-             100   25644k         38    1   F        -
- + New bound is 75 (gap is 25.00%)
-             100   25660k         82    1   F    21 != _int37
- + New bound is 76 (gap is 24.00%)
+ *            85       68  0.04s        1      (gap is 64.71%)
+              85     2087         85    1   F    41 != _int46
+ + New bound is 58 (gap is 31.76%)
+              85     2292         84    1   F        -
+ + New bound is 73 (gap is 14.12%)
+              85     2292         84    1   F        -
+ + New bound is 80 (gap is 5.88%)
+              85     2440         83    4   F    24 != _int19
+ + New bound is 84 (gap is 1.18%)
+              85     3166         84    1   F    28 != _int19
+ + New bound is 85 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, 8 solutions found.
- ! Best objective         : 100 (gap is 24.00%)
- ! Best bound             : 76
+ ! Search completed, 1 solution found.
+ ! Best objective         : 85 (optimal - effective tol. is 0)
+ ! Best bound             : 85
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 734139434
- ! Number of fails        : 348418184
- ! Total memory usage     : 542.9 MB (542.8 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 1800.00s (1800.00s engine + 0.00s extraction)
- ! Search speed (br. / s) : 407855.2
+ ! Number of branches     : 28347
+ ! Number of fails        : 12321
+ ! Total memory usage     : 8.7 MB (8.5 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.07s (0.07s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 472450.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 100
-! Labeling: 13 71 16 98 24 75 96 61 99 22 89 20 66 15 93 68 64 47 4 5 8 63 21 100 69 94 9 81 78 82 97 58 49 57 95 3 83 1 11 84 53 26 62 48 18 86 6 59 60 50 38 42 88 54 19 90 30 29 52 72 41 7 34 14 92 91 32 44 12 35 2 25 36 43 79 80 10 67 87 39 85 37 73 46 40 
+! Best span = 85
+! Labeling: 1 1 29 85 29 29 57 85 85 57 29 29 57 29 1 1 1 57 1 85 85 29 85 1 85 1 29 1 1 1 57 29 57 57 1 29 1 1 85 1 57 1 29 57 29 1 85 1 1 57 57 85 29 57 29 57 57 29 57 57 29 29 1 57 57 1 57 85 1 57 85 85 29 85 57 1 29 29 29 85 85 1 1 1 29 
 ! -------------------------------------------------------- 

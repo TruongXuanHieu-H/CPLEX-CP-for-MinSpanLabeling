@@ -1,38 +1,38 @@
-! Solving for graph ../../../benchmarks/abp/K-dwt__234.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/K-dwt__234.mtx.rnd
 ! Target value is set to 51
+! Lower bound is set to 52
+! Upper bound is set to 117
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
  ! Minimization problem - 118 variables, 280 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 809.9 (before), 809.9 (after)
- !  . Memory usage      : 392.0 kB (before), 392.0 kB (after)
+ !  . Log search space  : 802.9 (before), 802.9 (after)
+ !  . Memory usage      : 359.9 kB (before), 359.9 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        118                 -
  + New bound is 52
-                        2        117    1   F     1 != _int85
+                        2        117    1   F     1 != _int92
  + New bound is 53
- *           117   30455k  673.43s      3      (gap is 54.70%)
-             117   29608k         31    1   F    34 != _int106
- + New bound is 86 (gap is 26.50%)
-             117   29608k         31    1   F    51 != _int106
- + New bound is 103 (gap is 11.97%)
-             117   39315k        115    1   F   102 != _int39
- + New bound is 104 (gap is 11.11%)
+ *           103      113  0.04s        1      (gap is 48.54%)
+             103      709          1    1            -
+ + New bound is 103 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, 1 solution found.
- ! Best objective         : 117 (gap is 11.11%)
- ! Best bound             : 104
+ ! Search completed, 1 solution found.
+ ! Best objective         : 103 (optimal - effective tol. is 0)
+ ! Best bound             : 103
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 617484561
- ! Number of fails        : 297802233
- ! Total memory usage     : 180.4 MB (180.3 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 1800.01s (1800.01s engine + 0.00s extraction)
- ! Search speed (br. / s) : 343045.1
+ ! Number of branches     : 6837
+ ! Number of fails        : 981
+ ! Total memory usage     : 8.4 MB (8.3 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 227900.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 117
-! Labeling: 1 87 63 97 103 61 105 20 4 91 36 67 88 79 82 35 70 52 23 28 71 74 15 80 48 69 107 30 19 86 18 26 102 9 115 72 7 76 78 33 99 100 44 22 56 64 68 24 51 111 47 3 110 38 10 65 42 32 27 116 66 55 53 75 6 45 25 21 39 73 16 93 106 50 54 96 81 58 114 34 90 94 13 77 92 5 89 41 59 60 14 113 117 98 12 49 17 8 11 57 46 62 2 43 95 31 84 112 40 101 29 83 108 109 85 104 37 
+! Best span = 103
+! Labeling: 103 1 1 1 52 52 52 52 103 1 1 1 1 1 1 1 103 1 52 1 52 1 103 1 1 1 103 52 1 1 52 1 1 1 103 1 1 52 52 1 1 1 1 1 1 52 1 52 1 1 1 1 1 1 1 1 1 1 52 52 1 1 52 103 52 1 52 1 1 52 103 103 52 1 103 52 1 1 1 103 52 1 1 103 1 1 1 1 52 52 103 52 52 1 52 1 52 1 1 1 1 103 1 1 1 52 1 103 1 52 52 52 103 52 1 1 103 
 ! -------------------------------------------------------- 

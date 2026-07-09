@@ -1,16 +1,16 @@
-! Solving for graph ../../../benchmarks/abp/S-sherman4.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/S-sherman4.mtx.rnd
 ! Target value is set to 195
 ! Lower bound is set to 196
 ! Upper bound is set to 409
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 547 variables, 2705 constraints, 1 phase
+ ! Minimization problem - 547 variables, 2706 constraints, 1 phase
  ! Presolve      : 409 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.07s (0.07s extraction + 0.00s propagation)
- !  . Log search space  : 4744.8 (before), 4744.8 (after)
+ !  . Log search space  : 4738.6 (before), 4738.6 (after)
  !  . Memory usage      : 1.3 MB (before), 1.3 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
@@ -25,11 +25,11 @@
  ! Search terminated by limit, no solution found.
  ! Best bound             : 390
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 36978628
- ! Number of fails        : 15108914
- ! Total memory usage     : 183.2 MB (180.0 MB CP Optimizer + 3.3 MB Concert)
+ ! Number of branches     : 41086862
+ ! Number of fails        : 16509599
+ ! Total memory usage     : 184.3 MB (181.0 MB CP Optimizer + 3.3 MB Concert)
  ! Time spent in solve    : 1800.09s (1800.02s engine + 0.07s extraction)
- ! Search speed (br. / s) : 20543.5
+ ! Search speed (br. / s) : 22825.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! No solution
