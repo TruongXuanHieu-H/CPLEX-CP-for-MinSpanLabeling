@@ -1,0 +1,45 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/C-bcspwr01.mtx.rnd
+! Target value is set to 19
+! Lower bound is set to 20
+! Upper bound is set to 59
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 40 variables, 48 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 231.9 (before), 231.9 (after)
+ !  . Memory usage      : 344.8 kB (before), 344.8 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         40                 -
+ + New bound is 38
+                       22         39    1   F    11 != _int23
+ + New bound is 39
+ *            57       60  0.03s        1      (gap is 31.58%)
+              57     1920         23    1   F    10 != _int8
+ + New bound is 49 (gap is 14.04%)
+              57     2345         33    1   F    29 != _int5
+ + New bound is 54 (gap is 5.26%)
+              57     2709         30    4   F    36 != _int8
+ + New bound is 56 (gap is 1.75%)
+              57     3747         21    4            -
+ + New bound is 57 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 57 (optimal - effective tol. is 0)
+ ! Best bound             : 57
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 32646
+ ! Number of fails        : 15083
+ ! Total memory usage     : 7.8 MB (7.7 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.08s (0.08s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 466371.4
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 57
+! Labeling: 39 1 1 1 20 20 1 1 20 57 1 1 20 39 20 1 1 1 39 20 20 20 20 20 1 20 20 39 1 1 1 20 1 1 20 20 1 1 20 
+! -------------------------------------------------------- 

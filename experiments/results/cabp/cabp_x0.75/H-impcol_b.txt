@@ -1,0 +1,78 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/H-impcol_b.mtx.rnd
+! Target value is set to 5
+! Lower bound is set to 6
+! Upper bound is set to 44
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 60 variables, 371 constraints, 1 phase
+ ! Presolve      : 44 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 326.2 (before), 326.2 (after)
+ !  . Memory usage      : 783.7 kB (before), 783.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         60                 -
+ + New bound is 10
+                       10         59    1   F     5 != _int30
+ + New bound is 11
+ *            44      392  0.06s        1      (gap is 75.00%)
+ *            43      132  0.06s        6      (gap is 74.42%)
+ *            42      982  0.06s        6      (gap is 73.81%)
+ *            40     1685  0.08s        8      (gap is 72.50%)
+              40    23586         51    4   F     6 != _int15
+ + New bound is 12 (gap is 70.00%)
+              40    23600         51    4   F     7 != _int15
+ + New bound is 13 (gap is 67.50%)
+              40    23422         27    1   F    11 != _int15
+ + New bound is 14 (gap is 65.00%)
+              40    23579         23    1   F    13 != _int15
+ + New bound is 15 (gap is 62.50%)
+              40    25739         41    2   F    14 != _int2
+ + New bound is 16 (gap is 60.00%)
+              40    26275         55    7   F     6 != _int9
+ + New bound is 17 (gap is 57.50%)
+              40    31323         26    4   F     6 != _int6
+ + New bound is 18 (gap is 55.00%)
+              40    31505         26    4   F     8 != _int49
+ + New bound is 19 (gap is 52.50%)
+              40    41904         54    7   F     6 != _int9
+ + New bound is 20 (gap is 50.00%)
+              40    62634          7    1   F     5 != _int58
+ + New bound is 21 (gap is 47.50%)
+              40   11056k         55    2   F    19 != _int9
+ + New bound is 22 (gap is 45.00%)
+              40   11160k         34    2   F    21 != _int9
+ + New bound is 23 (gap is 42.50%)
+              40   11811k         41    1   F     8 != _int12
+ + New bound is 24 (gap is 40.00%)
+              40   14540k         38    4   F    21 != _int9
+ + New bound is 25 (gap is 37.50%)
+ ! Time = 275.50s, Average fail depth = 16, Memory usage = 34.6 MB
+ ! Current bound is 25 (gap is 37.50%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              40   14540k         38    4   F    24 != _int9
+ + New bound is 26 (gap is 35.00%)
+              40   14586k         52    4   F    20 != _int57
+ + New bound is 27 (gap is 32.50%)
+              40   14524k         54    2            -
+ + New bound is 40 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 4 solutions found.
+ ! Best objective         : 40 (optimal - effective tol. is 0)
+ ! Best bound             : 40
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 109581579
+ ! Number of fails        : 53045472
+ ! Total memory usage     : 53.4 MB (53.0 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 277.17s (277.16s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 395373.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 40
+! Labeling: 30 21 11 5 6 27 11 28 8 34 13 4 6 14 7 6 26 37 25 19 1 20 31 40 16 16 1 6 21 18 36 21 16 1 21 11 23 12 29 10 39 38 1 2 22 6 33 26 35 9 3 17 15 24 6 32 11 1 6 
+! -------------------------------------------------------- 

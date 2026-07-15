@@ -1,0 +1,46 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/L-bcspwr03.mtx.rnd
+! Target value is set to 21
+! Lower bound is set to 22
+! Upper bound is set to 88
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 119 variables, 357 constraints, 1 phase
+ ! Presolve      : 88 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 766.8 (before), 766.8 (after)
+ !  . Memory usage      : 749.2 kB (before), 749.2 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        119                 -
+ + New bound is 42
+                       42        118    1   F    21 != _int29
+ + New bound is 43
+ *            84      160  0.08s        1      (gap is 48.81%)
+              84     3294         71    1   F    62 != _int58
+ + New bound is 64 (gap is 23.81%)
+              84     7895        117    2   F    21 != _int35
+ + New bound is 75 (gap is 10.71%)
+              84    12047        116    2   F    59 != _int62
+ + New bound is 81 (gap is 3.57%)
+              84    12073        116    2   F    59 != _int58
+ + New bound is 84 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 84 (optimal - effective tol. is 0)
+ ! Best bound             : 84
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 143780
+ ! Number of fails        : 66523
+ ! Total memory usage     : 17.5 MB (17.1 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 0.42s (0.40s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 368666.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 84
+! Labeling: 1 43 80 43 16 1 1 49 22 25 58 45 43 30 64 4 22 26 43 24 22 29 22 38 22 48 22 22 1 35 40 6 2 67 44 36 3 1 78 75 1 56 65 84 33 14 72 77 42 15 22 22 11 70 61 1 76 43 68 43 32 62 46 83 22 21 22 59 51 22 8 1 57 41 53 71 63 1 9 1 81 22 7 12 82 50 52 37 22 19 13 20 74 73 1 22 54 27 10 18 1 22 66 17 1 55 31 79 39 69 23 28 47 34 60 5 22 1 
+! -------------------------------------------------------- 

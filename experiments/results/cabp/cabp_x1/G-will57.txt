@@ -1,0 +1,45 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/G-will57.mtx.rnd
+! Target value is set to 11
+! Lower bound is set to 12
+! Upper bound is set to 57
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 58 variables, 129 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 336.7 (before), 336.7 (after)
+ !  . Memory usage      : 464.2 kB (before), 464.2 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         58                 -
+ + New bound is 22
+                       22         57    1   F    11 != _int34
+ + New bound is 23
+ *            55       79  0.04s        1      (gap is 58.18%)
+              55     4243         56    2   F    14 != _int40
+ + New bound is 40 (gap is 27.27%)
+              55     7889         55    2   F    26 != _int49
+ + New bound is 49 (gap is 10.91%)
+              55    11876         56    7   F    12 != _int50
+ + New bound is 53 (gap is 3.64%)
+              55    12994         56    2   F    28 != _int48
+ + New bound is 55 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 55 (optimal - effective tol. is 0)
+ ! Best bound             : 55
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 151476
+ ! Number of fails        : 72686
+ ! Total memory usage     : 11.4 MB (11.3 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.25s (0.25s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 631150.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 55
+! Labeling: 1 12 12 1 12 45 23 1 1 12 12 12 1 12 23 23 23 23 23 34 12 1 12 1 12 45 34 1 12 12 1 12 12 23 23 23 23 23 45 12 1 1 1 55 23 34 12 23 12 1 23 12 45 1 12 12 34 
+! -------------------------------------------------------- 

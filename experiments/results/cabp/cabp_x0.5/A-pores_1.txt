@@ -1,0 +1,46 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/A-pores_1.mtx.rnd
+! Target value is set to 3
+! Lower bound is set to 4
+! Upper bound is set to 15
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 31 variables, 135 constraints, 1 phase
+ ! Presolve      : 15 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 119.6 (before), 119.6 (after)
+ !  . Memory usage      : 452.4 kB (before), 452.4 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         31                 -
+ + New bound is 6
+                        6         30    1   F     3 != _int17
+ + New bound is 7
+ *            15      713  0.05s        1      (gap is 53.33%)
+ *            14      927  0.05s        6      (gap is 50.00%)
+ *            13     3022  0.09s        1      (gap is 46.15%)
+              13     2933          1    4   F     4 != _int14
+ + New bound is 11 (gap is 15.38%)
+              13     8690         12    1   F     5 != _int6
+ + New bound is 12 (gap is 7.69%)
+              13     8263         10    2   F     9 != _int4
+ + New bound is 13 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 3 solutions found.
+ ! Best objective         : 13 (optimal - effective tol. is 0)
+ ! Best bound             : 13
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 71401
+ ! Number of fails        : 34733
+ ! Total memory usage     : 8.9 MB (8.7 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.17s (0.15s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 476006.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 13
+! Labeling: 3 8 1 10 12 7 6 5 1 13 9 7 9 8 10 2 1 4 11 3 5 11 10 11 4 13 7 4 2 8 
+! -------------------------------------------------------- 

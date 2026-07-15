@@ -1,0 +1,63 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/M-bcsstk06.mtx.rnd
+! Target value is set to 16
+! Lower bound is set to 17
+! Upper bound is set to 210
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 421 variables, 4142 constraints, 1 phase
+ ! Presolve      : 210 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.11s (0.09s extraction + 0.02s propagation)
+ !  . Log search space  : 3246.5 (before), 3246.5 (after)
+ !  . Memory usage      : 6.9 MB (before), 6.9 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        421                 -
+ + New bound is 32
+                       32        420    1   F    16 != _int149
+ + New bound is 33
+ *           210     161k  11.90s       7      (gap is 84.29%)
+ *           209     213k  16.48s       4      (gap is 84.21%)
+ *           208     221k  17.11s       4      (gap is 84.13%)
+             208     470k         45    1   F    19 != _int87
+ + New bound is 36 (gap is 82.69%)
+             208     471k        420    1   F    20 != _int87
+ + New bound is 37 (gap is 82.21%)
+             208     499k        345    2   F     5 != _int402
+ + New bound is 38 (gap is 81.73%)
+             208     511k        366    7   F     6 != _int318
+ + New bound is 39 (gap is 81.25%)
+             208     532k        408    2   F    30 != _int335
+ + New bound is 40 (gap is 80.77%)
+             208     536k        315    1   F     8 != _int362
+ + New bound is 41 (gap is 80.29%)
+             208     559k        419    2   F     9 != _int56
+ + New bound is 42 (gap is 79.81%)
+             208     600k        419    1   F    10 != _int324
+ + New bound is 43 (gap is 79.33%)
+             208     621k        419    2   F    11 != _int309
+ + New bound is 44 (gap is 78.85%)
+             208     661k        408    2   F    18 != _int316
+ + New bound is 47 (gap is 77.40%)
+             208    1293k        411    4   F    31 != _int84
+ + New bound is 48 (gap is 76.92%)
+ *           194    2149k  173.03s      8      (gap is 75.26%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : 194 (gap is 75.26%)
+ ! Best bound             : 48
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 207245096
+ ! Number of fails        : 96709826
+ ! Total memory usage     : 215.7 MB (211.2 MB CP Optimizer + 4.5 MB Concert)
+ ! Time spent in solve    : 1800.04s (1799.95s engine + 0.09s extraction)
+ ! Search speed (br. / s) : 115140.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 194
+! Labeling: 179 137 1 67 163 145 147 49 40 13 1 143 173 49 161 119 177 34 113 81 97 51 72 147 113 11 70 33 17 131 81 35 37 99 38 112 194 97 115 99 163 161 17 33 177 69 1 77 161 161 159 1 2 17 68 147 138 5 177 83 145 129 1 71 43 55 115 67 1 100 85 161 157 1 79 83 87 160 179 83 148 67 65 171 177 163 179 99 189 161 28 36 128 1 174 33 109 181 41 135 17 133 4 31 65 179 146 17 81 98 147 67 47 60 191 20 177 1 145 17 183 3 65 145 158 51 65 131 163 22 46 65 147 103 33 83 175 115 131 127 65 180 91 33 113 75 17 94 193 115 48 56 17 19 33 99 17 33 1 110 117 33 163 163 30 99 108 170 81 163 131 15 167 104 97 113 131 176 93 169 58 114 81 129 165 49 115 51 49 92 83 54 153 89 113 33 81 185 101 59 124 1 65 27 120 49 33 49 17 90 51 9 115 33 155 161 76 81 35 65 33 179 49 7 33 49 81 129 17 62 52 17 166 113 177 65 136 67 188 145 81 152 126 78 118 115 97 163 178 115 61 121 65 67 190 82 65 80 161 49 35 1 97 1 116 145 83 17 97 14 49 33 134 26 163 115 156 49 49 97 1 65 147 63 25 29 184 102 74 141 145 105 97 65 147 113 161 99 49 97 113 150 81 145 97 192 84 10 17 86 1 147 33 23 177 97 144 131 39 8 99 49 12 1 168 140 179 65 149 142 44 113 129 53 81 66 131 131 132 147 49 49 50 139 106 57 111 186 129 177 162 125 151 81 17 32 17 97 179 67 33 97 187 182 130 96 6 24 154 99 115 145 179 129 129 81 49 147 17 88 33 33 129 17 95 1 33 17 122 16 179 64 107 1 161 129 163 145 45 21 115 172 131 177 164 73 131 42 163 179 131 18 83 17 123 35 1 67 1 83 
+! -------------------------------------------------------- 

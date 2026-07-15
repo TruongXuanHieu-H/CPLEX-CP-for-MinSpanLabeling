@@ -1,0 +1,41 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/G-will57.mtx.rnd
+! Target value is set to 16
+! Lower bound is set to 17
+! Upper bound is set to 86
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 58 variables, 129 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 371.1 (before), 371.1 (after)
+ !  . Memory usage      : 528.3 kB (before), 528.3 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         58                 -
+ + New bound is 32
+                       32         57    1   F    16 != _int34
+ + New bound is 33
+ *            80       89  0.05s        1      (gap is 58.75%)
+              80     6055         57    7   F    53 != _int38
+ + New bound is 57 (gap is 28.75%)
+              80     129k         57    7            -
+ + New bound is 80 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 80 (optimal - effective tol. is 0)
+ ! Best bound             : 80
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 1089917
+ ! Number of fails        : 525905
+ ! Total memory usage     : 13.4 MB (13.3 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1.96s (1.95s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 561812.9
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 80
+! Labeling: 1 17 17 1 17 65 33 1 1 17 17 17 1 17 33 33 33 33 33 49 17 1 17 1 17 65 49 1 17 17 1 17 17 33 33 33 33 33 65 17 1 1 1 80 33 49 17 33 17 1 33 17 65 1 17 17 49 
+! -------------------------------------------------------- 

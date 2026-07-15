@@ -1,0 +1,77 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/K-dwt__234.mtx.rnd
+! Target value is set to 69
+! Lower bound is set to 70
+! Upper bound is set to 176
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 118 variables, 164 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 877.0 (before), 877.0 (after)
+ !  . Memory usage      : 605.6 kB (before), 605.6 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        118                 -
+ + New bound is 138
+                       38        117    1   F    19 != _int79
+ + New bound is 139
+ *           176      584  0.04s        2      (gap is 21.02%)
+ *           175     5716  0.09s        4      (gap is 20.57%)
+ *           174    14527  0.20s        8      (gap is 20.11%)
+ *           172    18309  0.29s        7      (gap is 19.19%)
+ *           171    22247  0.40s        1      (gap is 18.71%)
+ *           170    22770  0.45s        1      (gap is 18.24%)
+ *           169    22855  0.45s        1      (gap is 17.75%)
+ *           168    23312  0.45s        1      (gap is 17.26%)
+ *           167    23703  0.45s        1      (gap is 16.77%)
+ *           166    24733  0.47s        1      (gap is 16.27%)
+             166    68621        111    4   F    72 != _int42
+ + New bound is 140 (gap is 15.66%)
+             166    58881         54    7   F    71 != _int41
+ + New bound is 141 (gap is 15.06%)
+             166     110k         96    7   F     3 != _int84
+ + New bound is 142 (gap is 14.46%)
+             166     131k        116    4   F    71 != _int65
+ + New bound is 143 (gap is 13.86%)
+             166     142k        115    4   F    78 != _int63
+ + New bound is 144 (gap is 13.25%)
+             166     340k         98    1   F   100 != _int82
+ + New bound is 145 (gap is 12.65%)
+             166     474k        110    1   F    76 != _int85
+ + New bound is 146 (gap is 12.05%)
+             166     868k         71    4   F    27 != _int64
+ + New bound is 147 (gap is 11.45%)
+ ! Time = 18.31s, Average fail depth = 22, Memory usage = 18.6 MB
+ ! Current bound is 147 (gap is 11.45%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             166     990k         99    4   F    97 != _int65
+ + New bound is 148 (gap is 10.84%)
+             166    1339k        115    1   F    79 != _int44
+ + New bound is 149 (gap is 10.24%)
+             166    1741k         70    1   F    80 != _int42
+ + New bound is 150 (gap is 9.64%)
+             166    2443k        102    4   F   112 != _int82
+ + New bound is 151 (gap is 9.04%)
+             166    2411k        116    1   F   120 != _int75
+ + New bound is 155 (gap is 6.63%)
+             166    2807k        111    1            -
+ + New bound is 166 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 10 solutions found.
+ ! Best objective         : 166 (optimal - effective tol. is 0)
+ ! Best bound             : 166
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 20554094
+ ! Number of fails        : 10076314
+ ! Total memory usage     : 31.5 MB (31.3 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 79.67s (79.66s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 258022.8
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 166
+! Labeling: 35 78 104 91 9 132 1 22 50 91 91 119 160 147 76 91 132 104 9 91 160 119 63 104 91 119 76 7 91 69 63 35 78 119 9 104 63 132 119 91 106 119 91 78 119 78 119 7 119 139 78 119 78 119 78 132 91 106 78 9 134 145 132 132 50 78 160 63 119 147 78 104 1 106 70 9 91 119 147 91 22 76 147 104 91 119 63 78 147 50 78 50 37 129 63 106 35 119 78 145 91 147 139 78 104 166 76 147 106 160 22 132 76 22 76 63 78 
+! -------------------------------------------------------- 

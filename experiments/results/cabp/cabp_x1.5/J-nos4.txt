@@ -1,0 +1,48 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/J-nos4.mtx.rnd
+! Target value is set to 48
+! Lower bound is set to 49
+! Upper bound is set to 150
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 101 variables, 249 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 727.7 (before), 727.7 (after)
+ !  . Memory usage      : 713.0 kB (before), 713.0 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        101                 -
+ + New bound is 96
+                       54        100    1   F    27 != _int36
+ + New bound is 97
+ *           150      302  0.05s        1      (gap is 35.33%)
+ *           144      160  0.05s        4      (gap is 32.64%)
+             144     4818         44    4   F   114 != _int26
+ + New bound is 121 (gap is 15.97%)
+             144     5000        101    4   F        -
+ + New bound is 134 (gap is 6.94%)
+             144     5194        101    4   F   118 != _int26
+ + New bound is 140 (gap is 2.78%)
+             144     5113         93    7   F        -
+ + New bound is 143 (gap is 0.69%)
+             144     5239         93    7            -
+ + New bound is 144 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 144 (optimal - effective tol. is 0)
+ ! Best bound             : 144
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 71375
+ ! Number of fails        : 35042
+ ! Total memory usage     : 15.4 MB (15.1 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 0.21s (0.20s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 356875.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 144
+! Labeling: 49 1 49 1 49 49 1 1 1 97 49 97 1 144 97 49 1 49 49 97 1 1 1 49 1 1 97 97 97 97 49 1 49 49 1 1 97 49 97 1 1 1 1 97 49 1 97 1 49 49 1 1 1 1 1 97 97 49 1 97 1 49 49 49 49 97 1 1 97 97 1 97 1 97 97 49 1 49 97 1 97 1 49 49 1 97 97 49 97 49 1 49 97 97 1 49 97 49 49 97 
+! -------------------------------------------------------- 

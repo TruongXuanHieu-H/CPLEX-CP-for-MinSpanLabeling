@@ -1,0 +1,52 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/K-dwt__234.mtx.rnd
+! Target value is set to 46
+! Lower bound is set to 47
+! Upper bound is set to 117
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 118 variables, 164 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 803.2 (before), 803.2 (after)
+ !  . Memory usage      : 605.6 kB (before), 605.6 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        118                 -
+ + New bound is 92
+                       26        117    1   F    13 != _int79
+ + New bound is 93
+ *           117      472  0.04s        2      (gap is 20.51%)
+ *           111     8724  0.18s        2      (gap is 16.22%)
+             111    24158        108    4   F     1 != _int52
+ + New bound is 94 (gap is 15.32%)
+             111    28627        115    7   F    69 != _int65
+ + New bound is 103 (gap is 7.21%)
+             111    33645        106    1   F    57 != _int56
+ + New bound is 104 (gap is 6.31%)
+             111    56048        117    1   F    83 != _int57
+ + New bound is 105 (gap is 5.41%)
+             111    84005        117    4   F    85 != _int75
+ + New bound is 106 (gap is 4.50%)
+             111     616k        117    4   F    89 != _int75
+ + New bound is 108 (gap is 2.70%)
+             111    1021k        105    7            -
+ + New bound is 111 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 111 (optimal - effective tol. is 0)
+ ! Best bound             : 111
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 7298621
+ ! Number of fails        : 3563042
+ ! Total memory usage     : 22.8 MB (22.7 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 21.31s (21.31s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 342497.5
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 111
+! Labeling: 17 46 63 55 1 82 1 9 28 55 55 74 101 93 47 55 82 63 109 55 101 74 36 63 55 74 47 1 55 46 36 17 44 74 1 63 36 82 74 55 63 74 55 47 74 47 74 1 74 93 47 74 44 74 47 82 55 63 47 1 82 93 82 82 28 47 101 36 74 93 47 63 1 63 47 1 55 74 93 55 9 47 93 63 55 74 36 47 90 28 47 28 17 74 36 63 17 74 47 93 55 93 93 47 63 111 47 93 63 101 9 82 47 9 47 36 47 
+! -------------------------------------------------------- 

@@ -1,0 +1,47 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/G-will57.mtx.rnd
+! Target value is set to 5
+! Lower bound is set to 6
+! Upper bound is set to 28
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 58 variables, 185 constraints, 1 phase
+ ! Presolve      : 28 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 277.3 (before), 277.3 (after)
+ !  . Memory usage      : 530.3 kB (before), 530.3 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         58                 -
+ + New bound is 10
+                       10         57    1   F     5 != _int34
+ + New bound is 11
+ *            28      429  0.04s        1      (gap is 60.71%)
+ *            27      732  0.04s        3      (gap is 59.26%)
+ *            26      794  0.04s        5      (gap is 57.69%)
+ *            25      959  0.04s        5      (gap is 56.00%)
+              25     2695         54    7   F     6 != _int1
+ + New bound is 19 (gap is 24.00%)
+              25     4894         52    2   F    13 != _int50
+ + New bound is 23 (gap is 8.00%)
+              25    11138         55    1            -
+ + New bound is 25 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 4 solutions found.
+ ! Best objective         : 25 (optimal - effective tol. is 0)
+ ! Best bound             : 25
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 87498
+ ! Number of fails        : 41382
+ ! Total memory usage     : 11.2 MB (11.0 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.18s (0.18s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 514694.1
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 25
+! Labeling: 21 22 16 13 4 19 9 14 20 24 17 23 11 5 7 3 15 19 8 25 14 13 6 9 22 10 24 12 7 9 14 2 3 4 24 20 9 8 4 9 25 1 20 11 22 19 14 18 10 6 23 22 18 25 10 23 3 
+! -------------------------------------------------------- 

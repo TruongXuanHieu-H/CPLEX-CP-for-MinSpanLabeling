@@ -1,0 +1,48 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/J-nos4.mtx.rnd
+! Target value is set to 24
+! Lower bound is set to 25
+! Upper bound is set to 75
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 101 variables, 399 constraints, 1 phase
+ ! Presolve      : 75 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 625.5 (before), 625.5 (after)
+ !  . Memory usage      : 786.6 kB (before), 786.6 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        101                 -
+ + New bound is 48
+                       28        100    1   F    14 != _int36
+ + New bound is 49
+ *            75    1263k  36.83s       1      (gap is 34.67%)
+              75    1262k         77    7   F    52 != _int26
+ + New bound is 63 (gap is 16.00%)
+              75    1239k         28    2   F    15 != _int24
+ + New bound is 64 (gap is 14.67%)
+              75    1239k         28    2   F    14 != _int18
+ + New bound is 70 (gap is 6.67%)
+              75    1236k         58    4   F    60 != _int26
+ + New bound is 71 (gap is 5.33%)
+              75    1293k         92    7   F    61 != _int26
+ + New bound is 72 (gap is 4.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 75 (gap is 4.00%)
+ ! Best bound             : 72
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 423238218
+ ! Number of fails        : 212855010
+ ! Total memory usage     : 152.9 MB (152.5 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 1800.02s (1800.00s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 235132.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 75
+! Labeling: 22 16 2 16 75 7 73 18 56 58 8 46 30 57 44 6 27 40 43 67 18 72 72 70 74 4 58 45 47 46 69 19 41 10 65 75 49 21 14 37 65 39 29 17 63 38 48 34 41 13 32 20 25 71 24 67 58 9 33 15 36 40 24 11 23 45 31 1 58 55 66 60 34 68 50 42 70 62 59 19 61 35 26 19 54 3 45 52 15 21 35 69 48 11 53 5 12 64 28 51 
+! -------------------------------------------------------- 

@@ -1,0 +1,88 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/H-impcol_b.mtx.rnd
+! Target value is set to 7
+! Lower bound is set to 8
+! Upper bound is set to 59
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 60 variables, 283 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 351.6 (before), 351.6 (after)
+ !  . Memory usage      : 724.7 kB (before), 724.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         60                 -
+ + New bound is 14
+                       14         59    1   F     7 != _int30
+ + New bound is 15
+ *            56       72  0.05s        1      (gap is 73.21%)
+              56    23306          3    1   F     8 != _int6
+ + New bound is 16 (gap is 71.43%)
+              56    23324          3    1   F     9 != _int6
+ + New bound is 17 (gap is 69.64%)
+              56    26398         55    4   F    10 != _int15
+ + New bound is 18 (gap is 67.86%)
+              56    31008         59    1   F    11 != _int6
+ + New bound is 19 (gap is 66.07%)
+              56    32884         31    2   F     5 != _int9
+ + New bound is 20 (gap is 64.29%)
+              56    29587         24    7   F    19 != _int15
+ + New bound is 21 (gap is 62.50%)
+              56    38867         39    1   F    20 != _int57
+ + New bound is 22 (gap is 60.71%)
+              56    43083         58    4   F     8 != _int12
+ + New bound is 23 (gap is 58.93%)
+              56    51664          3    1   F     9 != _int6
+ + New bound is 24 (gap is 57.14%)
+              56    48311         57    7   F    23 != _int6
+ + New bound is 25 (gap is 55.36%)
+              56    64745          8    2   F    11 != _int57
+ + New bound is 26 (gap is 53.57%)
+              56    78104         57    4   F    12 != _int12
+ + New bound is 27 (gap is 51.79%)
+              56    2267k         31    1   F    12 != _int12
+ + New bound is 28 (gap is 50.00%)
+              56   15263k         36    1   F    14 != _int49
+ + New bound is 29 (gap is 48.21%)
+              56   61005k         14    1   F     8 != _int9
+ + New bound is 30 (gap is 46.43%)
+              56   83846k         52    7   F    26 != _int2
+ + New bound is 31 (gap is 44.64%)
+              56   84188k         57    7   F    29 != _int2
+ + New bound is 32 (gap is 42.86%)
+ ! Time = 1503.81s, Average fail depth = 29, Memory usage = 126.4 MB
+ ! Current bound is 32 (gap is 42.86%)
+ !          Best Branches  Non-fixed    W       Branch decision
+              56   84281k         59    7   F    18 != _int2
+ + New bound is 34 (gap is 39.29%)
+              56   88235k         52    2   F    32 != _int58
+ + New bound is 35 (gap is 37.50%)
+              56   88245k         45    2   F    34 != _int58
+ + New bound is 36 (gap is 35.71%)
+              56   88245k         45    2   F    34 != _int58
+ + New bound is 37 (gap is 33.93%)
+              56   88249k         50    2   F    35 != _int58
+ + New bound is 38 (gap is 32.14%)
+              56   88249k         50    2   F    37 != _int58
+ + New bound is 39 (gap is 30.36%)
+              56   89079k         41    2   F    38 != _int58
+ + New bound is 40 (gap is 28.57%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 56 (gap is 28.57%)
+ ! Best bound             : 40
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 737928009
+ ! Number of fails        : 353795233
+ ! Total memory usage     : 281.9 MB (281.7 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 1800.02s (1800.00s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 409960.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 56
+! Labeling: 15 1 15 56 8 8 15 15 8 8 22 1 8 8 8 15 29 15 1 29 15 22 50 8 22 8 15 8 22 1 43 36 8 1 15 36 1 1 15 8 15 15 1 1 1 8 22 1 15 8 8 8 1 1 8 15 36 1 8 
+! -------------------------------------------------------- 

@@ -1,0 +1,39 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/E-bcspwr02.mtx.rnd
+! Target value is set to 24
+! Lower bound is set to 25
+! Upper bound is set to 74
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 50 variables, 61 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 306.6 (before), 306.6 (after)
+ !  . Memory usage      : 378.0 kB (before), 378.0 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         50                 -
+ + New bound is 48
+                       26         49    1   F    13 != _int35
+ + New bound is 49
+ *            72       73  0.04s        1      (gap is 31.94%)
+              72      464          1    1            -
+ + New bound is 72 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 72 (optimal - effective tol. is 0)
+ ! Best bound             : 72
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 7472
+ ! Number of fails        : 2538
+ ! Total memory usage     : 7.0 MB (6.9 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.02s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 373600.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 72
+! Labeling: 72 1 25 25 1 25 49 25 1 25 25 25 1 1 1 1 1 1 49 25 1 1 25 25 49 1 25 49 25 1 1 1 49 25 25 25 25 1 25 1 1 1 25 25 1 25 1 49 1 
+! -------------------------------------------------------- 

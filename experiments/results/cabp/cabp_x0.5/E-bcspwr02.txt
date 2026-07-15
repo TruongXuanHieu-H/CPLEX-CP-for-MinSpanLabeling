@@ -1,0 +1,40 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/E-bcspwr02.mtx.rnd
+! Target value is set to 8
+! Lower bound is set to 9
+! Upper bound is set to 24
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 50 variables, 109 constraints, 1 phase
+ ! Presolve      : 24 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 225.3 (before), 225.3 (after)
+ !  . Memory usage      : 379.7 kB (before), 379.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         50                 -
+ + New bound is 16
+                        8         49    1   F     4 != _int35
+ + New bound is 17
+ *            24      687  0.02s        1      (gap is 29.17%)
+              24     1835          7    2            -
+ + New bound is 24 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 24 (optimal - effective tol. is 0)
+ ! Best bound             : 24
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 15678
+ ! Number of fails        : 7144
+ ! Total memory usage     : 7.5 MB (7.4 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 391950.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 24
+! Labeling: 23 19 23 7 12 16 13 2 7 5 17 15 11 21 5 11 7 14 13 23 11 7 20 4 15 21 21 23 8 21 24 5 19 23 14 22 10 11 3 6 14 1 5 18 9 6 15 19 21 
+! -------------------------------------------------------- 

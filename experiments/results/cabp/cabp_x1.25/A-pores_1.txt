@@ -1,0 +1,44 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/A-pores_1.mtx.rnd
+! Target value is set to 7
+! Lower bound is set to 8
+! Upper bound is set to 38
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 31 variables, 105 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 161.1 (before), 161.1 (after)
+ !  . Memory usage      : 419.3 kB (before), 419.3 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         31                 -
+ + New bound is 14
+                       14         30    1   F     7 != _int17
+ + New bound is 15
+ *            29       48  0.04s        1      (gap is 48.28%)
+              29     1835          1    1   F    17 != _int11
+ + New bound is 23 (gap is 20.69%)
+ *            28     1061  0.04s        8      (gap is 17.86%)
+              28     2799         29    2   F    24 != _int5
+ + New bound is 27 (gap is 3.57%)
+              28     5209         28    1            -
+ + New bound is 28 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 28 (optimal - effective tol. is 0)
+ ! Best bound             : 28
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 42528
+ ! Number of fails        : 20376
+ ! Total memory usage     : 9.0 MB (8.9 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.09s (0.09s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 472533.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 28
+! Labeling: 21 7 28 14 7 14 7 21 21 28 14 14 14 14 7 28 21 21 7 21 28 7 7 14 28 28 7 28 21 14 
+! -------------------------------------------------------- 

@@ -1,0 +1,53 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/G-will57.mtx.rnd
+! Target value is set to 13
+! Lower bound is set to 14
+! Upper bound is set to 72
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 58 variables, 129 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 356.2 (before), 356.2 (after)
+ !  . Memory usage      : 528.3 kB (before), 528.3 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         58                 -
+ + New bound is 26
+                       26         57    1   F    13 != _int34
+ + New bound is 27
+ *            65       83  0.03s        1      (gap is 58.46%)
+              65     5694         56    2   F    45 != _int37
+ + New bound is 47 (gap is 27.69%)
+              65    28999         20    2   F     8 != _int49
+ + New bound is 48 (gap is 26.15%)
+              65    70890         45    4   F    44 != _int51
+ + New bound is 49 (gap is 24.62%)
+              65    90091         54    4   F    10 != _int48
+ + New bound is 50 (gap is 23.08%)
+              65    86882         35    1   F    38 != _int51
+ + New bound is 52 (gap is 20.00%)
+              65     106k         49    4   F    13 != _int48
+ + New bound is 53 (gap is 18.46%)
+              65    95522         55    2   F    51 != _int51
+ + New bound is 54 (gap is 16.92%)
+              65    95186         55    7            -
+ + New bound is 65 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 65 (optimal - effective tol. is 0)
+ ! Best bound             : 65
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 825155
+ ! Number of fails        : 398382
+ ! Total memory usage     : 12.7 MB (12.5 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1.45s (1.45s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 573024.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 65
+! Labeling: 1 14 14 1 14 53 27 1 1 14 14 14 1 14 27 27 27 27 27 40 14 1 14 1 14 53 40 1 14 14 1 14 14 27 27 27 27 27 53 14 1 1 1 65 27 40 14 27 14 1 27 14 53 1 14 14 40 
+! -------------------------------------------------------- 

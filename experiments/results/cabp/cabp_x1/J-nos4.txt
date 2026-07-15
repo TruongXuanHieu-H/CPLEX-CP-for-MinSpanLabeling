@@ -1,0 +1,46 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/J-nos4.mtx.rnd
+! Target value is set to 32
+! Lower bound is set to 33
+! Upper bound is set to 100
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 101 variables, 249 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 667.3 (before), 667.3 (after)
+ !  . Memory usage      : 713.0 kB (before), 713.0 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        101                 -
+ + New bound is 64
+                       36        100    1   F    18 != _int36
+ + New bound is 65
+ *           100      228  0.04s        1      (gap is 35.00%)
+ *            96      134  0.04s        4      (gap is 32.29%)
+              96     3357         92    4   F    16 != _int34
+ + New bound is 81 (gap is 15.62%)
+              96     3749         92    4   F    70 != _int26
+ + New bound is 90 (gap is 6.25%)
+              96     3879         92    4   F    79 != _int26
+ + New bound is 94 (gap is 2.08%)
+              96     4555         94    1            -
+ + New bound is 96 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 96 (optimal - effective tol. is 0)
+ ! Best bound             : 96
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 41827
+ ! Number of fails        : 19738
+ ! Total memory usage     : 15.0 MB (14.7 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 0.11s (0.11s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 418270.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 96
+! Labeling: 33 1 33 1 33 33 1 1 1 65 33 65 1 96 65 33 1 33 33 65 1 1 1 33 1 1 65 65 65 65 33 1 33 33 1 1 65 33 65 1 1 1 1 65 33 1 65 1 33 33 1 1 1 1 1 65 65 33 1 65 1 33 33 33 33 65 1 1 65 65 1 65 1 65 65 33 1 33 65 1 65 1 33 33 1 65 65 33 65 33 1 33 65 65 1 33 65 33 33 65 
+! -------------------------------------------------------- 

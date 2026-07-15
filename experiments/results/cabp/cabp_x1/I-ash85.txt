@@ -1,0 +1,45 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/I-ash85.mtx.rnd
+! Target value is set to 21
+! Lower bound is set to 22
+! Upper bound is set to 85
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 86 variables, 221 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 549.3 (before), 549.3 (after)
+ !  . Memory usage      : 646.8 kB (before), 646.8 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         86                 -
+ + New bound is 42
+                       42         85    1   F    21 != _int56
+ + New bound is 43
+ *            84      118  0.04s        1      (gap is 48.81%)
+              84     3929         21    1   F    59 != _int12
+ + New bound is 64 (gap is 23.81%)
+              84     7559         85    2   F    53 != _int33
+ + New bound is 75 (gap is 10.71%)
+              84     8805         84    7   F    37 != _int21
+ + New bound is 80 (gap is 4.76%)
+              84    10866         83    1            -
+ + New bound is 84 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 84 (optimal - effective tol. is 0)
+ ! Best bound             : 84
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 100839
+ ! Number of fails        : 48770
+ ! Total memory usage     : 14.2 MB (14.0 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.25s (0.24s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 420162.5
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 84
+! Labeling: 43 1 22 43 22 1 22 64 43 84 22 22 1 22 43 1 1 1 22 43 64 22 22 1 22 64 64 1 22 1 64 64 1 64 22 22 1 43 43 1 43 1 64 43 43 1 22 43 43 1 22 43 22 43 43 43 22 1 43 43 1 64 1 22 43 22 1 64 1 1 64 1 43 64 1 1 22 1 1 43 22 43 64 43 22 
+! -------------------------------------------------------- 

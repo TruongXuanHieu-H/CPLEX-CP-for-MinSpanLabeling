@@ -1,0 +1,47 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/F-curtis54.mtx.rnd
+! Target value is set to 15
+! Lower bound is set to 16
+! Upper bound is set to 81
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 55 variables, 126 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 347.1 (before), 347.1 (after)
+ !  . Memory usage      : 493.9 kB (before), 493.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         55                 -
+ + New bound is 30
+                       30         54    1   F    15 != _int25
+ + New bound is 31
+ *            75      112  0.04s        1      (gap is 58.67%)
+              75     3123         54    7   F    17 != _int8
+ + New bound is 54 (gap is 28.00%)
+              75    83500         52    7   F    21 != _int9
+ + New bound is 55 (gap is 26.67%)
+              75     100k         39    7   F    40 != _int8
+ + New bound is 56 (gap is 25.33%)
+              75     109k         49    2   F    25 != _int10
+ + New bound is 57 (gap is 24.00%)
+              75     129k         52    4            -
+ + New bound is 75 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 75 (optimal - effective tol. is 0)
+ ! Best bound             : 75
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 971314
+ ! Number of fails        : 469465
+ ! Total memory usage     : 12.9 MB (12.8 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1.75s (1.74s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 561453.2
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 75
+! Labeling: 46 31 31 75 16 1 16 31 1 15 16 46 1 16 16 31 16 16 1 31 31 1 1 46 31 31 46 1 1 31 16 61 1 31 16 16 61 46 46 16 1 1 31 16 31 31 1 46 46 1 16 31 46 1 
+! -------------------------------------------------------- 
