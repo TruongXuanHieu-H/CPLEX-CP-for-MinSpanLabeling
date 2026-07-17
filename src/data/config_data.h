@@ -23,7 +23,7 @@ public:
     {
         if (argc != 8)
         {
-            std::cerr << "Usage: " << argv[0] << " instance.txt <target_value_mul> <lower_bound> <upper_bound> <time_limit> <vertices_mode> <target_value_mode>\n";
+            std::cerr << "Usage: " << argv[0] << " <graph_file_dir> <target_value> <lower_bound> <upper_bound> <time_limit> <vertices_mode> <target_value_mode>\n";
             exit(1);
         }
 
