@@ -61,27 +61,13 @@ protected:
 
     void encode_span(ConfigData &config_data, GraphData &graph_data, CPData &cp_data)
     {
-        switch (config_data.target_value_mode)
-        {
-        case TargetValueMode::abp:
-        {
+        cp_data.model.add(IloCount(cp_data.label, 1) >= 1);
 
-            for (int v = 0; v < graph_data.num_vertices; v++)
-                cp_data.model.add(cp_data.span >= cp_data.label[v]);
-            break;
-        }
-        case TargetValueMode::cabp:
-        {
-            IloIntExprArray labels(cp_data.env);
-            for (int v = 0; v < graph_data.num_vertices; v++)
-                labels.add(cp_data.label[v]);
-            cp_data.model.add(cp_data.span == IloMax(labels));
-            labels.end();
-            break;
-        }
-        default:
-            break;
-        }
+        IloIntExprArray labels(cp_data.env);
+        for (int v = 0; v < graph_data.num_vertices; v++)
+            labels.add(cp_data.label[v]);
+        cp_data.model.add(cp_data.span == IloMax(labels));
+        labels.end();
     }
 };
 

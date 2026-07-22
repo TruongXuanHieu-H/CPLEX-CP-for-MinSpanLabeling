@@ -14,7 +14,8 @@ IloModel NoHoleEncoder::encode_model(ConfigData &config_data, GraphData &graph_d
 
 void NoHoleEncoder::encode_no_hole(ConfigData &config_data, GraphData &graph_data, CPData &cp_data)
 {
-    for (int l = 1; l <= config_data.upper_bound; l++)
+    // Start from 2 since label 1 has been forced to used
+    for (int l = 2; l <= config_data.upper_bound; l++)
     {
         IloIntExpr occ = IloCount(cp_data.label, l);
         cp_data.model.add(IloIfThen(cp_data.env, cp_data.span >= l, occ >= 1));
