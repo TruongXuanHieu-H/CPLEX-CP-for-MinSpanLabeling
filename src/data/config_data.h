@@ -12,8 +12,8 @@ enum class VerticesMode
 
 enum class TargetValueMode
 {
-    abp,  // Linear
-    cabp, // Cyclic
+    abp,  // Antibandwidth
+    cabp, // Cyclic Antibandwidth
 };
 
 class ConfigData
@@ -68,12 +68,12 @@ public:
         if (target_value_mode == "abp")
         {
             this->target_value_mode = TargetValueMode::abp;
-            std::cout << "! Target value mode is set to Linear\n";
+            std::cout << "! Target value mode is set to Antibandwidth\n";
         }
         else if (target_value_mode == "cabp")
         {
             this->target_value_mode = TargetValueMode::cabp;
-            std::cout << "! Target value mode is set to Cyclic\n";
+            std::cout << "! Target value mode is set to Cyclic Antibandwidth\n";
         }
         else
         {
