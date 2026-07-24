@@ -4,15 +4,15 @@
 ! Upper bound is set to 88
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 119 variables, 357 constraints, 1 phase
+ ! Minimization problem - 119 variables, 356 constraints, 1 phase
  ! Presolve      : 88 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
  !  . Log search space  : 766.8 (before), 766.8 (after)
- !  . Memory usage      : 749.2 kB (before), 749.2 kB (after)
+ !  . Memory usage      : 749.1 kB (before), 749.1 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -37,8 +37,8 @@
  ! Number of branches     : 143780
  ! Number of fails        : 66523
  ! Total memory usage     : 17.5 MB (17.1 MB CP Optimizer + 0.4 MB Concert)
- ! Time spent in solve    : 0.42s (0.40s engine + 0.02s extraction)
- ! Search speed (br. / s) : 368666.7
+ ! Time spent in solve    : 0.37s (0.36s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 399388.9
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 84

@@ -1,86 +1,57 @@
-! Solving for graph ../../../benchmarks/abp/G-will57.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/G-will57.mtx.rnd
 ! Target value is set to 19
+! Lower bound is set to 20
+! Upper bound is set to 86
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 58 variables, 185 constraints, 1 phase
+ ! Minimization problem - 58 variables, 130 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 372.4 (before), 372.4 (after)
- !  . Memory usage      : 347.0 kB (before), 347.0 kB (after)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 371.4 (before), 371.4 (after)
+ !  . Memory usage      : 346.6 kB (before), 346.6 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         58                 -
  + New bound is 20
-                        2         57    1   F     1 != _int53
+                        2         57    1   F     1 != _int33
  + New bound is 21
- *            86      416  0.02s        7      (gap is 75.58%)
- *            83     1925  0.04s        1      (gap is 74.70%)
- *            82     2550  0.05s        3      (gap is 74.39%)
-              82     7003         58    1   F    13 != _int19
- + New bound is 52 (gap is 36.59%)
-              82     9834         27    4   F    14 != _int26
- + New bound is 53 (gap is 35.37%)
- *            81    18173  0.24s        3      (gap is 34.57%)
- *            80    16175  0.29s        2      (gap is 33.75%)
- *            79    61031  0.83s        8      (gap is 32.91%)
-              79     125k         56    1   F     3 != _int19
- + New bound is 54 (gap is 31.65%)
-              79     360k         31    1   F    16 != _int25
- + New bound is 55 (gap is 30.38%)
-              79     471k         39    4   F    14 != _int8
- + New bound is 56 (gap is 29.11%)
-              79     498k         39    1   F    37 != _int25
- + New bound is 57 (gap is 27.85%)
-              79     632k         31    4   F    17 != _int19
- + New bound is 58 (gap is 26.58%)
-              79     844k         55    7   F    59 != _int25
- + New bound is 60 (gap is 24.05%)
-              79     909k         54    1   F    38 != _int13
- + New bound is 61 (gap is 22.78%)
-              79     972k         55    4   F     2 != _int25
- + New bound is 62 (gap is 21.52%)
-              79     934k         55    1   F    38 != _int13
- + New bound is 63 (gap is 20.25%)
-              79     973k         54    1   F    38 != _int13
- + New bound is 64 (gap is 18.99%)
- ! Time = 13.67s, Average fail depth = 18, Memory usage = 11.1 MB
- ! Current bound is 64 (gap is 18.99%)
- !          Best Branches  Non-fixed    W       Branch decision
-              79     988k         54    1   F    38 != _int13
- + New bound is 65 (gap is 17.72%)
-              79    1330k         37    1   F     2 != _int8
- + New bound is 67 (gap is 15.19%)
-              79    1688k         31    1   F     2 != _int8
- + New bound is 68 (gap is 13.92%)
-              79    2279k         27    1   F     4 != _int8
- + New bound is 69 (gap is 12.66%)
-              79    2339k         39    1   F    41 != _int16
- + New bound is 70 (gap is 11.39%)
-              79    2356k         55    1   F    41 != _int16
- + New bound is 71 (gap is 10.13%)
-              79    2649k         29    1   F     4 != _int8
- + New bound is 72 (gap is 8.86%)
-              79   12633k         30    1   F     2 != _int20
- + New bound is 74 (gap is 6.33%)
-              79   14742k         40    1   F        -
- + New bound is 75 (gap is 5.06%)
-              79   14914k         56    1   F    59 != _int5
- + New bound is 78 (gap is 1.27%)
-              79   16807k         46    7            -
- + New bound is 79 (gap is 0.00%)
+ *            77       59  0.03s        1      (gap is 72.73%)
+              77     3090         56    1   F    27 != _int27
+ + New bound is 50 (gap is 35.06%)
+              77     5186         56    2   F    24 != _int49
+ + New bound is 65 (gap is 15.58%)
+              77    20225         55    4   F    62 != _int48
+ + New bound is 66 (gap is 14.29%)
+              77    21585         45    2   F    20 != _int50
+ + New bound is 67 (gap is 12.99%)
+              77    38713         32    2   F     8 != _int49
+ + New bound is 68 (gap is 11.69%)
+              77    48255         20    1   F    49 != _int50
+ + New bound is 69 (gap is 10.39%)
+              77    54666         53    2   F    27 != _int49
+ + New bound is 70 (gap is 9.09%)
+              77    72983         46    1   F        -
+ + New bound is 71 (gap is 7.79%)
+              77    78568         26    1   F        -
+ + New bound is 72 (gap is 6.49%)
+              77     111k         56    4            -
+ + New bound is 77 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 6 solutions found.
- ! Best objective         : 79 (optimal - effective tol. is 0)
- ! Best bound             : 79
+ ! Search completed, 1 solution found.
+ ! Best objective         : 77 (optimal - effective tol. is 0)
+ ! Best bound             : 77
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 133213845
- ! Number of fails        : 64291274
- ! Total memory usage     : 55.3 MB (55.2 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 242.45s (242.45s engine + 0.00s extraction)
- ! Search speed (br. / s) : 549448.7
+ ! Number of branches     : 882704
+ ! Number of fails        : 425905
+ ! Total memory usage     : 10.0 MB (9.9 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 1.32s (1.31s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 679003.1
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 79
-! Labeling: 19 37 16 7 2 78 59 40 41 9 17 46 48 3 65 67 60 71 66 79 1 13 29 39 12 22 21 10 32 4 8 11 34 64 58 63 61 62 20 23 42 25 24 69 52 77 14 51 6 18 72 47 53 26 5 15 27 
+! Best span = 77
+! Labeling: 1 20 20 20 58 77 39 1 1 20 20 58 20 77 39 39 39 39 39 58 77 20 1 1 20 20 20 20 1 20 20 20 1 39 58 39 39 39 20 20 1 1 1 1 39 39 20 39 20 1 58 39 39 1 20 20 1 
 ! -------------------------------------------------------- 

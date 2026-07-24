@@ -4,15 +4,15 @@
 ! Upper bound is set to 50
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 101 variables, 349 constraints, 1 phase
+ ! Minimization problem - 101 variables, 348 constraints, 1 phase
  ! Presolve      : 50 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
  !  . Log search space  : 566.3 (before), 566.3 (after)
- !  . Memory usage      : 761.0 kB (before), 761.0 kB (after)
+ !  . Memory usage      : 760.9 kB (before), 760.9 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -20,7 +20,7 @@
  + New bound is 32
                        18        100    1   F     9 != _int36
  + New bound is 33
- *            50    87710  1.50s        4      (gap is 34.00%)
+ *            50    87710  1.35s        4      (gap is 34.00%)
               50    88744         71    2   F     9 != _int88
  + New bound is 42 (gap is 16.00%)
               50    89133         99    1   F    10 != _int17
@@ -34,11 +34,11 @@
  ! Best objective         : 50 (gap is 4.00%)
  ! Best bound             : 48
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 787030632
- ! Number of fails        : 379973503
- ! Total memory usage     : 196.7 MB (196.3 MB CP Optimizer + 0.4 MB Concert)
- ! Time spent in solve    : 1800.02s (1800.00s engine + 0.02s extraction)
- ! Search speed (br. / s) : 437239.2
+ ! Number of branches     : 832106175
+ ! Number of fails        : 401848686
+ ! Total memory usage     : 208.3 MB (207.9 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 1800.00s (1800.00s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 462283.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 50

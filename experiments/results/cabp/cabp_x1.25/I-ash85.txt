@@ -4,14 +4,14 @@
 ! Upper bound is set to 107
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 86 variables, 221 constraints, 1 phase
+ ! Minimization problem - 86 variables, 222 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 577.8 (before), 577.8 (after)
- !  . Memory usage      : 646.8 kB (before), 646.8 kB (after)
+ !  . Memory usage      : 678.8 kB (before), 678.8 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -20,28 +20,36 @@
                        52         85    1   F    26 != _int56
  + New bound is 53
  *           104      128  0.04s        1      (gap is 49.04%)
-             104     3617         64    1   F    44 != _int22
+             104     3868         65    1   F    64 != _int51
  + New bound is 79 (gap is 24.04%)
-             104     7665         85    2   F    27 != _int22
- + New bound is 92 (gap is 11.54%)
-             104    10026         86    7   F    90 != _int34
- + New bound is 99 (gap is 4.81%)
-             104    14179         85    2   F    98 != _int34
- + New bound is 102 (gap is 1.92%)
-             104    42329         62    1   F   100 != _int31
- + New bound is 103 (gap is 0.96%)
-             104    66525         81    1   F    74 != _int34
+             104    22300         61    4   F    27 != _int8
+ + New bound is 80 (gap is 23.08%)
+             104    30673         80    2   F    52 != _int42
+ + New bound is 81 (gap is 22.12%)
+             104    28262         81    1   F    47 != _int51
+ + New bound is 82 (gap is 21.15%)
+             104    39702         64    2   F    56 != _int42
+ + New bound is 83 (gap is 20.19%)
+             104    50787         73    2   F    67 != _int42
+ + New bound is 84 (gap is 19.23%)
+             104    47618         60    7   F    58 != _int34
+ + New bound is 85 (gap is 18.27%)
+             104    62203         81    2   F    59 != _int42
+ + New bound is 86 (gap is 17.31%)
+             104    57865         75    7   F    59 != _int34
+ + New bound is 87 (gap is 16.35%)
+             104    61742         84    7            -
  + New bound is 104 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 104 (optimal - effective tol. is 0)
  ! Best bound             : 104
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 544005
- ! Number of fails        : 267969
- ! Total memory usage     : 16.5 MB (16.3 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 1.45s (1.45s engine + 0.00s extraction)
- ! Search speed (br. / s) : 377781.2
+ ! Number of branches     : 583834
+ ! Number of fails        : 287708
+ ! Total memory usage     : 16.9 MB (16.6 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1.38s (1.37s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 426156.2
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 104

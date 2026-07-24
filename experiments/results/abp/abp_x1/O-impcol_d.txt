@@ -1,29 +1,40 @@
-! Solving for graph ../../../benchmarks/abp/O-impcol_d.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/O-impcol_d.mtx.rnd
 ! Target value is set to 120
+! Lower bound is set to 121
+! Upper bound is set to 425
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 426 variables, 1693 constraints, 1 phase
+ ! Minimization problem - 426 variables, 1270 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
- !  . Log search space  : 3719.1 (before), 3719.1 (after)
- !  . Memory usage      : 848.0 kB (before), 848.0 kB (after)
+ !  . Log search space  : 3718.1 (before), 3718.1 (after)
+ !  . Memory usage      : 836.4 kB (before), 836.4 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        426                 -
  + New bound is 121
-                        2        425    1   F     1 != _int245
+                        2        425    1   F     1 != _int308
  + New bound is 122
+ *           425     1043  0.11s        2      (gap is 71.29%)
+ *           361     5076  0.20s        2      (gap is 66.20%)
+             361    44312        411    1            -
+ + New bound is 361 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, no solution found.
- ! Best bound             : 122
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 361 (optimal - effective tol. is 0)
+ ! Best bound             : 361
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 170697827
- ! Number of fails        : 80421021
- ! Total memory usage     : 655.4 MB (654.7 MB CP Optimizer + 0.7 MB Concert)
- ! Time spent in solve    : 1800.03s (1800.02s engine + 0.02s extraction)
- ! Search speed (br. / s) : 94831.6
+ ! Number of branches     : 369633
+ ! Number of fails        : 172290
+ ! Total memory usage     : 42.3 MB (41.6 MB CP Optimizer + 0.7 MB Concert)
+ ! Time spent in solve    : 2.22s (2.20s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 168782.2
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! No solution
-! --------------------------------------------------------
+! Best span = 361
+! Labeling: 361 121 361 361 1 241 1 241 1 241 241 121 1 241 121 1 1 241 121 1 241 241 121 121 1 121 121 121 1 361 241 1 1 241 1 121 1 1 361 361 121 241 241 121 241 1 1 1 241 121 1 241 1 121 241 241 241 121 241 241 121 121 241 121 1 121 241 121 121 1 361 121 361 241 241 121 361 361 241 241 121 1 121 121 121 241 121 241 241 361 1 121 1 1 1 1 1 1 1 241 241 121 241 1 361 121 1 121 121 1 1 1 361 241 1 1 1 241 1 1 121 361 361 121 1 1 121 1 121 241 1 241 121 121 241 121 241 241 361 1 241 1 241 121 361 121 241 1 241 1 241 241 121 241 361 121 1 1 121 121 121 1 121 1 1 1 1 1 361 1 1 361 1 1 241 241 1 1 361 361 241 121 1 241 241 1 361 1 121 1 121 1 121 1 241 121 121 1 1 1 1 121 121 121 121 241 241 1 1 121 361 121 361 1 241 361 241 1 361 361 361 1 241 121 121 1 1 361 241 121 121 121 121 241 1 1 1 1 1 121 121 1 361 1 361 1 1 361 1 1 121 121 241 121 121 1 361 1 1 1 121 361 121 1 241 1 121 241 241 241 1 241 361 241 361 1 1 1 241 1 121 1 121 121 121 361 1 121 121 361 241 241 1 241 241 1 361 121 1 1 121 121 121 1 121 241 121 1 1 121 121 1 1 241 241 361 241 121 121 1 241 241 1 361 121 121 121 241 121 1 121 1 1 361 121 361 121 121 241 1 121 1 121 121 241 121 121 1 241 121 121 241 361 121 241 241 121 241 241 241 1 1 241 1 121 1 361 241 1 361 1 361 361 1 121 121 121 241 241 121 241 1 121 241 1 361 241 121 121 241 241 121 361 1 121 241 241 241 121 241 121 361 361 1 361 1 121 121 1 1 121 1 121 121 361 1 1 241 241 121 1 241 361 241 1 
+! -------------------------------------------------------- 

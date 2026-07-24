@@ -4,14 +4,14 @@
 ! Upper bound is set to 178
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 119 variables, 181 constraints, 1 phase
+ ! Minimization problem - 119 variables, 182 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 887.7 (before), 887.7 (after)
- !  . Memory usage      : 606.5 kB (before), 606.5 kB (after)
+ !  . Memory usage      : 638.5 kB (before), 638.5 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -19,23 +19,33 @@
  + New bound is 86
                        86        118    1   F    43 != _int29
  + New bound is 87
- *           172      288  0.04s        1      (gap is 49.42%)
-             172     6024        118    2   F    29 != _int35
+ *           172      288  0.03s        1      (gap is 49.42%)
+             172     5314        119    2   F    42 != _int62
  + New bound is 130 (gap is 24.42%)
-             172    96046        118    1   F    85 != _int58
+             172    48463        114    7   F    43 != _int35
  + New bound is 131 (gap is 23.84%)
-             172    94593        117    2            -
+             172    86297        113    1   F    87 != _int62
+ + New bound is 132 (gap is 23.26%)
+             172    99510        100    1   F    46 != _int63
+ + New bound is 133 (gap is 22.67%)
+             172    99580        100    1   F    46 != _int63
+ + New bound is 134 (gap is 22.09%)
+             172     104k        104    2   F    82 != _int58
+ + New bound is 135 (gap is 21.51%)
+             172     128k         74    4   F    92 != _int62
+ + New bound is 136 (gap is 20.93%)
+             172     117k        117    1            -
  + New bound is 172 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 172 (optimal - effective tol. is 0)
  ! Best bound             : 172
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 836408
- ! Number of fails        : 387874
- ! Total memory usage     : 18.4 MB (18.2 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 2.00s (2.00s engine + 0.00s extraction)
- ! Search speed (br. / s) : 420305.5
+ ! Number of branches     : 903799
+ ! Number of fails        : 424069
+ ! Total memory usage     : 18.6 MB (18.4 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1.79s (1.79s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 504915.6
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 172

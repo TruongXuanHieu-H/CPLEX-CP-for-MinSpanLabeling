@@ -4,13 +4,13 @@
 ! Upper bound is set to 212
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 426 variables, 1693 constraints, 1 phase
+ ! Minimization problem - 426 variables, 1692 constraints, 1 phase
  ! Presolve      : 212 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.05s (0.05s extraction + 0.00s propagation)
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
  !  . Log search space  : 3290.1 (before), 3290.1 (after)
  !  . Memory usage      : 2.9 MB (before), 2.9 MB (after)
  ! Using parallel search with 8 workers.
@@ -20,15 +20,15 @@
  + New bound is 104
                       104        425    1   F    52 != _int309
  + New bound is 105
- *           212    37864  2.19s        4      (gap is 50.47%)
- *           211    97519  6.41s        1      (gap is 50.24%)
- *           210     134k  8.65s        1      (gap is 50.00%)
- *           209     145k  9.27s        1      (gap is 49.76%)
+ *           212    37864  2.04s        4      (gap is 50.47%)
+ *           211    97519  5.81s        1      (gap is 50.24%)
+ *           210     134k  7.88s        1      (gap is 50.00%)
+ *           209     145k  8.45s        1      (gap is 49.76%)
              209     145k        407    4   F        -
  + New bound is 107 (gap is 48.80%)
              209     145k        407    4   F        -
  + New bound is 108 (gap is 48.33%)
- *           208     146k  9.67s        4      (gap is 48.08%)
+ *           208     146k  8.79s        4      (gap is 48.08%)
              208     138k          2    7   F     4 != _int408
  + New bound is 109 (gap is 47.60%)
              208     165k        297    4   F        -
@@ -51,7 +51,7 @@
  + New bound is 120 (gap is 42.31%)
              208     376k        423    1   F    68 != _int55
  + New bound is 121 (gap is 41.83%)
- ! Time = 21.87s, Average fail depth = 38, Memory usage = 65.6 MB
+ ! Time = 19.68s, Average fail depth = 38, Memory usage = 65.6 MB
  ! Current bound is 121 (gap is 41.83%)
  !          Best Branches  Non-fixed    W       Branch decision
              208     372k        422    4   F    69 != _int29
@@ -72,8 +72,8 @@
  ! Number of branches     : 3639857
  ! Number of fails        : 1626143
  ! Total memory usage     : 93.7 MB (91.4 MB CP Optimizer + 2.3 MB Concert)
- ! Time spent in solve    : 31.41s (31.36s engine + 0.05s extraction)
- ! Search speed (br. / s) : 116066.9
+ ! Time spent in solve    : 27.95s (27.91s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 130460.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 208

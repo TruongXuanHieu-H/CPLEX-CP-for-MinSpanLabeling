@@ -4,94 +4,78 @@
 ! Upper bound is set to 662
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 663 variables, 908 constraints, 1 phase
+ ! Minimization problem - 663 variables, 909 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
  !  . Log search space  : 6210.8 (before), 6210.8 (after)
- !  . Memory usage      : 2.1 MB (before), 2.1 MB (after)
+ !  . Memory usage      : 2.2 MB (before), 2.2 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        663                 -
  + New bound is 330
- *           662      680  0.12s        3      (gap is 50.15%)
+ *           662      680  0.13s        3      (gap is 50.15%)
  *           660     1458  0.16s        2      (gap is 50.00%)
-             660     708k         10    1   F        -
+             660     921k        547    7   F   170 != _int662
  + New bound is 336 (gap is 49.09%)
-             660     805k        573    1   F        -
- + New bound is 342 (gap is 48.18%)
-             660     993k          1    1   F        -
+             660     921k        547    7   F   171 != _int662
+ + New bound is 337 (gap is 48.94%)
+             660     973k        591    1   F        -
  + New bound is 343 (gap is 48.03%)
-             660    1434k        657    2   F   182 != _int660
+             660    1148k        663    2   F   182 != _int660
  + New bound is 348 (gap is 47.27%)
-             660    1698k        335    4   F   187 != _int662
- + New bound is 353 (gap is 46.52%)
-             660    1763k        548    7   F   192 != _int606
- + New bound is 358 (gap is 45.76%)
-             660    1795k        658    2   F   193 != _int660
- + New bound is 359 (gap is 45.61%)
-             660    1795k        658    2   F   198 != _int660
- + New bound is 364 (gap is 44.85%)
-             660    1795k        658    2   F   198 != _int660
- + New bound is 365 (gap is 44.70%)
-             660    1800k        525    1   F        -
- + New bound is 370 (gap is 43.94%)
-             660    2001k        661    2   F   208 != _int651
- + New bound is 375 (gap is 43.18%)
-             660    2034k        649    7   F   214 != _int658
+             660    1075k        444    7   F   180 != _int660
+ + New bound is 349 (gap is 47.12%)
+             660    1056k        585    1   F        -
+ + New bound is 350 (gap is 46.97%)
+             660    1254k        575    2   F   189 != _int660
+ + New bound is 355 (gap is 46.21%)
+             660    1151k        658    1   F        -
+ + New bound is 356 (gap is 46.06%)
+             660    1349k        633    1   F        -
+ + New bound is 361 (gap is 45.30%)
+             660    1349k        633    1   F        -
+ + New bound is 362 (gap is 45.15%)
+             660    1496k        652    7   F   200 != _int660
+ + New bound is 367 (gap is 44.39%)
+             660    1424k        630    1   F        -
+ + New bound is 368 (gap is 44.24%)
+             660    1644k        600    1   F        -
+ + New bound is 373 (gap is 43.48%)
+             660    1644k        600    1   F        -
+ + New bound is 374 (gap is 43.33%)
+             660    1730k        577    1   F        -
+ + New bound is 379 (gap is 42.58%)
+             660    1730k        577    1   F        -
  + New bound is 380 (gap is 42.42%)
-             660    2041k        655    1   F        -
- + New bound is 381 (gap is 42.27%)
-             660    2262k        557    4   F   216 != _int658
- + New bound is 382 (gap is 42.12%)
-             660    2056k         55    1   F        -
- + New bound is 383 (gap is 41.97%)
-             660    2079k         16    1   F        -
- + New bound is 388 (gap is 41.21%)
-             660    2079k         16    1   F        -
- + New bound is 389 (gap is 41.06%)
- ! Time = 151.11s, Average fail depth = 45, Memory usage = 69.7 MB
- ! Current bound is 389 (gap is 41.06%)
+             660    1810k        516    1   F        -
+ + New bound is 385 (gap is 41.67%)
+ ! Time = 115.31s, Average fail depth = 51, Memory usage = 72.4 MB
+ ! Current bound is 385 (gap is 41.67%)
  !          Best Branches  Non-fixed    W       Branch decision
-             660    2359k        659    2   F   228 != _int651
- + New bound is 394 (gap is 40.30%)
-             660    2142k        567    1   F        -
- + New bound is 395 (gap is 40.15%)
-             660    2142k        567    1   F        -
- + New bound is 400 (gap is 39.39%)
-             660    2142k        567    1   F        -
- + New bound is 401 (gap is 39.24%)
-             660    2355k        548    7   F   240 != _int658
- + New bound is 406 (gap is 38.48%)
-             660    2470k        569    2   F   245 != _int662
- + New bound is 411 (gap is 37.73%)
-             660    2198k        595    1   F        -
- + New bound is 412 (gap is 37.58%)
-             660    2534k        621    4   F   247 != _int658
- + New bound is 413 (gap is 37.42%)
-             660    2592k        475    2   F   309 != _int606
- + New bound is 476 (gap is 27.88%)
-             660    2276k        531    1   F   260 != _int662
- + New bound is 477 (gap is 27.73%)
-             660    2737k        654    4   F   145 != _int658
- + New bound is 478 (gap is 27.58%)
-             660    2738k        663    4   F   315 != _int662
- + New bound is 481 (gap is 27.12%)
-             660    2628k        661    7            -
+             660    1810k        516    1   F        -
+ + New bound is 386 (gap is 41.52%)
+             660    2027k        594    7   F    98 != _int660
+ + New bound is 387 (gap is 41.36%)
+             660    2027k        594    7   F    98 != _int660
+ + New bound is 392 (gap is 40.61%)
+             660    2027k        594    7   F    98 != _int660
+ + New bound is 393 (gap is 40.45%)
+             660    1950k        662    1            -
  + New bound is 660 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 2 solutions found.
  ! Best objective         : 660 (optimal - effective tol. is 0)
  ! Best bound             : 660
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 18493367
- ! Number of fails        : 7919190
- ! Total memory usage     : 136.3 MB (135.4 MB CP Optimizer + 0.9 MB Concert)
- ! Time spent in solve    : 179.90s (179.87s engine + 0.03s extraction)
- ! Search speed (br. / s) : 102815.2
+ ! Number of branches     : 14592728
+ ! Number of fails        : 6360667
+ ! Total memory usage     : 119.7 MB (118.8 MB CP Optimizer + 0.9 MB Concert)
+ ! Time spent in solve    : 122.68s (122.65s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 118978.6
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 660

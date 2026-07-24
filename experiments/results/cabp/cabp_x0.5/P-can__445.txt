@@ -4,13 +4,13 @@
 ! Upper bound is set to 222
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 446 variables, 2128 constraints, 1 phase
+ ! Minimization problem - 446 variables, 2127 constraints, 1 phase
  ! Presolve      : 222 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.08s (0.08s extraction + 0.00s propagation)
+ ! Initial process time : 0.06s (0.06s extraction + 0.00s propagation)
  !  . Log search space  : 3474.6 (before), 3474.6 (after)
  !  . Memory usage      : 3.5 MB (before), 3.5 MB (after)
  ! Using parallel search with 8 workers.
@@ -20,7 +20,7 @@
  + New bound is 86
                        86        445    1   F    43 != _int161
  + New bound is 87
- *           222     345k  26.92s       7      (gap is 60.81%)
+ *           222     345k  22.56s       7      (gap is 60.81%)
              222     451k        328    1   F    49 != _int180
  + New bound is 90 (gap is 59.46%)
              222     451k        328    1   F     4 != _int162
@@ -41,7 +41,7 @@
  + New bound is 98 (gap is 55.86%)
              222     630k        445    1   F    58 != _int5
  + New bound is 102 (gap is 54.05%)
- *           221    1025k  73.43s       1      (gap is 53.85%)
+ *           221    1025k  62.52s       1      (gap is 53.85%)
              221    1501k        445    4   F    62 != _int155
  + New bound is 106 (gap is 52.04%)
              221    1568k        445    2   F    70 != _int425
@@ -50,23 +50,23 @@
  + New bound is 121 (gap is 45.25%)
              221    2343k        445    4   F    81 != _int398
  + New bound is 125 (gap is 43.44%)
- *           220    3749k  261.42s      4      (gap is 43.18%)
+ *           220    3749k  234.17s      4      (gap is 43.18%)
              220    5246k        446    7   F    85 != _int237
  + New bound is 129 (gap is 41.36%)
- ! Time = 382.67s, Average fail depth = 64, Memory usage = 87.8 MB
+ ! Time = 347.97s, Average fail depth = 64, Memory usage = 87.8 MB
  ! Current bound is 129 (gap is 41.36%)
  !          Best Branches  Non-fixed    W       Branch decision
- *           219   13774k  1004.35s     7      (gap is 41.10%)
+ *           219   13774k  925.17s      7      (gap is 41.10%)
  ! ----------------------------------------------------------------------------
  ! Search terminated by limit, 4 solutions found.
  ! Best objective         : 219 (gap is 41.10%)
  ! Best bound             : 129
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 176328159
- ! Number of fails        : 75612142
- ! Total memory usage     : 160.2 MB (157.5 MB CP Optimizer + 2.7 MB Concert)
- ! Time spent in solve    : 1800.08s (1800.01s engine + 0.08s extraction)
- ! Search speed (br. / s) : 97959.5
+ ! Number of branches     : 190385844
+ ! Number of fails        : 81531744
+ ! Total memory usage     : 160.8 MB (158.0 MB CP Optimizer + 2.7 MB Concert)
+ ! Time spent in solve    : 1800.06s (1800.01s engine + 0.06s extraction)
+ ! Search speed (br. / s) : 105769.3
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 219

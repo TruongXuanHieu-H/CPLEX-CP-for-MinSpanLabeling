@@ -1,50 +1,45 @@
-! Solving for graph ../../../benchmarks/abp/B-ibm32.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/B-ibm32.mtx.rnd
 ! Target value is set to 13
+! Lower bound is set to 14
+! Upper bound is set to 48
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 33 variables, 123 constraints, 1 phase
+ ! Minimization problem - 33 variables, 93 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 183.8 (before), 183.8 (after)
- !  . Memory usage      : 304.3 kB (before), 304.3 kB (after)
+ !  . Log search space  : 182.2 (before), 182.2 (after)
+ !  . Memory usage      : 304.1 kB (before), 304.1 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         33                 -
  + New bound is 14
-                        2         32    1   F     1 != _int21
+                        2         32    1   F     1 != _int3
  + New bound is 15
- *            47       34  0.02s        1      (gap is 68.09%)
- *            46     1785  0.03s        5      (gap is 67.39%)
-              46     2690          1    1   F     3 != _int25
- + New bound is 32 (gap is 30.43%)
- *            45     3117  0.04s        5      (gap is 28.89%)
- *            44     3460  0.04s        8      (gap is 27.27%)
-              44     4916          1    7   F     6 != _int3
- + New bound is 33 (gap is 25.00%)
-              44     7082         31    1   F    32 != _int15
- + New bound is 34 (gap is 22.73%)
- *            43     9609  0.11s        5      (gap is 20.93%)
-              43    10009         33    4   F    23 != _int15
- + New bound is 39 (gap is 9.30%)
-              43    11971         30    2   F    39 != _int25
- + New bound is 40 (gap is 6.98%)
-              43     625k         31    7   F    24 != _int20
- + New bound is 41 (gap is 4.65%)
-              43     735k         24    4            -
- + New bound is 43 (gap is 0.00%)
+ *            40       34  0.02s        1      (gap is 62.50%)
+              40      945          1    4   F    14 != _int0
+ + New bound is 28 (gap is 30.00%)
+              40     1134         24    1   F        -
+ + New bound is 35 (gap is 12.50%)
+              40     1138         24    1   F    36 != _int10
+ + New bound is 39 (gap is 2.50%)
+              40     1372         24    1            -
+ + New bound is 40 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 5 solutions found.
- ! Best objective         : 43 (optimal - effective tol. is 0)
- ! Best bound             : 43
+ ! Search completed, 1 solution found.
+ ! Best objective         : 40 (optimal - effective tol. is 0)
+ ! Best bound             : 40
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 5933209
- ! Number of fails        : 2925169
- ! Total memory usage     : 10.9 MB (10.8 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 8.81s (8.81s engine + 0.00s extraction)
- ! Search speed (br. / s) : 674228.3
+ ! Number of branches     : 13236
+ ! Number of fails        : 6092
+ ! Total memory usage     : 6.1 MB (6.0 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 441200.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 43
-! Labeling: 12 34 33 40 28 11 25 2 21 4 37 14 16 38 30 39 15 3 29 41 1 19 18 6 13 24 17 20 43 5 9 42 
+! Best span = 40
+! Labeling: 27 14 14 14 14 27 1 27 1 27 40 14 14 40 14 14 1 27 1 40 27 1 1 27 14 1 1 1 40 27 27 14 
 ! -------------------------------------------------------- 

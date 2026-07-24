@@ -4,12 +4,12 @@
 ! Upper bound is set to 117
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 118 variables, 164 constraints, 1 phase
+ ! Minimization problem - 118 variables, 165 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 803.2 (before), 803.2 (after)
  !  . Memory usage      : 605.6 kB (before), 605.6 kB (after)
  ! Using parallel search with 8 workers.
@@ -20,7 +20,7 @@
                        26        117    1   F    13 != _int79
  + New bound is 93
  *           117      472  0.04s        2      (gap is 20.51%)
- *           111     8724  0.18s        2      (gap is 16.22%)
+ *           111     8724  0.17s        2      (gap is 16.22%)
              111    24158        108    4   F     1 != _int52
  + New bound is 94 (gap is 15.32%)
              111    28627        115    7   F    69 != _int65
@@ -31,20 +31,22 @@
  + New bound is 105 (gap is 5.41%)
              111    84005        117    4   F    85 != _int75
  + New bound is 106 (gap is 4.50%)
-             111     616k        117    4   F    89 != _int75
+             111     259k         93    4   F    87 != _int75
+ + New bound is 107 (gap is 3.60%)
+             111     298k         68    4   F    89 != _int75
  + New bound is 108 (gap is 2.70%)
-             111    1021k        105    7            -
+             111    1410k        107    1            -
  + New bound is 111 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 2 solutions found.
  ! Best objective         : 111 (optimal - effective tol. is 0)
  ! Best bound             : 111
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 7298621
- ! Number of fails        : 3563042
- ! Total memory usage     : 22.8 MB (22.7 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 21.31s (21.31s engine + 0.00s extraction)
- ! Search speed (br. / s) : 342497.5
+ ! Number of branches     : 9856920
+ ! Number of fails        : 4827803
+ ! Total memory usage     : 24.1 MB (23.9 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 28.40s (28.38s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 347319.2
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 111

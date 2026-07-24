@@ -4,9 +4,9 @@
 ! Upper bound is set to 318
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 426 variables, 1905 constraints, 1 phase
+ ! Minimization problem - 426 variables, 1904 constraints, 1 phase
  ! Presolve      : 318 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
@@ -20,12 +20,12 @@
  + New bound is 156
                       156        425    1   F    78 != _int309
  + New bound is 157
- *           318    21363  1.70s        4      (gap is 50.63%)
- *           317    42438  3.77s        4      (gap is 50.47%)
- *           316    77069  6.08s        4      (gap is 50.32%)
- *           315    85885  6.60s        4      (gap is 50.16%)
- *           314    97696  7.38s        4      (gap is 50.00%)
- *           313     281k  22.25s       7      (gap is 49.84%)
+ *           318    21363  1.67s        4      (gap is 50.63%)
+ *           317    42438  3.60s        4      (gap is 50.47%)
+ *           316    77069  5.69s        4      (gap is 50.32%)
+ *           315    85885  6.15s        4      (gap is 50.16%)
+ *           314    97696  6.95s        4      (gap is 50.00%)
+ *           313     281k  20.97s       7      (gap is 49.84%)
              313     373k        426    4   F     3 != _int286
  + New bound is 160 (gap is 48.88%)
              313     347k        223    1   F     4 != _int315
@@ -46,10 +46,10 @@
  + New bound is 168 (gap is 46.33%)
              313     620k        424    4   F    12 != _int406
  + New bound is 169 (gap is 46.01%)
- *           312     612k  48.67s       2      (gap is 45.83%)
+ *           312     612k  46.40s       2      (gap is 45.83%)
              312     730k        396    7   F    13 != _int407
  + New bound is 170 (gap is 45.51%)
- ! Time = 56.26s, Average fail depth = 40, Memory usage = 75.1 MB
+ ! Time = 53.54s, Average fail depth = 40, Memory usage = 75.1 MB
  ! Current bound is 170 (gap is 45.51%)
  !          Best Branches  Non-fixed    W       Branch decision
              312     727k        412    1   F    94 != _int172
@@ -74,8 +74,8 @@
  ! Number of branches     : 8695783
  ! Number of fails        : 3947385
  ! Total memory usage     : 117.2 MB (114.4 MB CP Optimizer + 2.8 MB Concert)
- ! Time spent in solve    : 88.40s (88.34s engine + 0.06s extraction)
- ! Search speed (br. / s) : 98446.5
+ ! Time spent in solve    : 84.06s (84.00s engine + 0.06s extraction)
+ ! Search speed (br. / s) : 103521.2
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 312

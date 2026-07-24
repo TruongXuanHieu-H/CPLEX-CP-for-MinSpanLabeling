@@ -4,12 +4,12 @@
 ! Upper bound is set to 74
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 50 variables, 61 constraints, 1 phase
+ ! Minimization problem - 50 variables, 62 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 306.6 (before), 306.6 (after)
  !  . Memory usage      : 378.0 kB (before), 378.0 kB (after)
  ! Using parallel search with 8 workers.
@@ -20,18 +20,18 @@
                        26         49    1   F    13 != _int35
  + New bound is 49
  *            72       73  0.04s        1      (gap is 31.94%)
-              72      464          1    1            -
+              72      481          1    1            -
  + New bound is 72 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 72 (optimal - effective tol. is 0)
  ! Best bound             : 72
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 7472
- ! Number of fails        : 2538
- ! Total memory usage     : 7.0 MB (6.9 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.04s (0.02s engine + 0.02s extraction)
- ! Search speed (br. / s) : 373600.0
+ ! Number of branches     : 6943
+ ! Number of fails        : 2341
+ ! Total memory usage     : 7.1 MB (7.0 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 231433.3
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 72

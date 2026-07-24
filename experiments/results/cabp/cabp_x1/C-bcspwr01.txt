@@ -4,12 +4,12 @@
 ! Upper bound is set to 39
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 40 variables, 48 constraints, 1 phase
+ ! Minimization problem - 40 variables, 49 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
  !  . Log search space  : 207.8 (before), 207.8 (after)
  !  . Memory usage      : 344.8 kB (before), 344.8 kB (after)
  ! Using parallel search with 8 workers.
@@ -19,19 +19,19 @@
  + New bound is 26
                        14         39    1   F     7 != _int23
  + New bound is 27
- *            39       52  0.02s        1      (gap is 30.77%)
-              39      488          1    1            -
+ *            39       52  0.04s        1      (gap is 30.77%)
+              39      485          1    1            -
  + New bound is 39 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 39 (optimal - effective tol. is 0)
  ! Best bound             : 39
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 6140
- ! Number of fails        : 2511
- ! Total memory usage     : 6.3 MB (6.2 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.02s (0.02s engine + 0.00s extraction)
- ! Search speed (br. / s) : 307000.0
+ ! Number of branches     : 6787
+ ! Number of fails        : 2847
+ ! Total memory usage     : 6.4 MB (6.3 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.03s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 339349.9
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 39

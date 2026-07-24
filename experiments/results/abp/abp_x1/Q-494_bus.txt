@@ -1,29 +1,51 @@
-! Solving for graph ../../../benchmarks/abp/Q-494_bus.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/Q-494_bus.mtx.rnd
 ! Target value is set to 227
+! Lower bound is set to 228
+! Upper bound is set to 494
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 495 variables, 1081 constraints, 1 phase
+ ! Minimization problem - 495 variables, 589 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
- !  . Log search space  : 4428.6 (before), 4428.6 (after)
- !  . Memory usage      : 755.6 kB (before), 755.6 kB (after)
+ !  . Log search space  : 4420.5 (before), 4420.5 (after)
+ !  . Memory usage      : 711.4 kB (before), 711.4 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        495                 -
  + New bound is 228
-                        2        494    1   F     1 != _int245
+                        2        494    1   F     1 != _int58
  + New bound is 229
+ *           455      481  0.09s        1      (gap is 49.67%)
+             455     5769          1    4   F     7 != _int180
+ + New bound is 343 (gap is 24.62%)
+             455     6343        495    4   F     2 != _int180
+ + New bound is 400 (gap is 12.09%)
+             455     6981        495    4   F    20 != _int180
+ + New bound is 429 (gap is 5.71%)
+             455     7619        495    4   F    20 != _int180
+ + New bound is 443 (gap is 2.64%)
+             455     8257        495    4   F    20 != _int180
+ + New bound is 450 (gap is 1.10%)
+             455     8895        495    4   F    20 != _int180
+ + New bound is 454 (gap is 0.22%)
+             455     8933        494    4   F    20 != _int180
+ + New bound is 455 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, no solution found.
- ! Best bound             : 229
+ ! Search completed, 1 solution found.
+ ! Best objective         : 455 (optimal - effective tol. is 0)
+ ! Best bound             : 455
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 105321756
- ! Number of fails        : 49911729
- ! Total memory usage     : 319.7 MB (319.3 MB CP Optimizer + 0.4 MB Concert)
- ! Time spent in solve    : 1800.01s (1800.00s engine + 0.01s extraction)
- ! Search speed (br. / s) : 58512.1
+ ! Number of branches     : 134422
+ ! Number of fails        : 60483
+ ! Total memory usage     : 41.5 MB (41.1 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 0.61s (0.61s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 224036.7
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! No solution
-! --------------------------------------------------------
+! Best span = 455
+! Labeling: 455 1 1 228 1 1 1 1 1 1 1 228 1 228 1 1 228 1 228 1 228 228 1 228 455 228 455 1 228 1 228 1 228 228 228 1 1 1 228 1 1 228 228 228 228 228 228 1 1 1 1 228 228 1 228 455 228 1 228 228 1 228 1 1 228 228 1 1 1 228 1 228 228 1 228 1 1 1 228 228 228 228 1 1 228 1 228 228 455 228 228 1 228 455 1 1 1 228 228 1 228 1 228 1 455 1 228 1 1 1 1 1 228 228 455 1 228 228 1 1 228 228 1 228 228 1 228 1 228 1 228 228 1 1 228 228 1 1 228 228 1 1 1 1 1 1 228 1 1 228 228 1 1 1 228 228 228 228 1 228 228 1 455 1 455 1 228 1 228 1 1 228 1 228 1 228 228 1 1 455 228 228 228 228 228 228 228 1 228 228 228 1 228 228 1 1 228 1 1 228 455 228 1 228 1 1 228 1 1 228 228 455 1 1 228 228 228 228 1 1 228 228 1 228 228 228 228 228 228 1 228 1 228 455 1 228 228 228 228 1 228 1 228 228 228 1 228 228 1 228 228 228 1 228 1 1 1 228 1 228 1 228 1 1 1 1 1 1 1 1 1 1 228 228 455 228 1 1 1 228 228 228 228 1 228 1 1 1 1 1 228 228 1 228 1 1 228 1 1 1 1 1 1 1 228 228 1 228 1 228 455 1 1 1 1 455 1 228 1 1 228 455 1 228 1 228 1 1 1 1 228 228 1 1 1 1 228 228 1 1 1 228 1 1 228 1 1 1 228 228 228 228 228 228 228 455 228 1 1 1 455 1 1 1 1 1 228 1 228 228 1 1 455 455 1 1 228 228 1 228 228 1 1 228 228 228 1 228 1 1 228 228 228 1 228 1 228 228 228 228 1 228 455 1 228 228 228 1 455 1 228 228 228 228 1 228 455 1 1 1 228 228 228 228 228 228 1 1 1 1 1 455 1 455 228 228 228 228 228 228 228 1 228 1 228 228 228 1 228 1 1 1 1 228 228 1 1 455 1 228 1 1 228 228 455 455 1 1 228 228 1 228 1 1 1 228 228 455 1 1 228 228 1 228 1 228 1 228 1 1 1 228 1 228 
+! -------------------------------------------------------- 

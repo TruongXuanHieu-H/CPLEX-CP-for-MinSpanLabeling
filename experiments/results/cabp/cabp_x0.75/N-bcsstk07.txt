@@ -4,13 +4,13 @@
 ! Upper bound is set to 315
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 421 variables, 4352 constraints, 1 phase
+ ! Minimization problem - 421 variables, 4351 constraints, 1 phase
  ! Presolve      : 315 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.12s (0.12s extraction + 0.00s propagation)
+ ! Initial process time : 0.11s (0.11s extraction + 0.00s propagation)
  !  . Log search space  : 3492.7 (before), 3492.7 (after)
  !  . Memory usage      : 7.0 MB (before), 7.0 MB (after)
  ! Using parallel search with 8 workers.
@@ -20,7 +20,7 @@
  + New bound is 48
                        48        420    1   F    24 != _int149
  + New bound is 49
- *           315   10071k  915.14s      1      (gap is 84.44%)
+ *           315   10071k  787.29s      1      (gap is 84.44%)
              315    8539k        396    4   F     5 != _int308
  + New bound is 54 (gap is 82.86%)
              315    8539k        396    4   F     6 != _int308
@@ -37,24 +37,24 @@
  + New bound is 60 (gap is 80.95%)
              315   10523k        338    7   F    36 != _int316
  + New bound is 61 (gap is 80.63%)
- *           314   10708k  969.65s      2      (gap is 80.57%)
+ *           314   10708k  829.81s      2      (gap is 80.57%)
              314   10824k        408    2   F    23 != _int412
  + New bound is 65 (gap is 79.30%)
              314   10825k        419    2   F    23 != _int412
  + New bound is 66 (gap is 78.98%)
              314    9643k        290    4   F    45 != _int15
  + New bound is 70 (gap is 77.71%)
- *           313   11384k  1079.43s     2      (gap is 77.64%)
+ *           313   11384k  925.56s      2      (gap is 77.64%)
  ! ----------------------------------------------------------------------------
  ! Search terminated by limit, 3 solutions found.
  ! Best objective         : 313 (gap is 77.64%)
  ! Best bound             : 70
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 150887758
- ! Number of fails        : 69882053
- ! Total memory usage     : 251.9 MB (246.6 MB CP Optimizer + 5.3 MB Concert)
- ! Time spent in solve    : 1800.04s (1799.92s engine + 0.12s extraction)
- ! Search speed (br. / s) : 83830.3
+ ! Number of branches     : 173502974
+ ! Number of fails        : 80228609
+ ! Total memory usage     : 254.0 MB (248.7 MB CP Optimizer + 5.3 MB Concert)
+ ! Time spent in solve    : 1800.06s (1799.95s engine + 0.11s extraction)
+ ! Search speed (br. / s) : 96393.2
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 313

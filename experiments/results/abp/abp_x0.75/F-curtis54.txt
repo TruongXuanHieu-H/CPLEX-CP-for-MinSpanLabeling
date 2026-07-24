@@ -1,17 +1,18 @@
-! Solving for graph ../../../benchmarks/abp/F-curtis54.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/F-curtis54.mtx.rnd
 ! Target value is set to 9
 ! Lower bound is set to 10
 ! Upper bound is set to 40
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 55 variables, 258 constraints, 1 phase
+ ! Minimization problem - 55 variables, 205 constraints, 1 phase
  ! Presolve      : 40 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 292.3 (before), 292.3 (after)
- !  . Memory usage      : 349.6 kB (before), 349.6 kB (after)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 291.3 (before), 291.3 (after)
+ !  . Memory usage      : 349.2 kB (before), 349.2 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -21,24 +22,27 @@
  + New bound is 18
                        18         54    1   F     9 != _int24
  + New bound is 19
- *            38     1662  0.04s        4      (gap is 50.00%)
- *            37     2982  0.06s        4      (gap is 48.65%)
-              37     3835         52    7   F     1 != _int27
- + New bound is 29 (gap is 21.62%)
-              37    10456         52    2   F     1 != _int7
+ *            40     2654  0.06s        4      (gap is 52.50%)
+ *            39     1974  0.06s        7      (gap is 51.28%)
+ *            37     3582  0.06s        5      (gap is 48.65%)
+              37     4037         52    1   F     2 != _int23
+ + New bound is 30 (gap is 18.92%)
+              37     7573         52    7   F    31 != _int4
+ + New bound is 34 (gap is 8.11%)
+              37    13458         52    1            -
  + New bound is 37 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 2 solutions found.
+ ! Search completed, 3 solutions found.
  ! Best objective         : 37 (optimal - effective tol. is 0)
  ! Best bound             : 37
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 119705
- ! Number of fails        : 57852
- ! Total memory usage     : 8.8 MB (8.6 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 0.19s (0.19s engine + 0.00s extraction)
- ! Search speed (br. / s) : 630026.3
+ ! Number of branches     : 109506
+ ! Number of fails        : 52560
+ ! Total memory usage     : 8.7 MB (8.6 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.15s (0.14s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 782185.7
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 37
-! Labeling: 10 16 37 20 15 7 28 24 6 11 28 10 1 2 26 32 37 1 14 5 31 35 27 34 19 1 17 13 36 18 8 28 12 30 33 3 10 22 28 4 25 21 10 1 29 1 19 23 1 1 1 10 9 10 
+! Labeling: 28 32 37 7 33 5 1 18 24 16 1 19 10 29 26 11 1 1 35 9 22 6 3 19 19 23 17 27 1 13 31 1 1 25 4 20 28 36 37 34 14 8 28 19 19 28 10 2 30 12 1 21 15 10 
 ! -------------------------------------------------------- 

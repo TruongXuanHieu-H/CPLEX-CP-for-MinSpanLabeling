@@ -4,14 +4,14 @@
 ! Upper bound is set to 74
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 60 variables, 283 constraints, 1 phase
+ ! Minimization problem - 60 variables, 284 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.00s extraction + 0.02s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 371.2 (before), 371.2 (after)
- !  . Memory usage      : 788.7 kB (before), 788.7 kB (after)
+ !  . Memory usage      : 788.8 kB (before), 788.8 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -19,46 +19,46 @@
  + New bound is 16
                        16         59    1   F     8 != _int30
  + New bound is 17
- *            65       77  0.06s        1      (gap is 73.85%)
- *            64       75  0.06s        2      (gap is 73.44%)
-              64    22559         54    4   F     9 != _int12
+ *            65       77  0.08s        1      (gap is 73.85%)
+ *            64       75  0.08s        2      (gap is 73.44%)
+              64    22504         51    4   F     9 != _int6
  + New bound is 18 (gap is 71.88%)
-              64    22579         54    4   F    10 != _int12
+              64    22524         51    4   F    10 != _int6
  + New bound is 19 (gap is 70.31%)
-              64    24518         52    1   F     3 != _int49
+              64    25383         52    1   F     3 != _int6
  + New bound is 20 (gap is 68.75%)
-              64    24762          9    1   F     4 != _int49
+              64    26012         58    1   F     4 != _int49
  + New bound is 21 (gap is 67.19%)
-              64    29372         53    7   F     5 != _int49
+              64    34304          7    4   F     5 != _int9
  + New bound is 22 (gap is 65.62%)
-              64    32282         15    2   F     6 != _int57
+              64    31122         55    7   F     6 != _int57
  + New bound is 23 (gap is 64.06%)
-              64    42477          6    4   F    15 != _int49
+              64    30910         37    1   F    22 != _int6
  + New bound is 24 (gap is 62.50%)
-              64    43218         54    7   F     8 != _int58
+              64    29186         50    2   F     8 != _int58
  + New bound is 25 (gap is 60.94%)
-              64    57212         58    4   F    17 != _int42
+              64    52229         50    4   F     9 != _int6
  + New bound is 26 (gap is 59.38%)
-              64    51895          9    7   F    10 != _int42
+              64    44787         42    7   F    18 != _int49
  + New bound is 27 (gap is 57.81%)
-              64    60306         57    1   F    10 != _int44
+              64    80877         38    4   F    11 != _int56
  + New bound is 28 (gap is 56.25%)
-              64    89351         57    2   F    12 != _int12
+              64     251k         39    7   F    12 != _int2
  + New bound is 29 (gap is 54.69%)
-              64    9689k         53    1   F     5 != _int9
+              64    9941k         57    1   F    13 != _int49
  + New bound is 30 (gap is 53.12%)
-              64   84758k         33    2   F    14 != _int2
+              64   36812k         53    1   F    25 != _int9
  + New bound is 31 (gap is 51.56%)
  ! ----------------------------------------------------------------------------
  ! Search terminated by limit, 2 solutions found.
  ! Best objective         : 64 (gap is 51.56%)
  ! Best bound             : 31
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 780877930
- ! Number of fails        : 375988287
- ! Total memory usage     : 297.5 MB (297.2 MB CP Optimizer + 0.3 MB Concert)
- ! Time spent in solve    : 1800.02s (1800.02s engine + 0.00s extraction)
- ! Search speed (br. / s) : 433818.7
+ ! Number of branches     : 793810475
+ ! Number of fails        : 381711029
+ ! Total memory usage     : 301.2 MB (300.9 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 1800.00s (1799.99s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 441008.3
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 64

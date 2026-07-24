@@ -1,29 +1,75 @@
-! Solving for graph ../../../benchmarks/abp/N-bcsstk07.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/N-bcsstk07.mtx.rnd
 ! Target value is set to 34
+! Lower bound is set to 35
+! Upper bound is set to 420
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 421 variables, 4141 constraints, 1 phase
+ ! Minimization problem - 421 variables, 3723 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
- !  . Log search space  : 3668.6 (before), 3668.6 (after)
- !  . Memory usage      : 1.5 MB (before), 1.5 MB (after)
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
+ !  . Log search space  : 3667.6 (before), 3667.6 (after)
+ !  . Memory usage      : 1.4 MB (before), 1.4 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        421                 -
  + New bound is 35
-                        2        420    1   F     1 != _int245
+                        2        420    1   F     1 != _int148
  + New bound is 36
+ *           409      419  0.11s        2      (gap is 91.20%)
+ *           375      422  0.11s        4      (gap is 90.40%)
+             375     142k        410    7   F     8 != _int103
+ + New bound is 43 (gap is 88.53%)
+             375     142k        410    7   F     9 != _int103
+ + New bound is 44 (gap is 88.27%)
+             375     154k        403    2   F    10 != _int125
+ + New bound is 45 (gap is 88.00%)
+             375     154k        403    2   F    16 != _int125
+ + New bound is 51 (gap is 86.40%)
+             375     154k        403    2   F    17 != _int125
+ + New bound is 52 (gap is 86.13%)
+             375     217k        262    1   F    18 != _int321
+ + New bound is 53 (gap is 85.87%)
+             375     225k        257    7   F    19 != _int45
+ + New bound is 54 (gap is 85.60%)
+             375     233k         81    4   F    20 != _int399
+ + New bound is 55 (gap is 85.33%)
+             375     238k        402    1   F    21 != _int104
+ + New bound is 56 (gap is 85.07%)
+             375     244k        292    2   F    22 != _int293
+ + New bound is 57 (gap is 84.80%)
+             375     248k        412    7   F    23 != _int100
+ + New bound is 58 (gap is 84.53%)
+             375     248k        412    7   F    29 != _int100
+ + New bound is 64 (gap is 82.93%)
+             375     248k        412    7   F    30 != _int100
+ + New bound is 65 (gap is 82.67%)
+             375     254k        413    4   F    31 != _int65
+ + New bound is 66 (gap is 82.40%)
+             375     257k        402    1   F    32 != _int108
+ + New bound is 67 (gap is 82.13%)
+             375     258k        304    1   F     4 != _int104
+ + New bound is 73 (gap is 80.53%)
+ ! Time = 9.08s, Average fail depth = 21, Memory usage = 42.7 MB
+ ! Current bound is 73 (gap is 80.53%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             375     258k        304    1   F     5 != _int104
+ + New bound is 74 (gap is 80.27%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, no solution found.
- ! Best bound             : 36
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 375 (gap is 80.27%)
+ ! Best bound             : 74
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 247266221
- ! Number of fails        : 117289448
- ! Total memory usage     : 239.6 MB (237.7 MB CP Optimizer + 1.9 MB Concert)
- ! Time spent in solve    : 1800.02s (1800.00s engine + 0.03s extraction)
- ! Search speed (br. / s) : 137370.9
+ ! Number of branches     : 355646638
+ ! Number of fails        : 165476563
+ ! Total memory usage     : 149.1 MB (147.2 MB CP Optimizer + 1.8 MB Concert)
+ ! Time spent in solve    : 1800.00s (1799.97s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 197584.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! No solution
-! --------------------------------------------------------
+! Best span = 375
+! Labeling: 137 307 103 307 205 273 137 103 69 69 307 307 35 69 1 205 1 137 375 1 171 69 69 1 69 239 171 171 35 137 239 273 1 239 239 205 1 273 103 239 137 239 239 307 137 103 239 1 137 35 273 1 273 35 69 375 1 205 69 341 239 375 273 1 1 171 35 103 103 273 273 205 273 375 35 69 205 1 171 307 69 273 103 35 341 205 1 239 1 273 137 35 35 171 1 69 307 1 35 35 307 239 35 137 171 341 205 35 341 103 307 1 1 35 35 1 307 273 341 171 137 1 239 239 205 103 341 103 273 69 103 205 375 103 137 375 1 375 341 35 171 1 1 69 205 239 307 35 1 205 1 171 307 35 103 307 239 239 137 1 239 171 69 171 137 171 35 103 171 69 341 171 307 1 307 103 273 307 35 205 103 1 171 35 103 375 375 103 103 1 307 35 137 1 137 239 171 171 35 273 205 171 103 35 1 341 239 1 307 205 205 171 205 273 137 205 1 69 1 205 69 273 137 239 307 103 239 35 307 35 69 239 1 103 103 1 273 69 1 341 171 171 103 35 1 375 307 205 341 137 103 171 239 1 171 1 1 69 307 103 205 239 307 35 1 205 375 1 35 171 137 1 103 69 171 69 1 69 205 35 205 69 205 69 69 137 35 239 307 1 341 205 375 137 35 205 341 273 375 273 69 137 273 171 239 205 171 1 1 69 35 273 375 171 205 375 1 69 1 137 35 137 239 1 307 103 205 341 137 273 1 171 341 35 171 69 69 341 103 375 69 35 103 239 69 69 239 35 273 69 375 35 137 307 35 1 137 307 171 341 273 273 239 137 35 35 205 35 171 35 35 273 239 137 205 375 1 205 137 69 137 103 341 1 1 307 137 35 1 1 1 1 205 205 375 137 171 137 35 103 103 103 341 69 239 239 103 205 273 137 35 69 341 239 273 171 35 1 103 273 
+! -------------------------------------------------------- 

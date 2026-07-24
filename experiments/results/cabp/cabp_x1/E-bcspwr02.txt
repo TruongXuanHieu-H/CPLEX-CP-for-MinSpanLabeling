@@ -4,9 +4,9 @@
 ! Upper bound is set to 49
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 50 variables, 61 constraints, 1 phase
+ ! Minimization problem - 50 variables, 62 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
@@ -19,19 +19,19 @@
  + New bound is 32
                        18         49    1   F     9 != _int35
  + New bound is 33
- *            48       65  0.03s        1      (gap is 31.25%)
-              48      499          1    1            -
+ *            48       65  0.02s        1      (gap is 31.25%)
+              48      498          1    1            -
  + New bound is 48 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 48 (optimal - effective tol. is 0)
  ! Best bound             : 48
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 6883
- ! Number of fails        : 2438
- ! Total memory usage     : 6.8 MB (6.7 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.03s (0.03s engine + 0.00s extraction)
- ! Search speed (br. / s) : 229433.4
+ ! Number of branches     : 6896
+ ! Number of fails        : 2436
+ ! Total memory usage     : 6.9 MB (6.8 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.02s (0.02s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 344800.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 48

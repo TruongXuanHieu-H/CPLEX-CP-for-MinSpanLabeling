@@ -4,12 +4,12 @@
 ! Upper bound is set to 40
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 33 variables, 92 constraints, 1 phase
+ ! Minimization problem - 33 variables, 93 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 173.7 (before), 173.7 (after)
  !  . Memory usage      : 418.8 kB (before), 418.8 kB (after)
  ! Using parallel search with 8 workers.
@@ -19,33 +19,31 @@
  + New bound is 20
                        20         32    1   F    10 != _int4
  + New bound is 21
- *            40       45  0.03s        1      (gap is 47.50%)
-              40     1791          1    1   F    10 != _int16
+ *            40       45  0.04s        1      (gap is 47.50%)
+              40     1628          1    4   F    10 != _int9
  + New bound is 31 (gap is 22.50%)
-              40    30197         21    1   F     1 != _int14
+              40    25223         14    2   F    12 != _int2
  + New bound is 32 (gap is 20.00%)
-              40     164k         15    1   F    20 != _int11
+              40     304k         17    7   F    17 != _int11
  + New bound is 33 (gap is 17.50%)
-              40    1357k         19    1   F     3 != _int19
+              40     483k         21    4   F     2 != _int11
  + New bound is 34 (gap is 15.00%)
-              40    2189k         25    2   F    21 != _int9
+              40    1272k         24    1   F    12 != _int32
  + New bound is 35 (gap is 12.50%)
-              40    2195k         26    2   F    32 != _int24
+              40    2000k         25    2   F     3 != _int14
  + New bound is 36 (gap is 10.00%)
-              40    2201k         25    2   F    16 != _int32
- + New bound is 37 (gap is 7.50%)
-              40    2213k         18    1            -
+              40    2087k         25    1            -
  + New bound is 40 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 40 (optimal - effective tol. is 0)
  ! Best bound             : 40
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 17975850
- ! Number of fails        : 8865619
- ! Total memory usage     : 19.4 MB (19.3 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 33.58s (33.57s engine + 0.01s extraction)
- ! Search speed (br. / s) : 535633.2
+ ! Number of branches     : 16896820
+ ! Number of fails        : 8331206
+ ! Total memory usage     : 19.3 MB (19.2 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 31.31s (31.29s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 540007.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 40

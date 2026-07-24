@@ -4,14 +4,14 @@
 ! Upper bound is set to 81
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 55 variables, 126 constraints, 1 phase
+ ! Minimization problem - 55 variables, 127 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 347.1 (before), 347.1 (after)
- !  . Memory usage      : 493.9 kB (before), 493.9 kB (after)
+ !  . Memory usage      : 526.0 kB (before), 526.0 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -20,26 +20,38 @@
                        30         54    1   F    15 != _int25
  + New bound is 31
  *            75      112  0.04s        1      (gap is 58.67%)
-              75     3123         54    7   F    17 != _int8
+              75     4157         53    2   F    22 != _int10
  + New bound is 54 (gap is 28.00%)
-              75    83500         52    7   F    21 != _int9
+              75    22921         45    4   F    23 != _int5
  + New bound is 55 (gap is 26.67%)
-              75     100k         39    7   F    40 != _int8
+              75    27313         24    1   F    25 != _int10
  + New bound is 56 (gap is 25.33%)
-              75     109k         49    2   F    25 != _int10
+              75    31365         27    1   F    24 != _int10
  + New bound is 57 (gap is 24.00%)
-              75     129k         52    4            -
+              75    77273         49    7   F    26 != _int10
+ + New bound is 58 (gap is 22.67%)
+              75    85065         53    1   F     8 != _int5
+ + New bound is 59 (gap is 21.33%)
+              75    96978         36    1   F    18 != _int8
+ + New bound is 60 (gap is 20.00%)
+              75     101k         35    7   F    30 != _int10
+ + New bound is 61 (gap is 18.67%)
+              75     108k         16    4   F    46 != _int10
+ + New bound is 62 (gap is 17.33%)
+              75     105k         48    2   F    61 != _int8
+ + New bound is 63 (gap is 16.00%)
+              75     111k         53    7            -
  + New bound is 75 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 75 (optimal - effective tol. is 0)
  ! Best bound             : 75
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 971314
- ! Number of fails        : 469465
- ! Total memory usage     : 12.9 MB (12.8 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 1.75s (1.74s engine + 0.02s extraction)
- ! Search speed (br. / s) : 561453.2
+ ! Number of branches     : 893889
+ ! Number of fails        : 430551
+ ! Total memory usage     : 12.9 MB (12.7 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1.70s (1.68s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 532076.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 75

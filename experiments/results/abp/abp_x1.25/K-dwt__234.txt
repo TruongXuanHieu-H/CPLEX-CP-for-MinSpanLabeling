@@ -1,87 +1,39 @@
-! Solving for graph ../../../benchmarks/abp/K-dwt__234.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/K-dwt__234.mtx.rnd
 ! Target value is set to 63
+! Lower bound is set to 64
+! Upper bound is set to 147
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 118 variables, 280 constraints, 1 phase
+ ! Minimization problem - 118 variables, 165 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
- !  . Log search space  : 848.8 (before), 848.8 (after)
- !  . Memory usage      : 392.0 kB (before), 392.0 kB (after)
+ !  . Log search space  : 842.1 (before), 842.1 (after)
+ !  . Memory usage      : 382.9 kB (before), 382.9 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        118                 -
  + New bound is 64
-                        2        117    1   F     1 != _int85
+                        2        117    1   F     1 != _int92
  + New bound is 65
- *           147    10551  0.23s        1      (gap is 55.78%)
-             147    10888         56    2   F    43 != _int68
- + New bound is 107 (gap is 27.21%)
-             147    13786         76    1   F    44 != _int18
- + New bound is 108 (gap is 26.53%)
-             147    17571          1    7   F    45 != _int107
- + New bound is 109 (gap is 25.85%)
-             147    16895         78    4   F    46 != _int65
- + New bound is 110 (gap is 25.17%)
- *           146    17666  0.41s        4      (gap is 24.66%)
- *           145    21762  0.49s        4      (gap is 24.14%)
- *           144    24843  0.54s        4      (gap is 23.61%)
- *           143    25705  0.57s        4      (gap is 23.08%)
- *           142    27757  0.61s        4      (gap is 22.54%)
-             142    43045        117    2   F    47 != _int80
- + New bound is 111 (gap is 21.83%)
-             142    73651         85    4   F    48 != _int4
- + New bound is 112 (gap is 21.13%)
-             142    98649         22    1   F        -
- + New bound is 113 (gap is 20.42%)
-             142     106k        117    7   F    50 != _int104
- + New bound is 114 (gap is 19.72%)
- *           141     115k  2.79s        7      (gap is 19.15%)
-             141     118k         47    1   F        -
- + New bound is 115 (gap is 18.44%)
-             141     118k         47    1   F        -
- + New bound is 116 (gap is 17.73%)
-             141     118k         47    1   F        -
- + New bound is 117 (gap is 17.02%)
- ! Time = 2.93s, Average fail depth = 14, Memory usage = 11.3 MB
- ! Current bound is 117 (gap is 17.02%)
- !          Best Branches  Non-fixed    W       Branch decision
-             141     130k         56    4   F    54 != _int43
- + New bound is 118 (gap is 16.31%)
-             141     127k         55    2   F    55 != _int47
- + New bound is 119 (gap is 15.60%)
-             141     138k         64    1   F        -
- + New bound is 120 (gap is 14.89%)
-             141     150k         80    4   F    57 != _int32
- + New bound is 121 (gap is 14.18%)
-             141     154k         82    1   F        -
- + New bound is 122 (gap is 13.48%)
-             141     157k         34    1   F        -
- + New bound is 123 (gap is 12.77%)
-             141     157k         34    1   F        -
- + New bound is 124 (gap is 12.06%)
-             141     236k         72    7   F    61 != _int68
- + New bound is 125 (gap is 11.35%)
-             141     243k         55    4   F    62 != _int93
- + New bound is 126 (gap is 10.64%)
-             141     243k         55    4   F    63 != _int93
- + New bound is 127 (gap is 9.93%)
-             141     249k         49    1   F        -
- + New bound is 128 (gap is 9.22%)
- *           140    2983k  78.61s       4      (gap is 8.57%)
- *           139    5283k  137.77s      2      (gap is 7.91%)
+ *           127      112  0.02s        1      (gap is 48.82%)
+             127      708          1    1            -
+ + New bound is 127 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, 9 solutions found.
- ! Best objective         : 139 (gap is 7.91%)
- ! Best bound             : 128
+ ! Search completed, 1 solution found.
+ ! Best objective         : 127 (optimal - effective tol. is 0)
+ ! Best bound             : 127
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 525459806
- ! Number of fails        : 253515948
- ! Total memory usage     : 127.2 MB (127.0 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 1800.02s (1800.02s engine + 0.00s extraction)
- ! Search speed (br. / s) : 291920.5
+ ! Number of branches     : 7041
+ ! Number of fails        : 1428
+ ! Total memory usage     : 8.7 MB (8.6 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.02s (0.02s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 352050.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 139
-! Labeling: 136 19 72 46 8 39 45 89 138 16 83 30 17 36 33 85 44 71 139 125 41 24 114 38 106 62 12 137 110 49 87 118 59 67 7 25 124 57 55 109 31 21 92 95 70 117 61 120 6 43 101 68 76 65 86 5 97 135 103 13 4 75 73 40 128 127 121 122 66 32 130 34 28 134 111 60 20 64 53 123 2 48 51 54 23 3 47 104 11 131 119 129 69 29 116 132 113 63 126 9 90 37 26 108 50 115 52 15 133 22 112 27 74 1 18 10 91 
+! Best span = 127
+! Labeling: 127 1 1 1 64 64 64 64 127 1 1 1 1 1 1 1 127 1 64 1 64 1 127 1 1 1 127 64 1 1 64 1 1 1 127 1 1 64 64 1 1 1 1 1 1 64 1 64 1 1 1 1 1 1 1 1 1 1 64 64 1 1 64 127 64 1 64 1 1 64 127 127 64 1 127 64 1 1 1 127 64 1 1 127 1 1 1 1 64 64 127 64 64 1 64 1 64 1 1 1 1 127 1 1 1 64 1 127 1 64 64 64 127 64 1 1 127 
 ! -------------------------------------------------------- 

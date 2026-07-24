@@ -4,45 +4,45 @@
 ! Upper bound is set to 618
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 495 variables, 588 constraints, 1 phase
+ ! Minimization problem - 495 variables, 589 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 4586.8 (before), 4586.8 (after)
- !  . Memory usage      : 1.5 MB (before), 1.5 MB (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        495                 -
  + New bound is 410
- *           618      503  0.08s        6      (gap is 33.66%)
+ *           618      503  0.09s        6      (gap is 33.66%)
  *           615     1154  0.11s        3      (gap is 33.33%)
-             615    16699        495    7   F        -
+             615    13182        271    1   F   101 != _int0
  + New bound is 513 (gap is 16.59%)
-             615    19045        491    2   F   330 != _int181
+             615    13368        271    1   F   152 != _int0
  + New bound is 565 (gap is 8.13%)
-             615    19049        491    2   F    81 != _int181
+             615    13303        275    7   F   179 != _int0
  + New bound is 591 (gap is 3.90%)
-             615    19085        491    2   F   390 != _int181
+             615    13349        275    7   F   193 != _int0
  + New bound is 604 (gap is 1.79%)
-             615    22957        490    2   F   378 != _int181
+             615    13401        275    7   F   199 != _int0
  + New bound is 611 (gap is 0.65%)
-             615    26290        494    7   F   406 != _int181
+             615    13455        275    7   F   201 != _int0
  + New bound is 614 (gap is 0.16%)
-             615    27216        494    2   F   406 != _int181
+             615    30043        494    7            -
  + New bound is 615 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 2 solutions found.
  ! Best objective         : 615 (optimal - effective tol. is 0)
  ! Best bound             : 615
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 389403
- ! Number of fails        : 171560
- ! Total memory usage     : 47.9 MB (47.3 MB CP Optimizer + 0.6 MB Concert)
- ! Time spent in solve    : 3.65s (3.63s engine + 0.02s extraction)
- ! Search speed (br. / s) : 107273.6
+ ! Number of branches     : 275713
+ ! Number of fails        : 119027
+ ! Total memory usage     : 45.3 MB (44.7 MB CP Optimizer + 0.6 MB Concert)
+ ! Time spent in solve    : 2.47s (2.46s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 112078.5
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 615

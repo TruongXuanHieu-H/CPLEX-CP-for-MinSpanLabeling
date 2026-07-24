@@ -1,29 +1,85 @@
-! Solving for graph ../../../benchmarks/abp/M-bcsstk06.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/M-bcsstk06.mtx.rnd
 ! Target value is set to 51
+! Lower bound is set to 52
+! Upper bound is set to 630
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 421 variables, 4141 constraints, 1 phase
+ ! Minimization problem - 421 variables, 3723 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
- !  . Log search space  : 3914.8 (before), 3914.8 (after)
- !  . Memory usage      : 1.5 MB (before), 1.5 MB (after)
+ !  . Log search space  : 3913.8 (before), 3913.8 (after)
+ !  . Memory usage      : 1.4 MB (before), 1.4 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        421                 -
  + New bound is 52
-                        2        420    1   F     1 != _int245
+                        2        420    1   F     1 != _int148
  + New bound is 53
+ *           613      419  0.13s        2      (gap is 91.35%)
+ *           562      422  0.13s        4      (gap is 90.57%)
+             562     140k        411    4   F    11 != _int0
+ + New bound is 63 (gap is 88.79%)
+             562     140k        411    4   F    12 != _int0
+ + New bound is 64 (gap is 88.61%)
+             562     141k        225    1   F    13 != _int102
+ + New bound is 65 (gap is 88.43%)
+             562     142k        334    1   F    22 != _int102
+ + New bound is 74 (gap is 86.83%)
+             562     142k        334    1   F    23 != _int102
+ + New bound is 75 (gap is 86.65%)
+             562     143k        413    7   F    24 != _int15
+ + New bound is 76 (gap is 86.48%)
+             562     143k        413    7   F    33 != _int15
+ + New bound is 85 (gap is 84.88%)
+             562     143k        413    7   F    34 != _int15
+ + New bound is 86 (gap is 84.70%)
+             562     157k        415    2   F    35 != _int304
+ + New bound is 87 (gap is 84.52%)
+             562     224k        364    4   F    36 != _int349
+ + New bound is 88 (gap is 84.34%)
+             562     227k        204    1   F    37 != _int358
+ + New bound is 89 (gap is 84.16%)
+             562     234k        246    7   F    38 != _int125
+ + New bound is 90 (gap is 83.99%)
+             562     245k        411    4   F    39 != _int148
+ + New bound is 91 (gap is 83.81%)
+             562     250k        410    1   F    40 != _int379
+ + New bound is 92 (gap is 83.63%)
+             562     255k        414    7   F    41 != _int83
+ + New bound is 93 (gap is 83.45%)
+             562     277k        324    2   F    42 != _int307
+ + New bound is 94 (gap is 83.27%)
+ ! Time = 14.38s, Average fail depth = 24, Memory usage = 48.0 MB
+ ! Current bound is 94 (gap is 83.27%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             562     274k        411    1   F    43 != _int66
+ + New bound is 95 (gap is 83.10%)
+             562     276k        152    1   F     1 != _int67
+ + New bound is 104 (gap is 81.49%)
+             562     296k        413    2   F   104 != _int350
+ + New bound is 105 (gap is 81.32%)
+             562     332k        282    4   F     3 != _int292
+ + New bound is 106 (gap is 81.14%)
+             562     372k        215    7   F     4 != _int125
+ + New bound is 107 (gap is 80.96%)
+             562     696k        417    2   F     5 != _int39
+ + New bound is 108 (gap is 80.78%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, no solution found.
- ! Best bound             : 53
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 562 (gap is 80.78%)
+ ! Best bound             : 108
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 215981369
- ! Number of fails        : 101852590
- ! Total memory usage     : 272.8 MB (270.9 MB CP Optimizer + 1.9 MB Concert)
- ! Time spent in solve    : 1800.05s (1800.02s engine + 0.04s extraction)
- ! Search speed (br. / s) : 119989.0
+ ! Number of branches     : 217370191
+ ! Number of fails        : 101085979
+ ! Total memory usage     : 172.7 MB (170.9 MB CP Optimizer + 1.8 MB Concert)
+ ! Time spent in solve    : 1800.04s (1800.00s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 120761.2
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! No solution
-! --------------------------------------------------------
+! Best span = 562
+! Labeling: 205 460 154 460 307 409 205 154 103 103 460 460 52 103 1 307 1 205 562 1 256 103 103 1 103 358 256 256 52 205 358 409 1 358 358 307 1 409 154 358 205 358 358 460 205 154 358 1 205 52 409 1 409 52 103 562 1 307 103 511 358 562 409 1 1 256 52 154 154 409 409 307 409 562 52 103 307 1 256 460 103 409 154 52 511 307 1 358 1 409 205 52 52 256 1 103 460 1 52 52 460 358 52 205 256 511 307 52 511 154 460 1 1 52 52 1 460 409 511 256 205 1 358 358 307 154 511 154 409 103 154 307 562 154 205 562 1 562 511 52 256 1 1 103 307 358 460 52 1 307 1 256 460 52 154 460 358 358 205 1 358 256 103 256 205 256 52 154 256 103 511 256 460 1 460 154 409 460 52 307 154 1 256 52 154 562 562 154 154 1 460 52 205 1 205 358 256 256 52 409 307 256 154 52 1 511 358 1 460 307 307 256 307 409 205 307 1 103 1 307 103 409 205 358 460 154 358 52 460 52 103 358 1 154 154 1 409 103 1 511 256 256 154 52 1 562 460 307 511 205 154 256 358 1 256 1 1 103 460 154 307 358 460 52 1 307 562 1 52 256 205 1 154 103 256 103 1 103 307 52 307 103 307 103 103 205 52 358 460 1 511 307 562 205 52 307 511 409 562 409 103 205 409 256 358 307 256 1 1 103 52 409 562 256 307 562 1 103 1 205 52 205 358 1 460 154 307 511 205 409 1 256 511 52 256 103 103 511 154 562 103 52 154 358 103 103 358 52 409 103 562 52 205 460 52 1 205 460 256 511 409 409 358 205 52 52 307 52 256 52 52 409 358 205 307 562 1 307 205 103 205 154 511 1 1 460 205 52 1 1 1 1 307 307 562 205 256 205 52 154 154 154 511 103 358 358 154 307 409 205 52 103 511 358 409 256 52 1 154 409 
+! -------------------------------------------------------- 

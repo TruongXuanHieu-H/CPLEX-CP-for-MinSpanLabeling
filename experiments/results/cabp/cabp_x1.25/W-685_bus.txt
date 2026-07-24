@@ -4,30 +4,93 @@
 ! Upper bound is set to 857
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 686 variables, 1284 constraints, 1 phase
+ ! Minimization problem - 686 variables, 1285 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
  !  . Log search space  : 6682.2 (before), 6682.2 (after)
- !  . Memory usage      : 2.8 MB (before), 2.8 MB (after)
+ !  . Memory usage      : 2.9 MB (before), 2.9 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        686                 -
  + New bound is 284
- *           852      704  0.15s        3      (gap is 66.67%)
+ *           852      704  0.13s        3      (gap is 66.67%)
+             852   13514k        520    1   F   150 != _int316
+ + New bound is 293 (gap is 65.61%)
+             852   13514k        520    1   F   151 != _int316
+ + New bound is 294 (gap is 65.49%)
+             852   13903k        543    1   F   160 != _int316
+ + New bound is 303 (gap is 64.44%)
+             852   13903k        543    1   F   161 != _int316
+ + New bound is 304 (gap is 64.32%)
+             852   13999k        368    1   F   170 != _int316
+ + New bound is 313 (gap is 63.26%)
+             852   13999k        368    1   F   171 != _int316
+ + New bound is 314 (gap is 63.15%)
+             852   14250k        639    1   F   180 != _int316
+ + New bound is 323 (gap is 62.09%)
+             852   14250k        639    1   F   181 != _int316
+ + New bound is 324 (gap is 61.97%)
+             852   17529k        513    1   F        -
+ + New bound is 333 (gap is 60.92%)
+             852   17529k        513    1   F        -
+ + New bound is 334 (gap is 60.80%)
+             852   17697k        470    1   F        -
+ + New bound is 343 (gap is 59.74%)
+             852   17697k        470    1   F        -
+ + New bound is 344 (gap is 59.62%)
+             852   17891k        338    1   F        -
+ + New bound is 353 (gap is 58.57%)
+             852   17891k        338    1   F        -
+ + New bound is 354 (gap is 58.45%)
+             852   18436k        558    1   F   219 != _int316
+ + New bound is 362 (gap is 57.51%)
+             852   18436k        558    1   F   220 != _int316
+ + New bound is 363 (gap is 57.39%)
+             852   18531k        365    1   F   228 != _int316
+ + New bound is 371 (gap is 56.46%)
+             852   18532k        685    1   F   229 != _int316
+ + New bound is 372 (gap is 56.34%)
+ ! Time = 1274.51s, Average fail depth = 47, Memory usage = 109.3 MB
+ ! Current bound is 372 (gap is 56.34%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             852   19100k        686    1   F   237 != _int316
+ + New bound is 380 (gap is 55.40%)
+             852   19100k        685    1   F   238 != _int316
+ + New bound is 381 (gap is 55.28%)
+             852   19414k        281    1   F   246 != _int312
+ + New bound is 389 (gap is 54.34%)
+             852   19414k        281    1   F   247 != _int312
+ + New bound is 390 (gap is 54.23%)
+             852   22339k        488    1   F   255 != _int312
+ + New bound is 398 (gap is 53.29%)
+             852   22340k        685    1   F   256 != _int312
+ + New bound is 399 (gap is 53.17%)
+             852   22510k        443    1   F   264 != _int312
+ + New bound is 407 (gap is 52.23%)
+             852   22511k        685    1   F   265 != _int312
+ + New bound is 408 (gap is 52.11%)
+             852   23461k        332    1   F   273 != _int312
+ + New bound is 416 (gap is 51.17%)
+             852   23461k        332    1   F   274 != _int312
+ + New bound is 417 (gap is 51.06%)
+             852   23753k        312    1   F   281 != _int312
+ + New bound is 424 (gap is 50.23%)
+             852   23753k        312    1   F   140 != _int318
+ + New bound is 425 (gap is 50.12%)
  ! ----------------------------------------------------------------------------
  ! Search terminated by limit, 1 solution found.
- ! Best objective         : 852 (gap is 66.67%)
- ! Best bound             : 284
+ ! Best objective         : 852 (gap is 50.12%)
+ ! Best bound             : 425
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 153506353
- ! Number of fails        : 66855895
- ! Total memory usage     : 276.7 MB (275.4 MB CP Optimizer + 1.3 MB Concert)
+ ! Number of branches     : 191103103
+ ! Number of fails        : 82855656
+ ! Total memory usage     : 295.3 MB (294.0 MB CP Optimizer + 1.3 MB Concert)
  ! Time spent in solve    : 1800.04s (1800.01s engine + 0.04s extraction)
- ! Search speed (br. / s) : 85280.8
+ ! Search speed (br. / s) : 106167.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 852

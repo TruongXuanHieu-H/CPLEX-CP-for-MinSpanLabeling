@@ -1,130 +1,164 @@
-! Solving for graph ../../../benchmarks/abp/W-685_bus.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/W-685_bus.mtx.rnd
 ! Target value is set to 136
+! Lower bound is set to 137
+! Upper bound is set to 685
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 686 variables, 1968 constraints, 1 phase
+ ! Minimization problem - 686 variables, 1285 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
- !  . Log search space  : 6461.8 (before), 6461.8 (after)
- !  . Memory usage      : 1.1 MB (before), 1.1 MB (after)
+ !  . Log search space  : 6460.8 (before), 6460.8 (after)
+ !  . Memory usage      : 1.0 MB (before), 1.0 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        686                 -
  + New bound is 137
-                        2        685    1   F     1 != _int634
+                        2        685    1   F     1 != _int171
  + New bound is 138
- *           685    11328  0.94s        2      (gap is 79.85%)
-             685     384k        682    4   F    10 != _int470
- + New bound is 147 (gap is 78.54%)
-             685     384k        682    4   F    11 != _int470
- + New bound is 148 (gap is 78.39%)
-             685     351k        676    2   F    12 != _int235
- + New bound is 149 (gap is 78.25%)
-             685     395k          3    1   F    13 != _int398
- + New bound is 150 (gap is 78.10%)
-             685     399k        671    2   F    14 != _int235
- + New bound is 151 (gap is 77.96%)
-             685     419k        683    1   F    15 != _int473
- + New bound is 152 (gap is 77.81%)
-             685     426k        676    2   F    16 != _int235
- + New bound is 153 (gap is 77.66%)
-             685     426k        676    2   F    25 != _int235
- + New bound is 162 (gap is 76.35%)
-             685     426k        676    2   F    26 != _int235
- + New bound is 163 (gap is 76.20%)
-             685     410k        132    7   F    27 != _int69
- + New bound is 164 (gap is 76.06%)
-             685     468k        683    1   F    28 != _int235
- + New bound is 165 (gap is 75.91%)
-             685     432k        683    7   F    29 != _int69
- + New bound is 166 (gap is 75.77%)
-             685     494k        683    1   F    30 != _int235
- + New bound is 167 (gap is 75.62%)
-             685     497k          4    1   F        -
- + New bound is 176 (gap is 74.31%)
-             685     497k          4    1   F        -
- + New bound is 177 (gap is 74.16%)
-             685     465k        683    7   F    41 != _int69
- + New bound is 178 (gap is 74.01%)
-             685     496k        683    7   F    49 != _int69
- + New bound is 186 (gap is 72.85%)
- ! Time = 45.61s, Average fail depth = 115, Memory usage = 125.0 MB
- ! Current bound is 186 (gap is 72.85%)
+ *           681      687  0.10s        1      (gap is 79.74%)
+             681     206k        682    7   F    10 != _int314
+ + New bound is 147 (gap is 78.41%)
+             681     206k        682    7   F    11 != _int314
+ + New bound is 148 (gap is 78.27%)
+             681     232k        684    4   F    12 != _int314
+ + New bound is 149 (gap is 78.12%)
+             681     284k        520    1   F    13 != _int311
+ + New bound is 150 (gap is 77.97%)
+             681     294k        485    2   F    14 != _int314
+ + New bound is 151 (gap is 77.83%)
+             681     364k        419    7   F    15 != _int318
+ + New bound is 152 (gap is 77.68%)
+             681     394k        639    1   F    16 != _int314
+ + New bound is 153 (gap is 77.53%)
+             681     412k        682    7   F    17 != _int311
+ + New bound is 154 (gap is 77.39%)
+             681     427k         72    4   F    18 != _int316
+ + New bound is 155 (gap is 77.24%)
+             681     401k        565    2   F    19 != _int318
+ + New bound is 156 (gap is 77.09%)
+             681     428k        683    1   F    20 != _int311
+ + New bound is 157 (gap is 76.95%)
+             681     435k        682    2   F    21 != _int318
+ + New bound is 158 (gap is 76.80%)
+             681     504k        255    1   F    22 != _int314
+ + New bound is 159 (gap is 76.65%)
+             681     515k        401    2   F    23 != _int317
+ + New bound is 160 (gap is 76.51%)
+             681     577k          5    7   F    24 != _int318
+ + New bound is 161 (gap is 76.36%)
+             681     547k        683    1   F    25 != _int315
+ + New bound is 162 (gap is 76.21%)
+             681     547k        683    1   F    34 != _int315
+ + New bound is 171 (gap is 74.89%)
+ ! Time = 23.09s, Average fail depth = 47, Memory usage = 56.2 MB
+ ! Current bound is 171 (gap is 74.89%)
  !          Best Branches  Non-fixed    W       Branch decision
-             685     496k        683    7   F    50 != _int69
- + New bound is 187 (gap is 72.70%)
-             685     678k        299    4   F    51 != _int470
- + New bound is 188 (gap is 72.55%)
-             685     742k        686    4   F    59 != _int235
- + New bound is 196 (gap is 71.39%)
-             685     742k        685    4   F    60 != _int235
- + New bound is 197 (gap is 71.24%)
-             685     722k          3    2   F    61 != _int247
- + New bound is 198 (gap is 71.09%)
-             685     763k        671    2   F    69 != _int235
- + New bound is 206 (gap is 69.93%)
-             685     764k        685    2   F    70 != _int235
- + New bound is 207 (gap is 69.78%)
-             685     845k         96    1   F        -
- + New bound is 208 (gap is 69.64%)
-             685     839k        109    7   F    72 != _int470
- + New bound is 209 (gap is 69.49%)
-             685     928k        683    1   F        -
- + New bound is 210 (gap is 69.34%)
-             685     875k        683    7   F    74 != _int614
- + New bound is 211 (gap is 69.20%)
-             685     930k        671    1   F        -
- + New bound is 212 (gap is 69.05%)
-             685     930k        671    1   F        -
- + New bound is 220 (gap is 67.88%)
-             685     930k        671    1   F        -
- + New bound is 221 (gap is 67.74%)
-             685    1049k        348    4   F    85 != _int470
- + New bound is 222 (gap is 67.59%)
-             685    1053k        265    2   F    86 != _int470
- + New bound is 223 (gap is 67.45%)
-             685    1103k        683    4   F    87 != _int235
- + New bound is 224 (gap is 67.30%)
-             685    1097k        675    2   F    88 != _int473
- + New bound is 225 (gap is 67.15%)
-             685    1179k        685    4   F    89 != _int470
- + New bound is 226 (gap is 67.01%)
-             685    1161k        674    2   F    97 != _int138
- + New bound is 234 (gap is 65.84%)
- ! Time = 101.69s, Average fail depth = 119, Memory usage = 144.3 MB
- ! Current bound is 234 (gap is 65.84%)
+             681     547k        683    1   F    35 != _int315
+ + New bound is 172 (gap is 74.74%)
+             681     558k        681    2   F    36 != _int316
+ + New bound is 173 (gap is 74.60%)
+             681     558k        681    2   F    45 != _int316
+ + New bound is 182 (gap is 73.27%)
+             681     559k        685    2   F    46 != _int316
+ + New bound is 183 (gap is 73.13%)
+             681     621k        682    7   F    47 != _int311
+ + New bound is 184 (gap is 72.98%)
+             681     664k         61    4   F    48 != _int315
+ + New bound is 185 (gap is 72.83%)
+             681     627k        668    1   F    49 != _int316
+ + New bound is 186 (gap is 72.69%)
+             681     638k        507    2   F    50 != _int311
+ + New bound is 187 (gap is 72.54%)
+             681     741k        684    4   F    51 != _int315
+ + New bound is 188 (gap is 72.39%)
+             681     684k        683    1   F    52 != _int316
+ + New bound is 189 (gap is 72.25%)
+             681     720k        682    2   F    53 != _int316
+ + New bound is 190 (gap is 72.10%)
+             681     788k         20    7   F    54 != _int315
+ + New bound is 191 (gap is 71.95%)
+             681     771k        228    1   F        -
+ + New bound is 192 (gap is 71.81%)
+             681     771k        228    1   F        -
+ + New bound is 200 (gap is 70.63%)
+             681     771k        228    1   F        -
+ + New bound is 201 (gap is 70.48%)
+             681     804k        553    2   F    65 != _int315
+ + New bound is 202 (gap is 70.34%)
+             681     804k        553    2   F    73 != _int315
+ + New bound is 210 (gap is 69.16%)
+             681     804k        553    2   F    74 != _int315
+ + New bound is 211 (gap is 69.02%)
+             681     915k        554    4   F    75 != _int311
+ + New bound is 212 (gap is 68.87%)
+             681     852k        570    1   F        -
+ + New bound is 213 (gap is 68.72%)
+ ! Time = 38.04s, Average fail depth = 46, Memory usage = 57.0 MB
+ ! Current bound is 213 (gap is 68.72%)
  !          Best Branches  Non-fixed    W       Branch decision
-             685    1164k          3    7   F    98 != _int470
- + New bound is 235 (gap is 65.69%)
-             685    1287k        462    1   F    99 != _int235
- + New bound is 236 (gap is 65.55%)
-             685   12978k        631    1   F        -
- + New bound is 244 (gap is 64.38%)
-             685   12978k        631    1   F        -
- + New bound is 245 (gap is 64.23%)
-             685   13308k        335    1   F        -
- + New bound is 252 (gap is 63.21%)
-             685   13308k        335    1   F        -
- + New bound is 253 (gap is 63.07%)
-             685   14166k        203    1   F        -
- + New bound is 260 (gap is 62.04%)
-             685   14166k        203    1   F        -
- + New bound is 261 (gap is 61.90%)
-             685   15057k        684    1   F   143 != _int470
- + New bound is 275 (gap is 59.85%)
+             681     972k        683    4   F    77 != _int315
+ + New bound is 214 (gap is 68.58%)
+             681     972k        683    4   F    85 != _int315
+ + New bound is 222 (gap is 67.40%)
+             681     972k        683    4   F    86 != _int315
+ + New bound is 223 (gap is 67.25%)
+             681     952k        685    7   F    87 != _int316
+ + New bound is 224 (gap is 67.11%)
+             681     928k        682    1   F        -
+ + New bound is 225 (gap is 66.96%)
+             681     929k        520    1   F        -
+ + New bound is 233 (gap is 65.79%)
+             681     929k        520    1   F        -
+ + New bound is 234 (gap is 65.64%)
+             681    1008k        682    7   F    98 != _int315
+ + New bound is 235 (gap is 65.49%)
+             681     964k        682    2   F    99 != _int318
+ + New bound is 236 (gap is 65.35%)
+             681    1012k        561    1   F        -
+ + New bound is 237 (gap is 65.20%)
+             681    1012k        561    1   F        -
+ + New bound is 245 (gap is 64.02%)
+             681    1012k        561    1   F        -
+ + New bound is 246 (gap is 63.88%)
+             681    2148k        686    1   F   251 != _int524
+ + New bound is 253 (gap is 62.85%)
+             681    3255k        686    1   F   251 != _int524
+ + New bound is 267 (gap is 60.79%)
+             681    3256k        685    1   F   248 != _int524
+ + New bound is 268 (gap is 60.65%)
+             681   22427k        686    1   F   138 != _int311
+ + New bound is 275 (gap is 59.62%)
+             681   36891k        686    1   F   145 != _int317
+ + New bound is 282 (gap is 58.59%)
+             681   36891k        684    1   F   146 != _int317
+ + New bound is 283 (gap is 58.44%)
+             681   36973k        385    1   F   153 != _int317
+ + New bound is 290 (gap is 57.42%)
+             681   36973k        385    1   F   154 != _int317
+ + New bound is 291 (gap is 57.27%)
+ ! Time = 1656.22s, Average fail depth = 23, Memory usage = 85.3 MB
+ ! Current bound is 291 (gap is 57.27%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             681   37131k        303    1   F   161 != _int317
+ + New bound is 298 (gap is 56.24%)
+             681   37131k        303    1   F   162 != _int317
+ + New bound is 299 (gap is 56.09%)
  ! ----------------------------------------------------------------------------
  ! Search terminated by limit, 1 solution found.
- ! Best objective         : 685 (gap is 59.85%)
- ! Best bound             : 275
+ ! Best objective         : 681 (gap is 56.09%)
+ ! Best bound             : 299
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 151682029
- ! Number of fails        : 56591336
- ! Total memory usage     : 454.6 MB (453.8 MB CP Optimizer + 0.8 MB Concert)
- ! Time spent in solve    : 1800.03s (1800.01s engine + 0.02s extraction)
- ! Search speed (br. / s) : 84267.3
+ ! Number of branches     : 319245790
+ ! Number of fails        : 138103553
+ ! Total memory usage     : 257.6 MB (256.9 MB CP Optimizer + 0.7 MB Concert)
+ ! Time spent in solve    : 1800.02s (1800.00s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 177358.8
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 685
-! Labeling: 684 616 88 474 661 320 625 219 633 466 644 458 519 530 72 645 622 443 102 127 15 195 605 584 39 421 176 83 73 201 60 131 564 447 604 650 253 504 291 414 407 612 487 515 663 299 174 311 232 276 217 199 361 680 431 10 324 226 117 402 223 164 463 17 511 681 454 445 245 1 47 343 221 56 489 159 507 89 190 51 261 79 260 16 679 340 326 647 566 395 355 649 403 409 626 198 101 374 18 490 664 146 560 682 370 241 166 587 38 613 676 484 120 315 422 106 98 479 111 594 209 327 257 472 438 170 517 469 93 619 396 492 200 301 434 331 167 470 137 666 309 122 22 371 493 300 381 337 643 368 638 296 453 197 212 36 128 491 278 30 185 386 639 316 177 678 286 471 429 448 279 450 85 46 462 58 631 191 424 307 392 563 417 193 175 354 404 206 236 136 654 204 551 108 160 416 188 411 387 77 512 352 500 237 180 110 59 289 158 287 379 574 357 524 651 66 544 642 14 67 196 35 582 149 685 178 132 413 84 376 405 186 305 133 78 546 234 548 585 535 184 7 265 362 367 596 57 351 646 143 611 576 255 668 9 441 181 124 282 607 520 304 339 389 6 420 440 364 271 5 614 141 589 118 538 318 575 32 497 214 388 172 608 358 630 545 333 91 211 228 675 525 218 328 363 557 74 95 275 665 581 555 598 583 252 242 426 401 330 495 145 451 526 325 156 285 527 169 290 336 162 54 586 635 11 653 104 259 486 567 624 365 269 640 103 549 140 244 425 319 485 534 390 92 461 658 96 251 572 31 113 24 627 258 353 528 4 670 100 171 597 310 25 139 135 562 406 632 208 641 433 591 173 246 329 194 134 247 33 382 618 293 23 660 37 523 377 213 295 502 338 673 578 628 138 346 383 233 672 274 283 516 75 677 476 249 442 439 3 541 94 372 436 306 192 345 553 267 229 28 391 514 8 667 43 312 378 480 49 220 71 142 569 151 202 273 40 97 456 427 506 481 281 165 510 408 671 552 662 609 577 189 588 153 593 465 227 321 398 116 302 280 308 52 482 399 615 298 155 350 683 435 603 410 452 238 432 559 115 317 543 375 215 488 419 21 467 475 12 347 182 637 579 366 373 602 571 423 505 521 595 266 157 63 537 50 599 112 222 19 508 41 148 606 294 70 224 570 126 369 400 674 652 397 323 125 483 2 239 20 430 161 623 522 147 659 270 243 529 297 536 13 80 268 44 210 473 82 55 592 53 263 48 499 393 384 501 532 284 45 114 561 254 29 531 547 444 636 256 360 533 418 90 455 248 65 590 332 154 556 105 655 348 460 457 394 629 26 620 550 344 568 385 107 335 356 34 503 342 380 123 518 86 121 27 565 183 573 61 498 601 69 262 449 163 277 250 415 322 314 657 130 509 580 62 64 288 428 150 231 81 468 152 230 313 179 656 334 292 99 359 272 554 669 264 341 225 203 478 412 68 119 129 617 600 87 464 76 477 144 513 634 621 235 540 446 496 205 42 437 539 610 648 216 187 109 303 542 494 168 558 207 349 459 240 
+! Best span = 681
+! Labeling: 273 273 273 1 1 137 137 137 273 273 1 137 409 1 1 137 1 1 1 273 409 1 137 1 1 273 273 137 273 137 1 137 137 1 137 273 273 1 273 273 273 273 1 1 273 1 137 137 273 137 409 1 273 137 273 137 137 1 273 137 409 137 273 1 137 409 1 273 1 681 1 273 1 137 1 273 137 273 1 1 137 409 1 137 273 1 1 137 137 273 273 273 1 1 1 1 409 273 409 273 1 273 1 137 1 1 273 137 273 1 273 1 1 273 273 1 1 137 137 273 409 137 137 137 1 137 137 137 273 1 409 137 1 137 137 137 1 137 409 1 273 137 273 1 1 137 1 1 273 137 137 137 1 409 137 137 137 1 273 137 1 273 1 1 1 1 137 137 1 1 137 1 273 1 1 137 137 137 137 137 137 137 137 1 1 1 1 1 137 137 137 137 273 137 137 137 1 1 273 273 1 273 137 137 137 137 1 137 409 273 409 137 273 137 1 273 137 273 273 137 137 1 137 273 273 137 1 137 273 273 1 409 273 1 137 137 273 273 137 1 1 1 1 273 273 1 1 545 409 1 137 1 137 273 137 137 137 137 137 1 1 545 1 137 1 137 137 1 1 409 1 137 1 273 137 137 273 273 273 137 1 273 1 273 137 1 137 1 137 1 1 1 1 1 137 1 273 137 1 1 137 1 1 137 1 137 1 1 137 1 137 137 137 1 137 137 137 273 137 1 409 273 1 1 409 1 137 1 137 1 1 137 137 137 1 1 409 137 273 1 137 137 137 1 1 273 273 1 1 1 137 137 137 273 273 1 137 137 137 273 273 1 137 137 1 1 1 1 409 137 273 273 137 1 137 1 1 1 137 273 137 137 1 1 273 137 137 273 1 273 1 1 137 137 273 273 137 1 409 1 273 1 137 1 273 1 545 137 137 1 1 1 273 1 137 1 137 273 137 137 137 137 137 1 137 273 1 1 137 1 1 273 137 1 273 137 273 273 1 1 273 273 1 1 1 1 137 1 1 137 273 1 1 1 137 137 137 273 273 1 137 137 137 545 273 1 1 137 273 137 545 1 273 273 1 137 1 137 137 545 1 137 273 1 137 137 137 137 1 137 137 137 1 1 1 137 137 137 1 273 1 273 273 137 137 1 1 409 273 409 137 137 1 1 1 137 273 137 273 1 1 1 1 137 137 137 1 273 137 409 273 137 1 137 1 1 137 1 137 1 1 1 273 1 1 137 1 1 545 1 137 1 137 1 273 273 1 137 1 1 137 1 1 1 1 137 273 137 1 1 273 273 137 1 1 1 137 1 1 1 1 1 273 137 137 1 137 137 1 137 1 137 1 137 1 1 137 273 1 137 273 273 273 137 137 1 273 137 409 1 1 137 273 1 1 137 1 137 137 273 1 137 1 1 273 137 273 273 1 1 273 273 273 273 1 273 1 137 273 1 137 273 137 137 137 273 1 273 273 273 137 1 1 273 273 1 273 137 137 273 137 1 137 273 137 137 137 1 1 1 409 273 137 137 1 273 137 137 1 273 1 1 137 137 137 
 ! -------------------------------------------------------- 

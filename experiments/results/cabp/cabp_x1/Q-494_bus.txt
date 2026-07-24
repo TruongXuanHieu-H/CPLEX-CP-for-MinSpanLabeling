@@ -4,14 +4,14 @@
 ! Upper bound is set to 494
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 495 variables, 588 constraints, 1 phase
+ ! Minimization problem - 495 variables, 589 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
  !  . Log search space  : 4426.9 (before), 4426.9 (after)
- !  . Memory usage      : 1.5 MB (before), 1.5 MB (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -19,30 +19,32 @@
  + New bound is 328
                       166        494    2   F    83 != _int474
  + New bound is 329
- *           493      649  0.09s        2      (gap is 33.27%)
- *           492      656  0.09s        4      (gap is 33.13%)
-             492     9094        495    1   F    82 != _int0
+ *           493      649  0.08s        2      (gap is 33.27%)
+ *           492      656  0.08s        4      (gap is 33.13%)
+             492     9240        279    1   F    82 != _int0
  + New bound is 411 (gap is 16.46%)
-             492    12086        495    7   F   450 != _int182
+             492    10064        495    7   F   354 != _int182
  + New bound is 452 (gap is 8.13%)
-             492    12213        265    2   F   384 != _int182
+             492    11078        495    7   F   346 != _int182
  + New bound is 473 (gap is 3.86%)
-             492    14006        495    7   F   400 != _int182
+             492    12332        256    2   F   388 != _int182
+ + New bound is 483 (gap is 1.83%)
+             492    12086        495    7   F   439 != _int182
  + New bound is 484 (gap is 1.63%)
-             492    16368        480    2   F   402 != _int182
+             492    13092        495    7   F   442 != _int182
  + New bound is 489 (gap is 0.61%)
-             492    20712        494    7   F   397 != _int182
+             492    13134        495    7   F   488 != _int182
  + New bound is 492 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 2 solutions found.
  ! Best objective         : 492 (optimal - effective tol. is 0)
  ! Best bound             : 492
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 277246
- ! Number of fails        : 120906
- ! Total memory usage     : 44.7 MB (44.1 MB CP Optimizer + 0.6 MB Concert)
- ! Time spent in solve    : 2.42s (2.42s engine + 0.01s extraction)
- ! Search speed (br. / s) : 115039.8
+ ! Number of branches     : 176414
+ ! Number of fails        : 74325
+ ! Total memory usage     : 41.8 MB (41.2 MB CP Optimizer + 0.6 MB Concert)
+ ! Time spent in solve    : 1.18s (1.18s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 150781.2
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 492

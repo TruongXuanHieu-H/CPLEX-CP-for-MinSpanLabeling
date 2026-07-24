@@ -4,9 +4,9 @@
 ! Upper bound is set to 496
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 663 variables, 1900 constraints, 1 phase
+ ! Minimization problem - 663 variables, 1899 constraints, 1 phase
  ! Presolve      : 496 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
@@ -18,11 +18,11 @@
  !          Best Branches  Non-fixed    W       Branch decision
                         0        663                 -
  + New bound is 246
- *           496     1557  0.42s        3      (gap is 50.40%)
+ *           496     1557  0.41s        3      (gap is 50.40%)
  *           495     2298  0.52s        5      (gap is 50.30%)
  *           494     3721  0.86s        6      (gap is 50.20%)
- *           493     5951  1.09s        3      (gap is 50.10%)
- *           492     9789  1.70s        3      (gap is 50.00%)
+ *           493     5951  1.11s        3      (gap is 50.10%)
+ *           492     9789  1.68s        3      (gap is 50.00%)
              492     160k        655    7   F   126 != _int662
  + New bound is 250 (gap is 49.19%)
              492     316k        663    2   F   130 != _int651
@@ -51,7 +51,7 @@
  + New bound is 280 (gap is 43.09%)
              492    1005k        661    1   F        -
  + New bound is 281 (gap is 42.89%)
- ! Time = 148.80s, Average fail depth = 252, Memory usage = 159.8 MB
+ ! Time = 142.70s, Average fail depth = 252, Memory usage = 159.8 MB
  ! Current bound is 281 (gap is 42.89%)
  !          Best Branches  Non-fixed    W       Branch decision
              492    1063k        567    1   F        -
@@ -86,8 +86,8 @@
  ! Number of branches     : 9471354
  ! Number of fails        : 4252603
  ! Total memory usage     : 206.0 MB (201.7 MB CP Optimizer + 4.3 MB Concert)
- ! Time spent in solve    : 180.66s (180.57s engine + 0.09s extraction)
- ! Search speed (br. / s) : 52455.4
+ ! Time spent in solve    : 172.30s (172.22s engine + 0.09s extraction)
+ ! Search speed (br. / s) : 54998.9
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 492

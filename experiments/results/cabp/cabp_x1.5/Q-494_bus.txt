@@ -4,45 +4,43 @@
 ! Upper bound is set to 741
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 495 variables, 588 constraints, 1 phase
+ ! Minimization problem - 495 variables, 589 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 4716.4 (before), 4716.4 (after)
- !  . Memory usage      : 1.5 MB (before), 1.5 MB (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0        495                 -
  + New bound is 492
- *           741      503  0.08s        6      (gap is 33.60%)
+ *           741      503  0.09s        6      (gap is 33.60%)
  *           738     1279  0.11s        1      (gap is 33.33%)
-             738    13764        495    2   F   122 != _int181
+             738    12606        257    2   F   121 != _int181
  + New bound is 616 (gap is 16.53%)
-             738    15848        495    2   F   533 != _int182
+             738    15682        495    2   F   516 != _int182
  + New bound is 678 (gap is 8.13%)
-             738    15936        495    2   F   584 != _int182
+             738    15746        495    2   F   586 != _int182
  + New bound is 709 (gap is 3.93%)
-             738    17808        495    2   F   592 != _int182
+             738    17608        495    2   F   592 != _int182
  + New bound is 725 (gap is 1.76%)
-             738    18770        495    2   F   584 != _int182
- + New bound is 733 (gap is 0.68%)
-             738    19852        495    2   F   614 != _int182
- + New bound is 737 (gap is 0.14%)
-             738    28105        494    1            -
+             738    19201        495    7   F   607 != _int182
+ + New bound is 732 (gap is 0.81%)
+             738    33026        495    1            -
  + New bound is 738 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 2 solutions found.
  ! Best objective         : 738 (optimal - effective tol. is 0)
  ! Best bound             : 738
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 334179
- ! Number of fails        : 149328
- ! Total memory usage     : 47.3 MB (46.7 MB CP Optimizer + 0.6 MB Concert)
- ! Time spent in solve    : 3.15s (3.13s engine + 0.02s extraction)
- ! Search speed (br. / s) : 107108.7
+ ! Number of branches     : 286543
+ ! Number of fails        : 124680
+ ! Total memory usage     : 46.3 MB (45.7 MB CP Optimizer + 0.6 MB Concert)
+ ! Time spent in solve    : 3.34s (3.33s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 86308.1
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 738

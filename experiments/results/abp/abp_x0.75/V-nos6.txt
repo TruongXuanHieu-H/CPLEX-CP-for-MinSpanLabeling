@@ -1,17 +1,18 @@
-! Solving for graph ../../../benchmarks/abp/V-nos6.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/V-nos6.mtx.rnd
 ! Target value is set to 246
 ! Lower bound is set to 247
 ! Upper bound is set to 506
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 676 variables, 2977 constraints, 1 phase
+ ! Minimization problem - 676 variables, 2303 constraints, 1 phase
  ! Presolve      : 506 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
  ! Initial process time : 0.08s (0.08s extraction + 0.00s propagation)
- !  . Log search space  : 6071.5 (before), 6071.5 (after)
- !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ !  . Log search space  : 6066.9 (before), 6066.9 (after)
+ !  . Memory usage      : 1.5 MB (before), 1.5 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -23,11 +24,11 @@
  ! Search terminated by limit, no solution found.
  ! Best bound             : 492
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 23209042
- ! Number of fails        : 8907742
- ! Total memory usage     : 242.0 MB (237.6 MB CP Optimizer + 4.4 MB Concert)
- ! Time spent in solve    : 1800.10s (1800.02s engine + 0.08s extraction)
- ! Search speed (br. / s) : 12893.8
+ ! Number of branches     : 26801409
+ ! Number of fails        : 10420125
+ ! Total memory usage     : 240.3 MB (236.0 MB CP Optimizer + 4.3 MB Concert)
+ ! Time spent in solve    : 1800.09s (1800.02s engine + 0.08s extraction)
+ ! Search speed (br. / s) : 14889.6
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! No solution

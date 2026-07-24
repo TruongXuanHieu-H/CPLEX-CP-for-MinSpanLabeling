@@ -4,14 +4,14 @@
 ! Upper bound is set to 125
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 101 variables, 249 constraints, 1 phase
+ ! Minimization problem - 101 variables, 250 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 701.1 (before), 701.1 (after)
- !  . Memory usage      : 713.0 kB (before), 713.0 kB (after)
+ !  . Memory usage      : 745.1 kB (before), 745.1 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -21,18 +21,18 @@
  + New bound is 81
  *           125      266  0.04s        1      (gap is 35.20%)
  *           120      148  0.04s        4      (gap is 32.50%)
-             120     2172        100    4            -
+             120     2343         65    4            -
  + New bound is 120 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 2 solutions found.
  ! Best objective         : 120 (optimal - effective tol. is 0)
  ! Best bound             : 120
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 22634
- ! Number of fails        : 10305
- ! Total memory usage     : 13.4 MB (13.2 MB CP Optimizer + 0.3 MB Concert)
- ! Time spent in solve    : 0.08s (0.08s engine + 0.00s extraction)
- ! Search speed (br. / s) : 323342.9
+ ! Number of branches     : 22490
+ ! Number of fails        : 10297
+ ! Total memory usage     : 13.8 MB (13.5 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 0.06s (0.05s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 449800.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 120

@@ -4,14 +4,14 @@
 ! Upper bound is set to 118
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 119 variables, 181 constraints, 1 phase
+ ! Minimization problem - 119 variables, 182 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 817.1 (before), 817.1 (after)
- !  . Memory usage      : 606.5 kB (before), 606.5 kB (after)
+ !  . Memory usage      : 638.5 kB (before), 638.5 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -19,25 +19,27 @@
  + New bound is 58
                        58        118    1   F    29 != _int29
  + New bound is 59
- *           116      232  0.05s        1      (gap is 49.14%)
-             116     3610        117    2   F    82 != _int58
+ *           116      232  0.04s        1      (gap is 49.14%)
+             116     3139        118    2   F    69 != _int62
  + New bound is 88 (gap is 24.14%)
-             116    15738        116    7   F    61 != _int63
- + New bound is 110 (gap is 5.17%)
-             116    16648        118    7   F    88 != _int62
- + New bound is 114 (gap is 1.72%)
-             116    18426        117    7   F    24 != _int62
+             116    27820        108    4   F    30 != _int35
+ + New bound is 89 (gap is 23.28%)
+             116    26067          9    1   F    60 != _int58
+ + New bound is 90 (gap is 22.41%)
+             116    40409         89    4   F    30 != _int58
+ + New bound is 91 (gap is 21.55%)
+             116    30084        118    2            -
  + New bound is 116 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 116 (optimal - effective tol. is 0)
  ! Best bound             : 116
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 189009
- ! Number of fails        : 87024
- ! Total memory usage     : 15.0 MB (14.8 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 0.41s (0.40s engine + 0.01s extraction)
- ! Search speed (br. / s) : 472522.5
+ ! Number of branches     : 340593
+ ! Number of fails        : 158200
+ ! Total memory usage     : 16.1 MB (15.9 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.62s (0.62s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 558349.2
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 116

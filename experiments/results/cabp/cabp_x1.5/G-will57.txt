@@ -4,12 +4,12 @@
 ! Upper bound is set to 86
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
-! Target value mode is set to Cyclic
+! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 58 variables, 129 constraints, 1 phase
+ ! Minimization problem - 58 variables, 130 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 371.1 (before), 371.1 (after)
  !  . Memory usage      : 528.3 kB (before), 528.3 kB (after)
  ! Using parallel search with 8 workers.
@@ -19,21 +19,37 @@
  + New bound is 32
                        32         57    1   F    16 != _int34
  + New bound is 33
- *            80       89  0.05s        1      (gap is 58.75%)
-              80     6055         57    7   F    53 != _int38
+ *            80       89  0.04s        1      (gap is 58.75%)
+              80     7203         56    2   F    21 != _int10
  + New bound is 57 (gap is 28.75%)
-              80     129k         57    7            -
+              80    91048         56    2   F    41 != _int51
+ + New bound is 58 (gap is 27.50%)
+              80     101k         56    2   F     8 != _int51
+ + New bound is 59 (gap is 26.25%)
+              80     114k         53    7   F    27 != _int49
+ + New bound is 60 (gap is 25.00%)
+              80     133k         55    2   F    44 != _int51
+ + New bound is 61 (gap is 23.75%)
+              80     140k         51    2   F    29 != _int51
+ + New bound is 62 (gap is 22.50%)
+              80     153k         50    4   F    27 != _int49
+ + New bound is 63 (gap is 21.25%)
+              80     149k         46    2   F     3 != _int49
+ + New bound is 64 (gap is 20.00%)
+              80     157k         42    2   F    32 != _int51
+ + New bound is 65 (gap is 18.75%)
+              80     172k         56    2            -
  + New bound is 80 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 80 (optimal - effective tol. is 0)
  ! Best bound             : 80
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 1089917
- ! Number of fails        : 525905
- ! Total memory usage     : 13.4 MB (13.3 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 1.96s (1.95s engine + 0.02s extraction)
- ! Search speed (br. / s) : 561812.9
+ ! Number of branches     : 1367068
+ ! Number of fails        : 662964
+ ! Total memory usage     : 13.5 MB (13.4 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 2.34s (2.34s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 584217.1
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 80

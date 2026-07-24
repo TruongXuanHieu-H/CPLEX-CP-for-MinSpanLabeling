@@ -1,17 +1,18 @@
-! Solving for graph ../../../benchmarks/abp/I-ash85.mtx.rnd
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/I-ash85.mtx.rnd
 ! Target value is set to 11
 ! Lower bound is set to 12
 ! Upper bound is set to 42
 ! Time limit is set to 1800
 ! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 86 variables, 388 constraints, 1 phase
+ ! Minimization problem - 86 variables, 304 constraints, 1 phase
  ! Presolve      : 42 extractables eliminated, 1 constraint generated
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
- !  . Log search space  : 463.3 (before), 463.3 (after)
- !  . Memory usage      : 394.3 kB (before), 394.3 kB (after)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 462.0 (before), 462.0 (after)
+ !  . Memory usage      : 393.6 kB (before), 393.6 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -19,32 +20,32 @@
  + New bound is 12
                         0         86    1            -
  + New bound is 22
-                       22         85    1   F    11 != _int55
+                       20         85    1   F    10 != _int55
  + New bound is 23
- *            42     3858  0.08s        1      (gap is 45.24%)
-              42     7176         84    1   F    32 != _int68
+ *            42     3977  0.07s        1      (gap is 45.24%)
+              42     4889         17    7   F    10 != _int75
  + New bound is 33 (gap is 21.43%)
- *            41    11477  0.18s        1      (gap is 19.51%)
- *            40    20772  0.31s        1      (gap is 17.50%)
- *            39     128k  1.78s        7      (gap is 15.38%)
- *            38     134k  1.86s        7      (gap is 13.16%)
-              38     382k         11    1   F        -
- + New bound is 34 (gap is 10.53%)
- *            37    1194k  16.50s       8      (gap is 8.11%)
- *            36    4728k  69.67s       6      (gap is 5.56%)
- *            35    6754k  101.21s      6      (gap is 2.86%)
+ *            41    31581  0.45s        1      (gap is 19.51%)
+              41    40179         84    2   F    11 != _int52
+ + New bound is 34 (gap is 17.07%)
+ *            40    54223  0.70s        8      (gap is 15.00%)
+ *            39     141k  1.75s        7      (gap is 12.82%)
+ *            38     300k  3.92s        4      (gap is 10.53%)
+ *            37     360k  4.50s        7      (gap is 8.11%)
+ *            36    1615k  21.17s       2      (gap is 5.56%)
+ *            35   13603k  180.83s      8      (gap is 2.86%)
  ! ----------------------------------------------------------------------------
  ! Search terminated by limit, 8 solutions found.
  ! Best objective         : 35 (gap is 2.86%)
  ! Best bound             : 34
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 834321590
- ! Number of fails        : 403435673
- ! Total memory usage     : 323.3 MB (323.0 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 1800.00s (1800.00s engine + 0.01s extraction)
- ! Search speed (br. / s) : 463514.6
+ ! Number of branches     : 1033330571
+ ! Number of fails        : 494472071
+ ! Total memory usage     : 315.8 MB (315.5 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1800.00s (1800.00s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 574072.5
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
 ! Best span = 35
-! Labeling: 35 23 1 8 1 16 1 24 12 6 35 7 31 1 35 35 30 25 1 1 1 23 3 12 9 19 12 14 13 32 23 23 24 24 13 5 29 12 12 16 28 10 24 33 1 34 1 23 21 35 1 34 35 18 2 12 12 1 26 23 23 24 35 4 12 13 1 34 34 35 1 1 17 34 22 15 11 12 34 35 35 20 1 27 23 
+! Labeling: 34 23 1 12 1 16 1 23 12 8 34 30 33 1 1 23 10 24 1 35 1 1 29 12 1 15 12 13 12 7 12 12 24 23 13 3 5 12 12 14 25 11 23 26 35 1 34 13 19 28 34 32 35 18 1 1 24 34 31 23 23 1 12 4 23 9 1 34 35 24 35 34 22 34 21 17 6 23 2 34 1 20 34 27 1 
 ! -------------------------------------------------------- 
