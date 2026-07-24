@@ -5,9 +5,9 @@
 
 enum class VerticesMode
 {
-    no_hole,
-    has_hole,
-    all_diff,
+    no_hole,  // All the labels must be used.
+    has_hole, // No constraints.
+    all_diff, // All the labels must be different.
 };
 
 enum class TargetValueMode

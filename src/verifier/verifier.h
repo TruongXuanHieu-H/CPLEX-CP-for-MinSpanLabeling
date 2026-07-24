@@ -16,7 +16,6 @@ public:
 protected:
     bool verify_target_value(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span)
     {
-
         switch (config_data.target_value_mode)
         {
         case TargetValueMode::abp:
@@ -54,7 +53,7 @@ protected:
         return true;
     }
 
-    bool verify_span(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span)
+    bool verify_span(GraphData &graph_data, std::vector<int> &solution, int solution_span)
     {
         int min_label = solution_span;
         int max_label = 1;

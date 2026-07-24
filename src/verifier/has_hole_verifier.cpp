@@ -6,7 +6,7 @@ bool HasHoleVerifier::verify(ConfigData &config_data, GraphData &graph_data, std
 {
     if (!verify_target_value(config_data, graph_data, solution, solution_span))
         return false;
-    if (!verify_span(config_data, graph_data, solution, solution_span))
+    if (!verify_span(graph_data, solution, solution_span))
         return false;
 
     return true;
